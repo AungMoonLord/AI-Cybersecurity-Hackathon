@@ -1,0 +1,2001 @@
+log,log_class,label
+2025-12-20T10:09:04.341724Z       18 Query: show databases,Normal,0
+2025-12-20T10:42:47.606339Z       21 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:26:43.170481Z       64 Query: drop database production,Anormaly,1
+2025-12-20T10:27:12.777726Z       25 Query: use test,Normal,0
+2025-12-20T10:27:01.995054Z       64 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:35:14.798329Z       44 Query: show databases,Normal,0
+2025-12-20T10:34:36.642082Z       56 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:07:11.493655Z       35 Query: describe users,Normal,0
+2025-12-20T10:05:30.713890Z       38 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:15:54.750047Z       30 Query: delete from products,Anormaly,1
+2025-12-20T10:53:01.361708Z       28 Query: select * from admin,Normal,0
+2025-12-20T10:39:41.931343Z       17 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:37:20.504590Z       91 Query: use production,Normal,0
+2025-12-20T10:30:42.710451Z       46 Quit,Normal,0
+2025-12-20T10:07:56.186067Z       32 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+"2025-12-20T10:44:03.864587Z       34 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:01:24.293970Z       11 Query: delete from debtor,Anormaly,1
+2025-12-20T10:17:21.138578Z       26 Query: show databases,Normal,0
+2025-12-20T10:11:21.601835Z       79 Query: select count(*) from customers,Normal,0
+2025-12-20T10:06:23.596011Z       93 Query: select count(*) from admin,Normal,0
+2025-12-20T10:51:08.929853Z       94 Query: describe debtor,Normal,0
+2025-12-20T10:24:00.935613Z       46 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:28:06.448664Z       65 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:18:43.707786Z       13 Query: drop database mysql,Anormaly,1
+2025-12-20T10:09:05.974459Z       85 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:15:32.245273Z       99 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:35:39.346330Z       92 Query: delete from logs,Anormaly,1
+2025-12-20T10:32:10.852335Z       57 Quit,Normal,0
+2025-12-20T10:18:18.333579Z       10 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:26:01.598132Z       74 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:25:56.832511Z       32 Query: select count(*) from customers,Normal,0
+2025-12-20T10:01:27.186316Z       52 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:32:40.298118Z       36 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:32:43.205033Z       15 Query: show tables,Normal,0
+2025-12-20T10:17:12.973753Z       17 Connect: root@localhost on mysql,Normal,0
+2025-12-20T10:25:44.104461Z       37 Query: show tables,Normal,0
+2025-12-20T10:48:04.806137Z       99 Query: show tables,Normal,0
+2025-12-20T10:40:49.141884Z       42 Query: show databases,Normal,0
+2025-12-20T10:06:50.808775Z       65 Query: drop database production,Anormaly,1
+2025-12-20T10:39:01.360039Z       43 Query: drop table admin,Anormaly,1
+2025-12-20T10:14:48.855181Z       19 Query: show databases,Normal,0
+2025-12-20T10:49:40.361142Z       57 Query: select * from debtor,Normal,0
+2025-12-20T10:24:30.750033Z       98 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:11:38.946825Z       96 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:59:30.446442Z       85 Query: delete from admin,Anormaly,1
+"2025-12-20T10:49:58.768359Z       56 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:04:40.476421Z       56 Query: show tables,Normal,0
+2025-12-20T10:29:55.664995Z       29 Connect: root@localhost on test,Normal,0
+2025-12-20T10:31:49.738050Z       42 Query: delete from admin,Anormaly,1
+2025-12-20T10:06:53.534340Z       20 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:21:23.985447Z       86 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:41:13.840731Z       37 Quit,Normal,0
+2025-12-20T10:33:35.945442Z       10 Query: drop table debtor,Anormaly,1
+2025-12-20T10:00:15.347703Z       40 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:50:28.683672Z       95 Query: use production,Normal,0
+"2025-12-20T10:16:30.483672Z       12 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:49:44.597490Z       67 Connect: app_user@localhost on test,Normal,0
+2025-12-20T10:49:48.789997Z       91 Query: delete from users,Anormaly,1
+2025-12-20T10:17:00.352300Z       64 Query: select load_file('/etc/passwd'),Anormaly,1
+"2025-12-20T10:52:03.556191Z       71 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:10:35.524470Z       80 Quit,Normal,0
+2025-12-20T10:42:30.134945Z       39 Query: show databases,Normal,0
+2025-12-20T10:17:43.512601Z       24 Quit,Normal,0
+2025-12-20T10:23:53.781485Z       32 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:43:29.868582Z       68 Query: describe debtor,Normal,0
+2025-12-20T10:20:20.587198Z       36 Query: select * from admin,Normal,0
+2025-12-20T10:46:33.477406Z       69 Query: select count(*) from products,Normal,0
+2025-12-20T10:11:05.246858Z       84 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:06:52.781845Z       90 Connect: app_user@localhost on mysql,Normal,0
+2025-12-20T10:15:27.723928Z       67 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:42:04.809924Z       13 Query: show tables,Normal,0
+2025-12-20T10:57:48.636170Z       49 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:18:43.359993Z       84 Query: select * from users,Normal,0
+2025-12-20T10:01:54.636727Z       50 Query: describe transactions,Normal,0
+"2025-12-20T10:07:05.521818Z       93 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:24:40.412318Z       78 Query: delete from users,Anormaly,1
+2025-12-20T10:17:28.238517Z       99 Quit,Normal,0
+2025-12-20T10:12:12.957183Z       72 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:40:53.911392Z       91 Query: select * from admin,Normal,0
+2025-12-20T10:16:39.816247Z       70 Query: select count(*) from logs,Normal,0
+2025-12-20T10:07:22.902885Z       28 Query: drop database myapp,Anormaly,1
+2025-12-20T10:04:47.893623Z       69 Query: select * from customers,Normal,0
+2025-12-20T10:31:55.223047Z       92 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:56:38.602689Z       12 Query: describe users,Normal,0
+2025-12-20T10:45:12.748864Z       90 Query: show tables,Normal,0
+2025-12-20T10:39:11.342618Z       16 Query: drop database db1,Anormaly,1
+"2025-12-20T10:56:57.181674Z       28 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:40:41.448539Z       84 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:51:28.488028Z       55 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:36:22.571439Z       74 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:31:18.152414Z       22 Query: select count(*) from admin,Normal,0
+2025-12-20T10:30:45.770455Z       55 Connect: app_user@localhost on test,Normal,0
+2025-12-20T10:59:35.899262Z       22 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:09:10.942738Z       10 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:23:59.669910Z       16 Query: use mysql,Normal,0
+2025-12-20T10:54:42.651772Z       97 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:47:11.876409Z       77 Query: drop table transactions,Anormaly,1
+2025-12-20T10:44:17.373002Z       23 Query: show databases,Normal,0
+2025-12-20T10:16:03.391497Z       69 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:32:13.994239Z       98 Query: use db1,Normal,0
+2025-12-20T10:31:25.787089Z       47 Query: show tables,Normal,0
+2025-12-20T10:31:33.845578Z       57 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:13:52.882103Z       65 Query: show databases,Normal,0
+2025-12-20T10:16:32.784341Z       14 Query: drop database production,Anormaly,1
+2025-12-20T10:56:14.211279Z       16 Query: use db1,Normal,0
+2025-12-20T10:33:55.400985Z       42 Connect: root@localhost on myapp,Normal,0
+2025-12-20T10:18:03.802692Z       83 Query: show databases,Normal,0
+2025-12-20T10:59:24.449208Z       56 Query: show tables,Normal,0
+2025-12-20T10:51:26.347850Z       34 Quit,Normal,0
+"2025-12-20T10:26:56.123792Z       46 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:52:15.437486Z       86 Connect: app_user@localhost on db1,Normal,0
+2025-12-20T10:43:36.577296Z       81 Query: drop table users,Anormaly,1
+2025-12-20T10:37:00.750170Z       16 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:53:43.848907Z       16 Query: truncate table debtor,Anormaly,1
+"2025-12-20T10:43:31.573295Z       39 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:42:19.754999Z       26 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:49:53.809700Z       90 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:44:21.738701Z       62 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:43:58.587838Z       85 Quit,Normal,0
+2025-12-20T10:34:16.306060Z       28 Quit,Normal,0
+2025-12-20T10:56:36.356455Z       57 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:08:46.129411Z       50 Query: delete from products,Anormaly,1
+2025-12-20T10:53:13.213593Z       18 Query: describe users,Normal,0
+2025-12-20T10:17:13.386654Z       15 Query: use mysql,Normal,0
+2025-12-20T10:37:36.150697Z       70 Connect: app_user@localhost on myapp,Normal,0
+2025-12-20T10:44:21.645002Z       40 Query: show tables,Normal,0
+2025-12-20T10:25:05.553902Z       94 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:52:48.721363Z       96 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:22:33.816580Z       12 Query: delete from logs,Anormaly,1
+2025-12-20T10:32:12.123507Z       83 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:46:26.303517Z       91 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:55:28.375197Z       59 Query: use db1,Normal,0
+2025-12-20T10:10:37.315526Z       21 Query: truncate table products,Anormaly,1
+2025-12-20T10:19:48.271926Z       68 Query: drop table users,Anormaly,1
+2025-12-20T10:09:41.871221Z       32 Query: exec xp_cmdshell 'whoami',Anormaly,1
+"2025-12-20T10:08:54.101641Z       37 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:45:22.417719Z       70 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:08:14.723967Z       38 Query: select count(*) from logs,Normal,0
+2025-12-20T10:26:03.284614Z       17 Query: use myapp,Normal,0
+2025-12-20T10:38:41.901064Z       11 Query: delete from admin,Anormaly,1
+2025-12-20T10:43:32.748353Z       49 Query: select * from admin,Normal,0
+2025-12-20T10:46:02.864512Z       47 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:23:45.464725Z       52 Query: delete from products,Anormaly,1
+2025-12-20T10:04:55.406264Z       38 Quit,Normal,0
+2025-12-20T10:29:49.145232Z       53 Connect: user1@localhost on mysql,Normal,0
+2025-12-20T10:22:30.698294Z       41 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:29:36.570011Z       41 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:50:20.718305Z       53 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:26:36.318372Z       64 Query: describe customers,Normal,0
+2025-12-20T10:08:38.104498Z       36 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:53:50.974991Z       81 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:09:42.884204Z       90 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:03:15.707249Z       16 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:09:32.647830Z       87 Quit,Normal,0
+2025-12-20T10:07:28.608796Z       32 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:30:50.654008Z       41 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:44:02.702842Z       63 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:34:05.508276Z       41 Query: drop table admin,Anormaly,1
+2025-12-20T10:22:55.865647Z       18 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:50:15.132551Z       56 Query: drop database production,Anormaly,1
+2025-12-20T10:34:44.302863Z       89 Query: show tables,Normal,0
+"2025-12-20T10:48:57.274881Z       30 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:32:10.378119Z       53 Query: describe customers,Normal,0
+"2025-12-20T10:08:40.738400Z       29 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:56:59.723101Z       81 Quit,Normal,0
+2025-12-20T10:17:44.356709Z       18 Query: select count(*) from users,Normal,0
+2025-12-20T10:57:44.644249Z       78 Connect: admin@localhost on mysql,Normal,0
+2025-12-20T10:40:10.876854Z       83 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:44:03.499489Z       57 Query: drop table admin,Anormaly,1
+2025-12-20T10:15:06.453848Z       82 Query: show databases,Normal,0
+2025-12-20T10:10:32.913388Z       68 Query: describe transactions,Normal,0
+2025-12-20T10:00:11.363829Z       77 Query: use production,Normal,0
+2025-12-20T10:15:45.446272Z       91 Query: show databases,Normal,0
+2025-12-20T10:43:02.925024Z       19 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:41:48.169894Z       20 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:31:12.796126Z       28 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:36:19.798467Z       56 Query: select * from transactions,Normal,0
+2025-12-20T10:44:21.548739Z       74 Query: drop table transactions,Anormaly,1
+2025-12-20T10:19:29.734758Z       90 Query: delete from logs,Anormaly,1
+2025-12-20T10:24:30.637786Z       60 Query: use db1,Normal,0
+2025-12-20T10:19:54.715710Z       15 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:02:36.928144Z       48 Query: show databases,Normal,0
+2025-12-20T10:16:59.574224Z       14 Query: drop table products,Anormaly,1
+2025-12-20T10:45:59.870908Z       95 Query: show databases,Normal,0
+2025-12-20T10:57:32.280934Z       88 Query: show tables,Normal,0
+2025-12-20T10:21:21.852900Z       62 Query: select * from customers,Normal,0
+2025-12-20T10:02:34.946174Z       18 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:16:02.814692Z       86 Query: select count(*) from customers,Normal,0
+2025-12-20T10:19:51.936106Z       63 Query: select * from products,Normal,0
+2025-12-20T10:49:28.882788Z       34 Query: select count(*) from admin,Normal,0
+2025-12-20T10:31:14.397303Z       88 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:37:47.769671Z       97 Query: select * from customers,Normal,0
+2025-12-20T10:23:11.950062Z       25 Query: show tables,Normal,0
+2025-12-20T10:07:37.194677Z       12 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:56:44.240027Z       90 Connect: root@localhost on mysql,Normal,0
+2025-12-20T10:30:03.338692Z       13 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:36:19.177009Z       96 Query: show tables,Normal,0
+2025-12-20T10:58:04.608937Z       28 Query: use myapp,Normal,0
+2025-12-20T10:48:10.875967Z       18 Quit,Normal,0
+2025-12-20T10:19:10.646394Z       69 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:02:28.213651Z       61 Connect: root@localhost on mysql,Normal,0
+2025-12-20T10:58:03.570272Z       26 Connect: admin@localhost on production,Normal,0
+"2025-12-20T10:26:15.460777Z       91 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:21:41.532991Z       28 Query: drop table customers,Anormaly,1
+2025-12-20T10:56:15.346084Z       92 Query: use test,Normal,0
+2025-12-20T10:26:11.485258Z       81 Query: show databases,Normal,0
+"2025-12-20T10:36:06.404210Z       28 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:00:46.451420Z       44 Query: drop table admin,Anormaly,1
+"2025-12-20T10:14:59.384117Z       33 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:43:09.701016Z       48 Query: show tables,Normal,0
+2025-12-20T10:51:21.733572Z       14 Quit,Normal,0
+2025-12-20T10:04:05.451372Z       56 Query: show tables,Normal,0
+2025-12-20T10:51:15.497413Z       71 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:34:53.657782Z       12 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:13:24.999745Z       79 Query: delete from logs,Anormaly,1
+2025-12-20T10:25:52.827332Z       52 Quit,Normal,0
+2025-12-20T10:07:19.378762Z       77 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:05:34.341087Z       21 Query: delete from logs,Anormaly,1
+2025-12-20T10:08:04.380795Z       13 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:43:42.703414Z       82 Query: use mysql,Normal,0
+2025-12-20T10:30:26.307878Z       70 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:09:54.941568Z       38 Query: select load_file('/etc/passwd'),Anormaly,1
+"2025-12-20T10:00:31.904018Z       61 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:53:34.788274Z       88 Query: truncate table logs,Anormaly,1
+2025-12-20T10:51:32.149498Z       42 Query: select count(*) from admin,Normal,0
+2025-12-20T10:27:24.605172Z       82 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:49:13.303143Z       73 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:21:17.889891Z       39 Query: show databases,Normal,0
+2025-12-20T10:18:12.127389Z       39 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:44:44.766471Z       64 Query: truncate table users,Anormaly,1
+2025-12-20T10:53:57.859693Z       38 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:29:41.975650Z       15 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+"2025-12-20T10:37:59.954863Z       40 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:48:12.823675Z       36 Query: show databases,Normal,0
+2025-12-20T10:55:38.288063Z       30 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:42:40.254173Z       23 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:59:48.858826Z       90 Query: drop database test,Anormaly,1
+2025-12-20T10:05:28.829113Z       10 Query: drop database mysql,Anormaly,1
+2025-12-20T10:58:54.188012Z       62 Connect: app_user@localhost on mysql,Normal,0
+2025-12-20T10:57:34.540250Z       42 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:06:56.128723Z       63 Query: drop database test,Anormaly,1
+2025-12-20T10:40:59.487743Z       47 Query: show tables,Normal,0
+2025-12-20T10:42:06.618225Z       67 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:49:06.288923Z       90 Query: use db1,Normal,0
+2025-12-20T10:11:04.192680Z       76 Query: select * from logs,Normal,0
+2025-12-20T10:38:07.181188Z       35 Connect: admin@localhost on db1,Normal,0
+2025-12-20T10:01:45.360330Z       13 Query: delete from admin,Anormaly,1
+2025-12-20T10:11:37.707863Z       42 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:30:10.122514Z       54 Connect: root@localhost on production,Normal,0
+2025-12-20T10:20:16.280812Z       41 Query: select * from users,Normal,0
+2025-12-20T10:21:24.404415Z       18 Connect: admin@localhost on test,Normal,0
+2025-12-20T10:02:41.558723Z       67 Query: use test,Normal,0
+2025-12-20T10:15:02.283531Z       87 Connect: admin@localhost on db1,Normal,0
+2025-12-20T10:56:54.617024Z       46 Query: select count(*) from admin,Normal,0
+2025-12-20T10:12:52.124910Z       37 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:50:15.776568Z       32 Query: use test,Normal,0
+2025-12-20T10:12:14.337160Z       28 Query: select * from users,Normal,0
+2025-12-20T10:37:16.763867Z       78 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:01:50.919432Z       22 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:40:04.390251Z       75 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:18:12.461014Z       53 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:21:46.888570Z       76 Query: truncate table customers,Anormaly,1
+2025-12-20T10:57:10.278021Z       15 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:29:18.732406Z       25 Query: truncate table products,Anormaly,1
+2025-12-20T10:51:34.253085Z       27 Query: select count(*) from products,Normal,0
+"2025-12-20T10:59:10.258335Z       88 Query: select name, email from transactions limit 10",Normal,0
+"2025-12-20T10:33:25.590934Z       83 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:38:58.189079Z       68 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:23:17.916143Z       93 Query: drop database mysql,Anormaly,1
+2025-12-20T10:22:32.953747Z       12 Query: select * from products,Normal,0
+2025-12-20T10:17:07.672989Z       82 Quit,Normal,0
+2025-12-20T10:55:19.970672Z       92 Query: select * from admin,Normal,0
+2025-12-20T10:12:11.959772Z       46 Query: select * from products,Normal,0
+2025-12-20T10:23:15.984064Z       28 Query: describe transactions,Normal,0
+2025-12-20T10:23:10.704358Z       73 Query: use db1,Normal,0
+2025-12-20T10:53:16.234233Z       57 Connect: admin@localhost on test,Normal,0
+2025-12-20T10:15:56.413823Z       63 Query: select * from logs where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:06:14.557954Z       44 Query: show tables,Normal,0
+2025-12-20T10:39:54.620947Z       88 Query: select count(*) from users,Normal,0
+2025-12-20T10:59:26.911109Z       17 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:55:22.259698Z       57 Quit,Normal,0
+2025-12-20T10:37:56.471241Z       91 Query: drop database test,Anormaly,1
+2025-12-20T10:52:11.527274Z       14 Query: describe admin,Normal,0
+2025-12-20T10:57:37.197949Z       14 Query: select * from customers,Normal,0
+2025-12-20T10:07:35.648004Z       74 Query: drop table transactions,Anormaly,1
+2025-12-20T10:36:11.173010Z       46 Query: drop table logs,Anormaly,1
+2025-12-20T10:06:03.620771Z       95 Quit,Normal,0
+2025-12-20T10:56:18.853207Z       62 Quit,Normal,0
+2025-12-20T10:51:16.230992Z       59 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:40:00.401834Z       35 Query: truncate table customers,Anormaly,1
+2025-12-20T10:11:06.634956Z       71 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:48:02.570814Z       83 Query: delete from admin,Anormaly,1
+"2025-12-20T10:22:49.789306Z       23 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:58:22.578675Z       86 Query: use db1,Normal,0
+"2025-12-20T10:24:54.296700Z       12 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:11:13.213336Z       89 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:40:57.128498Z       27 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:11:37.963218Z       80 Query: drop database test,Anormaly,1
+2025-12-20T10:56:05.875530Z       97 Query: drop database test,Anormaly,1
+2025-12-20T10:56:47.219834Z       23 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:47:42.986515Z       70 Query: show databases,Normal,0
+2025-12-20T10:18:02.225299Z       15 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:39:59.410399Z       66 Query: drop table admin,Anormaly,1
+2025-12-20T10:21:34.214686Z       18 Query: select * from debtor,Normal,0
+2025-12-20T10:57:47.127646Z       15 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:05:44.947524Z       78 Query: drop table debtor,Anormaly,1
+2025-12-20T10:44:05.238235Z       14 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:37:48.982263Z       68 Query: use mysql,Normal,0
+2025-12-20T10:46:29.180193Z       98 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:45:59.568526Z       63 Query: describe logs,Normal,0
+2025-12-20T10:20:40.764581Z       64 Query: drop database myapp,Anormaly,1
+2025-12-20T10:42:21.426737Z       91 Query: drop table transactions,Anormaly,1
+2025-12-20T10:20:06.646993Z       81 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+"2025-12-20T10:33:30.915989Z       60 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:18:02.110329Z       25 Query: show tables,Normal,0
+"2025-12-20T10:11:15.637782Z       85 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:37:05.222296Z       18 Query: select * from debtor,Normal,0
+2025-12-20T10:02:12.235756Z       49 Query: describe transactions,Normal,0
+2025-12-20T10:40:45.469047Z       67 Query: select * from customers,Normal,0
+2025-12-20T10:02:54.118708Z       77 Query: show tables,Normal,0
+2025-12-20T10:36:29.393837Z       70 Connect: user1@localhost on production,Normal,0
+2025-12-20T10:54:26.707816Z       53 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:07:54.396872Z       71 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:33:24.304903Z       84 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+"2025-12-20T10:26:41.200467Z       83 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:04:34.617156Z       51 Query: use db1,Normal,0
+2025-12-20T10:01:36.261362Z       84 Query: delete from logs,Anormaly,1
+2025-12-20T10:39:29.411594Z       63 Query: select count(*) from admin,Normal,0
+"2025-12-20T10:35:45.148805Z       15 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:30:48.740062Z       75 Query: select * from users,Normal,0
+2025-12-20T10:26:58.324185Z       10 Query: describe users,Normal,0
+2025-12-20T10:19:31.267900Z       23 Query: use db1,Normal,0
+2025-12-20T10:47:57.542198Z       68 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:52:07.176037Z       13 Query: drop database myapp,Anormaly,1
+"2025-12-20T10:00:11.146371Z       16 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:14:07.899404Z       10 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:16:28.609049Z       18 Connect: user1@localhost on test,Normal,0
+"2025-12-20T10:54:19.319600Z       73 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:43:43.138270Z       40 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:32:47.871037Z       31 Quit,Normal,0
+2025-12-20T10:41:07.913456Z       33 Query: use production,Normal,0
+2025-12-20T10:19:23.432739Z       92 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:58:05.190368Z       43 Query: use myapp,Normal,0
+2025-12-20T10:07:44.515719Z       98 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+"2025-12-20T10:31:23.166487Z       95 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:31:27.980000Z       80 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:17:00.539805Z       80 Query: show tables,Normal,0
+2025-12-20T10:04:06.523947Z       97 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:32:23.883116Z       62 Query: drop database myapp,Anormaly,1
+2025-12-20T10:32:11.774905Z       71 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:59:48.571353Z       65 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:36:08.219612Z       67 Query: delete from admin,Anormaly,1
+2025-12-20T10:14:06.924817Z       38 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:55:30.533878Z       29 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:28:20.119201Z       32 Query: show databases,Normal,0
+2025-12-20T10:17:29.377061Z       22 Query: describe transactions,Normal,0
+2025-12-20T10:47:38.204396Z       56 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:51:24.103921Z       47 Query: describe admin,Normal,0
+2025-12-20T10:50:38.648722Z       21 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:58:28.942295Z       48 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:35:39.452624Z       88 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:56:03.896780Z       32 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:43:45.766005Z       74 Query: drop database production,Anormaly,1
+2025-12-20T10:50:18.246949Z       78 Query: select count(*) from users,Normal,0
+2025-12-20T10:23:59.931718Z       49 Query: delete from transactions,Anormaly,1
+2025-12-20T10:31:41.599590Z       71 Query: drop database mysql,Anormaly,1
+2025-12-20T10:14:47.182744Z       54 Query: show databases,Normal,0
+2025-12-20T10:35:25.167608Z       62 Query: drop table customers,Anormaly,1
+2025-12-20T10:39:10.764539Z       51 Quit,Normal,0
+2025-12-20T10:16:28.931140Z       28 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:38:05.860394Z       94 Query: select * from products,Normal,0
+2025-12-20T10:42:24.210409Z       18 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:44:55.110875Z       51 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:35:55.286676Z       71 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:59:24.938916Z       19 Query: delete from users,Anormaly,1
+2025-12-20T10:11:06.643601Z       14 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:55:03.845420Z       38 Query: select * from admin,Normal,0
+2025-12-20T10:00:05.433650Z       66 Query: select count(*) from admin,Normal,0
+2025-12-20T10:49:12.482485Z       90 Query: truncate table admin,Anormaly,1
+2025-12-20T10:27:50.649636Z       28 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:37:36.930939Z       60 Connect: admin@localhost on production,Normal,0
+2025-12-20T10:50:56.702259Z       39 Query: use db1,Normal,0
+2025-12-20T10:33:03.196103Z       24 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:34:51.912135Z       93 Query: drop database mysql,Anormaly,1
+2025-12-20T10:27:42.423664Z       38 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:11:02.204273Z       69 Query: show databases,Normal,0
+2025-12-20T10:41:13.813365Z       26 Query: describe debtor,Normal,0
+2025-12-20T10:20:39.793075Z       71 Query: drop table admin,Anormaly,1
+2025-12-20T10:41:40.227720Z       13 Query: show tables,Normal,0
+2025-12-20T10:48:08.205646Z       11 Connect: user1@localhost on db1,Normal,0
+2025-12-20T10:24:48.164236Z       30 Query: use production,Normal,0
+2025-12-20T10:49:29.777547Z       81 Query: select * from users,Normal,0
+"2025-12-20T10:07:11.307471Z       66 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:23:45.967131Z       18 Query: delete from customers,Anormaly,1
+2025-12-20T10:42:14.708900Z       60 Query: truncate table admin,Anormaly,1
+2025-12-20T10:16:24.797059Z       34 Query: select count(*) from products,Normal,0
+2025-12-20T10:09:57.644207Z       86 Query: select * from admin,Normal,0
+2025-12-20T10:02:28.373834Z       63 Quit,Normal,0
+2025-12-20T10:16:23.272713Z       50 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:26:13.467534Z       57 Query: show tables,Normal,0
+2025-12-20T10:57:02.877758Z       34 Query: use db1,Normal,0
+2025-12-20T10:58:40.532388Z       93 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:13:23.148998Z       87 Query: show tables,Normal,0
+2025-12-20T10:06:12.911502Z       98 Query: show tables,Normal,0
+2025-12-20T10:15:24.370275Z       27 Query: show tables,Normal,0
+2025-12-20T10:38:22.541061Z       71 Query: select * from products,Normal,0
+2025-12-20T10:41:03.377178Z       13 Query: drop database test,Anormaly,1
+2025-12-20T10:22:37.505753Z       10 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:14:38.345325Z       68 Query: delete from users,Anormaly,1
+2025-12-20T10:35:50.762108Z       86 Query: use myapp,Normal,0
+2025-12-20T10:59:36.746729Z       79 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:44:08.165960Z       42 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:44:38.362120Z       24 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:45:25.934150Z       84 Query: show databases,Normal,0
+2025-12-20T10:46:53.130166Z       42 Query: use test,Normal,0
+2025-12-20T10:53:10.448131Z       50 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:20:57.220578Z       92 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:06:31.683472Z       39 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:56:16.168441Z       83 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:53:00.699662Z       20 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:08:10.353875Z       76 Connect: root@localhost on production,Normal,0
+2025-12-20T10:10:11.554858Z       35 Query: show databases,Normal,0
+2025-12-20T10:15:23.194224Z       65 Query: drop table users,Anormaly,1
+2025-12-20T10:20:41.393617Z       82 Query: describe debtor,Normal,0
+2025-12-20T10:17:46.380556Z       75 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:11:17.113352Z       59 Query: use db1,Normal,0
+2025-12-20T11:00:00.515426Z       31 Query: select * from users,Normal,0
+2025-12-20T10:07:41.680836Z       83 Query: delete from logs,Anormaly,1
+2025-12-20T10:34:25.247154Z       39 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:24:19.275186Z       38 Query: drop database mysql,Anormaly,1
+2025-12-20T10:44:28.465670Z       79 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:45:50.360900Z       98 Query: drop database mysql,Anormaly,1
+2025-12-20T10:31:34.788344Z       84 Connect: app_user@localhost on mysql,Normal,0
+"2025-12-20T10:26:52.201651Z       55 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:55:26.863986Z       45 Query: select count(*) from logs,Normal,0
+2025-12-20T10:09:20.672587Z       49 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:40:39.244587Z       86 Query: select * from transactions,Normal,0
+2025-12-20T10:50:00.342345Z       43 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:14:48.926561Z       41 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:26:18.563276Z       41 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:30:02.254767Z       94 Query: show tables,Normal,0
+2025-12-20T10:36:50.824823Z       11 Query: describe admin,Normal,0
+2025-12-20T10:54:28.551263Z       95 Query: describe users,Normal,0
+2025-12-20T10:44:46.879585Z       20 Quit,Normal,0
+2025-12-20T10:23:06.523469Z       11 Query: show databases,Normal,0
+2025-12-20T10:14:36.962720Z       26 Connect: root@localhost on test,Normal,0
+2025-12-20T10:14:53.977732Z       61 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:09:18.908357Z       13 Query: show databases,Normal,0
+2025-12-20T10:03:17.187656Z       12 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:40:02.196729Z       84 Query: show databases,Normal,0
+2025-12-20T10:44:10.847165Z       64 Query: select * from products,Normal,0
+2025-12-20T10:41:43.370138Z       25 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:42:55.821906Z       84 Query: show databases,Normal,0
+2025-12-20T10:25:26.931809Z       27 Query: select count(*) from users,Normal,0
+2025-12-20T10:11:12.613626Z       85 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+"2025-12-20T10:52:44.866247Z       10 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:28:18.145964Z       21 Quit,Normal,0
+2025-12-20T10:45:52.160322Z       30 Query: drop database test,Anormaly,1
+2025-12-20T10:45:05.155923Z       74 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:17:45.496736Z       45 Query: truncate table products,Anormaly,1
+2025-12-20T10:53:28.927396Z       87 Query: show tables,Normal,0
+2025-12-20T10:01:39.803030Z       74 Connect: user1@localhost on production,Normal,0
+2025-12-20T10:09:35.898122Z       52 Query: drop database db1,Anormaly,1
+2025-12-20T10:00:32.746087Z       25 Query: drop table transactions,Anormaly,1
+2025-12-20T10:59:17.215215Z       81 Query: xp_cmdshell 'net user',Anormaly,1
+"2025-12-20T10:49:46.442523Z       31 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:51:49.737693Z       80 Query: delete from products,Anormaly,1
+2025-12-20T10:13:16.393039Z       86 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:05:58.585387Z       90 Query: select * from admin,Normal,0
+2025-12-20T10:10:04.879093Z       51 Query: describe products,Normal,0
+2025-12-20T10:04:01.319804Z       51 Query: use mysql,Normal,0
+2025-12-20T10:09:25.891726Z       67 Query: truncate table admin,Anormaly,1
+2025-12-20T10:06:05.250231Z       77 Query: show tables,Normal,0
+2025-12-20T10:31:12.196745Z       93 Connect: admin@localhost on mysql,Normal,0
+2025-12-20T10:07:39.726014Z       82 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:12:14.275196Z       19 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:42:43.600856Z       57 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:09:31.670341Z       86 Quit,Normal,0
+2025-12-20T10:07:40.227264Z       73 Query: delete from transactions,Anormaly,1
+2025-12-20T10:09:16.839937Z       49 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:12:56.320441Z       32 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:34:07.655399Z       30 Query: select count(*) from logs,Normal,0
+2025-12-20T10:20:04.817022Z       41 Query: drop database production,Anormaly,1
+2025-12-20T10:05:24.440910Z       14 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:16:00.940168Z       77 Query: drop table products,Anormaly,1
+2025-12-20T10:56:34.305647Z       14 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:19:04.213154Z       54 Query: describe admin,Normal,0
+2025-12-20T10:59:35.252608Z       33 Query: show tables,Normal,0
+2025-12-20T10:05:00.848564Z       71 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:30:37.232336Z       87 Query: select count(*) from customers,Normal,0
+2025-12-20T10:03:12.959371Z       87 Query: describe debtor,Normal,0
+2025-12-20T10:54:30.174318Z       18 Query: drop database production,Anormaly,1
+2025-12-20T10:45:27.999814Z       22 Query: drop table logs,Anormaly,1
+2025-12-20T10:45:10.974013Z       82 Query: use mysql,Normal,0
+2025-12-20T10:56:09.593712Z       82 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:22:32.337038Z       40 Query: show databases,Normal,0
+2025-12-20T10:26:53.687626Z       51 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:10:10.920660Z       83 Query: select * from users,Normal,0
+2025-12-20T10:25:54.645316Z       37 Query: truncate table products,Anormaly,1
+2025-12-20T10:57:05.990506Z       58 Query: select * from logs where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:06:00.362113Z       55 Quit,Normal,0
+2025-12-20T10:28:51.382707Z       71 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:20:08.306397Z       38 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:25:12.255418Z       25 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:32:18.280477Z       25 Query: describe debtor,Normal,0
+2025-12-20T10:50:15.587673Z       28 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:49:14.273212Z       24 Quit,Normal,0
+2025-12-20T10:27:35.569441Z       31 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:47:55.271898Z       93 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:35:09.825083Z       19 Query: show databases,Normal,0
+2025-12-20T10:24:12.894852Z       17 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:48:56.699455Z       73 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:31:46.720232Z       74 Quit,Normal,0
+2025-12-20T10:11:54.624153Z       17 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:18:05.776568Z       10 Query: use test,Normal,0
+2025-12-20T10:50:10.445816Z       42 Query: select * from transactions,Normal,0
+2025-12-20T10:01:57.998802Z       55 Connect: admin@localhost on mysql,Normal,0
+2025-12-20T10:23:02.660384Z       15 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:39:13.392699Z       48 Query: show tables,Normal,0
+2025-12-20T10:08:52.473631Z       99 Query: drop database db1,Anormaly,1
+"2025-12-20T10:41:47.159299Z       39 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:06:17.403442Z       80 Query: show databases,Normal,0
+2025-12-20T10:39:40.139451Z       19 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:56:16.740967Z       16 Query: truncate table users,Anormaly,1
+2025-12-20T10:33:55.990087Z       30 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:17:59.222059Z       98 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:31:59.801199Z       33 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:20:41.945426Z       81 Query: describe transactions,Normal,0
+2025-12-20T10:39:12.902869Z       56 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:26:04.648114Z       84 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:06:11.148916Z       11 Query: select count(*) from users,Normal,0
+2025-12-20T10:44:34.803590Z       15 Query: describe products,Normal,0
+2025-12-20T10:50:56.251906Z       13 Query: show tables,Normal,0
+"2025-12-20T10:30:44.583669Z       78 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:41:00.542439Z       69 Query: delete from products,Anormaly,1
+2025-12-20T10:41:54.237947Z       83 Query: select * from transactions,Normal,0
+2025-12-20T10:30:30.940669Z       30 Quit,Normal,0
+2025-12-20T10:16:34.223290Z       77 Quit,Normal,0
+2025-12-20T10:01:08.880879Z       63 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:52:14.354444Z       23 Query: select count(*) from admin,Normal,0
+2025-12-20T10:57:25.502841Z       68 Query: truncate table products,Anormaly,1
+2025-12-20T10:57:29.617546Z       79 Query: use production,Normal,0
+2025-12-20T10:06:55.532830Z       47 Query: use mysql,Normal,0
+2025-12-20T10:22:32.106955Z       90 Quit,Normal,0
+2025-12-20T10:07:55.720646Z       62 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:46:25.465699Z       68 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:04:05.475975Z       59 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:26:20.570927Z       11 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:07:06.715616Z       16 Query: select * from transactions,Normal,0
+2025-12-20T10:02:37.567004Z       22 Query: delete from customers,Anormaly,1
+2025-12-20T10:03:23.170463Z       87 Query: drop database test,Anormaly,1
+2025-12-20T10:41:43.224419Z       35 Query: truncate table logs,Anormaly,1
+2025-12-20T10:20:53.553042Z       69 Query: delete from customers,Anormaly,1
+2025-12-20T10:16:39.795853Z       67 Query: delete from products,Anormaly,1
+2025-12-20T10:49:14.833094Z       63 Query: show tables,Normal,0
+2025-12-20T10:05:52.889746Z       36 Quit,Normal,0
+"2025-12-20T10:47:08.898230Z       60 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:39:14.846805Z       19 Query: use production,Normal,0
+2025-12-20T10:18:09.823522Z       50 Query: drop table transactions,Anormaly,1
+2025-12-20T10:48:05.997608Z       78 Query: describe users,Normal,0
+2025-12-20T10:35:50.311413Z       75 Query: drop table transactions,Anormaly,1
+2025-12-20T10:43:12.742915Z       19 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:33:21.422404Z       12 Query: select count(*) from customers,Normal,0
+2025-12-20T10:07:19.186577Z       27 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:24:59.783631Z       46 Query: drop database mysql,Anormaly,1
+2025-12-20T10:19:01.246259Z       58 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:35:59.280059Z       76 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:29:56.158747Z       50 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:04:54.725263Z       56 Query: use mysql,Normal,0
+2025-12-20T10:10:20.261585Z       64 Query: drop database production,Anormaly,1
+2025-12-20T10:36:42.844379Z       41 Query: select count(*) from customers,Normal,0
+2025-12-20T10:01:00.769165Z       79 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:15:55.439409Z       98 Query: use mysql,Normal,0
+2025-12-20T10:20:43.545645Z       72 Query: drop database db1,Anormaly,1
+"2025-12-20T10:07:35.382485Z       66 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:46:29.863591Z       98 Query: truncate table logs,Anormaly,1
+2025-12-20T10:51:11.937021Z       34 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:06:12.513300Z       66 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:57:00.777841Z       10 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:46:04.669860Z       78 Query: use myapp,Normal,0
+2025-12-20T10:06:39.862107Z       45 Query: describe customers,Normal,0
+2025-12-20T10:54:07.983003Z       18 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:47:49.709854Z       11 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:02:04.255899Z       95 Query: drop database db1,Anormaly,1
+2025-12-20T10:46:50.723229Z       23 Query: select count(*) from logs,Normal,0
+2025-12-20T10:50:25.418679Z       75 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:10:36.555838Z       44 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:47:53.768818Z       39 Query: drop table users,Anormaly,1
+2025-12-20T10:16:26.265323Z       30 Query: show databases,Normal,0
+2025-12-20T10:04:07.725548Z       16 Query: show databases,Normal,0
+"2025-12-20T10:33:48.144309Z       30 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:12:56.419686Z       68 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:37:13.147673Z       43 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:36:54.459232Z       25 Query: show databases,Normal,0
+2025-12-20T10:45:30.160925Z       94 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:00:43.569775Z       22 Query: use db1,Normal,0
+2025-12-20T10:55:25.732022Z       90 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:45:52.426447Z       78 Query: show databases,Normal,0
+2025-12-20T10:42:35.514890Z       55 Query: use mysql,Normal,0
+2025-12-20T10:37:01.565209Z       20 Query: select load_file('/etc/passwd'),Anormaly,1
+"2025-12-20T10:29:05.381002Z       29 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:36:44.522236Z       20 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:52:18.469842Z       59 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:00:04.302323Z       90 Query: use test,Normal,0
+2025-12-20T10:48:36.951567Z       95 Query: select count(*) from logs,Normal,0
+2025-12-20T10:58:04.440321Z       94 Connect: root@localhost on test,Normal,0
+2025-12-20T10:32:12.740517Z       90 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:26:41.410743Z       49 Query: show tables,Normal,0
+2025-12-20T10:19:41.193020Z       37 Query: drop database mysql,Anormaly,1
+"2025-12-20T10:34:27.311782Z       24 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:35:01.743956Z       35 Query: drop database test,Anormaly,1
+2025-12-20T10:47:36.719582Z       76 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:26:11.894232Z       97 Query: show databases,Normal,0
+2025-12-20T10:19:59.127375Z       82 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:50:02.215206Z       15 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:47:29.807532Z       82 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:21:57.689430Z       53 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:00:43.753226Z       36 Query: select * from logs where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:20:25.599607Z       58 Query: drop database production,Anormaly,1
+2025-12-20T10:21:18.579220Z       84 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:53:52.996016Z       24 Query: show tables,Normal,0
+2025-12-20T10:34:12.353765Z       37 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:26:32.669822Z       61 Quit,Normal,0
+2025-12-20T10:47:26.898776Z       92 Query: truncate table admin,Anormaly,1
+2025-12-20T10:44:53.955808Z       38 Query: select count(*) from admin,Normal,0
+2025-12-20T10:05:14.399083Z       87 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:00:40.879727Z       16 Query: describe admin,Normal,0
+2025-12-20T10:08:53.983217Z       88 Query: drop database db1,Anormaly,1
+2025-12-20T10:33:53.295280Z       57 Query: xp_cmdshell 'net user',Anormaly,1
+"2025-12-20T10:59:11.829947Z       40 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:32:44.992718Z       69 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:02:07.574911Z       53 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:18:05.493204Z       69 Query: select * from transactions,Normal,0
+2025-12-20T10:06:58.796180Z       99 Query: drop table customers,Anormaly,1
+2025-12-20T10:34:17.704582Z       38 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:08:54.932992Z       33 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:11:24.753548Z       85 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:11:52.575222Z       88 Query: drop database test,Anormaly,1
+2025-12-20T10:27:50.101962Z       52 Query: drop table logs,Anormaly,1
+2025-12-20T10:36:52.246668Z       93 Quit,Normal,0
+2025-12-20T10:53:45.859154Z       20 Query: truncate table products,Anormaly,1
+2025-12-20T10:17:24.555913Z       98 Query: truncate table products,Anormaly,1
+2025-12-20T10:02:45.708702Z       87 Query: show tables,Normal,0
+2025-12-20T10:27:21.363061Z       16 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:55:50.795316Z       56 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:52:41.593016Z       40 Query: drop database mysql,Anormaly,1
+2025-12-20T10:48:15.875939Z       57 Query: truncate table admin,Anormaly,1
+2025-12-20T10:21:12.254137Z       84 Query: show databases,Normal,0
+2025-12-20T10:32:45.939522Z       48 Connect: root@localhost on test,Normal,0
+2025-12-20T10:53:52.905558Z       43 Query: select * from admin,Normal,0
+2025-12-20T10:02:17.900492Z       96 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:39:28.349173Z       14 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:26:38.871464Z       60 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:07:53.139748Z       50 Query: xp_cmdshell 'net user',Anormaly,1
+"2025-12-20T10:02:23.198136Z       94 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:59:33.747830Z       61 Quit,Normal,0
+2025-12-20T10:01:25.287643Z       31 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:54:32.385221Z       10 Query: select * from logs where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:47:02.677849Z       12 Query: show tables,Normal,0
+"2025-12-20T10:26:20.807858Z       44 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:30:03.133598Z       17 Query: show databases,Normal,0
+2025-12-20T10:08:02.318133Z       79 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:11:51.987834Z       30 Quit,Normal,0
+2025-12-20T10:21:35.812547Z       98 Query: show databases,Normal,0
+"2025-12-20T10:08:15.571228Z       44 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:03:53.831970Z       43 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:21:26.742394Z       19 Query: truncate table logs,Anormaly,1
+2025-12-20T10:28:52.508624Z       68 Query: delete from admin,Anormaly,1
+"2025-12-20T10:05:08.637966Z       54 Query: select name, email from users limit 10",Normal,0
+"2025-12-20T10:14:42.396334Z       80 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:28:27.137162Z       26 Query: show tables,Normal,0
+2025-12-20T10:07:15.965018Z       69 Query: show databases,Normal,0
+2025-12-20T10:47:47.134882Z       48 Query: show databases,Normal,0
+2025-12-20T10:43:29.341181Z       13 Quit,Normal,0
+2025-12-20T10:26:22.671646Z       38 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:46:44.419880Z       49 Query: select * from transactions,Normal,0
+2025-12-20T10:18:59.790908Z       47 Query: select * from logs,Normal,0
+2025-12-20T10:20:01.352782Z       31 Query: truncate table products,Anormaly,1
+2025-12-20T10:35:39.119918Z       96 Query: drop database myapp,Anormaly,1
+2025-12-20T10:56:55.118989Z       39 Query: truncate table admin,Anormaly,1
+2025-12-20T10:38:20.688874Z       82 Connect: app_user@localhost on mysql,Normal,0
+2025-12-20T10:47:20.804669Z       83 Quit,Normal,0
+2025-12-20T10:25:50.864602Z       82 Query: delete from logs,Anormaly,1
+2025-12-20T10:46:38.641472Z       54 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:48:08.215559Z       31 Query: drop table debtor,Anormaly,1
+2025-12-20T10:40:33.579632Z       85 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:50:15.285655Z       55 Query: select count(*) from users,Normal,0
+2025-12-20T10:59:12.239556Z       81 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:36:12.987598Z       37 Query: show databases,Normal,0
+2025-12-20T10:53:18.720972Z       10 Quit,Normal,0
+2025-12-20T10:14:35.260547Z       16 Query: use mysql,Normal,0
+2025-12-20T10:02:46.744002Z       50 Query: delete from transactions,Anormaly,1
+2025-12-20T10:08:54.409970Z       18 Query: drop table users,Anormaly,1
+2025-12-20T10:18:56.257785Z       92 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:04:45.555996Z       74 Query: drop table products,Anormaly,1
+2025-12-20T10:21:46.935213Z       41 Query: select * from customers,Normal,0
+2025-12-20T10:45:20.976068Z       70 Query: show tables,Normal,0
+2025-12-20T10:11:18.208124Z       74 Query: delete from admin,Anormaly,1
+2025-12-20T10:53:42.943263Z       68 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:17:12.501741Z       75 Query: select * from customers,Normal,0
+2025-12-20T10:06:02.582547Z       94 Connect: user1@localhost on db1,Normal,0
+"2025-12-20T10:53:46.925535Z       48 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:05:03.429392Z       67 Connect: admin@localhost on db1,Normal,0
+2025-12-20T10:28:30.320275Z       84 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:03:05.800201Z       44 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:20:59.745542Z       57 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:04:07.355340Z       17 Query: use db1,Normal,0
+2025-12-20T10:47:53.852050Z       34 Quit,Normal,0
+2025-12-20T10:07:52.723070Z       29 Query: drop table products,Anormaly,1
+2025-12-20T10:13:09.732371Z       19 Query: use mysql,Normal,0
+2025-12-20T10:57:07.166954Z       40 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:26:17.710359Z       82 Query: select * from logs,Normal,0
+2025-12-20T10:37:27.820130Z       76 Query: show databases,Normal,0
+2025-12-20T10:13:27.220145Z       18 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:10:31.978887Z       76 Query: describe transactions,Normal,0
+2025-12-20T10:40:01.681341Z       79 Query: select * from products,Normal,0
+2025-12-20T10:20:10.961629Z       59 Quit,Normal,0
+2025-12-20T10:28:29.367555Z       44 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:01:26.610354Z       10 Query: show tables,Normal,0
+2025-12-20T10:26:02.408562Z       10 Query: use mysql,Normal,0
+2025-12-20T10:18:53.650456Z       43 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:56:48.272022Z       52 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:55:48.181517Z       63 Query: show tables,Normal,0
+2025-12-20T10:05:21.510452Z       89 Query: use mysql,Normal,0
+2025-12-20T10:17:37.181266Z       98 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:32:19.796087Z       14 Query: select * from products,Normal,0
+2025-12-20T10:12:49.611379Z       12 Connect: admin@localhost on production,Normal,0
+2025-12-20T10:29:33.171405Z       16 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:53:54.393312Z       24 Query: use test,Normal,0
+2025-12-20T10:30:04.107353Z       25 Quit,Normal,0
+2025-12-20T10:33:38.422485Z       72 Query: truncate table admin,Anormaly,1
+2025-12-20T10:14:18.554607Z       23 Quit,Normal,0
+2025-12-20T10:18:43.752495Z       37 Connect: app_user@localhost on myapp,Normal,0
+2025-12-20T10:17:12.653349Z       10 Query: describe transactions,Normal,0
+2025-12-20T10:35:57.551299Z       56 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:39:58.423542Z       97 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:25:21.293863Z       23 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:06:26.113309Z       91 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:12:22.575227Z       50 Query: show tables,Normal,0
+2025-12-20T10:18:17.297127Z       29 Query: drop database db1,Anormaly,1
+2025-12-20T10:57:53.455692Z       25 Query: truncate table admin,Anormaly,1
+2025-12-20T10:54:10.975754Z       63 Query: select * from transactions,Normal,0
+"2025-12-20T10:53:15.629353Z       38 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:06:57.474760Z       54 Query: select * from users,Normal,0
+2025-12-20T10:07:38.553831Z       59 Quit,Normal,0
+2025-12-20T10:46:21.675716Z       31 Query: use test,Normal,0
+2025-12-20T10:45:45.425159Z       43 Query: select count(*) from debtor,Normal,0
+"2025-12-20T10:19:27.357716Z       86 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:46:17.939340Z       29 Quit,Normal,0
+2025-12-20T10:14:02.258443Z       57 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:29:18.139457Z       11 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:12:54.764666Z       59 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:50:34.878201Z       16 Query: drop table products,Anormaly,1
+2025-12-20T10:40:34.570879Z       80 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:17:07.371280Z       49 Query: select count(*) from products,Normal,0
+2025-12-20T10:15:35.102771Z       61 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:10:40.174113Z       19 Query: select count(*) from users,Normal,0
+2025-12-20T10:53:11.871797Z       85 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:21:03.659530Z       61 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:47:19.212381Z       37 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:36:19.473298Z       42 Query: show databases,Normal,0
+2025-12-20T10:59:10.413338Z       77 Query: select count(*) from products,Normal,0
+2025-12-20T10:44:13.257361Z       11 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:38:32.387438Z       87 Query: select count(*) from logs,Normal,0
+2025-12-20T10:20:49.245826Z       12 Query: select * from transactions,Normal,0
+2025-12-20T10:34:22.835860Z       32 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:22:07.753125Z       88 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:19:33.889088Z       64 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+"2025-12-20T10:23:33.383276Z       39 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:49:29.648976Z       35 Connect: admin@localhost on mysql,Normal,0
+2025-12-20T10:25:36.662867Z       31 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:09:51.262917Z       16 Query: describe users,Normal,0
+2025-12-20T10:05:32.635485Z       86 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:54:49.353139Z       70 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:22:53.163290Z       88 Query: drop database test,Anormaly,1
+"2025-12-20T10:08:20.835920Z       85 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:43:09.272934Z       92 Query: truncate table products,Anormaly,1
+2025-12-20T10:04:05.275814Z       70 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:11:25.630546Z       37 Query: show databases,Normal,0
+2025-12-20T10:07:13.871568Z       77 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:36:19.774430Z       84 Query: drop table debtor,Anormaly,1
+2025-12-20T10:06:48.230231Z       40 Query: show databases,Normal,0
+2025-12-20T10:41:20.411065Z       48 Query: show databases,Normal,0
+2025-12-20T10:30:54.139203Z       27 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:58:13.106402Z       84 Query: select * from admin,Normal,0
+2025-12-20T10:26:04.324474Z       83 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:28:29.749157Z       86 Quit,Normal,0
+2025-12-20T10:12:41.716385Z       64 Query: drop database test,Anormaly,1
+2025-12-20T10:21:48.506669Z       20 Query: describe transactions,Normal,0
+2025-12-20T10:34:54.394218Z       79 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:50:34.789652Z       13 Query: drop table users,Anormaly,1
+2025-12-20T10:10:42.802642Z       97 Quit,Normal,0
+2025-12-20T10:57:56.190181Z       28 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:57:27.731835Z       21 Query: show databases,Normal,0
+2025-12-20T10:42:43.437421Z       64 Query: delete from admin,Anormaly,1
+2025-12-20T10:39:06.539087Z       12 Query: describe products,Normal,0
+2025-12-20T10:17:55.539262Z       81 Query: show tables,Normal,0
+2025-12-20T10:14:38.886230Z       28 Quit,Normal,0
+2025-12-20T10:41:49.209615Z       10 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:17:47.325782Z       17 Query: drop table logs,Anormaly,1
+2025-12-20T10:28:16.599647Z       81 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+"2025-12-20T10:35:46.293114Z       20 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:42:13.596140Z       29 Query: drop table logs,Anormaly,1
+2025-12-20T10:30:10.614513Z       31 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:18:21.425175Z       30 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:50:09.466002Z       42 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:51:55.620022Z       84 Query: drop database db1,Anormaly,1
+2025-12-20T10:24:20.641307Z       62 Query: truncate table admin,Anormaly,1
+"2025-12-20T10:58:39.944679Z       68 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:44:22.268067Z       12 Query: describe users,Normal,0
+2025-12-20T10:15:10.746863Z       90 Query: select * from customers,Normal,0
+"2025-12-20T10:36:46.161931Z       78 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:05:56.416113Z       43 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:22:33.297647Z       58 Query: use db1,Normal,0
+2025-12-20T10:46:56.246725Z       79 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:40:28.471484Z       41 Query: show databases,Normal,0
+2025-12-20T10:13:27.600053Z       77 Query: drop table admin,Anormaly,1
+2025-12-20T10:57:37.124814Z       83 Query: truncate table logs,Anormaly,1
+2025-12-20T10:07:01.401042Z       84 Query: select count(*) from products,Normal,0
+2025-12-20T10:36:16.965351Z       75 Connect: app_user@localhost on mysql,Normal,0
+2025-12-20T10:07:40.613215Z       13 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:58:34.317241Z       14 Query: use myapp,Normal,0
+2025-12-20T10:55:56.400171Z       36 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:02:49.687017Z       14 Query: select count(*) from admin,Normal,0
+2025-12-20T10:19:19.184116Z       11 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:58:35.840219Z       38 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:10:57.575737Z       96 Query: select * from admin,Normal,0
+2025-12-20T10:13:43.837549Z       42 Query: select * from products,Normal,0
+2025-12-20T10:36:57.182175Z       64 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:06:52.836596Z       82 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:20:34.915202Z       72 Query: select count(*) from products,Normal,0
+2025-12-20T10:33:37.264671Z       79 Query: delete from debtor,Anormaly,1
+2025-12-20T10:42:26.777433Z       82 Query: delete from transactions,Anormaly,1
+2025-12-20T10:17:14.379949Z       65 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:19:49.991801Z       51 Query: drop table debtor,Anormaly,1
+2025-12-20T10:06:56.800323Z       58 Query: select * from users,Normal,0
+2025-12-20T10:13:32.875290Z       31 Query: delete from debtor,Anormaly,1
+2025-12-20T10:25:58.302188Z       26 Query: describe products,Normal,0
+2025-12-20T10:12:06.865986Z       54 Query: show tables,Normal,0
+2025-12-20T10:46:26.629415Z       27 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:57:50.814542Z       97 Query: show tables,Normal,0
+2025-12-20T10:43:45.378341Z       18 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:01:37.915902Z       12 Query: show databases,Normal,0
+2025-12-20T10:22:02.145246Z       91 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:37:05.240050Z       17 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:23:27.747833Z       50 Query: describe products,Normal,0
+2025-12-20T10:21:42.431147Z       97 Query: drop table debtor,Anormaly,1
+2025-12-20T10:26:22.538684Z       14 Quit,Normal,0
+2025-12-20T10:39:17.208394Z       65 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:06:37.182899Z       90 Quit,Normal,0
+2025-12-20T10:38:43.437638Z       14 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+"2025-12-20T10:36:11.520748Z       15 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:53:50.932305Z       17 Query: select count(*) from logs,Normal,0
+2025-12-20T10:39:25.503975Z       15 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:16:35.317057Z       89 Query: show databases,Normal,0
+2025-12-20T10:55:20.594304Z       42 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:28:46.957128Z       89 Query: describe admin,Normal,0
+2025-12-20T10:46:17.149313Z       45 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:31:02.640335Z       25 Connect: root@localhost on myapp,Normal,0
+2025-12-20T10:29:51.813555Z       44 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:52:03.703603Z       85 Query: delete from transactions,Anormaly,1
+2025-12-20T10:41:51.530540Z       88 Query: show databases,Normal,0
+2025-12-20T10:47:48.842161Z       50 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:13:03.229543Z       39 Query: delete from transactions,Anormaly,1
+2025-12-20T10:57:46.458367Z       36 Query: describe debtor,Normal,0
+2025-12-20T10:05:48.495369Z       19 Query: select count(*) from logs,Normal,0
+2025-12-20T10:42:59.399249Z       97 Query: drop database myapp,Anormaly,1
+2025-12-20T10:27:04.954346Z       96 Query: show databases,Normal,0
+2025-12-20T10:34:00.756843Z       88 Query: describe logs,Normal,0
+2025-12-20T10:26:04.234814Z       31 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:16:48.380425Z       87 Connect: user1@localhost on production,Normal,0
+2025-12-20T10:33:30.305374Z       73 Quit,Normal,0
+2025-12-20T10:06:26.528214Z       92 Quit,Normal,0
+2025-12-20T10:59:38.342258Z       93 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:08:37.775416Z       25 Query: show tables,Normal,0
+2025-12-20T10:58:55.457763Z       31 Quit,Normal,0
+2025-12-20T10:25:25.679253Z       70 Query: show databases,Normal,0
+2025-12-20T10:52:41.881984Z       22 Query: show databases,Normal,0
+"2025-12-20T10:58:29.747350Z       49 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:22:40.574027Z       39 Quit,Normal,0
+2025-12-20T10:21:17.700717Z       12 Query: show tables,Normal,0
+2025-12-20T10:35:05.802651Z       21 Query: show databases,Normal,0
+2025-12-20T10:28:47.623871Z       76 Query: truncate table users,Anormaly,1
+2025-12-20T10:33:31.282657Z       19 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:38:07.712417Z       75 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:35:32.892248Z       57 Query: truncate table admin,Anormaly,1
+2025-12-20T10:41:52.853376Z       59 Query: drop database db1,Anormaly,1
+2025-12-20T10:14:18.875116Z       36 Query: show tables,Normal,0
+2025-12-20T10:46:06.539658Z       80 Query: drop table admin,Anormaly,1
+2025-12-20T10:53:27.797509Z       36 Query: use test,Normal,0
+2025-12-20T10:34:16.498807Z       36 Query: xp_cmdshell 'net user',Anormaly,1
+"2025-12-20T10:29:14.540198Z       95 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:12:28.931493Z       69 Query: delete from logs,Anormaly,1
+2025-12-20T10:16:08.563470Z       11 Connect: admin@localhost on db1,Normal,0
+"2025-12-20T10:19:53.512626Z       89 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:52:39.899494Z       46 Quit,Normal,0
+2025-12-20T10:17:50.927860Z       24 Query: describe admin,Normal,0
+2025-12-20T10:27:38.456594Z       40 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:28:02.172116Z       18 Query: describe admin,Normal,0
+2025-12-20T10:54:31.407148Z       26 Query: select * from products,Normal,0
+2025-12-20T10:12:09.727215Z       87 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:12:03.127392Z       59 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:26:20.990131Z       83 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:25:10.158745Z       90 Query: show tables,Normal,0
+2025-12-20T10:00:46.359938Z       32 Connect: root@localhost on myapp,Normal,0
+2025-12-20T10:20:19.314261Z       64 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:42:50.330074Z       36 Query: use test,Normal,0
+2025-12-20T10:06:00.598598Z       59 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:44:49.535405Z       77 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:48:49.334662Z       67 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:30:38.501220Z       90 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:40:13.407625Z       33 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:40:39.654787Z       64 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:58:27.481275Z       21 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:38:02.985554Z       97 Connect: app_user@localhost on myapp,Normal,0
+2025-12-20T10:28:23.351474Z       12 Query: show tables,Normal,0
+2025-12-20T10:43:03.722832Z       34 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:08:00.521631Z       97 Query: select * from logs where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:56:02.167304Z       12 Query: select * from logs,Normal,0
+2025-12-20T10:13:05.778032Z       78 Query: select * from transactions,Normal,0
+2025-12-20T10:59:57.313100Z       91 Query: select count(*) from products,Normal,0
+2025-12-20T10:16:00.724099Z       14 Query: select count(*) from admin,Normal,0
+2025-12-20T10:26:04.348420Z       27 Quit,Normal,0
+2025-12-20T10:48:46.869683Z       31 Query: describe products,Normal,0
+2025-12-20T10:03:56.292124Z       97 Connect: root@localhost on db1,Normal,0
+"2025-12-20T10:41:17.424671Z       16 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:47:51.876115Z       89 Query: drop database db1,Anormaly,1
+2025-12-20T10:04:27.459188Z       41 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:20:09.974199Z       61 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:11:47.265039Z       55 Query: use production,Normal,0
+2025-12-20T10:06:08.484275Z       85 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:38:10.299275Z       13 Query: select * from admin,Normal,0
+2025-12-20T10:29:48.638631Z       56 Connect: user1@localhost on mysql,Normal,0
+"2025-12-20T10:51:24.404836Z       84 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:08:11.608953Z       88 Query: drop table users,Anormaly,1
+2025-12-20T10:57:29.913443Z       84 Query: delete from transactions,Anormaly,1
+2025-12-20T10:45:31.346081Z       12 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:23:05.236794Z       40 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:04:15.926718Z       38 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:01:10.518003Z       93 Quit,Normal,0
+2025-12-20T10:39:48.574354Z       48 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:43:45.711115Z       63 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:35:00.638680Z       55 Query: show tables,Normal,0
+2025-12-20T10:15:03.804800Z       35 Query: drop table customers,Anormaly,1
+2025-12-20T10:13:14.514430Z       64 Quit,Normal,0
+2025-12-20T10:52:24.840929Z       89 Query: drop database db1,Anormaly,1
+2025-12-20T10:36:13.863723Z       42 Connect: app_user@localhost on db1,Normal,0
+2025-12-20T10:35:48.242063Z       62 Query: show databases,Normal,0
+2025-12-20T10:02:54.593001Z       54 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:02:14.428994Z       23 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:43:25.381677Z       96 Query: show tables,Normal,0
+2025-12-20T10:51:26.394867Z       98 Query: delete from products,Anormaly,1
+2025-12-20T10:15:12.486584Z       16 Connect: user1@localhost on myapp,Normal,0
+2025-12-20T10:10:15.569320Z       28 Query: select count(*) from products,Normal,0
+2025-12-20T10:32:38.690940Z       48 Query: drop table products,Anormaly,1
+2025-12-20T10:42:28.336265Z       95 Connect: user1@localhost on test,Normal,0
+2025-12-20T10:11:15.173018Z       22 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+"2025-12-20T10:30:49.326146Z       97 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:30:59.731148Z       58 Query: use mysql,Normal,0
+2025-12-20T10:20:29.314517Z       19 Connect: user1@localhost on production,Normal,0
+2025-12-20T10:27:43.166911Z       40 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+"2025-12-20T10:22:14.775943Z       17 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:58:40.399960Z       50 Connect: app_user@localhost on db1,Normal,0
+2025-12-20T10:49:34.777773Z       84 Query: delete from products,Anormaly,1
+2025-12-20T10:02:17.203179Z       89 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:30:21.245778Z       21 Query: select count(*) from products,Normal,0
+2025-12-20T10:36:39.316192Z       76 Connect: admin@localhost on test,Normal,0
+2025-12-20T10:50:58.201258Z       44 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:57:00.379613Z       82 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:43:01.890091Z       47 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:39:39.747311Z       36 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:38:47.949504Z       83 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:28:07.159370Z       44 Query: select * from users,Normal,0
+2025-12-20T10:14:36.111901Z       45 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:59:01.525435Z       29 Connect: user1@localhost on test,Normal,0
+2025-12-20T10:28:57.526879Z       83 Query: use production,Normal,0
+2025-12-20T10:30:52.910650Z       28 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:50:30.773173Z       22 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:07:38.412188Z       68 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:41:34.847327Z       35 Query: select count(*) from admin,Normal,0
+2025-12-20T10:59:53.647950Z       15 Query: select * from transactions,Normal,0
+2025-12-20T10:23:57.125370Z       46 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:20:32.987273Z       81 Query: drop table users,Anormaly,1
+2025-12-20T10:15:09.321817Z       58 Query: delete from products,Anormaly,1
+2025-12-20T10:23:08.196225Z       74 Query: select count(*) from users,Normal,0
+2025-12-20T10:00:47.893696Z       45 Query: delete from transactions,Anormaly,1
+2025-12-20T10:07:59.383428Z       48 Query: show tables,Normal,0
+2025-12-20T10:39:16.350088Z       56 Query: show databases,Normal,0
+2025-12-20T10:56:24.931252Z       56 Connect: root@localhost on mysql,Normal,0
+"2025-12-20T10:16:30.869872Z       26 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:50:15.569668Z       51 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:31:06.200633Z       37 Query: drop table users,Anormaly,1
+2025-12-20T10:41:15.738667Z       90 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:24:38.186525Z       38 Query: show tables,Normal,0
+2025-12-20T10:40:44.805837Z       44 Quit,Normal,0
+2025-12-20T10:50:31.161622Z       23 Query: truncate table customers,Anormaly,1
+2025-12-20T10:59:46.318011Z       74 Query: drop table users,Anormaly,1
+2025-12-20T10:54:43.240791Z       71 Connect: user1@localhost on test,Normal,0
+2025-12-20T10:01:02.426341Z       15 Query: use mysql,Normal,0
+2025-12-20T10:49:02.200328Z       53 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:07:23.774800Z       57 Quit,Normal,0
+2025-12-20T10:38:57.354221Z       17 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:33:16.465993Z       93 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:29:17.616024Z       89 Query: drop table products,Anormaly,1
+2025-12-20T10:52:00.773637Z       13 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:52:13.107200Z       28 Query: drop table products,Anormaly,1
+2025-12-20T10:10:05.131705Z       11 Connect: admin@localhost on myapp,Normal,0
+2025-12-20T10:41:13.857235Z       12 Query: drop database production,Anormaly,1
+2025-12-20T10:21:08.744589Z       77 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:22:55.769826Z       34 Query: delete from admin,Anormaly,1
+2025-12-20T10:29:36.829945Z       67 Quit,Normal,0
+2025-12-20T10:31:45.196041Z       16 Quit,Normal,0
+2025-12-20T10:08:32.111577Z       65 Query: drop table products,Anormaly,1
+2025-12-20T10:20:48.467430Z       79 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:12:25.323708Z       24 Connect: user1@localhost on myapp,Normal,0
+"2025-12-20T10:53:09.246185Z       58 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:54:38.399264Z       49 Query: delete from debtor,Anormaly,1
+2025-12-20T10:31:39.422843Z       78 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:07:50.395584Z       68 Query: xp_cmdshell 'net user',Anormaly,1
+"2025-12-20T10:40:22.480138Z       84 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:23:51.262308Z       95 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:59:18.636053Z       21 Query: describe admin,Normal,0
+2025-12-20T10:01:01.958012Z       72 Query: show databases,Normal,0
+2025-12-20T10:30:02.309600Z       13 Query: drop table debtor,Anormaly,1
+2025-12-20T10:55:49.281262Z       54 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:59:58.409381Z       92 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:32:03.193870Z       65 Query: select * from products,Normal,0
+2025-12-20T10:14:00.879139Z       45 Connect: admin@localhost on myapp,Normal,0
+2025-12-20T10:46:53.269425Z       77 Query: drop database myapp,Anormaly,1
+2025-12-20T10:32:20.145481Z       96 Query: describe customers,Normal,0
+2025-12-20T10:08:19.989400Z       76 Query: drop table transactions,Anormaly,1
+2025-12-20T10:56:52.917303Z       51 Query: describe transactions,Normal,0
+2025-12-20T10:29:11.121734Z       65 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:01:52.960720Z       99 Query: drop database db1,Anormaly,1
+2025-12-20T10:39:12.269928Z       27 Query: describe admin,Normal,0
+2025-12-20T10:36:18.810068Z       52 Query: delete from debtor,Anormaly,1
+2025-12-20T10:36:40.253626Z       23 Query: delete from logs,Anormaly,1
+2025-12-20T10:49:09.846926Z       15 Query: drop database db1,Anormaly,1
+2025-12-20T10:27:20.942573Z       29 Query: truncate table products,Anormaly,1
+2025-12-20T10:45:10.808145Z       78 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:45:22.991602Z       34 Query: show tables,Normal,0
+2025-12-20T10:26:46.816260Z       50 Query: delete from admin,Anormaly,1
+2025-12-20T10:26:54.719642Z       14 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:19:00.955850Z       88 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:57:05.206386Z       24 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:26:39.458966Z       77 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:21:03.271184Z       53 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:28:18.575180Z       67 Query: drop table transactions,Anormaly,1
+2025-12-20T10:29:50.360255Z       84 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:42:18.621561Z       80 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:31:51.252752Z       71 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:42:52.824902Z       22 Query: select * from debtor,Normal,0
+2025-12-20T10:06:48.469854Z       20 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:37:03.900874Z       58 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:27:36.108757Z       33 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:22:03.697215Z       97 Query: use test,Normal,0
+"2025-12-20T10:11:22.138385Z       95 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:51:35.346894Z       35 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:53:00.958955Z       19 Query: delete from products,Anormaly,1
+2025-12-20T10:07:20.798476Z       23 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:48:28.869030Z       67 Query: drop table debtor,Anormaly,1
+2025-12-20T10:52:28.206895Z       67 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:58:18.358916Z       75 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:15:29.496055Z       66 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:50:32.823979Z       31 Quit,Normal,0
+2025-12-20T10:13:58.545196Z       27 Connect: root@localhost on mysql,Normal,0
+2025-12-20T10:03:06.466770Z       70 Query: truncate table logs,Anormaly,1
+2025-12-20T10:54:38.610455Z       26 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:06:28.742758Z       84 Query: delete from users,Anormaly,1
+2025-12-20T10:47:12.905609Z       70 Query: drop table admin,Anormaly,1
+2025-12-20T10:51:29.243896Z       19 Query: show tables,Normal,0
+2025-12-20T10:09:21.985859Z       88 Query: show tables,Normal,0
+2025-12-20T10:18:24.203478Z       31 Query: drop database db1,Anormaly,1
+2025-12-20T10:08:59.490217Z       45 Query: show databases,Normal,0
+2025-12-20T10:16:54.696304Z       76 Query: drop table logs,Anormaly,1
+2025-12-20T10:55:50.808088Z       56 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:03:30.727559Z       85 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:38:05.640296Z       69 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:05:38.460804Z       74 Query: drop database production,Anormaly,1
+2025-12-20T10:04:35.225614Z       40 Query: show tables,Normal,0
+"2025-12-20T10:50:45.212047Z       68 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:08:13.564463Z       76 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+"2025-12-20T10:12:26.314874Z       78 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:57:29.109790Z       54 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+"2025-12-20T10:30:11.773968Z       46 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:04:54.795856Z       10 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:56:09.399550Z       14 Query: use mysql,Normal,0
+2025-12-20T10:43:42.841144Z       86 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:16:19.539600Z       88 Query: drop table users,Anormaly,1
+2025-12-20T10:04:57.111333Z       16 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:02:41.754701Z       28 Query: drop table admin,Anormaly,1
+"2025-12-20T10:33:14.646702Z       26 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:38:29.611444Z       13 Query: select * from logs,Normal,0
+2025-12-20T10:36:57.334299Z       39 Query: describe products,Normal,0
+2025-12-20T10:23:35.515545Z       46 Query: drop database myapp,Anormaly,1
+2025-12-20T10:33:02.529337Z       89 Query: use db1,Normal,0
+2025-12-20T10:55:39.124364Z       41 Query: use myapp,Normal,0
+"2025-12-20T10:57:32.877121Z       90 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:08:01.738701Z       70 Query: drop database test,Anormaly,1
+2025-12-20T10:12:19.784703Z       59 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:44:40.194982Z       73 Query: select * from logs,Normal,0
+"2025-12-20T10:30:16.643854Z       88 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:25:08.318883Z       41 Query: show tables,Normal,0
+2025-12-20T10:25:25.925982Z       39 Query: show tables,Normal,0
+2025-12-20T10:30:39.961034Z       40 Query: show databases,Normal,0
+2025-12-20T10:27:41.732941Z       92 Quit,Normal,0
+2025-12-20T10:22:40.742752Z       92 Query: describe users,Normal,0
+2025-12-20T10:25:24.863999Z       77 Query: select count(*) from logs,Normal,0
+2025-12-20T10:59:46.736445Z       26 Query: delete from admin,Anormaly,1
+2025-12-20T10:20:19.784708Z       21 Query: show tables,Normal,0
+2025-12-20T10:48:27.113737Z       94 Connect: admin@localhost on test,Normal,0
+2025-12-20T10:20:22.117447Z       74 Query: describe admin,Normal,0
+2025-12-20T10:47:46.752269Z       27 Query: describe logs,Normal,0
+2025-12-20T10:14:23.707902Z       73 Query: truncate table logs,Anormaly,1
+2025-12-20T10:59:32.559655Z       26 Query: show tables,Normal,0
+2025-12-20T10:46:07.852819Z       21 Query: show databases,Normal,0
+2025-12-20T10:20:55.374534Z       27 Query: show databases,Normal,0
+2025-12-20T10:54:24.128881Z       20 Query: truncate table users,Anormaly,1
+2025-12-20T10:21:07.230385Z       87 Query: select count(*) from customers,Normal,0
+2025-12-20T10:59:20.435161Z       15 Query: truncate table users,Anormaly,1
+2025-12-20T10:47:30.911557Z       44 Query: drop database myapp,Anormaly,1
+2025-12-20T10:14:33.197739Z       86 Query: use db1,Normal,0
+2025-12-20T10:44:57.609195Z       70 Query: show databases,Normal,0
+2025-12-20T10:46:41.347667Z       36 Query: delete from transactions,Anormaly,1
+2025-12-20T10:28:15.501187Z       12 Quit,Normal,0
+2025-12-20T10:47:01.891377Z       72 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:35:40.478131Z       63 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:35:19.795172Z       41 Query: truncate table customers,Anormaly,1
+2025-12-20T10:52:31.409448Z       56 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:27:43.776671Z       14 Query: truncate table logs,Anormaly,1
+2025-12-20T10:01:09.602707Z       76 Query: show tables,Normal,0
+2025-12-20T10:00:50.119174Z       93 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:14:45.909632Z       31 Query: drop table users,Anormaly,1
+2025-12-20T10:55:00.636915Z       62 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:49:07.598967Z       59 Query: delete from transactions,Anormaly,1
+2025-12-20T10:24:34.113076Z       89 Query: truncate table users,Anormaly,1
+2025-12-20T10:49:13.328490Z       91 Query: select * from transactions,Normal,0
+2025-12-20T10:36:22.380096Z       74 Query: describe products,Normal,0
+2025-12-20T10:34:28.925307Z       25 Quit,Normal,0
+2025-12-20T10:32:36.855535Z       52 Query: show tables,Normal,0
+2025-12-20T10:09:05.393985Z       19 Query: use mysql,Normal,0
+2025-12-20T10:37:47.748949Z       96 Query: select * from transactions,Normal,0
+2025-12-20T10:33:21.795645Z       53 Query: delete from products,Anormaly,1
+2025-12-20T10:39:08.785382Z       82 Query: use test,Normal,0
+2025-12-20T10:54:16.905592Z       60 Query: use test,Normal,0
+2025-12-20T10:21:04.663161Z       68 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:10:19.624983Z       72 Query: show tables,Normal,0
+2025-12-20T10:51:31.747020Z       68 Query: delete from customers,Anormaly,1
+2025-12-20T10:11:26.373347Z       91 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:13:09.582315Z       12 Query: describe logs,Normal,0
+2025-12-20T10:48:50.625229Z       57 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:47:39.271105Z       80 Query: show tables,Normal,0
+2025-12-20T10:51:14.262345Z       62 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:51:17.688002Z       53 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:55:47.665391Z       66 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:33:38.989702Z       13 Query: delete from products,Anormaly,1
+2025-12-20T10:16:13.409808Z       77 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:08:14.207695Z       28 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:34:43.511061Z       40 Query: delete from customers,Anormaly,1
+2025-12-20T10:28:49.942244Z       50 Query: show databases,Normal,0
+2025-12-20T10:42:58.129900Z       77 Query: show databases,Normal,0
+2025-12-20T10:31:21.255252Z       42 Query: delete from users,Anormaly,1
+2025-12-20T10:49:02.178985Z       52 Query: select * from transactions,Normal,0
+2025-12-20T10:07:57.340659Z       83 Query: drop table logs,Anormaly,1
+2025-12-20T10:14:26.234533Z       91 Query: drop database db1,Anormaly,1
+2025-12-20T10:17:20.896320Z       52 Query: select * from transactions,Normal,0
+2025-12-20T10:17:23.447260Z       43 Query: use myapp,Normal,0
+2025-12-20T10:37:23.916015Z       33 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:00:36.620278Z       78 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:47:15.431563Z       21 Quit,Normal,0
+2025-12-20T10:41:27.771195Z       98 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:09:59.650611Z       92 Query: show databases,Normal,0
+2025-12-20T10:32:49.220244Z       25 Query: use production,Normal,0
+2025-12-20T10:21:35.769465Z       98 Query: show tables,Normal,0
+2025-12-20T10:24:42.984656Z       32 Query: select * from users,Normal,0
+2025-12-20T10:50:57.157196Z       10 Query: show databases,Normal,0
+2025-12-20T10:30:43.505742Z       41 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:32:35.152934Z       71 Query: describe products,Normal,0
+2025-12-20T10:37:58.903112Z       44 Query: show databases,Normal,0
+2025-12-20T10:02:57.686463Z       62 Query: show databases,Normal,0
+2025-12-20T10:29:46.140201Z       16 Quit,Normal,0
+2025-12-20T10:58:17.606238Z       81 Query: select * from products,Normal,0
+2025-12-20T10:20:16.299815Z       50 Query: delete from admin,Anormaly,1
+2025-12-20T10:38:53.558017Z       33 Quit,Normal,0
+2025-12-20T10:03:23.956959Z       20 Query: delete from products,Anormaly,1
+2025-12-20T10:47:18.426694Z       17 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:21:35.363369Z       19 Query: drop database mysql,Anormaly,1
+2025-12-20T10:25:50.630334Z       13 Connect: admin@localhost on mysql,Normal,0
+2025-12-20T10:16:21.941264Z       59 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:33:21.339184Z       58 Connect: admin@localhost on production,Normal,0
+2025-12-20T10:49:23.471518Z       60 Quit,Normal,0
+2025-12-20T10:55:55.956166Z       69 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:07:30.933983Z       84 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:21:38.134508Z       44 Quit,Normal,0
+2025-12-20T10:08:50.665714Z       80 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:21:49.305602Z       62 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:14:20.230832Z       37 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:52:34.620962Z       72 Query: drop table users,Anormaly,1
+"2025-12-20T10:02:41.709567Z       36 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:23:53.326625Z       72 Query: show databases,Normal,0
+2025-12-20T10:00:36.717346Z       14 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+"2025-12-20T10:16:13.267812Z       43 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:18:31.784594Z       60 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:58:00.184829Z       27 Query: truncate table users,Anormaly,1
+2025-12-20T10:17:53.724971Z       70 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:13:39.245815Z       28 Query: select count(*) from logs,Normal,0
+2025-12-20T10:15:04.120818Z       86 Query: truncate table admin,Anormaly,1
+2025-12-20T10:16:29.972044Z       98 Query: use test,Normal,0
+2025-12-20T10:23:05.139643Z       50 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:11:54.999159Z       11 Query: delete from customers,Anormaly,1
+2025-12-20T10:14:59.596616Z       42 Query: show databases,Normal,0
+2025-12-20T10:16:19.131679Z       89 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:16:51.638692Z       91 Query: use test,Normal,0
+2025-12-20T10:31:03.613864Z       76 Query: drop database production,Anormaly,1
+2025-12-20T10:06:26.198347Z       72 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:36:27.282600Z       46 Quit,Normal,0
+2025-12-20T10:29:31.486602Z       70 Query: select * from logs where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:52:36.130056Z       44 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:21:25.806986Z       42 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:12:42.862407Z       45 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:15:55.650508Z       96 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:53:13.896499Z       54 Query: show databases,Normal,0
+2025-12-20T10:57:04.864934Z       67 Query: drop database production,Anormaly,1
+2025-12-20T10:34:08.555922Z       69 Query: show databases,Normal,0
+2025-12-20T10:32:08.167244Z       95 Query: use test,Normal,0
+2025-12-20T10:40:49.640547Z       99 Query: truncate table logs,Anormaly,1
+2025-12-20T10:22:43.942672Z       50 Query: select * from transactions,Normal,0
+2025-12-20T10:45:20.890365Z       19 Query: show tables,Normal,0
+2025-12-20T10:52:39.884740Z       83 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:09:09.683962Z       59 Query: use db1,Normal,0
+2025-12-20T10:43:40.748636Z       40 Connect: user1@localhost on test,Normal,0
+"2025-12-20T10:45:22.926943Z       31 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:27:14.563145Z       24 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:06:51.527736Z       36 Query: show tables,Normal,0
+2025-12-20T10:15:39.479817Z       86 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:50:52.601330Z       51 Query: use test,Normal,0
+2025-12-20T10:47:03.593661Z       33 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:16:59.205295Z       67 Query: describe products,Normal,0
+2025-12-20T10:38:26.687280Z       56 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:56:54.832151Z       63 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:32:56.623095Z       75 Quit,Normal,0
+2025-12-20T10:21:59.955326Z       71 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:24:20.595410Z       77 Query: delete from users,Anormaly,1
+2025-12-20T10:31:43.932945Z       30 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:02:59.826386Z       98 Query: use test,Normal,0
+2025-12-20T10:43:14.487624Z       19 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:41:03.361019Z       81 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:44:03.889991Z       62 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:28:19.954567Z       66 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:49:47.337839Z       12 Query: drop table users,Anormaly,1
+2025-12-20T10:39:34.287997Z       67 Connect: user1@localhost on myapp,Normal,0
+2025-12-20T10:14:34.985465Z       75 Query: delete from logs,Anormaly,1
+2025-12-20T10:16:59.311962Z       22 Quit,Normal,0
+2025-12-20T10:18:03.537963Z       17 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:49:31.813983Z       82 Query: show databases,Normal,0
+2025-12-20T10:39:33.616135Z       60 Query: drop table admin,Anormaly,1
+2025-12-20T10:15:55.790733Z       22 Query: describe products,Normal,0
+2025-12-20T10:38:04.322226Z       76 Query: truncate table logs,Anormaly,1
+2025-12-20T10:35:45.520453Z       21 Query: select count(*) from logs,Normal,0
+2025-12-20T10:39:36.477540Z       60 Connect: root@localhost on production,Normal,0
+2025-12-20T10:27:11.738266Z       85 Query: describe customers,Normal,0
+2025-12-20T10:34:04.144147Z       35 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:15:36.216821Z       50 Connect: app_user@localhost on myapp,Normal,0
+2025-12-20T10:39:11.742328Z       27 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:38:41.762777Z       18 Query: truncate table logs,Anormaly,1
+2025-12-20T10:32:38.895114Z       13 Query: drop database db1,Anormaly,1
+2025-12-20T10:25:00.127722Z       44 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+"2025-12-20T10:58:48.500785Z       30 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:40:36.680795Z       72 Query: drop table logs,Anormaly,1
+2025-12-20T10:59:08.331886Z       65 Query: use db1,Normal,0
+"2025-12-20T10:59:34.183277Z       89 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:49:31.427186Z       58 Query: use db1,Normal,0
+2025-12-20T10:01:39.621073Z       23 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:21:00.993630Z       21 Quit,Normal,0
+2025-12-20T10:18:31.959333Z       47 Query: delete from users,Anormaly,1
+2025-12-20T10:43:34.274752Z       65 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:14:33.135273Z       89 Query: drop database production,Anormaly,1
+2025-12-20T10:11:28.112772Z       43 Query: select * from products,Normal,0
+2025-12-20T10:28:41.250090Z       89 Query: select * from logs,Normal,0
+2025-12-20T10:19:54.746720Z       31 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:52:14.641591Z       61 Query: show databases,Normal,0
+2025-12-20T10:28:36.110321Z       50 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+"2025-12-20T10:41:32.821486Z       68 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:25:39.386358Z       35 Query: delete from debtor,Anormaly,1
+2025-12-20T10:42:37.345196Z       61 Query: show tables,Normal,0
+2025-12-20T10:35:58.654733Z       72 Quit,Normal,0
+2025-12-20T10:44:08.732254Z       80 Query: exec xp_cmdshell 'whoami',Anormaly,1
+"2025-12-20T10:35:44.615142Z       45 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:52:09.343230Z       79 Query: describe debtor,Normal,0
+2025-12-20T10:14:05.458153Z       96 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:19:22.482846Z       87 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:34:26.768029Z       25 Query: select * from logs,Normal,0
+2025-12-20T10:14:35.123405Z       86 Query: show databases,Normal,0
+2025-12-20T10:01:11.274156Z       73 Query: show tables,Normal,0
+2025-12-20T10:56:37.454912Z       54 Quit,Normal,0
+2025-12-20T10:27:06.613769Z       96 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:08:01.140803Z       74 Query: describe customers,Normal,0
+2025-12-20T10:25:27.976640Z       70 Query: exec xp_cmdshell 'whoami',Anormaly,1
+"2025-12-20T10:47:27.545319Z       46 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:21:29.873806Z       84 Query: show tables,Normal,0
+2025-12-20T10:55:29.341196Z       29 Query: select count(*) from customers,Normal,0
+2025-12-20T10:38:06.965949Z       57 Query: drop table debtor,Anormaly,1
+2025-12-20T10:10:05.143501Z       10 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:03:33.624813Z       26 Query: drop table products,Anormaly,1
+2025-12-20T10:49:28.766207Z       55 Query: use db1,Normal,0
+2025-12-20T10:38:16.225038Z       34 Query: delete from products,Anormaly,1
+2025-12-20T10:16:01.702443Z       85 Connect: app_user@localhost on mysql,Normal,0
+2025-12-20T10:12:02.792468Z       18 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:40:11.458122Z       90 Query: use db1,Normal,0
+2025-12-20T10:28:59.358080Z       18 Query: drop table logs,Anormaly,1
+2025-12-20T10:43:27.648510Z       47 Query: select count(*) from logs,Normal,0
+2025-12-20T10:44:54.189542Z       46 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:22:50.207118Z       33 Query: show databases,Normal,0
+2025-12-20T10:26:57.329964Z       26 Query: drop table admin,Anormaly,1
+2025-12-20T10:25:19.106805Z       70 Query: drop table admin,Anormaly,1
+2025-12-20T10:27:33.364628Z       48 Query: use db1,Normal,0
+2025-12-20T10:16:14.305094Z       62 Query: use test,Normal,0
+"2025-12-20T10:38:43.597129Z       96 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:51:33.485198Z       90 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:26:40.997743Z       25 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+"2025-12-20T10:06:50.171486Z       48 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:20:57.951396Z       37 Quit,Normal,0
+2025-12-20T10:46:20.466436Z       30 Query: drop table logs,Anormaly,1
+2025-12-20T10:42:15.439325Z       40 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:38:41.323767Z       90 Query: describe logs,Normal,0
+2025-12-20T10:44:50.119803Z       21 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:36:01.574764Z       81 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:15:46.378553Z       73 Query: describe users,Normal,0
+2025-12-20T10:56:08.377014Z       56 Query: describe admin,Normal,0
+2025-12-20T10:16:34.641634Z       24 Query: truncate table users,Anormaly,1
+2025-12-20T10:49:51.739067Z       27 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:40:28.223429Z       68 Query: drop database production,Anormaly,1
+2025-12-20T10:18:55.177885Z       35 Connect: user1@localhost on production,Normal,0
+2025-12-20T10:32:37.254940Z       46 Query: describe users,Normal,0
+2025-12-20T10:27:25.690313Z       98 Query: show tables,Normal,0
+2025-12-20T10:54:45.190473Z       14 Query: show tables,Normal,0
+2025-12-20T10:28:37.838521Z       50 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:39:53.403576Z       19 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:27:20.158264Z       22 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:01:31.789787Z       65 Query: describe debtor,Normal,0
+2025-12-20T10:43:48.992261Z       93 Connect: root@localhost on mysql,Normal,0
+2025-12-20T10:11:15.731902Z       33 Query: select count(*) from logs,Normal,0
+2025-12-20T10:21:10.491561Z       36 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:16:33.550635Z       58 Connect: root@localhost on production,Normal,0
+2025-12-20T10:40:33.818030Z       38 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:22:15.775438Z       45 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:40:08.252235Z       11 Connect: app_user@localhost on test,Normal,0
+"2025-12-20T10:36:26.652288Z       18 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:48:41.718936Z       68 Query: select * from debtor,Normal,0
+2025-12-20T10:47:03.831991Z       11 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:23:15.666048Z       55 Query: drop table customers,Anormaly,1
+2025-12-20T10:39:32.267901Z       44 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:21:18.475931Z       74 Query: select * from customers,Normal,0
+2025-12-20T10:44:29.298426Z       46 Query: delete from users,Anormaly,1
+2025-12-20T10:12:02.420145Z       67 Connect: root@localhost on mysql,Normal,0
+2025-12-20T10:46:56.979317Z       51 Query: show databases,Normal,0
+2025-12-20T10:10:24.585145Z       84 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:21:56.130093Z       38 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:37:00.520247Z       81 Quit,Normal,0
+2025-12-20T10:06:38.224286Z       99 Query: drop database mysql,Anormaly,1
+2025-12-20T10:14:40.787469Z       46 Query: describe products,Normal,0
+2025-12-20T10:54:54.993633Z       19 Query: select count(*) from admin,Normal,0
+2025-12-20T10:31:04.376212Z       82 Query: use myapp,Normal,0
+"2025-12-20T10:46:47.289354Z       75 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:10:02.585329Z       28 Query: show tables,Normal,0
+2025-12-20T10:28:01.683781Z       65 Query: describe logs,Normal,0
+2025-12-20T10:08:47.838283Z       60 Query: use db1,Normal,0
+2025-12-20T10:31:03.787991Z       85 Query: delete from users,Anormaly,1
+2025-12-20T10:14:46.320610Z       73 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:21:23.302692Z       45 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:47:56.598748Z       21 Connect: app_user@localhost on myapp,Normal,0
+"2025-12-20T10:17:07.279471Z       80 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:01:12.835772Z       71 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:38:01.607797Z       28 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:52:47.394773Z       12 Query: truncate table logs,Anormaly,1
+2025-12-20T10:58:47.947970Z       40 Query: delete from admin,Anormaly,1
+2025-12-20T10:47:25.804815Z       88 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:27:48.742985Z       56 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:37:37.207307Z       87 Connect: admin@localhost on mysql,Normal,0
+2025-12-20T10:58:32.970407Z       13 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:13:56.105336Z       58 Query: delete from logs,Anormaly,1
+2025-12-20T10:41:18.177951Z       95 Query: truncate table logs,Anormaly,1
+2025-12-20T10:19:33.624700Z       86 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:13:52.505489Z       85 Query: select count(*) from users,Normal,0
+2025-12-20T10:26:00.171930Z       84 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:02:24.742703Z       90 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:48:29.305411Z       54 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:05:54.983394Z       96 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:39:02.327380Z       43 Query: exec xp_cmdshell 'whoami',Anormaly,1
+"2025-12-20T10:19:07.308365Z       47 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:12:17.424560Z       82 Query: describe debtor,Normal,0
+2025-12-20T10:21:15.434181Z       13 Query: delete from customers,Anormaly,1
+2025-12-20T10:49:38.465455Z       61 Query: drop database db1,Anormaly,1
+"2025-12-20T10:32:53.199949Z       64 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:41:03.280126Z       18 Query: drop database db1,Anormaly,1
+2025-12-20T10:04:59.122787Z       52 Quit,Normal,0
+2025-12-20T10:20:01.416446Z       30 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:16:19.741245Z       46 Query: truncate table products,Anormaly,1
+2025-12-20T10:44:51.527112Z       75 Query: delete from users,Anormaly,1
+"2025-12-20T10:42:21.807917Z       19 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:06:27.794196Z       20 Query: describe products,Normal,0
+2025-12-20T10:54:34.767662Z       93 Quit,Normal,0
+2025-12-20T10:44:43.893101Z       11 Quit,Normal,0
+2025-12-20T10:18:32.104184Z       43 Query: delete from logs,Anormaly,1
+2025-12-20T10:25:58.886634Z       42 Query: show tables,Normal,0
+2025-12-20T10:48:38.511885Z       63 Query: truncate table admin,Anormaly,1
+2025-12-20T10:57:21.841219Z       62 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:33:35.768663Z       98 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:47:18.669602Z       84 Query: truncate table products,Anormaly,1
+2025-12-20T10:49:01.464450Z       88 Query: delete from debtor,Anormaly,1
+2025-12-20T10:42:57.345885Z       49 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:03:24.553276Z       50 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:52:26.544898Z       12 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:23:21.608917Z       41 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:25:41.299416Z       40 Query: describe products,Normal,0
+2025-12-20T10:54:09.898663Z       47 Query: drop table logs,Anormaly,1
+2025-12-20T10:00:45.363868Z       88 Query: drop table users,Anormaly,1
+2025-12-20T10:20:06.742396Z       47 Connect: root@localhost on test,Normal,0
+"2025-12-20T10:39:06.421356Z       29 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:22:04.747949Z       14 Query: describe customers,Normal,0
+2025-12-20T10:07:03.371326Z       51 Query: select count(*) from products,Normal,0
+2025-12-20T10:35:07.870750Z       27 Query: drop table transactions,Anormaly,1
+2025-12-20T10:26:05.509067Z       75 Quit,Normal,0
+2025-12-20T10:13:51.821206Z       13 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:57:13.598104Z       44 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:11:22.509480Z       96 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:23:04.759432Z       93 Query: drop table customers,Anormaly,1
+2025-12-20T10:53:07.363065Z       11 Query: delete from debtor,Anormaly,1
+2025-12-20T10:09:43.647193Z       90 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:15:58.271239Z       11 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:18:06.457828Z       89 Query: describe products,Normal,0
+2025-12-20T10:09:03.844740Z       62 Query: select * from transactions,Normal,0
+2025-12-20T10:56:35.762980Z       39 Query: drop table admin,Anormaly,1
+2025-12-20T10:07:03.935837Z       75 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:18:03.213051Z       78 Query: use production,Normal,0
+2025-12-20T10:25:06.592345Z       29 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:38:02.573800Z       13 Quit,Normal,0
+2025-12-20T10:22:10.133261Z       60 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:25:55.291508Z       84 Query: show databases,Normal,0
+2025-12-20T10:29:46.189424Z       32 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:27:55.135691Z       53 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:58:07.993636Z       51 Query: use myapp,Normal,0
+2025-12-20T10:53:28.941094Z       92 Quit,Normal,0
+2025-12-20T10:20:48.891927Z       67 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:10:00.822012Z       93 Query: show tables,Normal,0
+2025-12-20T10:32:22.567371Z       82 Query: show tables,Normal,0
+2025-12-20T10:49:59.330952Z       46 Query: drop table admin,Anormaly,1
+2025-12-20T10:18:16.300387Z       82 Query: show tables,Normal,0
+2025-12-20T10:14:22.456208Z       91 Query: truncate table customers,Anormaly,1
+2025-12-20T10:34:34.755352Z       73 Query: show databases,Normal,0
+2025-12-20T10:52:01.865112Z       91 Query: show tables,Normal,0
+2025-12-20T10:28:00.672751Z       73 Query: describe customers,Normal,0
+2025-12-20T10:30:03.199404Z       24 Query: show databases,Normal,0
+2025-12-20T10:03:13.193730Z       45 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:42:41.771366Z       11 Quit,Normal,0
+"2025-12-20T10:28:15.328468Z       48 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:17:51.353786Z       82 Query: describe debtor,Normal,0
+2025-12-20T10:54:13.436008Z       29 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:28:52.770160Z       92 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:36:47.209349Z       22 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:45:09.665259Z       10 Query: show databases,Normal,0
+2025-12-20T10:46:55.359005Z       12 Query: drop database test,Anormaly,1
+2025-12-20T10:20:49.191276Z       61 Query: show tables,Normal,0
+2025-12-20T10:46:13.872009Z       66 Query: drop table transactions,Anormaly,1
+2025-12-20T10:07:27.314319Z       57 Connect: app_user@localhost on test,Normal,0
+2025-12-20T10:01:19.446559Z       23 Query: select * from debtor,Normal,0
+2025-12-20T10:58:03.238601Z       47 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:37:52.777538Z       44 Query: drop database production,Anormaly,1
+2025-12-20T10:39:18.108758Z       15 Quit,Normal,0
+2025-12-20T10:24:34.708348Z       15 Query: describe customers,Normal,0
+2025-12-20T10:40:15.855372Z       12 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:23:09.222791Z       58 Query: drop database test,Anormaly,1
+2025-12-20T10:42:08.869041Z       63 Query: drop database production,Anormaly,1
+2025-12-20T10:36:56.886057Z       26 Query: describe debtor,Normal,0
+2025-12-20T10:05:54.631271Z       51 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:56:02.344144Z       13 Query: delete from logs,Anormaly,1
+2025-12-20T10:06:48.568706Z       32 Query: select * from logs,Normal,0
+2025-12-20T10:43:14.961989Z       94 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:59:40.718140Z       65 Query: truncate table users,Anormaly,1
+2025-12-20T10:39:21.544710Z       17 Query: drop table transactions,Anormaly,1
+"2025-12-20T10:27:38.498630Z       74 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:12:23.589096Z       50 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:19:31.867622Z       51 Query: show tables,Normal,0
+2025-12-20T10:44:18.302127Z       32 Quit,Normal,0
+2025-12-20T10:41:09.201695Z       62 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:47:49.812106Z       56 Quit,Normal,0
+2025-12-20T10:05:42.106370Z       12 Query: use test,Normal,0
+2025-12-20T10:36:42.857151Z       59 Query: drop database myapp,Anormaly,1
+2025-12-20T10:54:46.335492Z       20 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:10:43.389248Z       54 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:12:31.451678Z       63 Query: show tables,Normal,0
+"2025-12-20T10:26:37.833544Z       86 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:18:00.861252Z       87 Query: describe transactions,Normal,0
+2025-12-20T10:45:55.538759Z       19 Query: drop database mysql,Anormaly,1
+"2025-12-20T10:15:38.509498Z       81 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:58:43.964939Z       84 Query: truncate table admin,Anormaly,1
+2025-12-20T10:18:18.130880Z       59 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:36:45.310749Z       13 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:12:37.205573Z       55 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:11:22.116482Z       98 Query: drop table customers,Anormaly,1
+2025-12-20T10:09:05.954299Z       52 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:40:23.730108Z       79 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:47:34.628246Z       52 Query: drop database db1,Anormaly,1
+2025-12-20T10:40:07.119011Z       50 Query: show tables,Normal,0
+2025-12-20T10:15:59.326181Z       68 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:49:07.506617Z       36 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:53:27.382294Z       57 Query: drop database production,Anormaly,1
+2025-12-20T10:44:15.195121Z       71 Query: describe products,Normal,0
+2025-12-20T10:43:16.261046Z       76 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:33:13.199681Z       56 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:01:53.537205Z       52 Query: drop database myapp,Anormaly,1
+2025-12-20T10:42:55.851682Z       56 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:46:35.494787Z       89 Query: show tables,Normal,0
+"2025-12-20T10:53:12.458459Z       90 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:54:49.496716Z       94 Query: describe transactions,Normal,0
+2025-12-20T10:33:34.887551Z       67 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:01:21.374638Z       40 Query: delete from admin,Anormaly,1
+2025-12-20T10:56:03.242556Z       73 Query: drop table products,Anormaly,1
+2025-12-20T10:38:06.606190Z       47 Query: use test,Normal,0
+2025-12-20T10:11:13.449551Z       64 Connect: user1@localhost on test,Normal,0
+2025-12-20T10:13:16.333397Z       27 Query: select count(*) from products,Normal,0
+2025-12-20T10:38:47.332766Z       45 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:44:50.572561Z       21 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:13:23.855498Z       21 Query: describe customers,Normal,0
+"2025-12-20T10:55:00.814717Z       65 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:38:37.358977Z       56 Query: show tables,Normal,0
+2025-12-20T10:49:49.416534Z       81 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:41:57.367757Z       29 Query: select count(*) from logs,Normal,0
+2025-12-20T10:37:30.452559Z       64 Query: describe transactions,Normal,0
+2025-12-20T10:47:34.395885Z       65 Query: select count(*) from users,Normal,0
+2025-12-20T10:52:51.517200Z       38 Query: drop table transactions,Anormaly,1
+2025-12-20T10:38:59.220162Z       91 Query: drop table logs,Anormaly,1
+2025-12-20T10:42:08.340699Z       45 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:01:25.833553Z       79 Query: exec xp_cmdshell 'whoami',Anormaly,1
+"2025-12-20T10:04:39.535656Z       48 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:38:16.532243Z       81 Query: show databases,Normal,0
+2025-12-20T10:04:55.562556Z       63 Quit,Normal,0
+2025-12-20T10:11:47.378440Z       24 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:49:37.511175Z       30 Query: truncate table logs,Anormaly,1
+2025-12-20T10:55:30.311271Z       18 Query: drop table customers,Anormaly,1
+2025-12-20T10:56:44.875172Z       97 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:56:16.238845Z       80 Query: describe products,Normal,0
+2025-12-20T10:27:53.374278Z       87 Query: drop table users,Anormaly,1
+2025-12-20T10:47:35.805519Z       13 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:28:58.674442Z       21 Query: show tables,Normal,0
+2025-12-20T10:47:11.907708Z       78 Query: drop table users,Anormaly,1
+2025-12-20T10:17:19.671063Z       15 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:12:19.686586Z       43 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:29:59.787171Z       44 Query: truncate table logs,Anormaly,1
+2025-12-20T10:56:25.156187Z       29 Query: delete from debtor,Anormaly,1
+2025-12-20T10:47:19.778602Z       24 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:14:09.496280Z       29 Query: select count(*) from admin,Normal,0
+2025-12-20T10:05:05.990395Z       88 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:53:37.672253Z       35 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:15:41.563366Z       72 Query: describe products,Normal,0
+"2025-12-20T10:56:44.801050Z       87 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:15:29.394174Z       51 Query: show databases,Normal,0
+2025-12-20T10:01:18.802952Z       31 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:31:32.945243Z       22 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:21:19.109402Z       74 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:25:18.151202Z       59 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:25:57.522015Z       24 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:04:22.797582Z       41 Connect: root@localhost on test,Normal,0
+2025-12-20T10:08:45.592060Z       87 Query: describe transactions,Normal,0
+2025-12-20T10:57:01.530382Z       37 Query: select count(*) from customers,Normal,0
+2025-12-20T10:30:57.230650Z       35 Query: show tables,Normal,0
+2025-12-20T10:53:47.367511Z       41 Query: delete from logs,Anormaly,1
+2025-12-20T10:13:28.365917Z       66 Query: drop database myapp,Anormaly,1
+2025-12-20T10:27:40.579391Z       93 Query: drop table transactions,Anormaly,1
+2025-12-20T10:44:31.442589Z       44 Query: truncate table admin,Anormaly,1
+2025-12-20T10:11:27.594369Z       89 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:47:31.835182Z       88 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:41:45.145293Z       15 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:58:52.645330Z       83 Query: describe logs,Normal,0
+2025-12-20T10:56:06.986147Z       47 Query: show tables,Normal,0
+"2025-12-20T10:55:32.544636Z       32 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:40:51.361136Z       81 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:40:44.186157Z       69 Quit,Normal,0
+2025-12-20T10:43:21.844275Z       42 Query: delete from customers,Anormaly,1
+2025-12-20T10:25:47.826862Z       17 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:22:29.922520Z       23 Query: show databases,Normal,0
+2025-12-20T10:00:57.524260Z       35 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:08:29.685825Z       95 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:15:38.568144Z       61 Query: describe users,Normal,0
+2025-12-20T10:06:39.992217Z       33 Query: select * from debtor,Normal,0
+2025-12-20T10:38:41.231485Z       39 Query: delete from admin,Anormaly,1
+"2025-12-20T10:51:20.611258Z       47 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:02:36.480909Z       93 Query: drop table admin,Anormaly,1
+"2025-12-20T10:55:24.486203Z       92 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:29:21.138844Z       97 Query: use db1,Normal,0
+2025-12-20T10:19:38.761888Z       66 Query: show tables,Normal,0
+2025-12-20T10:13:20.863324Z       30 Quit,Normal,0
+"2025-12-20T10:20:23.359001Z       74 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:13:40.256414Z       96 Query: delete from transactions,Anormaly,1
+2025-12-20T10:06:04.945173Z       22 Query: drop table customers,Anormaly,1
+2025-12-20T10:33:31.544723Z       97 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:32:12.543637Z       37 Query: show tables,Normal,0
+2025-12-20T10:36:57.465899Z       15 Query: select count(*) from products,Normal,0
+2025-12-20T10:00:37.775156Z       35 Query: truncate table customers,Anormaly,1
+2025-12-20T10:40:00.752405Z       25 Query: select * from users,Normal,0
+2025-12-20T10:28:00.937392Z       31 Query: show tables,Normal,0
+2025-12-20T10:51:24.695888Z       35 Query: use db1,Normal,0
+2025-12-20T10:57:51.985751Z       46 Query: describe debtor,Normal,0
+2025-12-20T10:13:47.208846Z       64 Query: show tables,Normal,0
+2025-12-20T10:06:57.866629Z       90 Query: drop database production,Anormaly,1
+2025-12-20T10:49:31.300586Z       68 Query: describe admin,Normal,0
+2025-12-20T10:41:26.230896Z       15 Query: truncate table admin,Anormaly,1
+2025-12-20T10:30:21.759529Z       11 Query: describe products,Normal,0
+2025-12-20T10:42:18.574834Z       80 Quit,Normal,0
+2025-12-20T10:24:49.942810Z       99 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:13:28.957469Z       62 Query: select * from products,Normal,0
+2025-12-20T10:54:41.190167Z       15 Query: show databases,Normal,0
+2025-12-20T10:46:08.891209Z       24 Quit,Normal,0
+2025-12-20T10:20:22.497679Z       71 Query: select * from debtor,Normal,0
+2025-12-20T10:42:58.251427Z       19 Query: show tables,Normal,0
+2025-12-20T10:51:26.111735Z       26 Query: show databases,Normal,0
+2025-12-20T10:05:00.762255Z       59 Query: show databases,Normal,0
+2025-12-20T10:02:54.205644Z       88 Query: delete from admin,Anormaly,1
+2025-12-20T10:12:10.485861Z       50 Query: describe transactions,Normal,0
+2025-12-20T10:25:28.569276Z       69 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:09:02.495596Z       71 Query: drop database mysql,Anormaly,1
+2025-12-20T10:16:58.208709Z       59 Query: select count(*) from admin,Normal,0
+2025-12-20T10:34:23.388237Z       30 Query: truncate table admin,Anormaly,1
+"2025-12-20T10:17:19.360762Z       82 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:10:14.592596Z       29 Query: describe logs,Normal,0
+2025-12-20T10:34:12.616774Z       46 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:40:17.407166Z       41 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:01:51.363591Z       83 Query: select * from logs where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:05:17.497679Z       71 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:07:51.193434Z       91 Query: show databases,Normal,0
+2025-12-20T10:31:50.197451Z       92 Query: select * from admin,Normal,0
+"2025-12-20T10:15:58.877764Z       45 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:16:48.633277Z       60 Query: select count(*) from customers,Normal,0
+2025-12-20T10:44:22.193808Z       79 Query: show databases,Normal,0
+2025-12-20T10:51:29.585876Z       20 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:11:52.959339Z       51 Query: describe debtor,Normal,0
+2025-12-20T10:12:40.533372Z       21 Query: use test,Normal,0
+"2025-12-20T10:50:25.891042Z       19 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:09:41.972791Z       12 Query: drop database production,Anormaly,1
+2025-12-20T10:06:30.382256Z       18 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:34:45.780868Z       65 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:33:33.871420Z       87 Query: show databases,Normal,0
+2025-12-20T10:04:28.210385Z       34 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:12:01.834154Z       82 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:07:00.881714Z       15 Query: drop database db1,Anormaly,1
+2025-12-20T10:28:36.158462Z       78 Quit,Normal,0
+2025-12-20T10:44:14.672735Z       77 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:07:44.141796Z       19 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:53:26.545183Z       40 Connect: root@localhost on production,Normal,0
+2025-12-20T10:08:09.140811Z       26 Query: delete from transactions,Anormaly,1
+2025-12-20T10:15:57.767621Z       76 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:17:31.313678Z       59 Query: show databases,Normal,0
+2025-12-20T10:40:33.888911Z       58 Connect: admin@localhost on test,Normal,0
+2025-12-20T10:20:22.912002Z       70 Query: truncate table logs,Anormaly,1
+2025-12-20T10:32:10.714922Z       95 Query: select count(*) from logs,Normal,0
+2025-12-20T10:13:32.547303Z       68 Connect: root@localhost on myapp,Normal,0
+2025-12-20T10:44:13.329789Z       12 Query: show tables,Normal,0
+2025-12-20T10:36:26.838127Z       90 Query: show tables,Normal,0
+2025-12-20T10:48:13.482590Z       29 Query: drop database db1,Anormaly,1
+2025-12-20T10:43:43.251073Z       51 Connect: admin@localhost on myapp,Normal,0
+2025-12-20T10:18:41.506678Z       52 Query: use db1,Normal,0
+2025-12-20T10:23:51.603000Z       66 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:46:42.130956Z       68 Quit,Normal,0
+2025-12-20T10:17:14.646904Z       95 Query: drop database test,Anormaly,1
+2025-12-20T10:45:14.994137Z       55 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:20:49.273090Z       94 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+"2025-12-20T10:33:37.403936Z       74 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:41:43.833200Z       57 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:58:41.826134Z       56 Quit,Normal,0
+2025-12-20T10:57:17.800677Z       57 Query: drop table admin,Anormaly,1
+2025-12-20T10:29:42.686390Z       85 Query: show tables,Normal,0
+2025-12-20T10:47:53.649597Z       61 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:30:41.559198Z       41 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:14:15.902964Z       66 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:44:51.963110Z       36 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:00:46.941222Z       91 Connect: root@localhost on myapp,Normal,0
+2025-12-20T10:16:32.660688Z       29 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:18:24.379599Z       55 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:47:59.502688Z       10 Query: select * from debtor,Normal,0
+2025-12-20T10:20:37.716953Z       95 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:31:54.125984Z       91 Query: delete from debtor,Anormaly,1
+"2025-12-20T10:05:15.564080Z       79 Query: select name, email from debtor limit 10",Normal,0
+"2025-12-20T10:09:14.903764Z       89 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:41:13.189968Z       70 Query: use production,Normal,0
+2025-12-20T10:30:21.508868Z       68 Quit,Normal,0
+2025-12-20T10:10:57.709933Z       68 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:27:51.247707Z       23 Query: select * from customers,Normal,0
+2025-12-20T10:33:46.628970Z       24 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:30:36.207180Z       12 Connect: admin@localhost on db1,Normal,0
+2025-12-20T10:47:03.212710Z       74 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:08:44.527841Z       32 Query: drop table products,Anormaly,1
+2025-12-20T10:19:51.652250Z       64 Query: describe logs,Normal,0
+2025-12-20T10:40:55.595182Z       65 Query: drop table customers,Anormaly,1
+2025-12-20T10:22:12.327017Z       29 Query: show tables,Normal,0
+2025-12-20T10:21:49.885316Z       95 Query: select * from logs,Normal,0
+2025-12-20T10:58:17.214469Z       33 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:12:54.619392Z       19 Query: drop database test,Anormaly,1
+2025-12-20T10:07:20.731057Z       23 Query: select count(*) from admin,Normal,0
+2025-12-20T10:48:26.516177Z       38 Quit,Normal,0
+2025-12-20T10:05:40.463535Z       19 Query: delete from admin,Anormaly,1
+2025-12-20T10:24:43.990460Z       18 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:17:30.501383Z       46 Query: use production,Normal,0
+2025-12-20T10:33:03.469282Z       58 Query: truncate table admin,Anormaly,1
+2025-12-20T10:30:11.828412Z       30 Query: show tables,Normal,0
+2025-12-20T10:20:39.730723Z       69 Query: use myapp,Normal,0
+"2025-12-20T10:36:05.913814Z       37 Query: select name, email from logs limit 10",Normal,0
+2025-12-20T10:12:03.366087Z       66 Query: select * from debtor,Normal,0
+2025-12-20T10:15:21.374633Z       17 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:45:31.942405Z       50 Query: show tables,Normal,0
+2025-12-20T10:57:36.930641Z       19 Query: truncate table logs,Anormaly,1
+2025-12-20T10:59:12.692003Z       89 Query: drop table products,Anormaly,1
+2025-12-20T10:56:05.564081Z       27 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:17:46.945310Z       27 Query: show databases,Normal,0
+2025-12-20T10:32:41.712432Z       81 Query: show tables,Normal,0
+2025-12-20T10:12:04.959804Z       17 Connect: user1@localhost on db1,Normal,0
+2025-12-20T10:33:48.550962Z       24 Query: describe transactions,Normal,0
+2025-12-20T10:11:40.401813Z       96 Query: show tables,Normal,0
+2025-12-20T10:37:52.299545Z       23 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:14:24.386746Z       30 Query: show tables,Normal,0
+2025-12-20T10:58:05.528135Z       10 Query: select * from admin,Normal,0
+2025-12-20T10:22:21.725420Z       45 Query: show tables,Normal,0
+2025-12-20T10:04:49.181046Z       71 Query: select count(*) from users,Normal,0
+2025-12-20T10:19:54.612532Z       45 Query: select * from logs,Normal,0
+2025-12-20T10:18:58.646141Z       85 Query: truncate table customers,Anormaly,1
+2025-12-20T10:50:05.614243Z       71 Query: use production,Normal,0
+2025-12-20T10:02:38.700327Z       62 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:55:18.375713Z       31 Query: delete from transactions,Anormaly,1
+2025-12-20T10:38:03.855629Z       92 Query: drop database mysql,Anormaly,1
+"2025-12-20T10:38:06.592549Z       30 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:11:38.287002Z       67 Query: describe transactions,Normal,0
+2025-12-20T10:30:36.255901Z       97 Query: drop database mysql,Anormaly,1
+2025-12-20T10:12:06.142120Z       52 Query: show tables,Normal,0
+2025-12-20T10:25:20.402329Z       23 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+"2025-12-20T10:46:11.757976Z       48 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:01:39.191182Z       36 Query: describe debtor,Normal,0
+2025-12-20T10:18:38.930168Z       85 Query: select * from products,Normal,0
+2025-12-20T10:08:39.251085Z       94 Query: delete from logs,Anormaly,1
+2025-12-20T10:20:13.720640Z       46 Connect: root@localhost on test,Normal,0
+2025-12-20T10:16:46.850957Z       36 Query: select * from products where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:53:02.808268Z       15 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:05:42.493604Z       32 Query: truncate table products,Anormaly,1
+"2025-12-20T10:18:12.602237Z       91 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:25:37.662105Z       29 Query: use production,Normal,0
+2025-12-20T10:54:34.369861Z       37 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:19:15.807976Z       42 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:29:18.219311Z       59 Query: drop database production,Anormaly,1
+2025-12-20T10:52:32.137953Z       69 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:57:34.827646Z       79 Query: use production,Normal,0
+2025-12-20T10:37:38.998581Z       81 Query: describe customers,Normal,0
+2025-12-20T10:25:37.530301Z       72 Query: delete from users,Anormaly,1
+2025-12-20T10:33:24.741552Z       58 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:14:31.554785Z       36 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:11:36.502370Z       51 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:35:37.162062Z       76 Connect: app_user@localhost on mysql,Normal,0
+2025-12-20T10:06:07.779601Z       77 Query: select count(*) from customers,Normal,0
+2025-12-20T10:27:55.847115Z       72 Connect: app_user@localhost on db1,Normal,0
+2025-12-20T10:52:23.623780Z       67 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:26:07.357121Z       10 Query: show tables,Normal,0
+2025-12-20T10:43:59.521875Z       87 Query: drop table transactions,Anormaly,1
+2025-12-20T10:27:42.199812Z       79 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:40:40.758199Z       83 Query: describe logs,Normal,0
+2025-12-20T10:14:54.183170Z       71 Query: use test,Normal,0
+2025-12-20T10:00:48.141856Z       27 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:04:45.466193Z       69 Quit,Normal,0
+2025-12-20T10:45:40.450473Z       69 Query: drop table customers,Anormaly,1
+2025-12-20T10:57:29.492051Z       77 Query: drop database production,Anormaly,1
+2025-12-20T10:24:55.431415Z       66 Query: drop database test,Anormaly,1
+2025-12-20T10:58:12.431980Z       54 Query: show databases,Normal,0
+2025-12-20T10:44:52.983260Z       65 Query: show tables,Normal,0
+"2025-12-20T10:18:15.357577Z       64 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:42:29.315013Z       90 Query: show tables,Normal,0
+2025-12-20T10:29:46.221665Z       24 Connect: admin@localhost on production,Normal,0
+2025-12-20T10:56:34.254188Z       94 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:14:00.441271Z       99 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:19:12.509924Z       10 Query: drop database db1,Anormaly,1
+2025-12-20T10:18:11.337385Z       92 Query: describe debtor,Normal,0
+2025-12-20T10:00:13.284716Z       43 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:09:15.780665Z       35 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:13:56.463493Z       12 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:31:23.320202Z       81 Query: describe debtor,Normal,0
+2025-12-20T10:07:10.195004Z       98 Query: show databases,Normal,0
+2025-12-20T10:11:51.242333Z       18 Query: use myapp,Normal,0
+2025-12-20T10:23:17.782213Z       65 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:46:50.759008Z       14 Query: show databases,Normal,0
+2025-12-20T10:24:00.972255Z       12 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:38:09.425545Z       92 Query: show tables,Normal,0
+2025-12-20T10:54:49.831378Z       16 Query: select count(*) from transactions,Normal,0
+2025-12-20T10:44:56.571933Z       94 Query: truncate table logs,Anormaly,1
+2025-12-20T10:17:55.193635Z       33 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:08:04.721943Z       82 Query: show tables,Normal,0
+2025-12-20T10:32:31.723069Z       74 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:14:28.906388Z       23 Query: select * from admin where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:03:16.251373Z       79 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:25:11.179900Z       93 Query: drop table debtor,Anormaly,1
+"2025-12-20T10:20:04.786521Z       80 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:11:47.251277Z       28 Query: drop table customers,Anormaly,1
+2025-12-20T10:29:19.105032Z       60 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:53:19.593940Z       95 Quit,Normal,0
+2025-12-20T10:24:22.235806Z       77 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:49:44.700423Z       57 Query: drop table debtor,Anormaly,1
+2025-12-20T10:30:12.598579Z       11 Query: use test,Normal,0
+2025-12-20T10:38:30.767820Z       75 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:08:05.966879Z       36 Query: describe transactions,Normal,0
+2025-12-20T10:49:53.157655Z       58 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:16:51.732869Z       15 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:08:48.564935Z       12 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:21:02.641130Z       87 Query: delete from users,Anormaly,1
+2025-12-20T10:06:03.114389Z       22 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:42:19.328593Z       29 Query: show databases,Normal,0
+2025-12-20T10:52:24.819905Z       76 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:20:24.418728Z       97 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:26:02.287831Z       84 Query: select * from logs where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:46:43.185576Z       38 Query: show tables,Normal,0
+2025-12-20T10:02:47.342354Z       62 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:14:51.907786Z       73 Query: show databases,Normal,0
+2025-12-20T10:02:31.619150Z       72 Query: use production,Normal,0
+2025-12-20T10:52:38.726303Z       66 Query: describe admin,Normal,0
+2025-12-20T10:56:52.359875Z       11 Connect: app_user@localhost on production,Normal,0
+2025-12-20T10:36:31.870865Z       84 Connect: admin@localhost on production,Normal,0
+2025-12-20T10:58:23.655369Z       33 Query: exec xp_cmdshell 'whoami',Anormaly,1
+"2025-12-20T10:26:47.710558Z       53 Query: select name, email from users limit 10",Normal,0
+2025-12-20T10:48:01.912080Z       65 Quit,Normal,0
+2025-12-20T10:22:15.951855Z       51 Query: truncate table customers,Anormaly,1
+2025-12-20T10:30:05.614437Z       13 Query: use mysql,Normal,0
+2025-12-20T10:43:20.691115Z       30 Query: drop database mysql,Anormaly,1
+2025-12-20T10:44:53.775727Z       89 Query: describe debtor,Normal,0
+2025-12-20T10:38:21.783447Z       44 Query: select count(*) from logs,Normal,0
+2025-12-20T10:32:08.135150Z       82 Query: select count(*) from users,Normal,0
+2025-12-20T10:20:59.357656Z       17 Query: drop database myapp,Anormaly,1
+2025-12-20T10:02:42.657077Z       31 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:55:14.152455Z       37 Query: show tables,Normal,0
+2025-12-20T10:28:33.731478Z       58 Query: use myapp,Normal,0
+2025-12-20T10:41:45.228446Z       18 Query: use production,Normal,0
+2025-12-20T10:36:35.456226Z       38 Query: select count(*) from logs,Normal,0
+2025-12-20T10:49:04.817800Z       83 Query: show tables,Normal,0
+2025-12-20T10:17:27.568006Z       42 Query: xp_cmdshell 'net user',Anormaly,1
+"2025-12-20T10:28:55.410630Z       36 Query: select name, email from transactions limit 10",Normal,0
+2025-12-20T10:26:15.814230Z       15 Query: use myapp,Normal,0
+2025-12-20T10:58:06.797696Z       32 Query: truncate table debtor,Anormaly,1
+2025-12-20T10:54:33.636860Z       98 Query: use production,Normal,0
+2025-12-20T10:00:46.429193Z       84 Query: select count(*) from customers,Normal,0
+2025-12-20T10:21:37.737607Z       19 Query: truncate table admin,Anormaly,1
+2025-12-20T10:07:56.124917Z       59 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:49:09.510845Z       86 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:36:10.517398Z       22 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:19:44.310039Z       26 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:23:37.901494Z       61 Query: select * from products,Normal,0
+2025-12-20T10:48:23.530299Z       61 Query: drop table transactions,Anormaly,1
+2025-12-20T10:30:23.486091Z       97 Query: show databases,Normal,0
+2025-12-20T10:50:17.252828Z       57 Query: delete from products,Anormaly,1
+2025-12-20T10:59:58.872186Z       43 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:56:21.340885Z       42 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:14:15.277081Z       57 Query: show tables,Normal,0
+2025-12-20T10:45:53.130888Z       85 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:54:46.788106Z       61 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:45:20.802120Z       33 Connect: app_user@localhost on myapp,Normal,0
+2025-12-20T10:04:24.764191Z       82 Query: describe admin,Normal,0
+2025-12-20T10:55:24.120635Z       81 Query: use myapp,Normal,0
+2025-12-20T10:07:03.274180Z       40 Connect: user1@localhost on test,Normal,0
+2025-12-20T10:17:39.121275Z       23 Quit,Normal,0
+2025-12-20T10:56:31.316608Z       88 Query: use test,Normal,0
+2025-12-20T10:31:42.613249Z       22 Quit,Normal,0
+2025-12-20T10:19:26.193392Z       71 Query: drop table products,Anormaly,1
+2025-12-20T10:54:02.435974Z       97 Query: describe logs,Normal,0
+2025-12-20T10:47:20.104792Z       42 Query: use db1,Normal,0
+2025-12-20T10:51:21.236693Z       57 Query: truncate table products,Anormaly,1
+2025-12-20T10:07:19.566478Z       71 Query: select * from debtor where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:03:36.947188Z       88 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:56:51.201566Z       22 Connect: user1@localhost on test,Normal,0
+2025-12-20T10:31:33.746358Z       42 Connect: admin@localhost on myapp,Normal,0
+2025-12-20T10:17:38.652815Z       10 Query: select * from admin,Normal,0
+2025-12-20T10:14:06.229246Z       69 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:27:53.102817Z       55 Query: select * from admin,Normal,0
+2025-12-20T10:03:33.528529Z       98 Quit,Normal,0
+2025-12-20T10:28:47.899781Z       11 Query: drop database production,Anormaly,1
+2025-12-20T10:44:51.446792Z       82 Query: use production,Normal,0
+2025-12-20T10:29:22.233510Z       57 Query: describe debtor,Normal,0
+2025-12-20T10:45:09.703298Z       18 Query: select * from logs,Normal,0
+2025-12-20T10:46:03.573882Z       79 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:40:21.512632Z       50 Query: select * from logs,Normal,0
+2025-12-20T10:29:10.991489Z       70 Query: use mysql,Normal,0
+2025-12-20T10:02:28.692471Z       88 Query: select * from customers,Normal,0
+2025-12-20T10:38:00.617715Z       96 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:00:55.569203Z       12 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:16:24.700050Z       55 Query: select count(*) from customers,Normal,0
+2025-12-20T10:25:38.724544Z       32 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:30:25.565927Z       52 Query: show databases,Normal,0
+2025-12-20T10:02:12.644186Z       41 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:02:47.956931Z       57 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:00:50.484877Z       24 Query: select * from transactions,Normal,0
+2025-12-20T10:47:19.258096Z       40 Query: select * from customers,Normal,0
+2025-12-20T10:59:10.311847Z       69 Query: select count(*) from products,Normal,0
+"2025-12-20T10:02:58.477317Z       73 Query: select name, email from admin limit 10",Normal,0
+2025-12-20T10:16:28.252428Z       30 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:51:09.795045Z       25 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:24:30.391159Z       60 Query: drop table debtor,Anormaly,1
+2025-12-20T10:25:35.952680Z       53 Query: describe products,Normal,0
+2025-12-20T10:18:02.828026Z       94 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:31:21.694293Z       14 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:36:20.501137Z       39 Quit,Normal,0
+2025-12-20T10:34:54.291575Z       44 Query: delete from transactions,Anormaly,1
+2025-12-20T10:20:00.962855Z       40 Query: truncate table customers,Anormaly,1
+2025-12-20T10:04:06.690513Z       66 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:44:52.123224Z       94 Query: show tables,Normal,0
+"2025-12-20T10:42:23.147878Z       77 Query: select name, email from customers limit 10",Normal,0
+2025-12-20T10:11:13.225448Z       43 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:48:52.952063Z       39 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:53:52.591869Z       53 Query: drop database test,Anormaly,1
+2025-12-20T10:57:54.927069Z       53 Query: show databases,Normal,0
+2025-12-20T10:25:01.473101Z       95 Query: show databases,Normal,0
+2025-12-20T10:07:37.358259Z       39 Connect: root@localhost on db1,Normal,0
+2025-12-20T10:29:06.200412Z       38 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:11:33.737250Z       55 Query: truncate table products,Anormaly,1
+2025-12-20T10:32:23.209613Z       41 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:24:39.645560Z       13 Query: delete from transactions,Anormaly,1
+2025-12-20T10:43:24.543830Z       26 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+2025-12-20T10:31:57.218574Z       31 Query: create user 'hacker'@'%' identified by '123456',Anormaly,1
+"2025-12-20T10:38:15.226940Z       40 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:28:51.574156Z       23 Query: truncate table transactions,Anormaly,1
+2025-12-20T10:50:13.900878Z       88 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:43:00.834335Z       38 Query: exec xp_cmdshell 'whoami',Anormaly,1
+"2025-12-20T10:20:51.753054Z       57 Query: select name, email from products limit 10",Normal,0
+2025-12-20T10:47:10.861869Z       55 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:38:49.278511Z       61 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:25:51.193356Z       10 Query: drop database production,Anormaly,1
+2025-12-20T10:01:07.286791Z       13 Query: show tables,Normal,0
+2025-12-20T10:41:36.204038Z       14 Quit,Normal,0
+2025-12-20T10:10:13.870788Z       53 Query: show tables,Normal,0
+2025-12-20T10:24:01.920811Z       19 Query: describe customers,Normal,0
+2025-12-20T10:22:01.286239Z       74 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:57:47.719961Z       91 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:57:18.576306Z       31 Query: show databases,Normal,0
+2025-12-20T10:11:59.987304Z       90 Query: show tables,Normal,0
+2025-12-20T10:22:25.467751Z       73 Query: select count(*) from logs,Normal,0
+2025-12-20T10:40:00.482040Z       49 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:12:19.614763Z       92 Query: show tables,Normal,0
+2025-12-20T10:38:24.232811Z       67 Query: show tables,Normal,0
+"2025-12-20T10:07:36.246620Z       19 Query: select name, email from admin limit 10",Normal,0
+"2025-12-20T10:28:44.624434Z       48 Query: select name, email from products limit 10",Normal,0
+"2025-12-20T10:49:13.740531Z       93 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:54:31.124706Z       78 Query: drop table customers,Anormaly,1
+2025-12-20T10:41:24.175502Z       47 Query: show databases,Normal,0
+2025-12-20T10:54:19.171742Z       65 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:17:57.355819Z       99 Query: delete from logs,Anormaly,1
+2025-12-20T10:08:55.429586Z       96 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:36:34.282387Z       80 Query: drop database db1,Anormaly,1
+2025-12-20T10:45:35.802926Z       62 Query: describe admin,Normal,0
+2025-12-20T10:53:05.815866Z       66 Query: select * from debtor,Normal,0
+2025-12-20T10:01:37.980856Z       57 Query: describe logs,Normal,0
+2025-12-20T10:21:11.167627Z       43 Query: drop table transactions,Anormaly,1
+2025-12-20T10:46:30.470328Z       33 Query: select * from users,Normal,0
+2025-12-20T10:19:03.533562Z       61 Query: select * from debtor,Normal,0
+2025-12-20T10:09:56.618441Z       80 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:11:07.304322Z       66 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:27:29.363591Z       21 Query: select * from transactions where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:43:49.388990Z       44 Query: select * from customers where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:31:19.523348Z       42 Query: select * from products,Normal,0
+2025-12-20T10:44:44.169793Z       34 Query: delete from transactions,Anormaly,1
+2025-12-20T10:05:41.486767Z       58 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:15:56.965767Z       77 Query: use myapp,Normal,0
+2025-12-20T10:26:36.836413Z       12 Query: drop table debtor,Anormaly,1
+2025-12-20T10:15:49.239029Z       31 Query: select * from users where id = '1' union select password from users--,Anormaly,1
+2025-12-20T10:16:42.847743Z       95 Query: show databases,Normal,0
+2025-12-20T10:00:35.430560Z       67 Query: use mysql,Normal,0
+2025-12-20T10:15:55.374744Z       42 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:05:29.644922Z       88 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:26:56.398622Z       50 Query: show tables,Normal,0
+2025-12-20T10:51:56.210248Z       29 Query: select * from users,Normal,0
+2025-12-20T10:21:57.156895Z       84 Query: show databases,Normal,0
+2025-12-20T10:01:05.747637Z       22 Query: show databases,Normal,0
+2025-12-20T10:50:51.136478Z       26 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:02:39.975201Z       19 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:44:37.940844Z       32 Query: drop table debtor,Anormaly,1
+2025-12-20T10:22:53.298719Z       72 Query: use myapp,Normal,0
+2025-12-20T10:27:17.404493Z       91 Quit,Normal,0
+2025-12-20T10:11:50.221111Z       36 Query: select * from customers,Normal,0
+2025-12-20T10:14:43.560104Z       30 Query: truncate table admin,Anormaly,1
+2025-12-20T10:00:33.339565Z       93 Query: select * from customers,Normal,0
+2025-12-20T10:08:35.847644Z       24 Query: select * from debtor,Normal,0
+2025-12-20T10:13:20.412521Z       91 Query: select * from admin,Normal,0
+2025-12-20T10:22:58.906384Z       89 Query: describe admin,Normal,0
+2025-12-20T10:51:49.826378Z       43 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:11:03.478200Z       89 Query: exec xp_cmdshell 'whoami',Anormaly,1
+2025-12-20T10:36:24.352346Z       49 Query: xp_cmdshell 'net user',Anormaly,1
+2025-12-20T10:42:50.448101Z       10 Query: drop database test,Anormaly,1
+2025-12-20T10:45:24.649058Z       59 Query: exec xp_cmdshell 'whoami',Anormaly,1
+"2025-12-20T10:57:22.118400Z       79 Query: select name, email from admin limit 10",Normal,0
+"2025-12-20T10:38:55.678898Z       24 Query: select name, email from debtor limit 10",Normal,0
+2025-12-20T10:31:48.142817Z       83 Query: select load_file('/etc/passwd'),Anormaly,1
+2025-12-20T10:00:24.814322Z       12 Query: truncate table users,Anormaly,1
+2025-12-20T10:17:28.484802Z       70 Query: drop table users,Anormaly,1
+2025-12-20T10:19:52.288139Z       43 Query: show tables,Normal,0
+2025-12-20T10:54:03.152306Z       45 Query: select count(*) from debtor,Normal,0
+2025-12-20T10:25:48.211031Z       83 Query: show databases,Normal,0
+2025-12-20T10:20:33.776439Z       58 Query: grant all privileges on *.* to 'hacker'@'%',Anormaly,1
+2025-12-20T10:00:16.966807Z       54 Quit,Normal,0
+2025-12-20T10:56:27.499927Z       46 Query: truncate table users,Anormaly,1
+2025-12-20T10:40:40.799689Z       54 Query: use test,Normal,0
+2025-12-20T10:40:25.630738Z       12 Query: show databases,Normal,0
+"2025-12-20T10:52:14.250155Z       55 Query: select name, email from transactions limit 10",Normal,0
