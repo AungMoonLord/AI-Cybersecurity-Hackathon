@@ -1,8 +1,13 @@
 '''generate_data.py'''
 import random
+import linecache
 import csv
+import os
+
 
 months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+cur_dir = os.path.dirname(__file__)
+
 class TimeGenerator():
     '''generate time forward only'''
 
@@ -29,10 +34,10 @@ class TimeGenerator():
             self.day += 1
 
         if (self.year % 4 == 0) and (self.year % 400 == 0 or self.year % 100):
-            month_day = self.day > months[self.month-1] + self.month
+            month_day = (months[self.month-1] + 1*(self.month == 2))
         else:
-            month_day = self.day > months[self.month-1]
-        
+            month_day = months[self.month-1]
+
         if self.day > month_day:
             self.day -= month_day
             self.month += 1
@@ -40,7 +45,7 @@ class TimeGenerator():
             self.month -= 12
             self.year += 1
 
-        return f"{self.year}-{self.month}-{self.day}T{self.hour}:{self.minute}:{self.second}Z"
+        return f"{self.year}-{self.month}-{self.day:<0d}T{self.hour}:{self.minute}:{self.second:.015f}Z"
 
 
 class WeightedRandomizer():
@@ -119,25 +124,47 @@ class Column:
         '''generate data coresponding to ratio'''
         return self.wr.getrand().get_data()
 
+class Row:
+    '''
+    Docstring for Row
+    '''
+    def __init__(self, tg : TimeGenerator, query : Data, is_anormaly : bool):
+        '''constructor'''
+        self.tg = tg
+        self.query = query
+        self.is_anormaly = is_anormaly
+
+    def gen_row(self):
+        '''genrate a row of randomized data'''
+        return (self.tg.get_time() + "\t" + self.query.get_data(), str(self.is_anormaly))
+
 class DatasetGenerator:
     '''
     Docstring for dataset_generator
     '''
-    def __init__(self):
-        '''constructor'''
-        self.columns = []
+    def __init__(self, normal : list, anormaly : list):
+        '''
+        constructor
+        normal and anormaly = list of row
+        '''
+        self.tg = TimeGenerator()
+        self.normal = WeightedRandomizer(normal)
+        self.anormaly = WeightedRandomizer(anormaly)
 
     def generate_csv(self, num : int):
         '''generate csv file'''
-        with open("dataset", mode="w", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
-            writer.writerow([column.get_header() for column in self.columns])
+        with open(f"{cur_dir}\\dataset.csv", mode="w", newline="", encoding="utf-8") as f:
             for _ in range(num):
-                writer.writerow([column.generate_data() for column in self.columns])
+                writer = csv.writer(f)
+                if random.random() < 0.5:
+                    data = self.normal.getrand()
+                else:
+                    data = self.anormaly.getrand()
+                writer.writerow(data)
 
-    def append_column(self, column : Column):
-        '''append_column'''
-        self.columns.append(column)
+def get_random_name():
+    '''name'''
+    return linecache.getline(f"{cur_dir}\\names.txt", random.randint(1, 100000)).strip()
 
 def main():
     '''main'''
@@ -165,16 +192,26 @@ def main():
     # print(f"a:{a}\nb:{b}\nc:{c}\nError:{er}")
 
     #time column
+    normal = []
     tg = TimeGenerator()
-    time_d = Data("/$",[tg.get_time])
-    time = Column("Time", [(time_d, 1)])
 
-    #id column
-    
+    #selectLock normal
+    get_session_id = lambda : random.randint(1, 99)
+    get_money = lambda : random.randint(1, 100000)
+    get_account_id = lambda : f"{random.randint(1,49):>02d}{random.randint(0,99999999):>07d}"
+
+    val1 = [get_session_id, get_random_name]
+    d1 = Data("/$\tQuery\tselect balance from account where account_id = '/$' for update;", val1)
+    val2 = [get_session_id, get_money, get_account_id]
+    d2 = Data("/$\tQuery\tupdate accounts set balance = balance - /$, last_updated = now() where account_id = '/$';", val2)
+
+    normal.append((Row(tg, d1, False), 1))
+    normal.append(Row(tg, d2, False), 1)
 
     # print(time_d.get_data())
     # print(time.generate_data())
 
 
 if __name__ == "__main__":
-    main()
+    for i in range(20):
+        print(get_random_name())
