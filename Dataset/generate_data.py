@@ -3,10 +3,13 @@ import random
 import linecache
 import csv
 import os
-
+import string
+import math
 
 months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 cur_dir = os.path.dirname(__file__)
+tables = ["accounts", "users", "account_type", "locations", "branchs", "countries", "transactions", "transaction_logs"]
+characters = string.ascii_letters + string.digits + "_-"
 
 class TimeGenerator():
     '''generate time forward only'''
@@ -19,7 +22,7 @@ class TimeGenerator():
         self.hour = 12
         self.minute = 3
         self.second = 32.3
-    
+
     def get_time(self):
         '''return time'''
         self.second += random.random()
@@ -45,7 +48,11 @@ class TimeGenerator():
             self.month -= 12
             self.year += 1
 
-        return f"{self.year}-{self.month}-{self.day:<0d}T{self.hour}:{self.minute}:{self.second:.015f}Z"
+        return f"{self.year}-{self.month}-{self.day:<0d}T{self.hour}:{self.minute}:{self.second:.06f}Z"
+
+    def get_time_no_inc(self):
+        '''return time without incrementing'''
+        return f"{self.year}-{self.month}-{self.day:<0d}T{self.hour}:{self.minute}:{self.second:.06f}Z"
 
 
 class WeightedRandomizer():
@@ -63,11 +70,12 @@ class WeightedRandomizer():
             self.pairs.append((value, self.total_weight))
 
     def getrand(self):
+        '''return random data'''
         rand_val = random.randint(1, self.total_weight)
         for val, cum_weight in self.pairs:
             if cum_weight >= rand_val:
                 return val
-        return "Error" 
+        return "Error"
 
 class Data:
     '''
@@ -88,7 +96,7 @@ class Data:
                 continue
             temp += form[i]
             i += 1
-        pass
+        self.str.append(temp)
 
     def get_data(self):
         '''get data'''
@@ -154,17 +162,26 @@ class DatasetGenerator:
     def generate_csv(self, num : int):
         '''generate csv file'''
         with open(f"{cur_dir}\\dataset.csv", mode="w", newline="", encoding="utf-8") as f:
-            for _ in range(num):
+            for i in range(num):
+                print(f"Progress: {i/num*100:.2f}% {'■'*math.ceil(i/num*20)}")
                 writer = csv.writer(f)
                 if random.random() < 0.5:
                     data = self.normal.getrand()
                 else:
                     data = self.anormaly.getrand()
-                writer.writerow(data)
+                writer.writerow(data.gen_row())
 
 def get_random_name():
     '''name'''
     return linecache.getline(f"{cur_dir}\\names.txt", random.randint(1, 100000)).strip()
+
+def get_random_table():
+    '''table'''
+    return random.choice(tables)
+
+def get_random_word():
+    '''word'''
+    return "".join(random.choices(characters, k=random.randint(5,20)))
 
 def main():
     '''main'''
@@ -193,25 +210,47 @@ def main():
 
     #time column
     normal = []
+    abnormal = []
     tg = TimeGenerator()
 
-    #selectLock normal
+    #normal data
     get_session_id = lambda : random.randint(1, 99)
     get_money = lambda : random.randint(1, 100000)
     get_account_id = lambda : f"{random.randint(1,49):>02d}{random.randint(0,99999999):>07d}"
 
     val1 = [get_session_id, get_random_name]
-    d1 = Data("/$\tQuery\tselect balance from account where account_id = '/$' for update;", val1)
+    d1 = Data("/$\tQuery\tselect balance from accounts where account_id = '/$' for update;", val1)
     val2 = [get_session_id, get_money, get_account_id]
     d2 = Data("/$\tQuery\tupdate accounts set balance = balance - /$, last_updated = now() where account_id = '/$';", val2)
+    val3 = [get_session_id, get_account_id, get_money, get_account_id, get_account_id]
+    d3 = Data("/$\tQuery\tinsert into transactions values (/$, 'DEPOSIT', /$, (SELECT balance FROM Accounts WHERE account_id = /$), /$, NOW(), @ idempotency_key);", val3)
+    val4 = [get_session_id]
+    d4 = Data("/$\tQuit", val4)
+    val5 = [get_session_id, lambda : get_random_name().split()[0]]
+    d5 = Data("/$\tConnect\t/$@10.6.1.1", val5)
 
     normal.append((Row(tg, d1, False), 1))
-    normal.append(Row(tg, d2, False), 1)
+    normal.append((Row(tg, d2, False), 1))
+    normal.append((Row(tg, d3, False), 1))
+    normal.append((Row(tg, d4, False), 1))
+    normal.append((Row(tg, d5, False), 1))
+    
 
-    # print(time_d.get_data())
-    # print(time.generate_data())
+    #anormaly data
+    aval1 = [get_session_id, get_random_word, get_random_word, get_random_word, get_random_word, lambda : random.choice( ["1=1", "'='", '"1"="1"', '""=""', "'1'='1'"] )]
+    ad1 = Data("/$\tQuery\tselect /$ from /$ where /$ = '/$' or /$", aval1)
+    aval2 = [get_session_id, get_random_word]
+    ad2 = Data("/$\tQuery\tdrop table /$", aval2)
+
+    abnormal.append((Row(tg, ad1, True), 1))
+    abnormal.append((Row(tg, ad2, True), 1))
+
+    num = 900000
+    dg = DatasetGenerator(normal, abnormal)
+    dg.generate_csv(num)
+
+    # print(ad1.get_data())
 
 
 if __name__ == "__main__":
-    for i in range(20):
-        print(get_random_name())
+    main()
