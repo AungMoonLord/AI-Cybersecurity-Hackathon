@@ -144,7 +144,12 @@ class Row:
 
     def gen_row(self):
         '''genrate a row of randomized data'''
-        return (self.tg.get_time() + "\t" + self.query.get_data(), str(self.is_anormaly))
+        temp = ""
+        if self.is_anormaly:
+            temp = "anormaly"
+        else:
+            temp = "normal"
+        return (self.tg.get_time() + "	" + self.query.get_data(), temp, str(int(not self.is_anormaly)))
 
 class DatasetGenerator:
     '''
@@ -162,9 +167,10 @@ class DatasetGenerator:
     def generate_csv(self, num : int):
         '''generate csv file'''
         with open(f"{cur_dir}\\dataset.csv", mode="w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["query log", "status", "label"])
             for i in range(num):
                 print(f"Progress: {i/num*100:.2f}% {'■'*math.ceil(i/num*20)}")
-                writer = csv.writer(f)
                 if random.random() < 0.5:
                     data = self.normal.getrand()
                 else:
@@ -219,28 +225,30 @@ def main():
     get_account_id = lambda : f"{random.randint(1,49):>02d}{random.randint(0,99999999):>07d}"
 
     val1 = [get_session_id, get_random_name]
-    d1 = Data("/$\tQuery\tselect balance from accounts where account_id = '/$' for update;", val1)
+    d1 = Data("/$	Query	select balance from accounts where account_id = '/$' for update;", val1)
     val2 = [get_session_id, get_money, get_account_id]
-    d2 = Data("/$\tQuery\tupdate accounts set balance = balance - /$, last_updated = now() where account_id = '/$';", val2)
+    d2 = Data("/$	Query	update accounts set balance = balance - /$, last_updated = now() where account_id = '/$';", val2)
     val3 = [get_session_id, get_account_id, get_money, get_account_id, get_account_id]
-    d3 = Data("/$\tQuery\tinsert into transactions values (/$, 'DEPOSIT', /$, (SELECT balance FROM Accounts WHERE account_id = /$), /$, NOW(), @ idempotency_key);", val3)
+    d3 = Data("/$	Query	insert into transactions values (/$, 'DEPOSIT', /$, (SELECT balance FROM Accounts WHERE account_id = /$), /$, NOW(), @ idempotency_key);", val3)
     val4 = [get_session_id]
-    d4 = Data("/$\tQuit", val4)
+    d4 = Data("/$	Quit", val4)
     val5 = [get_session_id, lambda : get_random_name().split()[0]]
-    d5 = Data("/$\tConnect\t/$@10.6.1.1", val5)
+    d5 = Data("/$	Connect	/$@10.6.1.1", val5)
+    d6 = Data("/$	Query	select balance from accounts where account_id = '/$';", val1)
 
     normal.append((Row(tg, d1, False), 1))
     normal.append((Row(tg, d2, False), 1))
     normal.append((Row(tg, d3, False), 1))
     normal.append((Row(tg, d4, False), 1))
     normal.append((Row(tg, d5, False), 1))
+    normal.append((Row(tg, d6, False), 1))
     
 
     #anormaly data
     aval1 = [get_session_id, get_random_word, get_random_word, get_random_word, get_random_word, lambda : random.choice( ["1=1", "'='", '"1"="1"', '""=""', "'1'='1'"] )]
-    ad1 = Data("/$\tQuery\tselect /$ from /$ where /$ = '/$' or /$", aval1)
+    ad1 = Data("/$	Query	select /$ from /$ where /$ = '/$' or /$", aval1)
     aval2 = [get_session_id, get_random_word]
-    ad2 = Data("/$\tQuery\tdrop table /$", aval2)
+    ad2 = Data("/$	Query	drop table /$", aval2)
 
     abnormal.append((Row(tg, ad1, True), 1))
     abnormal.append((Row(tg, ad2, True), 1))
