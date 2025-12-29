@@ -54,6 +54,16 @@ class TimeGenerator():
         '''return time without incrementing'''
         return f"{self.year}-{self.month}-{self.day:<0d}T{self.hour}:{self.minute}:{self.second:.06f}Z"
 
+    def get_rand_time(self):
+        '''generate random time'''
+        year = random.randint(1, 9999)
+        month = random.randint(1, 12)
+        if (year % 4 == 0) and (year % 400 == 0 or year % 100):
+            month_day = (months[self.month-1] + 1*(month == 2))
+        else:
+            month_day = months[self.month-1]
+        day = random.randint(1,month_day)
+        return f"{year:>04d}-{random.randint(1,12):>02d}-{day:>02d}T{random.randint(1, 24):>02d}:{random.randint(0, 59):>02d}:{random.random()*60:>09.06f}Z"
 
 class WeightedRandomizer():
     '''
@@ -115,23 +125,6 @@ class Data:
 
         return result
 
-class Column:
-    '''
-    Docstring for column
-    '''
-    def __init__(self, name : str, data : list):
-        '''constructor'''
-        self.name = name
-        self.wr = WeightedRandomizer(data)
-
-    def get_header(self):
-        '''return the column header name'''
-        return self.name
-
-    def generate_data(self):
-        '''generate data coresponding to ratio'''
-        return self.wr.getrand().get_data()
-
 class Row:
     '''
     Docstring for Row
@@ -149,7 +142,7 @@ class Row:
             temp = "anormaly"
         else:
             temp = "normal"
-        return (self.tg.get_time() + "	" + self.query.get_data(), temp, str(int(not self.is_anormaly)))
+        return (self.tg.get_rand_time() + "	" + self.query.get_data(), temp, str(int(not self.is_anormaly)))
 
 class DatasetGenerator:
     '''
@@ -170,7 +163,9 @@ class DatasetGenerator:
             writer = csv.writer(f)
             writer.writerow(["query log", "status", "label"])
             for i in range(num):
-                print(f"Progress: {i/num*100:.2f}% {'■'*math.ceil(i/num*20)}")
+                print(f"Progress: {i/num*100:.2f}% {'■'*math.ceil(i/num*20)}", end='')
+                if i != num-1:
+                    print("\r", end="")
                 if random.random() < 0.5:
                     data = self.normal.getrand()
                 else:
@@ -187,7 +182,11 @@ def get_random_table():
 
 def get_random_word():
     '''word'''
-    return "".join(random.choices(characters, k=random.randint(5,20)))
+    return "".join(random.choices(characters, k=random.randint(4,20)))
+
+def get_random_ipv4():
+    '''ip'''
+    return f"{random.randint(0, 255)}.{random.randint(0, 255)}.{random.randint(0, 255)}.{random.randint(0, 255)}"
 
 def main():
     '''main'''
@@ -224,36 +223,66 @@ def main():
     get_money = lambda : random.randint(1, 100000)
     get_account_id = lambda : f"{random.randint(1,49):>02d}{random.randint(0,99999999):>07d}"
 
-    val1 = [get_session_id, get_random_name]
-    d1 = Data("/$	Query	select balance from accounts where account_id = '/$' for update;", val1)
-    val2 = [get_session_id, get_money, get_account_id]
-    d2 = Data("/$	Query	update accounts set balance = balance - /$, last_updated = now() where account_id = '/$';", val2)
-    val3 = [get_session_id, get_account_id, get_money, get_account_id, get_account_id]
-    d3 = Data("/$	Query	insert into transactions values (/$, 'DEPOSIT', /$, (SELECT balance FROM Accounts WHERE account_id = /$), /$, NOW(), @ idempotency_key);", val3)
+    val1 = [get_session_id, get_random_word, get_random_word, get_random_word, get_random_word]
+    d1 = Data("/$	Query	select /$ from /$ where /$ = '/$' for update;", val1)
+    val2 = [get_session_id, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word]
+    d2 = Data("/$	Query	update /$ set /$ = /$ - /$, last_updated = now() where /$ = '/$';", val2)
+    val3 = [get_session_id, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word]
+    d3 = Data("/$	Query	insert into /$ values (/$, /$, /$, (SELECT /$ FROM /$ WHERE /$ = '/$'), /$, /$);", val3)
     val4 = [get_session_id]
-    d4 = Data("/$	Quit", val4)
-    val5 = [get_session_id, lambda : get_random_name().split()[0]]
-    d5 = Data("/$	Connect	/$@10.6.1.1", val5)
-    d6 = Data("/$	Query	select balance from accounts where account_id = '/$';", val1)
+    d4 = Data("/$	Quit;", val4)
+    val5 = [get_session_id, lambda : get_random_word, get_random_ipv4]
+    d5 = Data("/$	Connect	/$@/$;", val5)
+    d6 = Data("/$	Query	select /$ from /$ where /$ = '/$';", val1)
+    val6 = [get_session_id, get_random_word, lambda: ",".join([func() for func in [get_random_word]*random.randint(1,6)])]
+    d7 = Data("/$	Query	insert into /$ values (/$);", val6)
 
-    normal.append((Row(tg, d1, False), 1))
-    normal.append((Row(tg, d2, False), 1))
-    normal.append((Row(tg, d3, False), 1))
+    normal.append((Row(tg, d1, False), 5))
+    normal.append((Row(tg, d2, False), 10))
+    normal.append((Row(tg, d3, False), 5))
     normal.append((Row(tg, d4, False), 1))
     normal.append((Row(tg, d5, False), 1))
-    normal.append((Row(tg, d6, False), 1))
-    
+    normal.append((Row(tg, d6, False), 5))
+    normal.append((Row(tg, d7, False), 5))
 
     #anormaly data
     aval1 = [get_session_id, get_random_word, get_random_word, get_random_word, get_random_word, lambda : random.choice( ["1=1", "'='", '"1"="1"', '""=""', "'1'='1'"] )]
-    ad1 = Data("/$	Query	select /$ from /$ where /$ = '/$' or /$", aval1)
+    ad1 = Data("/$	Query	select /$ from /$ where /$ = '/$' or /$;", aval1)
     aval2 = [get_session_id, get_random_word]
-    ad2 = Data("/$	Query	drop table /$", aval2)
+    ad2 = Data("/$	Query	drop table /$;", aval2)
+    aval3 = [get_session_id, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word, get_random_word]
+    ad3 = Data("/$	Query	select /$ from /$ where /$ = '/$' union select /$ from /$;", aval3)
+    aval4 = [get_session_id, get_random_word]
+    ad4 = Data("/$	Query	EXEC /$;", aval4)
+    aval5 = [get_session_id]
+    ad5 = Data("/$	Query	SHOW DATABASES;", aval5)
+    ad6 = Data("/$	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;",aval5)
+    ad7 = Data("/$	Query	SELECT LOAD_FILE('/$');", aval4)
+    ad8 = Data("/$	Query	SELECT HEX(LOAD_FILE('/$'));", aval4)
+    aval6 = [get_session_id, get_random_word, get_random_word]
+    ad9 = Data("/$	Query	SELECT /$ INTO OUTFILE '/$';", aval6)
+    ad10 = Data("/$	Query	SELECT /$ INTO DUMPFILE '/$';", aval6)
+    aval7 = [get_session_id, get_random_word, get_random_word, get_random_ipv4]
+    ad11 = Data("/$	Query	GRANT ALL PRIVILEGES ON /$ TO '/$'@'/$';", aval7)
+    ad12 = Data("/$	Query	GRANT FILE ON /$ TO '/$'@'/%';", aval7)
+    aval8 = [get_session_id, lambda : random.choice(["user, authentication_string", "user, password", "*"])]
+    ad13 = Data("/$	Query	SELECT /$ FROM mysql.user;", aval8)
 
     abnormal.append((Row(tg, ad1, True), 1))
     abnormal.append((Row(tg, ad2, True), 1))
+    abnormal.append((Row(tg, ad3, True), 1))
+    abnormal.append((Row(tg, ad4, True), 1))
+    abnormal.append((Row(tg, ad5, True), 1))
+    abnormal.append((Row(tg, ad6, True), 1))
+    abnormal.append((Row(tg, ad7, True), 1))
+    abnormal.append((Row(tg, ad8, True), 1))
+    abnormal.append((Row(tg, ad9, True), 1))
+    abnormal.append((Row(tg, ad10, True), 1))
+    abnormal.append((Row(tg, ad11, True), 4))
+    abnormal.append((Row(tg, ad12, True), 4))
+    abnormal.append((Row(tg, ad13, True), 1))
 
-    num = 900000
+    num = 500000
     dg = DatasetGenerator(normal, abnormal)
     dg.generate_csv(num)
 
