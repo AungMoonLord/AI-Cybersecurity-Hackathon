@@ -11,11 +11,11 @@
     <br/>
     <br/>
     <a href="https://n8nsys.giize.com/form/7ba35445-b45e-4027-bb70-c84243abda6a">
-      <img src="images/try-the-demo.svg" alt="Try the Demo" width="auto" height="55" style="margin: 1rem">
+      <img src="images/try-the-demo.svg" alt="Try the Demo" width="auto" height="45">
     </a>
-    <br/>
+    &nbsp;
     <a href="https://youtu.be/2ONQI-wyqlo">
-      <img src="images/see-the-demo.svg" alt="See the Demo in Action" width="auto" height="30">
+      <img src="images/see-the-demo.svg" alt="See the Demo in Action" width="auto" height="45">
     </a>
   </h3>
 </div>
