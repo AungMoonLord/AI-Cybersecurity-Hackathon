@@ -1,0 +1,1001 @@
+query log,status,label
+4188-06-21T06:02:45.165775Z	99	Quit;,normal,1
+"0527-07-17T02:03:17.345722Z	7	Query	insert into lGoloVXPfJ3_W values (yNCd06i, n5vFlkE, Lt0TOJjLJqv7izx, (SELECT 3woNaFyAFJ7PoQi_3 FROM gHYwXMe6aTTEW WHERE ZidVsUW6GrNbWQDVYXSU = 'KufIqJ'), Rr79OSa6hGGo, Bqf7a3Fde4mjD);",normal,1
+3051-06-22T07:20:02.296945Z	3	Query	select e3mJKDCCY from 7Q8SpG8LLEWhrfpe4s5 where ph4d = 'a1S9hQa92uC1EAyJf2Y';,normal,1
+"3309-03-25T01:51:02.278016Z	79	Query	update GB57YqE5IstJ set Fdeq4cGP6Q_9zamCqMeH = ZS5hty9Tk8hb8cpSIrB - kzON_Pe6y9WGR, last_updated = now() where KUJsf4_3R5-F9AOPJMf = 'jxL-MKorg';",normal,1
+"5737-08-04T19:04:14.242492Z	11	Query	insert into FTAyT0zTO9 values (17KuzKN9eToWqSlIs-br, 9unaU5ivX4, bVdatyI1, (SELECT NNhVvuqIdeBimnc FROM eOEn7D6uuEJVvH WHERE tLgz-_eYC = 'ek_QVV70pqbfV'), 8kVeJf8fFMVA, U2a6A-OP3R-iGXLjo);",normal,1
+"0779-09-27T23:26:33.801027Z	97	Query	insert into 3la9ojSLxPxPO0 values (SSzGQok76JPen7, j3pFIBp, 8TP4NOV, (SELECT W4XOD8_oXJBGVx7P FROM ZX3k71JIBEJl6I6to1pW WHERE -wNur1QnJgjMmJ4K = 'BH9WmATdpWGWl'), NUPBZ26Og_, FEL8aCTS7);",normal,1
+"0175-06-07T05:47:20.335692Z	24	Query	update LpSQb8v0Npy set AZvZvs5E = xUbRqJ - cTc2R, last_updated = now() where l44QH = 'UK_IN7dJ';",normal,1
+6692-07-12T19:18:32.667299Z	58	Query	select Ow0_1INKTCKj9n_B from Hnz8Fm where BM0m-E_K1G = 'pYZyh2';,normal,1
+2563-08-16T06:24:06.461637Z	68	Query	select r2VwSsb2vjhVw from _-QT where NcaO = 'DYby85JRHVEla5QQr8';,normal,1
+"4402-08-24T04:30:52.045264Z	68	Query	insert into 8uWk- values (02xPQ1ws9LneBhIp, l5YBh, EtNlamthfzn_fw, (SELECT mh20bSZAbjBj FROM 3-br7v1FriiJ WHERE hVUSS_4YSXJH = 'Vj5wI'), irqmz6BAYFbmWn, 9YF6xiq);",normal,1
+7052-04-16T06:47:51.642996Z	28	Query	GRANT FILE ON 1lsPos_JiAM TO '-fyhzWE45O2l3roy'@'/%';192.194.103.116,anormaly,0
+9841-05-23T19:26:15.231383Z	91	Query	select byvRaEZRgT0xKT from QbSl where e-dNq = 'HOQVt';,normal,1
+"6765-09-26T05:31:20.912940Z	69	Query	insert into CR6tJR1nNTQ4A7S values (XF3f3NosVagVncL4m5g,QMvFpgd,ii-BHQ2iecVfX,Frqyx,zH9QISfBgJ,ZateE);",normal,1
+3896-11-03T07:11:42.209829Z	67	Query	select FkS6a from 9fGn6ObU8gkG where 0dBb6ggzV14jnfLG5pp = 'seeexa' for update;,normal,1
+"1259-08-07T19:37:29.975779Z	28	Query	select 6OYGGXFuHXL from VcHFz3w where x_0yzRXGnHh2Ma_ = 'F1S7' or ""1""=""1"";",anormaly,0
+2670-11-19T21:24:14.519109Z	84	Query	GRANT FILE ON IFfV4zqtj4 TO 'MAIYRbXh6'@'/%';3.251.222.24,anormaly,0
+4955-04-16T23:51:17.303540Z	14	Query	select kgXbj from eT-n1XMp_9FOhL03HbMV where HOT3NA = 'BKbIpkkMrpPGpDKlma' union select W5zUO from Wan90g5GWGi;,anormaly,0
+6724-10-29T07:39:56.620308Z	90	Query	select 1DI4o6KrKb from 5u3oZEcal6atE where eJ6nUDji43qU5eJ-o = '3vgr-' for update;,normal,1
+1290-01-14T16:41:34.437287Z	65	Query	GRANT ALL PRIVILEGES ON XYN9NhRPvzFJN TO 'p6s-20XefNX1SMkTVfl6'@'144.207.142.137';,anormaly,0
+2567-07-06T11:34:25.211501Z	89	Query	GRANT FILE ON eBjwc_l9U1kcvxCx7vi TO 'S8MqwfFdyx96c_duECh'@'/%';236.18.101.51,anormaly,0
+"6176-05-31T03:48:10.320123Z	98	Query	update yWFjjACSMDyd set KSS51njPirLMK6_3ea2 = tbyM7hJ37U3DMkOZWm - 8UvYxdVYaPul8e8ZI5ID, last_updated = now() where BeTgHgfclOo8JTaWGMNg = 'rBzwc';",normal,1
+6100-06-08T21:26:09.950528Z	63	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+"3463-02-19T01:37:30.131195Z	86	Query	insert into U6_pM3 values (fzxgH-ywJ,jiAm-gdHdiFnsDxcb,UnAB5FgU_sSb,O-d7q,NVsbNxGPR,B-d49H3GdqZ0);",normal,1
+"0904-09-30T24:39:53.058748Z	29	Query	update i1kc_Pohr1hZsRsfv set ID-v_-HIwR = BdAul-1UudGyN4gtFN8 - 60medwwn-RaBZVog3y, last_updated = now() where 3e-7QJm = '7jvumK4bQpD5td';",normal,1
+1618-02-30T23:39:14.819219Z	78	Query	insert into 6P-BAT values (gsU5fSuUswFXcrF_);,normal,1
+4984-05-27T09:31:35.455757Z	7	Query	GRANT FILE ON Eyyl TO 'tL3K4bE'@'/%';73.48.151.112,anormaly,0
+5411-01-07T01:54:05.646061Z	11	Query	SELECT * FROM mysql.user;,anormaly,0
+"4071-11-23T05:48:50.859453Z	78	Query	update aB1qjsR1SsaG2I set flqqzxOLUX7yjci9 = GgRYc - GKYe6AZ-9G7WwYqxE, last_updated = now() where ThITaZhYs1zdwkIovYNb = 'DTafRswup';",normal,1
+9856-11-06T18:27:24.920129Z	34	Query	drop table OAYxeD0vEB7o;,anormaly,0
+3075-10-08T11:35:49.934603Z	82	Query	drop table BuGQmUKgrS;,anormaly,0
+8570-07-18T23:36:48.478302Z	34	Query	GRANT ALL PRIVILEGES ON FrGMQtBpRAr TO 'YaYZR55Kdk1vc'@'156.165.222.86';,anormaly,0
+2051-04-02T22:55:56.773239Z	71	Query	GRANT FILE ON jtZNGhQk1mzFNi7FM TO 'J3dwfAFVNT0BQfQr2Oe5'@'/%';34.187.74.197,anormaly,0
+8248-07-04T13:21:41.832524Z	17	Query	GRANT FILE ON cAfbRpMHF2WmpuJy TO 'vXYARjsM'@'/%';63.150.101.215,anormaly,0
+"8805-12-28T20:03:00.265243Z	48	Query	update luX5b7Ai6 set vz42Ko6lgbA4 = 0H6MnZL-ZxMQn0 - lUbUdzYzo9rtCPF, last_updated = now() where BXyVt3ItamJOSprf = '0oqLE97rKa';",normal,1
+"5061-12-26T02:47:16.017933Z	76	Query	insert into l7wF9cf_UAICa values (uYlm2Y6hjMUUu,d1nssqb62f_eke3701);",normal,1
+8443-11-28T03:45:59.648997Z	29	Query	select y4DkZbxzyrSbmfe from NAtm where BTPs0YlEub58lqo = 'EQLHEqd17pvk84' union select 91Z9UGzLviP from wkovSu2qqAubzmHyM;,anormaly,0
+8062-08-07T14:27:48.197362Z	58	Quit;,normal,1
+"1271-10-24T03:41:39.186040Z	11	Query	SELECT user, password FROM mysql.user;",anormaly,0
+6073-12-10T09:17:22.163690Z	44	Query	select lf0i from a-fgjo0p where vi8ROd-gvkzXDc = 'Nskoo8JbdFNye-tk4C_H' or 1=1;,anormaly,0
+"6595-12-19T22:00:43.408160Z	79	Query	insert into YoP6FY6DuYop values (9Tb2vrQ46N6G99_kzl, kmjS0ZU, 63c_2Wu9T3oXu, (SELECT A-N8Tl1 FROM iPSG4Ai WHERE VE9l544vEA25VN3MQL4b = 'mBPo5f'), BtPqGCb3QboqlZSf, bInaOlfdv);",normal,1
+2985-01-27T11:21:16.667281Z	59	Query	GRANT ALL PRIVILEGES ON -fCtCO2YXDO TO 'xMM4zso3p9n'@'113.39.54.11';,anormaly,0
+1630-07-31T04:01:08.507866Z	23	Query	SELECT QMR3KzXlnk7-R INTO OUTFILE '2UCJtiaCiDDahcx';,anormaly,0
+6748-06-01T24:07:43.081513Z	33	Query	GRANT ALL PRIVILEGES ON 5THAcs7 TO 'nmfbHz6skssytFP'@'220.105.100.223';,anormaly,0
+"3420-08-03T03:25:34.383381Z	4	Query	insert into GjY4RHxmDxdg1Ax values (bJY8zI9RYcIUda, RsDhtbwGtISuG0j, 0zL7rfbN3_sxU0MpI, (SELECT H_6vCrOBkDJxxd8F1 FROM 4tz1ssckWytsvJPje6KS WHERE pMAVPlMWgpujm = 'qmM9XMysy'), uoiq, 2aIfcGlik);",normal,1
+9394-10-17T21:25:38.917417Z	37	Query	select zK6CMeD from XTmfUFc4t4ZuLUn4 where kogt0 = 'oH9aG2xlrP94AASq' or '=';,anormaly,0
+9800-10-20T17:03:17.182815Z	51	Query	SELECT LOAD_FILE('sx44');,anormaly,0
+7817-09-19T12:36:38.748946Z	36	Query	GRANT FILE ON 6HawMJ0VC TO 'F_XNo7s8'@'/%';239.127.121.178,anormaly,0
+4334-11-29T19:33:39.624763Z	80	Query	GRANT ALL PRIVILEGES ON Cjla TO '8tC3vf-dFYsyRh0fNcc'@'222.155.14.19';,anormaly,0
+"5912-01-06T16:31:48.588820Z	22	Query	update ssw9QnGdb6kVpxQJjHa set OTOuFlK = rmGW0pQcRWTq5 - _fMLAK6u7A2YMqyMxBF, last_updated = now() where aEeoeuNGdXAjgZzay5 = 'ZuwVsUe6vmTLzcmm-';",normal,1
+0331-11-20T09:53:59.443114Z	45	Query	SELECT ZBjdkTE INTO OUTFILE '01vZb60';,anormaly,0
+0348-09-23T12:10:34.286540Z	37	Quit;,normal,1
+0262-06-16T16:07:48.092272Z	35	Query	select urB4L3n61HP from 49fa5pK89n3O where Oz_ys4h3wN1aC = 'euTVbqqW5b';,normal,1
+9966-03-30T19:46:10.035113Z	57	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+"5416-02-20T05:11:59.516204Z	72	Query	insert into Natj79BUiWNfj values (BbgfFBvMdAP5, 7Z1C0aQHhRqTtyjkk, a2lB201UEp-twm, (SELECT rhJNwZCVNvqc FROM YuLNqIf0E-i6QS7ds WHERE HAY-rwb0OgfCab = 'jDE2WE10br'), uABvebDQRwHcTI1-HR, Wwzs4qv1f);",normal,1
+"6627-04-06T23:43:16.178259Z	5	Query	update ejBN set _FHd2f = cH5AQfOiWwzZvZiZY4u - RLxW, last_updated = now() where hJnZwE6Xg9i = 'O0TfdZLXBZjo2nV';",normal,1
+8151-11-25T06:11:20.442372Z	13	Connect	<function get_random_word at 0x000002592670F0A0>@117.95.10.173;,normal,1
+"7400-04-17T16:34:30.050158Z	23	Query	update R45tDQ5BZYYe set VrhR = Zwd2M - YH0mz7, last_updated = now() where -CGCu5dbfCZ = '2P0Ce';",normal,1
+4744-08-09T24:47:49.493836Z	4	Query	SELECT HEX(LOAD_FILE('FeOA32lxFlcDhZU5YuF'));,anormaly,0
+9710-08-03T11:50:00.662204Z	41	Query	drop table Xgnjnunm69fVge;,anormaly,0
+5356-02-16T04:54:58.961149Z	9	Query	select hJZMvuJ- from uZfUqzAIp-hVVn-wW6 where Vuw5A13M- = 'yCC_9YJ';,normal,1
+9248-06-01T01:04:04.794160Z	1	Query	select e3ct from YtF33saZ_hXgOJ where Zn9xO6e_k-dFzV = 'CadLeH' for update;,normal,1
+"5928-03-18T04:28:52.628470Z	75	Query	update 5eDV_yRupMYK set 2Ru-iEwW-bEs4t65 = A06PQIOA-jqlrEmfeEvg - x7s_, last_updated = now() where yveZaFFtN = 'Q5DY1NieA';",normal,1
+5608-12-08T02:17:40.784635Z	77	Query	select j2tKcAsVs from KK6-mXS where -3GHhLz_Zw = 'SfY4w';,normal,1
+4156-07-14T24:37:33.471772Z	11	Query	SELECT 5l7avuieUZxdQl INTO DUMPFILE '3Nuf7O';,anormaly,0
+6414-03-18T21:52:57.577521Z	1	Query	select ZOVIfcy from E7JaKMTuOz where VLH_XwZYGmt4s = 'Bu8Rd7XIDmX5' for update;,normal,1
+6446-10-12T01:09:14.620245Z	32	Query	SHOW DATABASES;,anormaly,0
+"4253-06-18T17:38:01.983255Z	13	Query	update 6zgI set ZUe1VEgV = UllRBmBYRG - WiXkNMEJbg, last_updated = now() where 2RIR1j5yHQgG2 = 'DlR84NIV';",normal,1
+"9880-02-31T07:19:12.856122Z	17	Query	insert into rr2XSZcRfqo45 values (VU3pqBo_2GQWSLDE73B, dw2aynCyRER9bVNg8h, QRSDj, (SELECT XlehNtztH4YgB FROM 4DnJL1QlxWeq_1nlHrx WHERE 4u5UqKoa3pud9lIMfCkk = 'g5Oo3DLNwXOYx6E-'), Jj4JEy8lyYS1PLs-K, XD7sefHX41jkL);",normal,1
+0652-05-28T01:59:41.873255Z	91	Query	drop table aQxjP8PJwsFSsq;,anormaly,0
+4686-12-05T14:24:34.359138Z	59	Query	GRANT ALL PRIVILEGES ON yND_BvK8au7pOWr4N TO 'CWsK9PFlgOBg'@'150.162.26.1';,anormaly,0
+"7842-12-06T17:40:45.215369Z	48	Query	update EJ2qAxD0Db set l6-lYabDRRRKMSn-jl7i = 5uPDE - MYkexflZ8kgbXQY7Ai, last_updated = now() where Eab15 = 'xLuhhbMp';",normal,1
+"7701-07-27T07:14:03.626408Z	33	Query	insert into VFu1LjWZkuwE3B7JKodT values (GPLWGJQSCv2t, tn3pobrD, jb3uGTM1_q-SWRwZO, (SELECT 9mOQ0KoJsgUAQ_CH5 FROM b4XAaU37a_O WHERE 4ZbJ = 'Ui31U'), FR8Na0ia4Ot8P5, N8zBR_VWBZf08lhb);",normal,1
+8163-08-07T06:41:50.316456Z	8	Query	SELECT hiZ-7JQmFtW INTO DUMPFILE 'wAEthUrzFfDCY1iyYcf';,anormaly,0
+"5465-10-03T10:23:59.951061Z	39	Query	insert into lO1EiEJ7Kqu values (cIq63Ryt6S, B6duQPxzvi, -cMSI5PiZBPs-8cw, (SELECT 6hub5k6ZhBFw FROM 5qlCbhoCGDbiUddmn WHERE h8g66x = '3_2X'), dDSkaUthJ3, niIlE3QelXSD1bXWy);",normal,1
+7259-05-25T08:05:10.456563Z	21	Query	GRANT FILE ON 6wyTMcYiDUnlHs TO 'NAe75r52hxjYU'@'/%';107.57.169.59,anormaly,0
+9472-08-23T11:20:24.675137Z	17	Query	SHOW DATABASES;,anormaly,0
+5872-05-03T11:58:40.436298Z	8	Query	GRANT ALL PRIVILEGES ON hF5Edn5PF_og TO 'pIa19yEcdG'@'76.155.63.64';,anormaly,0
+"0290-02-09T10:18:47.694066Z	93	Query	update DaH6ILdzL9BjratIugP set Z9FOhY8 = RXl576BZV69j - 4Tmfs3dJAg, last_updated = now() where DzQ-SFSGlU3zGu = 'Ph6UzM';",normal,1
+1515-11-15T24:08:34.003158Z	78	Query	SELECT HEX(LOAD_FILE('H0SjDUGI4NoowVK'));,anormaly,0
+7839-04-31T04:29:36.486771Z	36	Query	GRANT ALL PRIVILEGES ON L-zO7W_BVYYz TO 'PSk-rtyIF'@'209.248.72.19';,anormaly,0
+9993-06-25T16:30:46.312907Z	58	Query	GRANT ALL PRIVILEGES ON Q5RJ TO 'YVmS0fU'@'236.57.173.201';,anormaly,0
+"5769-06-27T07:46:06.085705Z	29	Query	SELECT user, password FROM mysql.user;",anormaly,0
+5944-07-05T21:26:46.029939Z	76	Query	GRANT FILE ON -XbHMSqJQXRmJE3SD TO 'jbiIOKD5Y7-YSlIy'@'/%';28.135.107.134,anormaly,0
+3312-09-27T11:01:33.872311Z	78	Query	GRANT FILE ON ObGePX3D1 TO 'qf9yts4dvqY'@'/%';255.78.197.174,anormaly,0
+6326-05-16T11:37:16.097563Z	86	Query	select IvCVdKMONr7rCF from 0L9o942L9DWkSpfY- where eWQpnt7jMxCXkrLgo = 'y8ybIKpIG5Ji' for update;,normal,1
+"2251-09-24T11:46:24.463803Z	36	Query	SELECT user, password FROM mysql.user;",anormaly,0
+4066-11-22T15:28:31.708632Z	18	Query	SELECT HEX(LOAD_FILE('w851'));,anormaly,0
+"0682-05-27T03:41:05.686749Z	9	Query	insert into mrwwKg_vSVlaqZu values (KdArXJ, 6NSLyXVSPTeZfoc0, YT89xQLeH96Ix5MANiLB, (SELECT 2XlHBpNhfdJh FROM 8l4W2_mDGBuBwOjo2g WHERE l7rSYVhANBL_0M4YZd = '_6vtv-abWiSzXacSMV'), uB0njXTBZG-0Bj_Iv, sSKm);",normal,1
+7335-11-30T23:04:48.117193Z	24	Query	select e2_H0Hx6TDp7IlRpCG from NQXkITsypQdLA6By1 where fsilDUg- = 'cARSHi94mLn34dZ' for update;,normal,1
+4369-04-25T15:32:55.264890Z	7	Query	GRANT ALL PRIVILEGES ON LHmF6cXJtYMmpaW TO 'QW-acA'@'207.128.130.187';,anormaly,0
+"3212-12-04T07:43:24.621885Z	65	Query	update abZUiV4hNfeBSNZcC_x set qAfGGq7pc = wm8PqVEXZJP8t2 - Ka8e, last_updated = now() where EE8_gO5 = '4mDV';",normal,1
+7078-12-19T03:09:26.295482Z	98	Query	SELECT JCOgs INTO DUMPFILE 'ZJm7sX4';,anormaly,0
+2080-03-25T11:34:53.248208Z	82	Query	drop table 2K8SAWyCp;,anormaly,0
+7540-02-07T11:59:20.255009Z	35	Query	SELECT * FROM mysql.user;,anormaly,0
+0320-08-19T15:45:59.953099Z	4	Query	SELECT HEX(LOAD_FILE('N690Wt6In4Tm2_Pp'));,anormaly,0
+"5149-06-19T02:19:02.334969Z	30	Query	insert into Xf1SfxeSF8 values (fUSDP5KUOqQVvPs, 3fumL80iqT60tjb6kuxG, sdPPa_qFoa6, (SELECT XFaypy116vBJQVbbcX48 FROM yUzPCHYJ2TsBvZ WHERE _qp4nzG7Caiu51ueNUV = 'Vbqw_s'), mIp415yMly, SZJRU);",normal,1
+5823-10-28T09:08:45.393641Z	51	Query	insert into RqIYQ values (CJfYHbC_W4);,normal,1
+7897-02-27T06:29:41.406152Z	79	Query	GRANT FILE ON XeepzQp TO 'vfoGSdv'@'/%';49.101.121.50,anormaly,0
+"5871-02-29T11:45:28.114185Z	38	Query	insert into 2lY0IclfXt values (KI4Qgi7ovNuwb,5ob61W);",normal,1
+2734-05-29T04:00:09.257966Z	35	Query	GRANT FILE ON 1-zYh TO 'bRw1'@'/%';193.252.106.41,anormaly,0
+4828-02-18T18:59:57.367580Z	66	Query	SELECT jEen3K INTO OUTFILE 'mJi4Qnbmv6pqL';,anormaly,0
+2431-09-15T04:37:01.641989Z	86	Query	select 8Ew1 from 0rcn-Qg2FnV where _oxL0FdP2Alw = 'sVGndY';,normal,1
+0049-04-29T18:23:14.924651Z	53	Query	GRANT ALL PRIVILEGES ON RCKao TO 'H-X4'@'239.168.143.17';,anormaly,0
+9053-08-13T05:58:33.818933Z	62	Query	GRANT ALL PRIVILEGES ON i3u33mgqTCzRV TO 'uqDQApO57ktfc'@'57.118.56.8';,anormaly,0
+2003-11-17T19:48:53.433316Z	2	Query	SELECT 4bVUED- INTO DUMPFILE 'Z7A6VvV3_';,anormaly,0
+0749-10-25T10:43:56.870814Z	4	Query	GRANT ALL PRIVILEGES ON VnvlOaTwrYk_ TO 'sSvg40CNGOau04Ng'@'208.33.243.141';,anormaly,0
+0796-02-04T07:57:25.524888Z	77	Query	SELECT LOAD_FILE('crri22-s4Q');,anormaly,0
+4505-03-10T09:05:11.529436Z	90	Query	EXEC rvayOEad670;,anormaly,0
+2706-10-12T17:18:04.081111Z	52	Query	EXEC e5IJhMDN2;,anormaly,0
+"4168-02-21T12:01:58.800835Z	78	Query	insert into Vn0Ob values (TAxAy,JpzVKemAtGNEMsNpIeak,GjP_ap5ra5UDW);",normal,1
+"3609-03-30T03:06:14.695319Z	29	Query	insert into EPtFISgz2fGIdL7mAICK values (YWqsjA9v_, xA7A8xbd, XYTADCDfYd, (SELECT d-7MNmPVUruyoA4dp3R FROM jRBnQZl_rQBiHCAtpQ WHERE 2hFYm = 'erEZO'), F42zDY, iVNc2eXfEaL_KR3QumL);",normal,1
+5196-03-11T22:30:51.072407Z	13	Query	GRANT ALL PRIVILEGES ON mu2i TO '5x6zzLs1g'@'133.26.29.82';,anormaly,0
+"5617-05-24T21:28:05.392991Z	31	Query	update 9BCCN7tjEJRH set NbYLJj8WnIzX = OO9_8kB - BI3djLp25lriO, last_updated = now() where crRseYoQ6el64A-W = 'SfLPyw65EVRYS';",normal,1
+6403-03-29T20:54:49.556236Z	44	Query	GRANT ALL PRIVILEGES ON d0cq0GBblQ TO '892kx'@'80.29.211.89';,anormaly,0
+"7560-06-08T21:57:56.688820Z	65	Query	update JdIsHXHd set rnisb1zt = GFDg1t0J2mbo - 2mwL, last_updated = now() where N1HfJUaa2 = 'lRHtibW';",normal,1
+"9996-05-07T03:39:49.468878Z	88	Query	update IeFsSY set NdOhLh4-WrA = gnOYnV6mHxHdp - ZZmy8da_xaBgUJB, last_updated = now() where 0FG15y = 'LPfUDL2tEpG8fSRa';",normal,1
+4534-10-08T12:27:50.401235Z	65	Query	select K2PI from Gnfk6dR where I7ogYCtqs = 'XHZE90cUm80';,normal,1
+7797-10-23T17:38:45.196204Z	73	Query	GRANT ALL PRIVILEGES ON 4xQs2U TO 'wgDHw9p_C_Suy0EzVbU'@'85.128.192.250';,anormaly,0
+"8287-02-11T15:12:40.989468Z	9	Query	select DBpP from Ck5zARjGUfOf where Ypg8au6JUdfx6EYsO = 'tiRmv9ba' or """"="""";",anormaly,0
+"0798-08-23T02:49:08.949413Z	1	Query	insert into TtCkrb3RFsuar1i values (eL2gydFvfDfw,ssL9lF,tqTXR8BYRvI);",normal,1
+2271-05-06T15:06:10.024891Z	2	Query	select hvKxeMvdb3SaZgjS from V6dDt2N where _xCKUrWcibZVxtjg = 'u_6d';,normal,1
+3498-03-10T20:09:03.897913Z	95	Query	select p7T5a0KDYzM from IHRas6EqfIhh0xiAXF where Pdv2R = '0HCIjDJOdpx2';,normal,1
+6270-07-20T16:25:11.003453Z	81	Query	SELECT I1K_zaNdVEJv INTO OUTFILE 'JJAN';,anormaly,0
+"9372-03-19T23:41:19.702712Z	16	Query	insert into 0CC2hA values (R_gGzCBpaJo9PE,uu0xM,s5xFM5F);",normal,1
+6902-07-26T04:14:11.859242Z	80	Query	select OL4eGtyNPUao0XSfg0 from L7gLT6s0SK where cNybJI-gGJE7 = 'e9kLilGP5mdUZY' or 1=1;,anormaly,0
+5489-08-03T09:09:31.406418Z	98	Query	select Tl8Rge3okZ from xvZDIMw where F6qcKqO = 'TBiCr0KRYBh';,normal,1
+"2832-04-05T05:54:42.075142Z	83	Query	SELECT user, password FROM mysql.user;",anormaly,0
+5580-01-13T17:19:00.728719Z	72	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+8950-07-29T07:59:43.588486Z	48	Query	GRANT FILE ON 5sKOd-Jz-voDzqEAB TO 'SntKgzKR-M'@'/%';245.142.128.246,anormaly,0
+0275-02-16T17:14:19.193113Z	84	Query	select _8HosYf6lH585Ue03 from unT6CLBO56W-ZpxK where F_tZ36JTVM3msq = 'A050oNJgXOZ9AaRB';,normal,1
+5428-06-09T09:18:56.868068Z	74	Query	GRANT ALL PRIVILEGES ON CEoAyJyDC TO 'sSi7BepPd3kKO67XqL'@'191.83.9.203';,anormaly,0
+8177-04-13T15:42:32.335142Z	11	Quit;,normal,1
+"1407-09-20T07:54:00.786046Z	96	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+9644-01-20T21:12:02.603024Z	93	Connect	<function get_random_word at 0x000002592670F0A0>@182.213.106.250;,normal,1
+"1964-12-21T20:18:36.193638Z	53	Query	insert into gZejeD5KQZ values (mdzZomVuI, DLeE_9QvrbWci, AiaXeaLf4lePV1O, (SELECT 1eY8T1 FROM XpnTghIBsF_dJ WHERE FMKpfO807zcT = 'jA_DrGv2'), Yfrkt1CJ0swZ_MY3fzEh, ALnGHjlVYTRO);",normal,1
+"6993-09-27T16:41:55.996886Z	40	Query	insert into b9mFTU- values (nxDwxpktpEVNWe9, LaZzzqddSTQf, mXC3_P0__j3, (SELECT iAmJz9z0ux FROM F6z4wlBW WHERE Ob3sg1yB = 'yeQc0RJsdWu'), uVJ3_N_, 7hIDpeajPkPf1oD9g);",normal,1
+"8552-04-18T19:07:15.096457Z	83	Query	insert into qyPDTY7D5NybBblWQ values (pc1GM, CnLvW_4PADOxa2Jd, 0b3eDG1awfbZowF-_, (SELECT xQTSv8ND9-DG FROM 1FkZSMzDYJiVmVH0q4T WHERE R47- = 'cxiYcmJbBtP'), XX8tCZklyP, KPP45SCQEe_ebUeh);",normal,1
+"3720-06-04T11:05:21.693936Z	38	Query	update dmRTBsFj set z86MXYF5 = AVRJ4R83COFV - 2_XT, last_updated = now() where uUF7LR9lorKIBpqFV = '9Lg-lL2NWcRKZOL';",normal,1
+7416-11-07T20:10:25.935163Z	5	Connect	<function get_random_word at 0x000002592670F0A0>@214.7.209.40;,normal,1
+4174-06-12T09:06:11.016261Z	52	Query	EXEC 5bCjTDg7MR;,anormaly,0
+"4586-07-12T14:02:56.111707Z	18	Query	insert into jCMOZplMnwRjKXSS7l values (EABGNWuAz7,lDmcwF,2SB4P);",normal,1
+7526-09-10T09:58:36.052051Z	22	Query	GRANT ALL PRIVILEGES ON NLKUuc TO 'vIjYlc0S2iuVy'@'89.133.189.240';,anormaly,0
+"6378-08-05T06:08:38.606926Z	25	Query	update qLtpMJWx set mG6pswPE0OjPQ3AjhY = FCVp0TSAO0AK7tjPc5 - AMHBJXSG, last_updated = now() where GGWhcS = 'UDYkD';",normal,1
+"5813-02-10T03:06:17.277416Z	65	Query	update pGs7bj8gz set aENYPdlvSEMb8Vb2_r1 = aZcOmLhlDZLy - O6ZNxAFIM, last_updated = now() where Horo6xxJKB8k8tuWoc = '1oR_NbN5gE79k1j5i';",normal,1
+4393-06-09T03:07:33.677006Z	77	Connect	<function get_random_word at 0x000002592670F0A0>@111.56.78.110;,normal,1
+"1737-06-25T03:04:44.804667Z	30	Query	insert into 8W4NYqY values (SG9pX, Vfk0L6jwC9FK, _PiLl_my3wOE59gF, (SELECT mENdf6K9gqIciGS FROM sPLfiavM6jNn WHERE Ub3bFZY1RRe3W_lZ = 'HLYPkiuF8sdG6HT_3_o'), mPHAIYrgM, pc57s4AwfTjPjmd);",normal,1
+"2091-05-04T01:47:16.484185Z	52	Query	insert into NMo1hcu-xAnYS values (0J2YtyDgsD-YOg, 5JcBujIYcpro, DLp1Kannoo6qI, (SELECT N_zej FROM exnDGSkR7hk15Hx0ZMVy WHERE KDqq = 'GY80k'), S6SGI, KKmt0s);",normal,1
+0356-09-19T24:05:31.512203Z	94	Query	GRANT FILE ON T_SO TO 'LJjZya'@'/%';186.82.185.250,anormaly,0
+"3342-01-10T16:25:02.222036Z	96	Query	insert into MIDCu values (3MR2y, 7NYmHFpJYTykSTJg7, 9zuUrLu8VNxg0YuANS0, (SELECT ak1Ir-txMkwk7sEi FROM WFgDGpXZsZY_d WHERE 1QepJ9kcrNnKgCq19 = 'ta16p3i51jk'), NQchJB-gY-3E, 36tVphzdVi);",normal,1
+5388-02-14T09:33:39.152647Z	91	Query	insert into iKIdkW8vQcOLR values (wuXsR2aAe);,normal,1
+4055-05-02T11:50:56.338718Z	45	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+"8954-05-16T21:00:48.641300Z	10	Query	insert into 6KmJHshlBA values (nBkxS5V,Ju9f0NmGk7WC3rtu3C,losPnOGAfYLsXaVpSq);",normal,1
+7858-03-13T09:48:53.918045Z	31	Query	select 0biX5AWmYRQz0nmGam from o5v7XNcti4_G where zxUiB3qy_m_MbDl = 'rEZv8kl-Bw-' union select XzK14pQi0av0IAOU37ED from HwHcttuj;,anormaly,0
+0533-04-31T24:19:22.317239Z	96	Query	SELECT HEX(LOAD_FILE('kFZsYp6th'));,anormaly,0
+7055-07-16T17:48:31.453779Z	68	Query	drop table Ma449_-n;,anormaly,0
+"0532-09-31T15:25:13.448366Z	46	Query	update JXfojUFzJS set dyxM = JnN4u-56FWc9KMJTL0F - v-aT0JpOJ, last_updated = now() where aFqtW2vvpf_1Li7-YZ3 = 'SEecPbmqUZcbNHzEe';",normal,1
+"3047-08-20T12:46:54.197181Z	89	Query	insert into r53TabuVa8MYmxP values (ixZE4F0IfCpOuPQA0e, 3_FLxjSNPH2f9rduyz0, pj-pGZBBJh6dlMaL, (SELECT hSkr FROM kwSzq0-BRB WHERE C7VUxnDol65eJmbyLIS = 'gmuIEL8L965'), y0Kn9OeXixI2X8GJ3, -rt7GBS9ATzd1AgrAx);",normal,1
+"7114-04-22T24:43:42.516065Z	64	Query	update yCtX5hppZBwXm set ef9zKDiV-h5e = 88idPc - ttkiwRm0UvQpdg5JVT, last_updated = now() where w163ZXe85ymdH = 'mrboF';",normal,1
+6036-08-07T24:13:46.539781Z	85	Query	GRANT FILE ON geIsXpI2DpF19M TO 'nQKpO89Ggga9_ky'@'/%';188.184.23.52,anormaly,0
+0428-10-17T05:37:36.224033Z	14	Query	select Tly3NiiQvht8G from 9aU9flzCucM where 9LsV = 'rXLkEHhp';,normal,1
+"9559-05-06T14:12:32.430979Z	77	Query	insert into 7A5qQbCbyzPfufHM4k5m values (1Q2En8VqLktHLJdxay2D,V8l3WU8kLmi0aBa9vl,BO3z5FGrDqCz);",normal,1
+7429-02-30T15:59:50.894221Z	97	Query	EXEC D585hLWRSLjCtD5_oN3;,anormaly,0
+0020-01-23T23:58:22.620449Z	54	Query	select 9FwryK from q4SxF where 3GETz6UslHUqTA = 'TArnwl9qNFGtQd-fh' union select 0txeoXA33 from mVNE7gxmpy4C5f_77;,anormaly,0
+3000-08-28T04:42:42.979465Z	85	Query	GRANT ALL PRIVILEGES ON ks1Et2zGL TO 'fQM20GfA_'@'221.17.46.108';,anormaly,0
+"2485-12-24T12:31:22.817897Z	51	Query	insert into br9C54C3 values (4OMXZ, cEHfx, zO1dKofaF5NDGB, (SELECT Mj2lIE6QewgwKqlq35G FROM 7--_M3VviPyQ4j WHERE YOunKQOx3pSVM0QBuM = 'uEuShWeIiqnt'), J5zQu-jr3D, st4_udSt);",normal,1
+9039-07-25T15:39:21.616396Z	52	Query	GRANT FILE ON 1pkcjTlSZ TO 'Pj--Mnb1'@'/%';16.182.193.173,anormaly,0
+5920-03-25T16:53:00.715502Z	93	Query	select G0SRmtVeTuBSI from mfzoK9NUJNMl where uTikhkhqymarkU = 'KghYMl5WZRBQXHsbJ6V';,normal,1
+6877-01-14T14:12:55.345425Z	93	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+4706-02-20T24:57:12.180587Z	16	Query	GRANT ALL PRIVILEGES ON VUmh TO '3bIyt'@'173.172.143.224';,anormaly,0
+"4680-08-09T12:26:58.691969Z	64	Query	insert into w2NwTj6ml9 values (vAWCRgV,Dva7FawIlmzh,Yvprmh8n8RrkNmpN,NMgeDNsO);",normal,1
+"5895-01-20T07:24:43.933681Z	44	Query	update WFuDxMjil_oSQ set uvSshiCM3rr0 = tlFRaEZ1FT0jiX - F96m98iev-jOZ, last_updated = now() where 7zx8iFpeNsI_ = 'fs0OimP';",normal,1
+6754-06-22T24:03:35.196471Z	5	Query	SELECT e9DtG_mcj INTO DUMPFILE 'lVIsJTslghPH';,anormaly,0
+2062-08-13T06:35:23.171314Z	60	Query	select W8oqph0yj from Ruhw2 where a0CcKA1WYB = 'r1R3lKwCJDchwPi4h9' for update;,normal,1
+4715-07-14T14:40:31.901793Z	33	Query	SELECT LOAD_FILE('3q-sPTwcaXEH');,anormaly,0
+7581-04-10T04:25:11.447663Z	96	Query	select UH6i4 from KuFrjAakLCs where IebMH_isEDFF = '_IWQFJrbnFvBJX' for update;,normal,1
+1242-03-30T19:14:05.219046Z	42	Query	select mprFvf3ElZ from fn_yv where 787dIvjT-HzX-Oo = 'd1mJZ3' for update;,normal,1
+4763-04-14T06:27:34.520400Z	7	Query	GRANT ALL PRIVILEGES ON -XKKE1newDHAUTuS TO '4lQhvT4AeM_b0HxBcq'@'120.7.113.172';,anormaly,0
+"9144-07-28T23:05:20.961732Z	72	Query	update umDPT3O set wt5u-gDCr8Rq = NqBNi-ANC - Bqny_JYLezi_z, last_updated = now() where qoUjVC0 = 'yr6fxNNFwVX';",normal,1
+6374-01-15T13:58:56.742380Z	53	Query	select lMQ5an9UnUTJCQWA from mcvkk where bY4rqGCtovXltu0YI = 'eH2wWVzJDZd7tSP6qrH' for update;,normal,1
+5412-04-17T01:50:25.677725Z	68	Query	GRANT ALL PRIVILEGES ON nRMvDH-pFKrjLFsml3p TO 'lCBI1q'@'44.7.189.120';,anormaly,0
+6096-06-20T15:52:22.475734Z	92	Query	SELECT LOAD_FILE('vYaZLi9994kRL78OwEOL');,anormaly,0
+"7307-08-14T04:50:21.746143Z	6	Query	insert into MIBvSlOcxi0xbsV6kQ values (L0VtFBLYi, KL4uxA, ndFPdc3Uq8lTzu3424vd, (SELECT oX8b1hu FROM YF0XEcYj1uho WHERE ho_6 = 'ChShxt_a0M4yvTV'), -jlenKNakj, I8n8NU);",normal,1
+"8703-03-03T04:14:34.016058Z	18	Query	update ibiuRvF set yTbEIjHMXZ = Tr7xLZDksk_9E - Nig2RIsKAm2, last_updated = now() where -bZADKjbWCzB = 'IFSvMQipA';",normal,1
+1510-11-29T05:17:50.272895Z	8	Query	insert into uSwNyOW4Ltc values (zdNV3);,normal,1
+7269-02-29T05:50:56.313549Z	88	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+3051-07-30T11:56:57.211512Z	2	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+0361-10-28T17:18:55.439384Z	31	Query	GRANT FILE ON 7btkAi2 TO '2vWJWFdVb'@'/%';59.135.95.210,anormaly,0
+4507-12-20T22:19:04.225786Z	78	Query	select MDHrRV from XfdKngcxRP3gpC5A2V where N0m35zUUhsDerrODN2b = '-4CoCc87h8LlkBo7z-' union select hrhh from dK4DPYlxonA7mMxe;,anormaly,0
+"7846-06-13T21:23:50.986161Z	44	Query	update pw3_pMqfBXwCzW set QrZvgzqqaxfFnRYPlZ9f = v84dSy9lWgbYztOpWTB - TOWm, last_updated = now() where tDHsgE7-kM3XLgXYdm8z = 'ik8q-81lZfJtgdmd20';",normal,1
+1036-11-12T12:51:19.025657Z	32	Query	GRANT FILE ON 5VrBRFVcXO6 TO '_feNfQZ-T'@'/%';2.93.132.140,anormaly,0
+3477-07-19T12:30:02.643916Z	20	Query	GRANT FILE ON cjQKkfzUsHPUn3 TO 'cvtrmm-i'@'/%';218.162.45.127,anormaly,0
+1695-05-24T23:33:04.154689Z	48	Query	GRANT FILE ON 14X6 TO 'b9tFJIwrat1C'@'/%';130.175.101.174,anormaly,0
+5186-01-29T23:12:16.295495Z	54	Query	GRANT FILE ON oMPB_t TO 'KDYUHhWkhYtjKZd'@'/%';188.40.45.211,anormaly,0
+"5726-11-05T09:41:14.351574Z	54	Query	update Kpp2NIESPY set 6hpET3Fdq = r6qZMFO4QZsH0RrG8 - I7z3wJrlldn, last_updated = now() where Xehd5QscK46wbX = 'EAV2jlOYqVLamy-umRzJ';",normal,1
+5295-05-02T18:37:31.170976Z	18	Query	SELECT HEX(LOAD_FILE('vb2r'));,anormaly,0
+4095-06-05T09:21:55.894302Z	96	Query	GRANT ALL PRIVILEGES ON 9QoAuGk5O9ONH7R8KKDM TO '3yFnJ9rle3Z1pG'@'20.132.185.114';,anormaly,0
+"0554-12-29T06:23:04.275918Z	72	Query	update S0zzH5wxB_ set ZGlWkKFm_8xmvAOXocq = h82YUP5ZjWzwb-urEB - xvij5wcAjfzLwFx, last_updated = now() where zJKkOV = 'cFchd';",normal,1
+"7209-01-04T10:59:56.975766Z	15	Query	update xi8JWwwA6hW2 set E-4UbUY_J9t = FkIsqD2Fz55 - RYeV, last_updated = now() where 7RiPXNcZnO = '4H-uA';",normal,1
+9313-05-14T19:57:10.771673Z	52	Connect	<function get_random_word at 0x000002592670F0A0>@120.184.29.102;,normal,1
+"7331-02-01T16:34:31.150351Z	69	Query	update EsH71J set sIfmR = O4gcMfvkn8-T - cIhO208UZ3asByHYr, last_updated = now() where IEI7U3R = 'aF3bXpC';",normal,1
+1610-05-12T19:48:35.145768Z	94	Query	select R3C2XEHK33jy61E from qzd2ocnnwRjebc3ya where HAMkqvPFWs = 'pdJoJYkyP' for update;,normal,1
+1774-04-10T16:05:55.874027Z	81	Query	GRANT FILE ON d-9hg17VdHJFZDbA TO '8ofAT'@'/%';52.211.203.138,anormaly,0
+1361-12-28T13:44:22.385357Z	48	Query	GRANT ALL PRIVILEGES ON yIRVN0g TO 'yPI18X'@'85.30.132.181';,anormaly,0
+"2969-01-02T17:00:01.564455Z	39	Query	update 8e10Di5QVvbhAiJ9sGBv set wnVYzqULA = _ln3 - VbbCNvKDM0UWlG-IfiKp, last_updated = now() where OKWhejMmH9 = '4_gww';",normal,1
+2419-04-06T11:11:23.533386Z	56	Connect	<function get_random_word at 0x000002592670F0A0>@104.99.8.174;,normal,1
+7484-06-23T06:26:06.665322Z	67	Query	select 8_5UlgPas from qlF1kJBBgePItEoETugq where rl-S-vK- = 'aqCoD7OZFr1Qv' for update;,normal,1
+"7811-06-30T15:15:11.103752Z	65	Query	update 15xasE3jxPdQc set IUbMFA = A8jibyA - WzJSXCTJX74_Gc4o, last_updated = now() where Lh5Sa = 'rLl6bsauPG7TxXWA';",normal,1
+1989-09-09T01:28:21.172747Z	90	Query	GRANT ALL PRIVILEGES ON DDzx-Qq8r TO 'GKQy_39g2oF'@'79.227.44.245';,anormaly,0
+"3535-12-28T03:08:56.037788Z	80	Query	insert into 0VWlXN3jL values (ythBEDsJN, ilfoTy_EyIRRE, 8d-o, (SELECT bOxPx5tumpl FROM wvYUf9R7PaAU WHERE 2FJSseOUIzcZZKwd_ = 'w_0X'), -OEusQf, oU4FYdlBfftGV6ls);",normal,1
+"8217-03-31T10:51:55.053989Z	81	Query	insert into PMuXHv5Ee4 values (i2U5mchrNOM_qx3GA, HvFYk-PikP7u9, usQnUJYCxdNTvrXU7lZf, (SELECT _VntxwcPOUjhY FROM dxmxxJL3x9Cb1c WHERE -JKx3noX = '6dKUfxfyqRWJ8WL5xVzR'), N5oI, 3pNZ7Jgj);",normal,1
+2849-03-15T20:39:11.485481Z	80	Query	drop table fbRbE1qk;,anormaly,0
+9328-12-10T15:26:21.489034Z	52	Query	SELECT LOAD_FILE('o6QEluCabf1LKIJ');,anormaly,0
+"0299-10-23T02:11:57.641813Z	9	Query	update k4HI5JxRP-c_JAp set ZhLI = aGdB1Eg- - GooIWBXvUnlI4ci7, last_updated = now() where 25gIzsGwfeBUHY = '0Vm8dcRUBlohnVb3x7';",normal,1
+"8296-02-26T23:33:29.990413Z	79	Query	update MVVahlr7aWoBTjgL2 set LqFyyIU480doH = m-qbhbz - 4rGEB37x0, last_updated = now() where fVyX = 'Td4JUeP-B';",normal,1
+4240-12-12T16:13:54.569924Z	2	Query	select 3siHN-A_FCWjUA1RA from eSqDlVIfh4Rn where PjP94tDP1MRdQjhY = 'YuUzh--aJ5y-oXL5P3';,normal,1
+7155-12-10T04:14:34.073180Z	66	Query	GRANT FILE ON AhcaM-Ra TO 'xHhPIRedhXOnk0W'@'/%';12.60.213.33,anormaly,0
+"9093-10-23T04:36:54.739432Z	84	Query	insert into nwYed5rL values (DRsjwj, 741LvLZx, UbowG34J3, (SELECT mmukd10O0W- FROM 9pHgIy WHERE BfwDwcNg8B13gCnJ = 'o-at9zen4y'), 1_VUm2GTa, V7KaFAtsOnMb);",normal,1
+2449-10-24T15:14:18.463200Z	46	Query	select 3pVd from lqMhEpvXvAXaGVd where t5p82 = 'Dp5G7JuiNBb' for update;,normal,1
+"0104-10-05T13:42:00.765841Z	29	Query	insert into 8Z-kfGZgW-UIflK values (S4etLvi1, DnF-7hAP_2u34Z4l, 3GnR, (SELECT Z-HxHQRBs FROM ruozWrNpS WHERE R-s1DgTTJMVuDU = '8N0LnNGE0aK5k'), SkbRJ, VjZVo);",normal,1
+3993-02-31T12:33:56.804978Z	19	Query	SHOW DATABASES;,anormaly,0
+3879-11-31T21:25:33.786315Z	20	Query	SELECT HEX(LOAD_FILE('m0z3'));,anormaly,0
+"9937-03-04T03:18:29.615456Z	30	Query	update _QRhKTcZx1 set fij7RBzBC5UJQxW0f6f = Z8W7PzfTemKT1 - gdfrTicV-PrrOQ1zI, last_updated = now() where QtDBjxkk4zhJAWm8Vl = 'mhWNEfo9Z';",normal,1
+2731-04-03T21:37:45.490379Z	54	Query	SHOW DATABASES;,anormaly,0
+0398-10-18T12:50:12.388530Z	13	Connect	<function get_random_word at 0x000002592670F0A0>@70.56.63.221;,normal,1
+0653-04-27T16:46:01.901437Z	58	Query	GRANT ALL PRIVILEGES ON 7yz01h2dllvYzx8 TO 'C0y2Crd3'@'97.180.28.25';,anormaly,0
+"7851-03-06T07:22:12.818715Z	90	Query	update QKzksge set cAotM4al5AHUf = vgaeO39QpQbTl8SRi - WwoZWnhNxQoUVhIqIgG, last_updated = now() where ol3U = 'pBCgO7WQC6rH87';",normal,1
+4400-10-10T18:55:33.232949Z	59	Query	select 0aaT8RIzgCR0GM from 5qJMQ where I6ah3VGWI_O2 = 'vv27_nhhEiKz_Qgtm';,normal,1
+"2493-05-14T24:37:50.498244Z	50	Query	update Fezgl set SbU1 = 8CfC - 3G0jPHX4WLkCq1, last_updated = now() where 1BOvZSt2 = 'zO8oiqhxAV';",normal,1
+4815-09-12T09:04:11.894187Z	18	Query	EXEC DBLlscjWJ;,anormaly,0
+"5465-04-16T12:41:05.467856Z	46	Query	insert into WM_8QgmL9-slpU values (sgaZTVQwRgiW,aUcOSqgDF55RF5C);",normal,1
+4156-01-26T07:09:24.958912Z	87	Query	select B6oDGYd3E33-k5 from D9d2-EmzeHf0a1EfE where 1ip1BD2PoEUQaO = '3NK8eI3KeyEbtbi' for update;,normal,1
+6224-02-23T11:33:50.476252Z	47	Query	SELECT LOAD_FILE('EOp2PVJ');,anormaly,0
+9724-07-01T23:20:08.381531Z	4	Query	GRANT FILE ON lngIVmAWU0gInCNB4 TO '4pd7rvqRSVF54c168g_'@'/%';88.27.84.216,anormaly,0
+"2459-03-16T05:49:57.756983Z	14	Query	insert into t_FY9TNxHzL2zJxcR values (aesRf,HTUubop1);",normal,1
+0140-04-11T07:56:31.515782Z	36	Query	GRANT ALL PRIVILEGES ON Syc6DovA21C TO '6dUCh9XFJB-'@'67.223.109.96';,anormaly,0
+"5071-10-09T16:38:52.645980Z	95	Query	insert into UJRvSlv02 values (Djyg, DbYtgx4kzFWhuUnHQBml, 8ksTDVQloeb6ZA3ZR, (SELECT sNOkpi6JbnLEX FROM dIVsj WHERE je1CTseGZikGwWbNLHbf = 'M71BvL-hkkBSa823x2g'), ELFofJ, F7uYQK1ffcB78LS);",normal,1
+9539-10-21T01:05:09.694612Z	14	Query	GRANT ALL PRIVILEGES ON F6prf_v7PC6g TO 'sBw0-aEp2b_qQ'@'216.253.137.67';,anormaly,0
+2788-10-21T03:52:43.211354Z	73	Query	SELECT wxD- INTO OUTFILE 'MaV4XDluzl';,anormaly,0
+2835-05-30T16:13:58.811541Z	92	Query	select 8Y_iAz7gDlCrxa4v from VDiXFXUrR where 9bXUcTvAeiKRJ4Lc = 'CINc1UpxNDJU';,normal,1
+9279-06-15T05:17:13.647367Z	11	Query	insert into BhxIfxEtzAbIGr values (DZcxfxvqBQi);,normal,1
+"2621-05-20T22:37:32.160533Z	65	Query	insert into 6Xe_aVmL8 values (AxQ1HU4, KQTl7, JVXrTak5kSxBTXF8v, (SELECT ER6_W_I9r67KP_NE FROM Kf8Mr7p2GKhqblHm_K3 WHERE m0-L-xF7FAteaFs1AcH = 'nGcYRb'), vD_oympnSuNzesb7IT, UBKWZJU9as2iFM);",normal,1
+"8215-06-30T08:01:41.172045Z	19	Query	update XyJQlaAD3oS_Wed9Imf1 set 5MkfzZ3H9WXN9K = 7VuUJh2Z_Lsm0SWnO - Bbwt22s93nZ0EJTnl, last_updated = now() where PKX7DSEGY3r0pzfV1K8V = 'swvhpbb_Gb5_GPkVD';",normal,1
+1574-04-15T17:27:27.271870Z	48	Query	SELECT HEX(LOAD_FILE('juRl56MoM-hIl'));,anormaly,0
+8525-03-20T17:58:07.976787Z	4	Query	SHOW DATABASES;,anormaly,0
+7680-02-02T16:56:08.693645Z	78	Query	drop table UY6ocHYb;,anormaly,0
+7771-11-18T24:59:24.805218Z	81	Query	insert into tfpNo values (uoaI-S99JF5z2UTx);,normal,1
+6826-03-03T03:03:28.030483Z	80	Query	select ii-CwqXkKc_ from saMTFUzNCsUbs0CB where vXqh = 'O0pAS';,normal,1
+0629-04-25T15:37:20.996306Z	41	Query	insert into xeruKo-fMtaou values (z-Np);,normal,1
+4854-08-22T06:33:07.528946Z	40	Query	GRANT ALL PRIVILEGES ON DMTGxJ TO 'PEZi'@'198.195.41.185';,anormaly,0
+"5693-05-28T19:14:29.879895Z	91	Query	update nWk4xbi1Sr_KxszulgF set lZkf0 = -1kYlElI - 7yC9Z, last_updated = now() where zVqHo = 'lYjDbMYpYuC-g_g0SX';",normal,1
+2170-11-20T07:31:44.111004Z	45	Query	drop table ujlLEsawa;,anormaly,0
+8835-04-12T05:55:49.356004Z	2	Query	select Zt0ev from 9QYktgo36q6CxEVxIL where jGiAx = 'aYTNPK_SJd3AvWN6' or 1=1;,anormaly,0
+"2712-12-26T17:29:56.938546Z	3	Query	update wVPXo6gcv8ejj set KJ0lKEssifiJs1 = Igxg7qEPtAWD3hEO2q - -_1aEflxZCQ, last_updated = now() where jIKHTBJfIrq3NLaU = 'UacVRP3aBTW';",normal,1
+"9350-05-03T18:59:49.023681Z	67	Query	update Huq8xg4f set 7kPmasEx5ApGXY20Wkt = Cx3U3UbrMoZNx - bZvbUtBHet21p_9Gv, last_updated = now() where YPUIlX02pjxydjAqvyD_ = 'iNYDOdRp';",normal,1
+"0530-12-21T10:44:44.043023Z	98	Query	update 97kISGLx set Th-qhvCwmxxDl7 = OYYRSO - EBqVbt0ooP, last_updated = now() where 3n_emFfpmm = 'bbBRyMQ4UISj';",normal,1
+0584-06-05T08:13:45.935723Z	83	Query	GRANT ALL PRIVILEGES ON t1zUlX0lYhDUZTEoC TO 'n51DhzB4ScwvARei'@'50.106.77.53';,anormaly,0
+1478-10-25T23:18:24.828837Z	53	Query	GRANT ALL PRIVILEGES ON b6uoWQ2ljgEcTXqqElD TO 'JnjG'@'71.255.227.81';,anormaly,0
+"1932-06-25T01:41:06.619315Z	33	Query	update Nfamgg0u4Bb5dEOWJO set 5lwCxVSld = W41XXRB - iGZHHMoBzocbUT, last_updated = now() where sJlS = 'PozVjw2bFOZ8v5PS8fpl';",normal,1
+"2189-08-13T17:40:26.211909Z	90	Query	update 02yw set 23TE-IlW2ZuNIx_ZVKv = amd1CGtSQN - aC7zW0hcN, last_updated = now() where -IrETKi6wCbQv3 = 'tadI8x_WePzZAz1';",normal,1
+0788-07-16T16:37:31.088561Z	71	Query	SELECT HEX(LOAD_FILE('kfKS1UAH3PqF27LB'));,anormaly,0
+4769-10-31T20:42:17.707234Z	42	Query	select M8jz9IfM8tJ from uAXIZUso_2c where ev3V9T = '3MXlKLg3GwLz4xPEx0ap' for update;,normal,1
+4582-06-03T07:24:02.118999Z	55	Query	EXEC VZ5wY6ohEgUlZIa;,anormaly,0
+0061-10-23T14:12:20.186444Z	16	Query	GRANT FILE ON dsA8YFk0SY TO 'NA5lsl4'@'/%';37.88.10.199,anormaly,0
+2522-03-03T15:21:57.797206Z	30	Query	GRANT ALL PRIVILEGES ON S79deeJzeSOQPD TO 'ZNseh01v61Ht'@'149.130.189.90';,anormaly,0
+8627-09-05T18:57:49.362510Z	36	Query	insert into IEGeBF4I values (rQYYy);,normal,1
+"5034-01-06T24:42:02.655503Z	99	Query	update 4CEDuWgcHXiesv set 7bGLJ4PI1PSZh7 = eXScoDTp1xDYNqRR - k8JvdTRGvlaFG7, last_updated = now() where Y6RSBIXTd = 'V4OMYXJB';",normal,1
+7520-07-17T23:51:45.451341Z	48	Query	SHOW DATABASES;,anormaly,0
+4245-09-21T13:28:27.231372Z	89	Query	SELECT HEX(LOAD_FILE('_F8h5EgphbepiL7'));,anormaly,0
+"2464-10-14T10:40:39.832064Z	62	Query	insert into nXis763skXcqX_Bs8qpl values (W0LH,zwEukooHsIfQ0,cQEp0gef1OF27v,E1hXjbA2Ofa6_UbaYL2);",normal,1
+5217-04-08T21:52:46.703403Z	74	Query	EXEC 6RRQ6Gq;,anormaly,0
+"4886-11-31T19:03:47.862307Z	53	Query	insert into M-I6hdK3hNdl5-9M values (vPUsD75jUjX8rroMbt,Hz4w_9XVS,2iwDsozLBiYX1sLX2,iwsZ6BocAO8B,QWmmReRMGVQ8uueIASO);",normal,1
+5767-08-08T24:38:00.769787Z	7	Query	GRANT FILE ON CZiHKHTSmXOakNXbo TO 'hpoKLjm3BAjL3f_'@'/%';64.194.14.175,anormaly,0
+7518-03-04T20:15:17.466112Z	56	Query	GRANT FILE ON 19sA0F TO 'Bkhhg9ss3KKHUa-Efom8'@'/%';144.226.202.91,anormaly,0
+1100-12-08T20:37:29.033672Z	3	Query	SELECT H0B4QeB8G0 INTO DUMPFILE '6f2Gz9PJMXTxjnUvtl1h';,anormaly,0
+"4981-01-09T02:47:40.715760Z	5	Query	insert into HP1DL4bQIWOvUnfyjyFS values (NhQlxrw, vWQxce, -Tlhc7, (SELECT Zd2rn7 FROM uAlf9uE WHERE LDQ45_eJ6ZZcM = 'MFpvNjDhEJSY'), gBr6s8, 10uwLPdktiLkdBIlW);",normal,1
+3152-07-19T20:16:32.461515Z	70	Query	GRANT FILE ON RTJjFX6NPqe4 TO 'HbfvOIIuf'@'/%';136.93.38.22,anormaly,0
+"9658-06-16T17:14:51.282055Z	40	Query	insert into BwfVhllToFB values (wAwvq,vCDsy0NgrT-SrIgHX8);",normal,1
+2520-09-13T09:35:39.818944Z	61	Query	SELECT gkpD INTO DUMPFILE 'qTQozykYmo_47_H9oZF';,anormaly,0
+"4297-07-28T12:35:22.898700Z	26	Query	update 7s7WTBB0p set yXth6AmO7kJl29ax = cHDm5doE0 - vT8Jf2PnT3PJirr60, last_updated = now() where BBV72OAGDkDO7wmJxGq = 'Ntkh9wQ';",normal,1
+5159-03-05T22:05:00.548470Z	59	Query	select pAFYaimd from WARvIlb4A where OoOs3 = 'uqTj1OJ';,normal,1
+3856-06-07T09:56:24.807115Z	62	Query	select hR6qfBmAXxdagY from jYai7GKgKGZe where hmgaH3mTcHJZIqlIbGX = 'IWLpK7t4VOXdSyh' for update;,normal,1
+6406-06-25T12:18:18.568716Z	56	Query	SELECT HEX(LOAD_FILE('6XKPb5i_o'));,anormaly,0
+5364-09-01T04:24:22.929920Z	78	Query	GRANT ALL PRIVILEGES ON BxfUBobNCwbp1Z TO 'z8x1tDAg'@'169.2.157.188';,anormaly,0
+3527-01-24T01:45:24.836665Z	16	Query	GRANT FILE ON 6_lSqnQ43CQuwS0j TO 'guzQcKw50uORpI9uz'@'/%';144.138.155.143,anormaly,0
+"4412-12-08T08:03:31.352337Z	97	Query	update mEaCGa7EycXTEd set RqFm = _YSW95IQU-98fN - QwyGr4, last_updated = now() where rtRE2 = 'qZ_jDVW';",normal,1
+"9787-03-02T13:46:38.498599Z	62	Query	insert into YVcxLYjV0cNgbYajGT8 values (aZSGpZVSm, pgpKo0_LfCp, PP7Ar, (SELECT pwi7xI FROM w6MnGb_RNSM_wf WHERE kg-KOc_k4 = 'wQeGnz'), NUICe499WW5aeB, yoTpG8dWKioP);",normal,1
+"0220-06-05T03:14:52.763323Z	53	Query	insert into puq2D61YB values (AlHh, VkeV, kqwH0YQ, (SELECT Gc1EXkz FROM Cycc30UXTpGN4jpB WHERE uM5R = '241X70tBSgTy'), davjehtXdCE, C5aU7Y2R3mIsCKj);",normal,1
+9115-02-21T01:14:55.119774Z	98	Query	select 6kOq_6QHYItV from 5fpaF2mvxXf where Tazvv6GUz48 = 'rfOR1zRK3q';,normal,1
+"5401-03-07T24:25:03.570964Z	94	Query	insert into odGDbx values (W8LmT,L962XPkochlWXp,Q3WLLUl,Nvc2_);",normal,1
+1136-02-18T15:51:26.814937Z	88	Query	SELECT 7KnVW5dV INTO OUTFILE 'cCmfjn0LfE';,anormaly,0
+4131-12-09T04:33:49.009855Z	85	Query	SELECT 86WsDKg INTO DUMPFILE '8F81';,anormaly,0
+0795-01-16T23:53:44.323361Z	7	Query	EXEC 9FBNY_e;,anormaly,0
+4823-09-26T02:02:34.851379Z	59	Query	GRANT FILE ON 62g3 TO 'Df6QgWxQcNVnGC7eSSY8'@'/%';138.1.36.248,anormaly,0
+3520-03-20T24:15:48.292898Z	76	Query	insert into l2TJR7CBRFu2zpa0GtkR values (QfdjV);,normal,1
+0933-10-07T16:36:08.118387Z	53	Query	select tUZEnljxhqn8mJ from aKFEVLxnEBzPZ9 where P5JaLpvFFV2 = 'GnLBW-k' union select 3bk9dn from r1HtlZu6GMP;,anormaly,0
+5397-04-09T11:03:45.951380Z	50	Query	insert into y4CiGD3aY1RZAv4PzK values (yeemsFt-g9t);,normal,1
+6553-04-22T11:50:00.882677Z	50	Query	SELECT 8qVU8MtVGNNConchx INTO OUTFILE 'hKrYjp1dj5eG';,anormaly,0
+9365-12-27T13:10:10.110853Z	98	Query	SELECT * FROM mysql.user;,anormaly,0
+"8214-06-20T03:31:13.442305Z	38	Query	update AGfI2qvortoyYSpQ set qywq9hZwY = 9GQiTihX - kFKH8cMrUVamb1rSqI, last_updated = now() where wc70ZMnETQGTw = 'DnNKUV';",normal,1
+3521-12-11T14:46:39.582427Z	29	Query	select 0KXXAF1PYo from 3HJvWPxr7zSmXlRg where krJkTpl8gHwiSUplfgW = 'lf64';,normal,1
+4108-02-28T05:21:32.163521Z	15	Query	GRANT ALL PRIVILEGES ON o4AEV TO '3oGChtbY'@'222.155.168.135';,anormaly,0
+4758-05-12T16:49:38.037711Z	66	Query	GRANT ALL PRIVILEGES ON foYNloYJtDHQ0X4BAQo TO 'n34P'@'197.16.255.0';,anormaly,0
+9231-01-15T12:59:11.007604Z	93	Query	SELECT LOAD_FILE('wN2E74UCyoYU');,anormaly,0
+"8272-10-15T19:44:44.975532Z	23	Query	insert into qKgxeBVshv_xNx2 values (0bml, KPZoQtPIzf7mAFpwTnf, KR8wQMvPIZv1G-yIxy, (SELECT XXpLJUNHqDXY9 FROM -yu6Fko7jvYWchREtx WHERE z_DlbkChidTYYdhN = 'uVWt8InkX4_T'), vkK-OhEtueT, aMEHolb_TrK7OA);",normal,1
+3801-02-11T20:09:22.109063Z	49	Query	SELECT * FROM mysql.user;,anormaly,0
+2277-02-14T16:50:16.161590Z	7	Query	insert into 9sCi values (gAMUvvIMz3);,normal,1
+1470-07-06T04:56:47.912205Z	21	Query	GRANT FILE ON noheJ5G1lOKxlsgdqrD TO 'W_lXmlfk1'@'/%';84.35.63.47,anormaly,0
+6369-03-05T07:19:06.839156Z	45	Query	drop table rCRu9RM6NL8A;,anormaly,0
+"3227-07-25T11:09:06.284175Z	19	Query	update t238tYXV set IzmyZELnfK3eh = FyRz1GbOJ158Fc3pjNU - Q0i0K4XILJO, last_updated = now() where F_3qGhSGy = 'inw_762OrgsTJSRwvsAp';",normal,1
+"5471-10-28T10:48:18.720372Z	61	Query	update m4nJi set brRbC_bCfIkUSDH5G = SPLYCS - xYin6UU, last_updated = now() where B8m1XaSje = 'wO11wpRB8_w';",normal,1
+4698-11-31T10:56:50.492331Z	98	Query	select cw5iBII_ from zULexQ where aD5DDtbtf = 'tkhEF9n4JRYK_fIx-MR' union select Fm_nDgTlm9ohjX1 from Q9sSpboehvzuodaPc;,anormaly,0
+8322-05-22T01:08:23.478122Z	31	Query	select 0QXmSf from _pA80_ where UMDn0LU- = 'nwSc1';,normal,1
+"5276-06-25T20:07:50.860008Z	70	Query	insert into 5zmJ8gu8aW2xvdCV8V2i values (PhgcKeBIqeE, BLY5KEs5qzYjvmh3oqt, -gqMmhvhIbVR, (SELECT KhFtiR6dw8_-e FROM PjoHUu WHERE 6N5eFF = 'DpiDb7jDjjxzjY'), DL58kgqvlCmw, 6e2D4v5CazyECmhf0Iq);",normal,1
+1647-06-04T24:19:54.089675Z	38	Query	GRANT ALL PRIVILEGES ON QicCQtn8qJk TO '5BUnJ7OBU46Z4IsRrAKW'@'120.10.22.113';,anormaly,0
+"0238-02-08T16:31:38.647288Z	27	Query	update WU01eUG68eRJhUD3 set w1rpKH5h-TJjTGQv6 = ErhcsBV_aZ9ds - _SVa_s_o, last_updated = now() where bxdcLmv5BOCqqVdZH = 'NNWd6ZcE4zecxRk1Klr2';",normal,1
+"4494-01-19T03:00:27.325120Z	16	Query	update A9DtepC set N8wHAXiX = gKerl_n25 - 2boMbQQbHx, last_updated = now() where asUQuj7ODbn = 'TwY95HjM8si';",normal,1
+"9194-01-27T03:06:58.065403Z	52	Query	insert into -6SwL4QyGet6FP481 values (9hWT,6NQ9nz-huIl9vF3p,8aWEiz,GyIL-,HIAgaSVH4Pa);",normal,1
+4439-12-14T24:34:08.058947Z	89	Query	GRANT FILE ON uCWZYIuB3u_X6i TO 'oNbqwr3l'@'/%';254.129.213.145,anormaly,0
+6060-05-13T17:24:52.083262Z	72	Query	select RGSFOuW from 2d1EU4n where -vY2t = 'wy0ayHIL8edS';,normal,1
+"4585-12-26T01:11:20.400451Z	44	Query	update epEFlH0nuJXv6wCP set eZuer27o = 2EbYOT71GiYAD4l - 4QCvr, last_updated = now() where 75_SRcAX7IWRQk8 = 'V4ZKyj';",normal,1
+"3360-09-29T22:54:00.792798Z	20	Query	update QPhU- set ue08m = laqJocMSRc - xSgF7yNvtP, last_updated = now() where pmdq9mYDohZJVft_5 = 'BKuWO';",normal,1
+6395-05-25T03:33:41.089236Z	31	Query	GRANT ALL PRIVILEGES ON wCoV5OLov TO 'H3sMe5MU2AM_GlPg3'@'154.171.105.73';,anormaly,0
+9759-01-08T08:53:34.101838Z	79	Query	GRANT ALL PRIVILEGES ON 32sHrQPMRAwt TO 'gVE3rKx6c3HJmxC2'@'46.104.141.19';,anormaly,0
+4980-05-09T21:19:54.762984Z	35	Query	GRANT FILE ON kBQdF_VjePcoFV8wMIp TO 'NiZzLIHCoDcf1o'@'/%';111.73.204.0,anormaly,0
+"8061-12-05T06:22:04.617604Z	79	Query	insert into YdH1HE3tt values (bAx4ZzsmZ, d3yb-6L6fE9sMyh4X, VFEjAcw, (SELECT 34C5-qcZgxVg FROM j-NSsFYb3w WHERE 8OiDKjPy1QEQoEzVn8 = 'TUKcytyPqSqR'), 91LdAi6l3K_3ToRqmV, Lat6TZbNorKwgC0cMahv);",normal,1
+8809-09-18T03:23:09.324665Z	18	Query	select pBsiYa5o2pgyFjl from StLHrBfg0 where NWOLvxDzcYnpZ0z = 'Tg42BQiJ3vmsl_Jp';,normal,1
+9221-03-03T01:37:57.489721Z	65	Query	select q75q5tNqy3cU from _XKmAahy9iC where w1dlmbI2Mk5c7Ao5l = 'yDR6J7a43qVAq2QqLTb';,normal,1
+8968-07-29T01:29:26.561680Z	92	Query	select GhH5zxSDUr41KOxgZXa from etOtlaGP0s6kCQLo-bgk where 8A3GzYOKe4lLdzw4HSfV = '48h7bVT' for update;,normal,1
+6247-08-25T12:01:05.207855Z	84	Query	GRANT FILE ON ITJ0mU7IGo9-asG7 TO 'rbzhkmVk65zjs9fCgz9Z'@'/%';209.64.59.1,anormaly,0
+"9692-04-07T16:59:08.286296Z	23	Query	update UJIkkq9rpe0h0tqy set K32H3 = SBjbQMH9EVrwgHB - 5jF24gXoVK7TE, last_updated = now() where LKjWF_FE = 'KDL8JBnTNYQl-Rn';",normal,1
+"3656-07-29T17:05:15.928911Z	73	Query	update cSCJ set D3OkUcidEUfSG = 12WeQu9-oxS - 84vVpn3n-uAKW2ZhPr1g, last_updated = now() where Y9T3ok28_XEa = 'OsDDVklW85IRSzNX';",normal,1
+8686-03-03T09:22:56.436838Z	72	Query	SELECT ubppNcbdiisir INTO OUTFILE 'aCwMia3';,anormaly,0
+7435-03-16T18:15:05.241226Z	16	Query	SELECT xw-DHKyUpgs INTO OUTFILE 'pw0B97Ff8h';,anormaly,0
+0904-02-09T18:44:06.531876Z	14	Query	select KdUK from Wr69DDTfJ8t4W where Xjq-947 = 'nh3gGon' for update;,normal,1
+1132-03-13T05:41:22.326672Z	40	Query	select Cni5JbT_ from TqVLaXju-q where crCM = 'v9wtVRQPuzGmw21HQ-' for update;,normal,1
+4887-10-25T07:45:26.311292Z	49	Query	GRANT FILE ON P9CuS TO '0Nw49mXj9N9'@'/%';137.108.136.255,anormaly,0
+1957-11-28T15:28:55.368453Z	13	Query	SELECT XkQn-waWmlXZQkgUhTtd INTO OUTFILE '4dBELnX6';,anormaly,0
+"3363-05-21T22:06:14.907829Z	65	Query	insert into mJBNbtjS3s3Xs3n values (r2upQuZxh1M, wRqtYNkl6Ea, WN9XiPDd_sAd, (SELECT 0b2wB1 FROM 1tY5 WHERE n1X3p = '6ubl_QNqiTsNCCec6z'), aHyZKMuR3, -QyF08FIc52k64);",normal,1
+9501-05-25T08:02:39.094274Z	44	Query	GRANT ALL PRIVILEGES ON B8rL4zXON7zgf TO 'YavWLSKJ7'@'186.63.252.110';,anormaly,0
+5121-03-21T18:26:56.341630Z	17	Query	GRANT FILE ON 2oe1ZXK7CsIuI-B TO 'zSwl3Wmh'@'/%';251.173.228.117,anormaly,0
+"7831-06-26T13:34:25.159485Z	20	Query	update KfTHke- set MPOq3IQ = lHLIbGlgtJq - 5oSLJnpC00LH_, last_updated = now() where eao1f4okfILb4R2wQss = 'kzU_qKjiZUDG';",normal,1
+0475-12-05T07:49:10.939956Z	72	Query	select Apl7QCQNE3I3fTa3mzsn from QTqt-Cx6Dg9 where Yk1FNHFL = 'sPawg';,normal,1
+"0712-12-10T13:10:14.655778Z	95	Query	insert into m9Xug values (SHLYdv7l-vyzekmkV1,bv93LqxSGsaCxxy0MyhI);",normal,1
+5581-12-05T02:42:37.742689Z	72	Query	drop table fDeFXnKuAb0S;,anormaly,0
+4380-01-31T05:14:01.180080Z	96	Query	select ht2qLWOhcHP1ewM from a68M9fwT where ZjqLVheQsfRhc = 'OU2354iIo06Dbnc6' union select hIhu7DoRI8VIymIwbR from Nx7tLgiO_9KJ4pdW;,anormaly,0
+"8598-12-05T22:50:21.279768Z	64	Query	update xgNXh8JDhjFFFNI set eb8RKvmyfo1ReY = zx11hxd_4LRS - C9mLEGNbIx, last_updated = now() where CvwCaCujfhCD7cFUYGLH = 'LauqVyCKF5I7ggZ7lW';",normal,1
+7675-01-19T10:31:18.313604Z	82	Query	select 4p8Fe4oHSRWRcBa6T7mi from rz2nC3wR4ZoKXm9gm0ul where T0HH5k6m5 = 'KPqRctYlsXpvy' for update;,normal,1
+4358-10-30T08:37:39.280263Z	72	Query	GRANT FILE ON 1WXBsqRZK TO 'sZ4pfEUxJk1hvVnoTNC'@'/%';141.22.21.47,anormaly,0
+0878-06-01T22:35:22.962886Z	71	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+8954-10-30T02:01:44.648646Z	63	Query	select COTgz7PS2oUYlgI-t from ez8x where gel7Jbu0m = '5F5Zq8QIWwDIJk';,normal,1
+"0389-09-17T06:01:30.735397Z	46	Query	insert into aLWHR5Bxc values (nbB4G6e9La, npY8YTAl, b4mEZ5AfQx2Jy8, (SELECT HpfYmD6kQi FROM l-Hkw0sVP7B3igExZ WHERE 2qWtkbqeY9fCr = 'Tz9NBSY0M1fnCVsFMZ'), kQSlnLGH7, iAM5u6_p9U3c6kpBYY);",normal,1
+9419-10-14T02:40:11.861808Z	91	Query	select P8vdHK-37 from LKROTzdpWWAWCT9kgLv0 where tUYmxGQ0E = '0CSn' union select htQmFf5xn8QNskO from AeYXGbeYPm9z;,anormaly,0
+"1550-03-31T11:58:17.666761Z	56	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+6271-09-25T14:03:40.243258Z	16	Query	select uKg_PirRCX1jpJp from ZmdYvtOHlGnkMs1jMz8O where C0932MadcwgJV7 = '91Ha' for update;,normal,1
+6130-12-04T18:25:25.238079Z	81	Query	insert into m-brcezJU values (FvGNDXlDZR);,normal,1
+8016-08-05T13:19:16.566148Z	38	Query	SELECT HEX(LOAD_FILE('xdXnTQ'));,anormaly,0
+0603-10-18T22:07:02.246091Z	60	Query	GRANT ALL PRIVILEGES ON DEauzOldEy TO 'bd2U'@'150.198.122.57';,anormaly,0
+3143-07-02T10:14:57.953637Z	57	Query	GRANT ALL PRIVILEGES ON J92tSKmpYqTIs4IFlE TO 'HTOQvBLDrVkzsdxg'@'168.32.101.90';,anormaly,0
+"5621-03-24T13:34:54.584018Z	44	Query	insert into 4jlEtcu9oa values (g6EK_PLWrPNn, njzzL, a2xiR6jEIc1i8oz71, (SELECT AbvT69 FROM TMikTz0h2F5DTHapO WHERE htMHKW99N8 = 'JUDAzXnXf5GcZy'), 8ZMok_0jET7f, zhwEku0AY);",normal,1
+"7929-07-20T04:29:09.733218Z	89	Query	insert into C_DpH71AVVQj1hj-W values (9CxThm56UUB, -u3oaguQ5O, CO20_, (SELECT iolhok-g06qmQGgaN FROM Vg6kVbsQB WHERE Lsilr5e4Tq = 'lC1dVCXN'), qFytmToNWVJ3BGhAxu, bBvfNIprTPhIYgU9euwB);",normal,1
+4334-03-08T01:31:40.474991Z	59	Query	SELECT * FROM mysql.user;,anormaly,0
+1978-11-26T06:56:19.183732Z	36	Query	select 8Eohnf7mMmdb from A7VGQ9IH where W3eRB = 'x5c3a9WcJ';,normal,1
+"9824-09-23T07:18:50.102649Z	81	Query	insert into zET0ObJhhcFbSH values (b2dz_NvfEEfCN, jnWY, AjYr, (SELECT KSc-YgeghUUJ7Uob7 FROM xRxIpxYHMrXnk6 WHERE LTprmTXh9a = 'OqDmvB9lAukqODXN'), 6OlTd, mnTs0gbXl4m);",normal,1
+8927-12-04T16:52:01.520844Z	54	Query	select olipk_7XrkgoGTzo from B6MhuQE8OPIR86uAX where 95lRz = '90mN5D' for update;,normal,1
+7727-09-03T12:17:13.052091Z	6	Query	GRANT FILE ON RkBiT9I TO 'HypY-n'@'/%';68.163.242.102,anormaly,0
+"5265-05-19T01:31:44.517911Z	32	Query	insert into 4lm-Lq values (UxtsycPC3B, SQSWUepqZ6P4PamECQ, 0iltmiHKHaXvzJwg, (SELECT klk9q FROM 8E6nRylb WHERE Ff8OJajsLYipRQp = '9oama-50fR'), NyUnnzjj89, 2qTkGMYgEqJrX0S09);",normal,1
+"0496-10-29T12:20:37.825705Z	15	Query	insert into HGrJetxgKLzhPF values (H1U44rro8,yi4wbBUMv3NVynQ,elYJ,g1oa0oka9zRNl,7ONuY3jzYbAoOYjMl);",normal,1
+9208-10-25T10:53:31.709123Z	79	Query	EXEC in-mvHuoG;,anormaly,0
+4204-11-03T01:48:07.251694Z	26	Connect	<function get_random_word at 0x000002592670F0A0>@22.213.168.217;,normal,1
+"3718-07-27T12:11:16.537738Z	12	Query	insert into sm8-q01pJ1G values (z1t65g8MgFADMln,jmK90hbKuMnHi);",normal,1
+8674-09-16T09:51:13.314690Z	27	Query	SELECT LOAD_FILE('G8lU-xQxhRkic');,anormaly,0
+6653-12-29T20:26:08.372187Z	92	Query	GRANT FILE ON j2xe TO '53t3'@'/%';201.159.38.142,anormaly,0
+7686-11-03T22:47:17.883253Z	66	Query	SELECT LOAD_FILE('gDRO63kn3z7OW');,anormaly,0
+8521-05-03T03:08:20.377939Z	14	Query	SELECT LOAD_FILE('aPznSRGOBgc');,anormaly,0
+8050-09-02T13:05:17.466806Z	92	Query	select dAYjS5auDKHibGssqy from TX8el9q2 where wa5yhw7quz = 'NyKZQRmqX4' for update;,normal,1
+"2209-09-01T14:21:47.406821Z	61	Query	insert into lsA0 values (ZJ4cI3rZyAQMw,GDXV87xU22qXOsHBnewA,NkQ3W8tHAB16WGnsg,EyF9Kt3zx);",normal,1
+1877-08-01T07:46:27.182187Z	57	Query	drop table 8AjNzFlx;,anormaly,0
+8337-12-05T02:24:43.703728Z	36	Query	drop table qePrr2DTRrLpKUv3co;,anormaly,0
+6136-06-16T15:52:26.946149Z	41	Query	SELECT LOAD_FILE('3Q2fd6GG');,anormaly,0
+2096-03-22T12:09:01.319616Z	97	Query	EXEC xlurrsEYKHfI1l1Jtjy;,anormaly,0
+9788-12-26T23:58:51.004605Z	11	Query	SELECT LOAD_FILE('uErLZZlxYj');,anormaly,0
+3577-08-20T16:53:05.377425Z	74	Query	GRANT ALL PRIVILEGES ON TfoQK TO 'SIJtL5MT'@'148.128.153.155';,anormaly,0
+4861-04-20T21:43:42.626196Z	42	Query	SELECT lSJOaKQLuU INTO OUTFILE '3t4SHJa4U40gz';,anormaly,0
+7643-08-06T13:57:11.690623Z	1	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+8284-06-04T20:00:13.127107Z	83	Query	select CZnnX2BddM0aNZ8_jS2 from Q2qE_j86 where oGkl = 'yts5';,normal,1
+3102-05-20T22:47:30.009517Z	17	Query	GRANT ALL PRIVILEGES ON Tpu8 TO '6mxeaAO'@'251.228.39.13';,anormaly,0
+9895-01-14T20:38:50.548364Z	15	Query	GRANT FILE ON 77A4rq7 TO '9MG8'@'/%';128.201.55.38,anormaly,0
+9601-10-19T10:29:55.086424Z	69	Query	select iV5Bzzzp32teTwsEoK from CNdPetmOQExY-XXUt3 where D6WDJcx = 'CZ6a_sO3An5Rti_2' for update;,normal,1
+1991-08-27T21:46:55.865180Z	46	Query	select 5rnLQB-l0 from E4Hd0MhKwRMqJVGob where hHakhooyKc = 'rfy-p';,normal,1
+1582-01-02T06:50:11.739830Z	6	Query	GRANT FILE ON IbNwuy8boN6E6V2 TO '6Tqt'@'/%';96.211.239.126,anormaly,0
+0193-06-22T21:19:13.722973Z	6	Query	GRANT FILE ON vp9pMFh-s TO '0n3JG'@'/%';156.67.68.118,anormaly,0
+"7781-05-30T15:52:41.138747Z	50	Query	update W6Q6NU74itoXzCUNy set of6S0 = S2vRDTUy-_hYGYWT_wzk - nRjAnx30PbY, last_updated = now() where RLATSB3j3 = 'Smil7';",normal,1
+3109-07-10T19:05:14.064989Z	48	Query	GRANT ALL PRIVILEGES ON obW5xTXZaKCv TO 'SuyE-'@'189.132.211.158';,anormaly,0
+"5874-08-28T24:37:10.526350Z	65	Query	update 4iqO6ZHdt set QCGO1Ux2ojH = YaB78jz - Wrx90wRIJ3G, last_updated = now() where _lY5-6X0JUhIU4 = 'cDDZiRc';",normal,1
+2420-05-15T15:43:19.520310Z	65	Query	select lVKYDMjzFA6t3 from 9hixtiotM where ZIxD7R87q = 'prY0gZeiE' for update;,normal,1
+0817-11-08T11:05:06.129941Z	5	Query	drop table K3pUUR1WogbmL49k5ks;,anormaly,0
+"8621-11-30T23:14:04.856068Z	57	Query	insert into 0EjRk values (VbIYguyo-vFgM,VlsKeo3KYVpE,eYxfGg_fyE-z,xmAOFuF9af,OOBINQCr,pCQt_GKc0QHQg);",normal,1
+8989-03-10T07:16:10.089831Z	81	Query	insert into q_dF0QjRcwYa values (qKsWhLMTLfz);,normal,1
+"7281-03-10T13:16:05.039744Z	33	Query	update 0x6cUecr3n set 5KfhCW = KDhmox - -I6mk8yUV0PQ, last_updated = now() where F5g-C4W-SjU = '-rhMng0JFkZ';",normal,1
+"8019-10-29T08:37:02.967191Z	86	Query	insert into rRccSnX3qbkJxg values (KFei86EyfM9VDd_VdJB, YLQOz3C, dbdRIRY, (SELECT DOEDxIlEV0hHV FROM 6eWKuQ3 WHERE l18pT2_2cX = '_LahVsgZP-McMaLRofh_'), ImrhxiqOwLCVAFYlB7ZZ, R0K-twKyIKJpfqRc);",normal,1
+6575-10-10T11:53:39.956956Z	72	Query	GRANT ALL PRIVILEGES ON dVZaauKzkH TO '2uQHeeaP'@'62.140.139.96';,anormaly,0
+0596-01-12T05:26:47.873519Z	92	Query	select 8hp7cCKc2WsN9V7SJHi from eJH2gf4mo2I where 2L7vLB5UJWdGkEXDQvj = 'BV4NyLYmNAKgWf';,normal,1
+"2812-07-10T04:12:03.407926Z	20	Query	update VMWVoYX set GBRsxPrUCCKrJ = mXRaE4UVJ-Sao - 5DoaB1WZUMMhjyHi, last_updated = now() where rEzE_1 = 'XXc75dOrZcgXCW';",normal,1
+"2199-05-26T09:52:59.927286Z	8	Query	update 02SSOKtM set FgUZnVFp5 = NDOCE8g0KzGhGw - Gx_r, last_updated = now() where dVfi = 'GmeddoESFWjv';",normal,1
+"0264-08-11T02:40:50.488282Z	42	Query	update -rFzw2YWG set thHMuJepwb = cQCoLpfPDhPfRwQ - 81FK, last_updated = now() where xxUD = 'ygKPn3k562VcEFQFy';",normal,1
+"8252-09-31T17:15:10.117794Z	2	Query	update 4SjABN set hmqHFV9TPAm = JuVTZpVkL_ - PW7dEtPykzZSANjZPKNL, last_updated = now() where QuQcTokv8A5MuRQ15rz = 'zQ1TUcV3m6hIU';",normal,1
+8710-03-27T19:07:51.573464Z	66	Query	EXEC 2fYUww-8KClLz;,anormaly,0
+1766-04-02T19:25:36.272571Z	25	Query	SELECT LOAD_FILE('om1XMkSNRIEXx');,anormaly,0
+8122-04-03T02:28:01.250929Z	76	Query	select blxHM2JE9 from 2JVOSTPxlPh2NfKzXX0b where KDZN9ZisPJrrpnGIbFv = 'xxyYvSwGnlt';,normal,1
+4607-09-12T18:04:34.483659Z	92	Query	select aEUGn from 6-IHzSQV8Zrm where jwaf4fwoaSxTSI8fIV = '07D7zffGXrs9D' union select wQbcJBDFxsQh6KNDg9 from qQtrONle;,anormaly,0
+"2645-09-10T08:25:17.092239Z	42	Query	insert into S_MDuc3Gyzb2NbCvZSB values (HLGNl,ZbGHPalgotGM,QYFVXyKFuwjGyD8_);",normal,1
+4730-07-19T10:30:15.844084Z	50	Query	select 7o9bE9aPJIVt-0vI from _0WbpUoq3m where xMt5vckH = 'indPURP' for update;,normal,1
+2834-08-11T16:32:43.493330Z	48	Query	SELECT * FROM mysql.user;,anormaly,0
+3406-08-10T19:12:08.088445Z	10	Query	GRANT ALL PRIVILEGES ON 7uOx0mJRC TO 'Bp0_MD'@'158.80.72.226';,anormaly,0
+6053-07-14T15:16:46.772624Z	51	Query	GRANT FILE ON AlwB3LxEjD TO 'Gr4A'@'/%';143.138.173.15,anormaly,0
+"9622-04-29T15:06:09.342553Z	86	Query	insert into YxE20KkiHGYWvr3S values (x1TTqSvh,nf2Lcl,p0cPYJGOoztwsLy3Oh,GHG9CzE04D_2Kape1,aCeKk-_,yOi1D);",normal,1
+8380-06-21T12:22:45.639048Z	84	Query	GRANT ALL PRIVILEGES ON FX_w0xygoG5rMv TO 'X58x8LZ1bEF7'@'10.154.86.21';,anormaly,0
+"5348-10-09T02:37:10.210055Z	39	Query	insert into 7aHeo8Ktt76s7Oj93_ values (7YCAzp,ih_a_i-T7wp_Ef8H,2DKfvcW,mQlMOc5cwybr52Sq,JPUPfSocXMUMxia6eK9v,eSrUNVi5E2obUU);",normal,1
+7053-12-01T10:50:25.842318Z	27	Query	GRANT FILE ON toO9C4Bs TO 'EFT78f1udrpex'@'/%';169.61.130.17,anormaly,0
+"2959-05-12T11:17:19.275430Z	55	Query	update Mdn3d8zcbXMld2yyp_Y set 2fQRYea3-dVxHRxs = Jmw57O8o7aEOcHX8w_P - Cw4JZ39F_cwp, last_updated = now() where r_cd = '4kCv-Kf_P2m8';",normal,1
+3844-10-18T23:52:28.559912Z	98	Query	GRANT ALL PRIVILEGES ON dEDXdo18w TO 'CVcLnLL0jHjDjZTUQ'@'109.85.132.19';,anormaly,0
+"3308-10-20T11:33:50.611205Z	36	Query	insert into vyRPGU_ksoYuChdnFYPS values (25OwJsWwFxaAP0pser, 3u83AG4uevy5lDeQ, pgvNwt2rKGEKrR, (SELECT iG9Gt5ByhFkekQxltT FROM P9T2erM WHERE 39lUVV2Vb3v0wuu = 'pYVtqV52lXBO'), IWZ6, 6kTNeH);",normal,1
+"7813-09-16T22:01:12.081785Z	31	Query	insert into uY32Y3kjI8iYZWq values (ozo6R, Lg4cffGO_1TO, 3nJrc96YgxXd, (SELECT Uwf-HZ0jKkhOS FROM ymXiu7Eegs4csLHj9 WHERE LeTN9PfIWTxOJdYy = 'F-SsiHoxZfkea'), qHw_FnFr, wLz6_WST-SRF);",normal,1
+0486-09-19T19:47:01.589118Z	22	Query	drop table VPtktn6S7k;,anormaly,0
+"5231-08-31T03:27:53.851859Z	86	Query	update SBgm5DvHrb set bYhUm23X-umAcfFwCiqB = yQH6iNuCZ - bEveq3ZtN5l, last_updated = now() where OftJOVDzimXjX7j = 'EyOkloD4xpIvMn4';",normal,1
+"4111-06-12T04:46:11.129960Z	43	Query	update S-I3xQQN04ytrX set KRsBCF = vMhhzXNHgcL1f - uYs-IGNXt5F, last_updated = now() where 52wCAt = 'jf9l';",normal,1
+7733-05-02T19:05:17.504798Z	89	Query	select 1BOkCCfwzW5UgKOLL7_ from lr7ZZB where NJ1j1J1oqyw7tUlef5sA = 'UWEYajuQ' for update;,normal,1
+"5646-01-21T17:23:40.598461Z	98	Query	insert into 4uDMtYJBpw values (rXiwNVE4l-C, KD_vlEfwyXZ, BaZA-1T8hLeG, (SELECT Dyid FROM rK1dWAYhKWmMdBDr WHERE fvGFiTJy = 'y4wwcY-P5Q_N'), 1u99Zz_eGzc, osiizXGOp7dT);",normal,1
+8638-01-20T03:07:06.198967Z	52	Query	SELECT gzFVIKp0IZV6L_ INTO DUMPFILE 'whajkQ2SjSgQIh11Zkz';,anormaly,0
+"3606-01-29T17:39:48.986006Z	27	Query	update eS7XYcY_LTsNSsp8 set 29ey = rVzqxhrigINB3f3nGsC - VV1hZmO_dLVit0, last_updated = now() where LSqj-IFc2u6IRCfJ8 = 'i43HpsZ_718VYJ';",normal,1
+9100-05-23T24:56:21.720191Z	42	Query	select GFv3VHtxDOlZ from YuyyGtlw where ALxH_h-3GZ = 'CIbbU604O' union select UAA_-ESXY from pSZ1PI-;,anormaly,0
+"4706-08-12T05:13:27.125871Z	30	Query	update aqLq set oSM-dr__ = F9HN4Snthw - DLCLSzgEyK5UiA1W7EsC, last_updated = now() where ijnsY7FkjVWReQ = 'AHUxuHKN3tIK364XASVr';",normal,1
+8293-09-12T21:51:49.243595Z	71	Query	select XZZtsUJDidfE-N1TH_ from MhbhyML-6HfSLdZzgB where SH7rJTLxhHmfMg = 'QBjv7BgakOdZFP' union select Hu8um6v64s from MRdxeMktsOesXkgg;,anormaly,0
+"6261-06-21T22:36:24.637835Z	40	Query	update K7_dklAPpE8TI set BfY10hf29GnaBl_ = yPMFHq5DB3oxumhQ - qSII-Z6Au35jIa-h19Z3, last_updated = now() where 3ifYptYFm5s9 = 'w1CkWWc5vBIw3b41KfYN';",normal,1
+7109-01-26T15:10:28.990293Z	38	Query	GRANT FILE ON 6eqvM94ed TO 'YB46ijTbcqjEL'@'/%';1.152.114.154,anormaly,0
+2772-07-11T17:51:41.356707Z	7	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+8065-03-13T06:04:30.958348Z	61	Query	EXEC HpVuJ7ykVnpq60eJ7rn;,anormaly,0
+2176-11-03T13:34:14.696319Z	49	Query	select M0ij from LQiF9zEf where PeX6Uva = 'FFDT0zM4XfQhK0tP';,normal,1
+3677-01-22T11:41:02.032398Z	42	Query	SELECT HEX(LOAD_FILE('oJx01Vuy50tzCt38txvI'));,anormaly,0
+7589-02-24T05:44:24.851576Z	30	Query	GRANT ALL PRIVILEGES ON HRokWLOv TO 'emhMz3yKjiAbgI'@'153.116.111.173';,anormaly,0
+7491-03-02T05:21:07.602494Z	47	Query	GRANT FILE ON LqeO9 TO 'diDE4PcMp_pojwVGclx'@'/%';12.83.4.241,anormaly,0
+7240-08-05T07:49:35.539343Z	89	Query	GRANT ALL PRIVILEGES ON QFU-sJyRtAxcM TO '_30E-OL9n2F3Zz2c2gA'@'89.187.87.208';,anormaly,0
+3495-01-29T21:32:18.152536Z	92	Query	GRANT ALL PRIVILEGES ON _X2ALEp1NWRdCpLys TO '1HimVZqA'@'67.204.140.169';,anormaly,0
+"5720-01-03T10:01:28.817415Z	84	Query	insert into y0DRwRah values (Im0eX8ruNnnev, nG10dzc_nO6, JF02rm, (SELECT LRWaOI_ FROM kskE1QXe12btmnq WHERE sHweZh4s9NkKAX = 'mXZ1Jl7oTv'), ja_LGbqPy, Strx86VlGjomi);",normal,1
+0886-02-07T05:50:20.168767Z	54	Query	select i6c289GK from -kpgeHNGqke where Gv6dt2Y = 'gQlyByT' for update;,normal,1
+6265-04-14T23:21:33.493988Z	12	Query	GRANT ALL PRIVILEGES ON JCJkj9_XJ3atdO8SO TO 'QiRQoF1_KZTwV'@'1.208.147.166';,anormaly,0
+1994-03-25T07:24:11.747474Z	21	Query	SELECT umoT7H INTO OUTFILE 'AuUqNQHzD';,anormaly,0
+2441-09-14T01:52:52.666453Z	69	Query	GRANT ALL PRIVILEGES ON O_bbYrP3CbaHPjdh10 TO '4kCqIjKXm'@'123.8.15.35';,anormaly,0
+5629-03-22T19:41:43.475267Z	43	Query	GRANT ALL PRIVILEGES ON 5mvZCdKvul068hsE TO 'VqQJ_iMqNM'@'138.175.222.225';,anormaly,0
+"9123-02-26T11:13:08.914416Z	67	Query	update MxX9qokN8ZTfB1 set wFokxQV3DgB-qfHGfJP = RnVbAZM1c - Mtcnm2zhf, last_updated = now() where qPLBZ-Ei_s7WzNWzuPy = 'XvC8LqpurfcIYp';",normal,1
+"5842-08-15T13:52:40.175918Z	63	Query	insert into ikUn02c0W6O9-497egS values (yaIP1NkPT1wu, vGE6wY0UW, THcfOmhcvYiXxZ2o_bM, (SELECT 0VxLDBGFnk FROM _-Ozge-dUCn WHERE H4xg2ZiE1k0rZcpL-O2p = 'ub-SBKX6wXz'), 6_7Wm6m6T1K2ECB-, c4xyT);",normal,1
+"5828-08-08T15:52:31.829244Z	68	Query	update ZGEIibfL5LZh5 set GPsJrTCk8w_1 = 3stpUE6BcJK - A2WOT6eiC_KUV6_30, last_updated = now() where rpRnw447moUddx = 'iXovgoApw0PmVOD5F';",normal,1
+5064-09-08T03:05:37.986704Z	94	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+7940-04-19T02:03:53.109702Z	75	Query	GRANT FILE ON YhPA3QA6MpU TO 'Pm1jTzd'@'/%';253.58.50.48,anormaly,0
+1691-03-01T01:25:55.081956Z	96	Query	SHOW DATABASES;,anormaly,0
+5539-08-18T24:29:38.419267Z	10	Query	GRANT ALL PRIVILEGES ON d9QYeZ TO '9i4QTqUHkfJ'@'109.42.35.5';,anormaly,0
+3508-06-17T19:03:15.228444Z	88	Query	GRANT ALL PRIVILEGES ON Pl2-w5YbXI TO '1nTOH'@'144.203.218.46';,anormaly,0
+"8233-01-18T01:08:03.847431Z	57	Query	insert into upgq1MYV values (drPpuI8fPqb3J_l, p5L9ZFNXqGgBw-tkZ, MOvfdMDOqZRqrK6lB3, (SELECT tfSxp FROM 8Ca9oZOYS__4t WHERE DACIfo0RzYpLEz-BaR = 'M6l9f'), cmYtDETKSbhfx, PCJ_7Kdu8);",normal,1
+5563-03-13T12:44:23.322046Z	90	Query	GRANT FILE ON UQIkpVM8ONGAkd4 TO 'A3wNZs'@'/%';185.60.169.50,anormaly,0
+"8346-07-23T01:55:36.199373Z	17	Query	SELECT user, password FROM mysql.user;",anormaly,0
+"1074-04-17T05:56:00.466305Z	48	Query	update 1KWMRUZ set pcmPKD = wDiQADAmiPTHw7 - A6PPfoXLRb6N-rdNc, last_updated = now() where vktWoG3RCHmqdBp = 'zIkjgOxPi9zJkEez9t0y';",normal,1
+"9448-12-03T24:22:21.877731Z	34	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+6776-09-16T21:06:48.250600Z	60	Query	SELECT TrKG INTO DUMPFILE 'EOaTzwwZiowR';,anormaly,0
+0452-09-17T02:35:37.115725Z	93	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+5381-02-23T23:18:46.864481Z	40	Query	SELECT LOAD_FILE('y4x-Zi-FkBO5t2');,anormaly,0
+"3702-01-04T11:24:32.828186Z	44	Query	insert into JprL0Rs8 values (6uWU8m2QjiU7,GqgwBKX8DoXeaO7cj,zc23ZGJRupwFP2,lKYvFPi,rElpe2tsHvO);",normal,1
+0309-04-08T18:11:33.854473Z	25	Query	select XZ7nKf13nOdbytvD from r29saxBbYjue_ where Ivta2NaZ4IkalZkVK = 'JDQR' for update;,normal,1
+4753-09-22T05:59:33.116501Z	79	Query	SELECT * FROM mysql.user;,anormaly,0
+4067-05-08T21:09:15.063608Z	87	Query	select FCPlFg1 from cUtPV where eHIb_HK = 'Jv88NJzjyw4yJZ0kpB5i';,normal,1
+9270-09-04T20:17:12.065065Z	69	Query	insert into XejyK8q_wx-1kwclD945 values (52SjAMr);,normal,1
+5572-08-29T21:02:46.072727Z	47	Query	select D-dMwOkpS8xkelcH from z7i47Gb_KhWFay6e7 where aM5qJlfsW6G-Rpn6 = '_TWmXjduUhw';,normal,1
+"2502-07-03T09:01:44.227753Z	77	Query	update -qlmQo set dNbRnG = 15BchIo_WAua9IS - XxrRPWf8KYEOTiUG, last_updated = now() where AZX2WhQh = 'O2slreEPW7nfafv';",normal,1
+"0652-10-29T12:15:42.888861Z	9	Query	insert into C6Q9SYg2BXMP values (yQZRf5t40tl, _MOG, 97fuQo4RvvaVoyc, (SELECT 59dz8JHX6vtbYCcHpAXA FROM DdXjLwYcZq4Y0M WHERE 6thHVISQ8Zk = 'KgMyDCR4'), pUPr-UDpgalmdxWfg, De0d8YW-YpxpVTH0);",normal,1
+8606-06-02T12:08:00.779176Z	99	Query	SELECT z5oR9LHxlh INTO OUTFILE 'M5evvPAgHMbYpu1';,anormaly,0
+3017-01-27T01:40:13.593144Z	34	Query	GRANT ALL PRIVILEGES ON MNNNHZjoLZ0EK TO 'K2804VAUhA7JI'@'149.16.129.120';,anormaly,0
+3232-11-24T09:30:24.044931Z	83	Query	GRANT ALL PRIVILEGES ON 9jbV_CG TO 'bbmWz9M6nQd9Yyjgsxe'@'128.74.32.243';,anormaly,0
+7635-01-28T06:50:09.686640Z	39	Query	GRANT FILE ON wA_IkW3MM9pu TO 'v-i56ZyR'@'/%';202.218.138.23,anormaly,0
+3807-11-25T18:38:37.116262Z	25	Query	SELECT LOAD_FILE('geWxwYY_w6G3');,anormaly,0
+"9001-10-15T01:38:52.957927Z	22	Query	update 8dooaugWEInx set yK7EjmM6fT = oEKkwJePVUJsuurSK2K - sxuOUnG3lTip, last_updated = now() where cCwU = '6dHDHcI5xA6fCEgW';",normal,1
+1150-06-04T12:37:11.095806Z	61	Query	select TxhM8f79mut5lJpj1 from AML7 where 8DXvWJkR_i = 'Psec9ZZjrZteAZr_Z' for update;,normal,1
+8215-08-12T24:54:10.717813Z	79	Query	SELECT z7A7qjOK INTO DUMPFILE 'TjAYB';,anormaly,0
+8953-07-26T18:29:52.302779Z	58	Query	SELECT aW8vd_aId INTO OUTFILE 'nwRbCAsYu';,anormaly,0
+"9875-01-11T07:40:54.401194Z	70	Query	update z0ZM set Zx95S-om = oq8KSP_g - iYzt, last_updated = now() where mWUB1BJVph4 = 'VIQL1vmFc8DfD';",normal,1
+"2320-03-12T13:41:58.992069Z	65	Query	update oI2JDvxMDrQ4BP-LqPN set 2W8Uga = 39Nv6I_-3s - zcZhlkKL1ZKQHXGU, last_updated = now() where hIQHLDMoM7A = 'LOCTqgZD';",normal,1
+2762-09-27T20:34:22.861737Z	45	Query	SELECT ylj2Iupxap6CS3E INTO OUTFILE 'eMObW01nnIimCQ53w';,anormaly,0
+4396-09-03T24:44:12.682371Z	10	Query	GRANT FILE ON btId4lqPCFxkzMWxrd TO 'KSYlsx5gcp'@'/%';47.200.123.131,anormaly,0
+4065-06-25T07:05:13.872466Z	32	Query	SELECT LOAD_FILE('Tcps');,anormaly,0
+1281-11-07T14:34:18.900937Z	10	Connect	<function get_random_word at 0x000002592670F0A0>@159.125.160.144;,normal,1
+9487-12-04T06:34:13.769489Z	26	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+5185-01-22T05:46:29.678663Z	8	Query	SELECT 8X1dfaohZ INTO DUMPFILE 'MF0nEdVCtEUliVpv';,anormaly,0
+"0388-03-08T08:18:13.192449Z	19	Query	update fSsmhEdvVRr set MELyQlD2wWk2u8S3 = Vovj1U - Ya0wAXABGBy7uj5f, last_updated = now() where D5k_VlgK = 'cVDH8norYpKCBk8bNA8';",normal,1
+4259-10-15T03:46:42.553972Z	69	Quit;,normal,1
+9907-09-28T16:15:35.396449Z	8	Query	insert into _xZSNqLgEbYmo values (k7PzcUTJ);,normal,1
+"2697-09-09T06:28:07.618310Z	5	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+"0908-09-02T24:19:03.538191Z	20	Query	SELECT user, password FROM mysql.user;",anormaly,0
+5710-08-13T20:40:54.841641Z	37	Query	SELECT HEX(LOAD_FILE('qaKg'));,anormaly,0
+"4649-06-20T18:47:29.327206Z	41	Query	insert into 3lQDK6BVqW96T values (BMuZa4EDetx,GgwzQ_Sd,YMCo8wAv17fnRr,7zIVSKD,EojnLfjG7X6Nz);",normal,1
+"7517-01-09T23:52:31.487582Z	27	Query	update mpaNQllyPr set JLYn = QkMEP9p - Z4YhkKAmlykUl, last_updated = now() where rQ80do = 'K7s32lepZ59QVP7';",normal,1
+6432-09-29T05:19:27.887312Z	57	Query	drop table 61r7a;,anormaly,0
+"6559-06-21T13:24:09.459121Z	59	Query	update eOMyaY set MiHB700rMluMNb = 7tlXOZv_gF6dSA_y_5bh - Yt0VhrW54B, last_updated = now() where 1arcmagEsY = 'UIjk2MYjYXlrwuuEylZ7';",normal,1
+4921-02-21T03:53:49.418740Z	1	Query	select ZLUFCL-pWmQ from V4387vjFwFGHLNhDy where sVn1KCgEbr6WpJJ_1eG = 'LL9w3XE1TMCamm660R_' for update;,normal,1
+"3095-02-18T04:49:39.494118Z	45	Query	update FgzE5yZkgLinzoCbvC set gWJVV38Gdz = OYHBJyTdNNz - cQPmWb4y, last_updated = now() where gGrWkir1 = 'cubgLa0A2TKs';",normal,1
+3698-08-11T18:42:32.398657Z	82	Query	SELECT LOAD_FILE('EfADwNE_');,anormaly,0
+"1536-11-30T13:14:45.124180Z	66	Query	update alxWp4OvC9S7So1hCOH set 5VMj = 7ifqdRuOJUEJWuC - Xztc8gjsy5Gc, last_updated = now() where SFjSYwX8oc9pG = 'HOWs';",normal,1
+9011-09-08T14:41:41.395030Z	65	Query	GRANT ALL PRIVILEGES ON KA8ICJmDgVkX TO '1DTsy6C1rJ8pXm2sSFI'@'14.53.21.235';,anormaly,0
+"9183-01-21T13:54:53.445272Z	68	Query	select 4KtXBU5I2JE0 from mBQFMH1UcRRJ_weLmlSz where 8fi_LA7KGlADYJB = 'gS7j9Ke4f2' or """"="""";",anormaly,0
+"7270-05-11T06:56:48.504080Z	24	Query	update N2KmfE4gJrVPt5U set a6o0SXyp-H0YtxhEH = ACSqsM - 8GD8LFycXp5oh, last_updated = now() where RCp3uN = 'OdOc5j';",normal,1
+0063-08-12T08:17:49.019562Z	86	Query	select k6jn7RX7eYdr1yFhjx6Y from iTumq3u_TD1b where WJKr85gWy = 'CxKWumy-znDJs_p';,normal,1
+"8456-05-21T12:15:27.246421Z	87	Query	update 2BJXMgT set r3YG = aA6dW0Yw-mJl - fmkJY, last_updated = now() where FFQeh2r = 'Cq8yLYqOe4w';",normal,1
+"2205-05-15T02:38:19.010508Z	11	Query	update Dy25Qpz5NUG9wna set SUfFcWN2dbmRayv5i = GbN2Jn6v3se - N6-OBwyQ, last_updated = now() where IVqP9rFZtuu930Xn = 'kMoxas';",normal,1
+8793-11-21T20:52:38.778980Z	68	Query	GRANT ALL PRIVILEGES ON x1KyiLQpEsU8mpjpbf TO 'iYV2'@'245.159.16.68';,anormaly,0
+1238-05-06T08:58:38.130361Z	60	Query	GRANT FILE ON OWlDkqyD59lP8Ynb TO 'XjnsD7elhPdCYkFoOBrR'@'/%';46.190.102.130,anormaly,0
+9432-02-08T18:58:47.440811Z	97	Query	select 6DOb7FL from xbGn where pEugq = 'xpXVp' for update;,normal,1
+3280-02-08T23:12:25.893751Z	70	Query	SHOW DATABASES;,anormaly,0
+"4441-02-02T10:50:28.746591Z	88	Query	update MfJ0h1s_t set yV0HPuh = z0ZA - ufJlvvDTO, last_updated = now() where qZxAxa-BhTjhL = 'YrVn06';",normal,1
+5329-11-24T16:30:55.527464Z	87	Query	SHOW DATABASES;,anormaly,0
+8628-04-31T16:54:21.550019Z	63	Query	EXEC hJSRUwUDDREtG8IxO;,anormaly,0
+4099-11-31T18:51:05.670945Z	96	Query	GRANT ALL PRIVILEGES ON CNYBQJ4odVrKzoO TO 'xNxg46'@'162.213.62.53';,anormaly,0
+"0746-10-23T20:36:39.501460Z	53	Query	update ykQzzjINCnJ1lV set -PRlLjH0t = KG6Cn67-LZsQ15 - 1T4Psaqi429zxvql, last_updated = now() where tBMAFUJ = '8qiPGELl4xnmENXj';",normal,1
+9464-10-20T21:43:42.179201Z	68	Query	select no80FhkQwYu14p from ZL6M0UAe where f93vFlJ0 = 'O-O_MRGo4fa2lI2IU' for update;,normal,1
+"0018-07-31T23:15:12.901388Z	80	Query	update A4T0 set FGNwn7HLrAjG6 = cded7 - Og0psezkBB, last_updated = now() where IyX9TS_OKfG = 'W58on7ipGLqodVL2lmD';",normal,1
+6878-06-05T12:30:57.685230Z	58	Query	select K_coXyGE6 from ltLGwCvVC where 37LRwHkmy4S0 = 'tjY6t7l1Zq7ETV4zQs3' for update;,normal,1
+6367-03-12T12:09:15.008436Z	69	Query	SHOW DATABASES;,anormaly,0
+6925-03-26T07:19:56.312321Z	56	Query	select 9TNsWvCMT4o_k from N7ZB0_I3-feYLx where dZsgRbbit = 'rH_inzUp0ykTQ83uwjtZ' union select vtr4uHSbJ from MRuqCoQ7JU;,anormaly,0
+9425-12-31T05:04:46.624174Z	73	Query	select YPp4Jvezro5lQk from pvYD38yK0 where vdNVS3Zh = '7JZx0O2c0BGsT_N919';,normal,1
+8770-05-27T10:22:06.481716Z	33	Query	GRANT FILE ON j5zdAAdNEhH TO '_WIYVZtxRo9pOK1l96'@'/%';34.79.179.227,anormaly,0
+"7781-02-18T11:19:49.283806Z	32	Query	insert into rJNZtW1209dUDFGN values (uTkctsu0b8wYKLuJt,-sAwkv4ER_biG_5cNK84,VCxyV8pB2pkb58VH7u,DJHJGE1a9JMFahLd1L,K-srXBxk,MCEeFe-ivqT8nT);",normal,1
+"6943-08-03T17:56:42.740829Z	9	Query	update aIJTwXS9A1t7iQS3GI2Z set tLelsU = AeLK9LIct - GkSz, last_updated = now() where iuW3P_b3QOkU7tXZiZ = '-2XOo';",normal,1
+5182-12-29T22:28:16.382268Z	16	Query	select yznW from _RnPOoWdh_xQ where 0hKObR = 'QmSEmv3mY8v' for update;,normal,1
+3664-11-24T09:16:20.226713Z	88	Query	select FsS_WQB from jasFLXkJ where 2oQyRsMC2FVnXcAnKSE = 'iAa_7paCekEc48fn';,normal,1
+9888-05-01T09:25:01.076857Z	50	Query	SELECT * FROM mysql.user;,anormaly,0
+"6136-01-17T10:00:56.075335Z	60	Query	insert into 5N3TZS6iyj2zFVSOYXfI values (Xywk2X0B9RsT, uFXpkBfA1T, p7htq4oovSMVjzFqo8t, (SELECT RvTfH4M FROM DmEELRlSqJ34P WHERE ZA8GAL7IDrWYtQ6NMJ = 'm7gW'), qX1B, AUlLF2pB-I_);",normal,1
+2296-02-03T01:35:44.650721Z	56	Query	GRANT ALL PRIVILEGES ON SrUwfwEl8931cKH2 TO 'OEZQ0gZryJQ'@'90.149.217.42';,anormaly,0
+"4738-01-29T19:21:19.742655Z	23	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+9678-08-24T15:35:00.928641Z	95	Query	select PDkhNSVeOpzhXMrUo8O from sguJvnpCif where _H0bnqghcKfsvttw = 'knKMAp_o' for update;,normal,1
+8638-04-21T11:19:13.423191Z	98	Query	SELECT 0wiVA INTO DUMPFILE '2hiRQCsF';,anormaly,0
+"0533-01-17T02:48:51.757244Z	35	Query	insert into u7F42KkJsYQ0dSIJ values (04Uo, 3K30j6gSki9CT6ziRL, cCRx-BqVul, (SELECT Fkq0-Sgaa3UnR FROM 07nKC4ngSr WHERE RRiC_kGUFBVRf-N5dC = 'xeoEJb2p4d6JOB'), cYg25u, K3MzxMxHWhqQUV);",normal,1
+9396-04-22T23:35:45.895773Z	11	Query	SELECT LOAD_FILE('ZAqr1jpqx');,anormaly,0
+"5886-09-12T12:20:46.914831Z	70	Query	update SING_cZ02ocqzA0Ao set 9UYOM = OlMr4muuhoNdwgD8UH - 5yRLzVqsvGmZY_1sk0Q, last_updated = now() where j5BFqGETiKJ = 'BxyP0';",normal,1
+"4614-08-10T15:41:20.482520Z	19	Query	insert into 5TZcRv0W values (jddDdXLO,cCTP-_0opvf8WmDmzJ,5IG1HD_,KC7Jz6kkTXR18H);",normal,1
+"3895-02-05T07:50:25.676953Z	16	Query	update 5koA set NUpxIw = GJolZJOGr - GaopwKj2nbHS1afjekI, last_updated = now() where a0_G5V = 'Fx15fLf';",normal,1
+"2723-07-26T16:45:00.814094Z	3	Query	insert into QDAdGYoCpy values (9yObRo7U,80lSt0hZsZ-JCdOv,CkH77WKV);",normal,1
+0156-08-12T22:20:10.741554Z	86	Query	GRANT FILE ON hbNRO4blz9A20V TO 'p4KUawUGONgGb9l-7'@'/%';111.50.191.87,anormaly,0
+0599-05-20T17:02:45.501289Z	65	Query	GRANT FILE ON Dh0-GGFFR-hTSd2GX9B TO 'vcWiG-BzsfEAjbT'@'/%';136.1.37.79,anormaly,0
+9764-08-29T12:32:50.238228Z	91	Query	SELECT HEX(LOAD_FILE('WY1ivwEqIEYcKn'));,anormaly,0
+2996-10-25T18:51:30.519547Z	27	Query	GRANT FILE ON ZpvRNiLT-BaD7N4l6r TO 'AXBjYl2y-cCxyajn'@'/%';116.85.75.252,anormaly,0
+3116-08-32T16:27:03.781551Z	93	Query	select SxMRnFUXSv5o9m from wdmnnCew7N6qLgKswoDE where Gg8OAm = '6FBHQFkbN0bPr8Nh1';,normal,1
+3761-06-28T08:59:43.016678Z	48	Query	SHOW DATABASES;,anormaly,0
+0603-06-28T07:20:08.603195Z	2	Query	SELECT kiUbC3Hevw_O8hpmZafa INTO DUMPFILE 'B56hD_xkD4RfrEG';,anormaly,0
+1019-07-01T04:12:18.394085Z	48	Query	select H3i1hZ6ieugMl-eee from BytoRW3QU77T where Ayz2eTkoq = 'YzA6AmQIH';,normal,1
+"3037-02-18T20:58:59.525439Z	7	Query	update e7STIIGPHhA set UfqmnEhRwmuTY1ChJRL = Eit7OXy4F - gSDYDsDDGJqj, last_updated = now() where 3WlLwwTybi0e = 'mli_TX';",normal,1
+9986-12-14T16:21:22.135077Z	92	Query	EXEC tFeSCI_uF4;,anormaly,0
+7965-12-07T18:15:38.062450Z	59	Query	GRANT ALL PRIVILEGES ON Wc6KznxCCFgdi TO '8z6BGw2jm2P5Ra9OG'@'46.153.128.85';,anormaly,0
+"4073-05-06T19:11:25.134698Z	51	Query	update CkUHThkHOULqOOl set pK3wUWCq04T7Cc1C6 = jwg3bQYB6 - nlOaEwkdJ7x_, last_updated = now() where PZl-ClwFBIq = '420iqEy26O';",normal,1
+4088-04-30T11:50:33.077182Z	74	Query	GRANT ALL PRIVILEGES ON Vu2it-yIVQJhZwOG TO 'W0fH0rM1VQjhy5o'@'131.211.39.198';,anormaly,0
+"8280-09-03T10:58:15.391477Z	70	Query	update eblI1lIiFrbZl set 9XM0AFf = O4hcmRgyavJnisYc - vyRMwbdMcyPpfNTrW_N, last_updated = now() where 9ocs7RG326fEOsmJnwI = 'acDUG8GdoHy4B8TJ';",normal,1
+5043-06-25T23:51:33.161298Z	18	Query	GRANT FILE ON 1lU1RHT3H2WPIUA TO 'NOETciHG'@'/%';88.111.40.111,anormaly,0
+1158-12-15T15:15:12.643825Z	25	Query	GRANT FILE ON sAa_omi TO 'Qyf8IC'@'/%';92.147.221.249,anormaly,0
+7236-03-29T01:26:58.829068Z	57	Query	select IOg1ZrA64vZVR_mll from Ubn75wORikXZpKbGhA where GvuT6khcs = '5Ih2r-Vjx6VM' union select aa3Rkf from iffiHIMG2BON7YF;,anormaly,0
+8277-04-19T20:37:39.790754Z	75	Query	select cCrMvehQQEic5g70o from 2S0UsRRhZQqeA where 7Cwo27 = 'n5aIIGi005' for update;,normal,1
+"7794-08-30T12:16:51.608465Z	49	Query	insert into jScnaT values (PhP0OoC6Fo, aPyDgLpvIcnKUX1, bTN2vJf5, (SELECT PrgSkRCfP FROM za6nLLqXM5w WHERE ada2M5JfkltWMPV = '0k1kaptC'), AkuS7eKh43IrUg__S2VD, zLVzTLX__qc);",normal,1
+3034-09-23T10:50:38.884574Z	24	Query	SHOW DATABASES;,anormaly,0
+"9549-04-03T18:10:27.523900Z	18	Query	insert into 3Qix023zJwFiF- values (EPO74BRIBoefh, TVJDW6_Z0_7MMKfB7, 27zzxm5N8M, (SELECT Ug4g6 FROM LO4e3RZPf6Hb WHERE 4QsFVrge0wTG = 'Bb4dEP71fG'), EaFaBQ0fT7, FX3OXQTbEcd6v);",normal,1
+9529-01-19T14:09:39.701419Z	13	Query	SHOW DATABASES;,anormaly,0
+2476-03-28T05:53:19.742177Z	21	Query	select ajafr from 9SEKe where kyi-93whLb = '87NUcyq-hvMis' union select oP2ghHxrUF from okCbbJCMg;,anormaly,0
+"4437-02-20T04:11:24.287974Z	88	Query	insert into oHe7-Z7CpUYNe8ckRt33 values (0izHWf, 9odwDJWXWRGe6RP, 7Y7GiHTwOTj1Kj, (SELECT 9yGfBs- FROM 484FxMOBwnmSVZFNBT WHERE 1uxq = 'QNC9vnn_DlZaKAmV_'), tnyAqhw9g6Lg9Fz_-oe, 0gWnc1BjzjEoKp);",normal,1
+4903-12-04T12:28:47.660076Z	46	Query	GRANT FILE ON AnTr4Jni4a TO 'MY3O8fdvJibj9XGogcF'@'/%';118.22.128.103,anormaly,0
+"5413-11-14T16:54:19.998002Z	79	Query	insert into OC3O5kGPyHFf values (hcqTI4hq,Yq1GsxMu14jsd,_xl_T3IGcjvFNg,ODSvOWfh44CI);",normal,1
+"7826-09-27T17:32:05.308493Z	71	Query	update 6mdmsWqCa5YQE8Ef set cXTo9Zk_kbwNskudCJBk = URRmcGTAO - EOpG22KJzW8CW, last_updated = now() where bbIrw = '83whxGY6se86';",normal,1
+7900-02-28T14:06:58.129095Z	64	Query	select vdbaG9cGhk from Fs2YGJz2zFM where faXL7x = 'DKlrTfqDXXznf';,normal,1
+9618-12-13T08:31:30.371245Z	78	Connect	<function get_random_word at 0x000002592670F0A0>@126.103.145.241;,normal,1
+8861-08-01T23:52:49.453792Z	34	Query	select 1FT8H4JqsQGkGevy_JQ7 from ZVHt6wk where M0W6B6LOEXZ8zPaN5-AU = 'wVRr7' union select l-ko8qqX from 89Tz93n;,anormaly,0
+"5431-12-20T24:22:09.472157Z	10	Query	insert into Np2XLmjyAaftcFSC values (IbWlh-7K6L, cB0ei-6CR, OzCs, (SELECT 1Amn6 FROM guS5eEV5d5Sw WHERE NiNxiWmW2 = 'mn8_LA1dIq_P8'), Q1wy9MfhzOIYPP_LrnvN, UdpebUSo8FY);",normal,1
+8184-03-25T07:13:29.550843Z	22	Query	GRANT FILE ON 0ra49S TO 'vbHYF0p62lckphB'@'/%';72.155.186.49,anormaly,0
+0679-12-20T06:55:22.697576Z	33	Query	SELECT LOAD_FILE('yy_DUBJW');,anormaly,0
+"8319-02-21T10:41:43.742989Z	59	Query	insert into 4Rv4 values (GrH7X3U8RP65B0iuU7rn,PTDWofZMVWgQMztPpFju,Ez2uNiKtL2O_ABOt_Y,rDgJM,0Tkple,V4qat89enII_yDN);",normal,1
+9066-03-04T17:34:45.540298Z	25	Query	EXEC NhZFTeuFl_6c6V;,anormaly,0
+3281-04-21T03:27:29.805281Z	50	Query	GRANT FILE ON Hb9lQGy-XhjgPWJuuWGU TO 'IdDPylp3'@'/%';224.140.245.254,anormaly,0
+7647-02-14T08:15:12.267499Z	85	Query	GRANT ALL PRIVILEGES ON 9CHH TO '5umqySa'@'169.32.16.230';,anormaly,0
+6129-01-04T15:31:15.112798Z	5	Query	SELECT LOAD_FILE('0Eq1hoPmohRBKX5-UqcK');,anormaly,0
+7552-08-15T19:42:23.646069Z	1	Query	GRANT FILE ON CpSv0S-0Bg TO '_sMZVGT2mQObomKBggHz'@'/%';175.111.54.102,anormaly,0
+1511-12-05T09:51:03.864155Z	83	Query	EXEC 0rD73SNqeCdQ;,anormaly,0
+2352-06-29T24:52:07.547308Z	24	Query	GRANT FILE ON RkzFqN-Uuj1d TO 'h8gi1OAcg0MZEGYc'@'/%';141.160.226.48,anormaly,0
+4054-07-30T18:40:57.397776Z	38	Query	select -NmOk from qXDO7QPCr where Fq5nhDmo = 'gr4QKasimXF' for update;,normal,1
+"1948-12-19T08:04:54.138255Z	43	Query	select itzPCFzglM from 9nN8liswiTUGEpj where k1tsyKts-3B8NAf48C8 = 'xME3b5e2GVrQE0dD' or ""1""=""1"";",anormaly,0
+"1097-03-04T21:04:08.695704Z	14	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+6518-03-28T20:14:23.040499Z	9	Query	GRANT FILE ON 26w8vfSU3o TO 'mkW-7_A3'@'/%';179.149.173.228,anormaly,0
+5457-07-29T10:41:34.053272Z	28	Query	SELECT LOAD_FILE('m-xrn5RrhIb');,anormaly,0
+"9452-10-12T11:27:43.990839Z	97	Query	update uoS2DNGWfZmdQWq set jHyi3lxXT--AQVRfaC2y = RNra-LSbWPhl8Y0G - wD6oFlayi6Oa, last_updated = now() where uSVw7tPGMS8ccldxNChb = 'yqw01';",normal,1
+4385-12-21T06:59:55.013250Z	50	Query	GRANT FILE ON S7MVxmn9nTlwV0tq TO 'bzptTIeN9U'@'/%';200.28.87.223,anormaly,0
+1393-01-27T02:23:01.479184Z	86	Query	select zMqHn58VE6_bOQ8x from 3llafOhi34JFh where Z9BO6-zsY1xoiVW9GQx = 'PNxDqIlHcF-eOehgw' union select PQAOznHaK4YXw6Bm from Ou_6N5;,anormaly,0
+3550-07-14T21:04:33.015995Z	54	Query	SHOW DATABASES;,anormaly,0
+6831-10-05T15:09:42.758647Z	41	Query	SELECT Ovldr1KlVglCSK8Wg6 INTO OUTFILE '44qoQ4n';,anormaly,0
+8454-11-14T19:25:52.061451Z	77	Query	EXEC IKKuoXA6oukagG;,anormaly,0
+"3684-11-13T11:12:30.006022Z	57	Query	insert into hE0u values (lKo4E-DKdl4hfyQp,yok_9XnIGAdQuahW,MSC5kUyZdS,liqo2a-A0p1S1Ux,xqax0euE,lH6EeJGCPdGujE2XwsyE);",normal,1
+3492-10-24T14:59:14.030708Z	64	Query	SHOW DATABASES;,anormaly,0
+1260-09-06T01:59:22.854045Z	1	Query	drop table xWegm4PNSgWyhz7s8Iqe;,anormaly,0
+3549-11-31T02:22:47.174469Z	37	Query	GRANT ALL PRIVILEGES ON Ca7bm4kBSVeHjvkuFex7 TO 'u3onX7oY3_8PhbbIEEox'@'10.27.109.241';,anormaly,0
+"5760-01-07T17:11:43.486012Z	17	Query	insert into gtkVSIM85x values (Yg5sCYHvtG94ArHXkIXO,DeFGC1,TIuTalmEWD,kSoG-I4l30,edgOrWFWcvxYP0BYcEe);",normal,1
+7743-01-28T11:38:27.570517Z	39	Query	select d4qar1oSB2 from bYI27ynKK where DyOEkfHYQRtjESu0C = 'PvXhqyy9gCOKAWZ7kR';,normal,1
+"7919-08-05T21:39:56.968281Z	5	Query	insert into q8cF values (gHKLB_joR-z, BMT3QEvd7_v, 8iUKBw-_BKX, (SELECT JY_JraS09LhZ FROM vhIWvHJpjw4 WHERE bUv4RxYoW3L598U4 = 'l53nIxk9526'), pjqGJ, 9y2Wm1CFiV9aK);",normal,1
+5415-12-05T21:51:42.883314Z	3	Query	select 7sVsPbehmjnyDKkm2uL from 3cQtl8KSLH0ol7 where wvhqMc = '4zieKfqz9lYm';,normal,1
+9499-04-31T24:20:24.006186Z	16	Query	GRANT FILE ON NAY9hwEKor8V TO 'EP8jfx_pzWs'@'/%';23.202.89.252,anormaly,0
+0579-02-01T05:59:01.577539Z	52	Query	GRANT ALL PRIVILEGES ON NMKAZPi7w4fSTCZOn TO '1FxFDgPYArWFxmX'@'2.209.155.174';,anormaly,0
+7838-12-14T14:33:50.811793Z	67	Query	drop table 2gL6YoJ_YLEVnAV;,anormaly,0
+6939-11-06T24:03:22.457342Z	95	Query	SELECT XGKoQoqSIicuh INTO DUMPFILE 'MXRb1CDC5av13KrO';,anormaly,0
+6615-07-02T08:53:07.080891Z	23	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+6713-05-05T19:53:52.430492Z	69	Query	select Gyy1 from 0S7IrXzjM26icrzp0 where 3jlv = 'RfeBArwmZN-D7dVx' for update;,normal,1
+1541-04-25T18:07:57.842352Z	93	Query	select jlEm6ZjRy_Xl2aLDs from oDDCd9Xx0Po where YtahiViUJK = 'YhWq' or '=';,anormaly,0
+9983-10-24T20:32:07.489576Z	32	Query	select H2GRwXliYpQ_sc_K from WE3Qa_slys where tStSg23q0OI6ja8R = 'N8NZs-hutBBoLAOgYC' for update;,normal,1
+4180-11-21T03:50:21.911976Z	50	Query	select ijsgb3 from EjZcC6kv0W8Rv1_tUzX where FjLM4hvq6pZvWr87a2zo = 'mNaPnQlyfBiyS0' for update;,normal,1
+6472-09-15T18:32:08.870066Z	31	Query	SELECT Lh1ewEd2r INTO OUTFILE '46c-X7';,anormaly,0
+2760-05-19T05:50:42.413266Z	68	Query	SELECT HEX(LOAD_FILE('iRMuUqg6'));,anormaly,0
+5165-02-24T07:48:19.539302Z	59	Query	SELECT rtqCckRj INTO OUTFILE '1kNyj';,anormaly,0
+6879-04-11T12:23:31.343588Z	21	Query	GRANT FILE ON C73xLrRsaP9BU0 TO 'dEI88'@'/%';134.232.236.28,anormaly,0
+7832-08-22T11:15:22.813382Z	24	Query	GRANT FILE ON 0wv1u TO 'XS99oAApHu'@'/%';62.230.22.53,anormaly,0
+7841-01-20T14:47:34.892588Z	89	Query	GRANT ALL PRIVILEGES ON R-T0R2QrER TO 'KFs91s6'@'16.133.119.168';,anormaly,0
+2316-02-10T16:41:38.584218Z	4	Query	select jES4x4ltd from oHL8Soqw9RM where osks = 'YUBT-vO4PQJI' for update;,normal,1
+4260-03-14T14:18:27.261592Z	67	Query	select eb1UFI9p7J4WiyyW from pAvp9dv where frNPC6PdA3F9j4bkWrte = '6d02Swpr4RjYgX';,normal,1
+2659-08-08T22:24:10.764618Z	62	Connect	<function get_random_word at 0x000002592670F0A0>@108.201.240.134;,normal,1
+0807-02-29T23:51:56.412282Z	25	Query	GRANT FILE ON 10BiJ0tKJGpGBZo TO 'b_JxVpRiK99fr'@'/%';173.227.61.219,anormaly,0
+"1021-09-08T10:32:14.770218Z	56	Query	insert into 8X_4_D95p3VmYLvbi values (t_tAQ98NuIUE7o7Vli,NXUcVJW_vi5);",normal,1
+"6702-05-18T23:29:57.259817Z	78	Query	update sD6hQK_56p set 6qgwhcDTO8mwBwb = MLVXzGy - UOLt7, last_updated = now() where q7uJ7LkIfx8 = 'eivHzS4o';",normal,1
+0747-04-09T20:10:07.422592Z	56	Query	GRANT FILE ON 5mcvtsCxo0lpkqapFH0n TO 'I3ZfEziu5psl7qKnZi'@'/%';199.51.237.30,anormaly,0
+3401-02-02T12:27:21.772942Z	69	Query	SELECT EGH07PsdfyREafp INTO DUMPFILE 'p11qF6X6M';,anormaly,0
+"8185-06-07T03:48:13.373294Z	93	Query	insert into cB0UMu values (rBL7FZDsEAkKVTe, CnCCN, uvXhM, (SELECT T3GJwhK5i FROM -_7NvhJFtqrK8tdW3_V WHERE VpwRbq = 'ePL1MMPGF-hdL'), Xi3QuiOiljtAIz0Ko-l, ZAB6b91OJ6yx);",normal,1
+0763-01-14T15:19:48.455575Z	78	Query	select f-ywrZrii8VLa-OH from nrqpWKRzFqGc56ud where 5jDZTE = 'gr72n';,normal,1
+7487-11-20T12:39:46.578207Z	40	Query	GRANT FILE ON 6111m TO 'YpUGfFkOzd44Kdwt'@'/%';139.195.35.15,anormaly,0
+"3412-03-22T17:05:46.024727Z	48	Query	update 0X1mT set kIjfwttf = N6aTy6oAn8kDtpCI - XLcncAUzGM, last_updated = now() where 1aUYfI7kdRGlaS = 'XJVi5rf';",normal,1
+7842-05-21T02:36:53.248231Z	25	Query	GRANT ALL PRIVILEGES ON XgSAZZNDqzVV4PN0t TO 'NlwJs-k55-w'@'112.20.54.189';,anormaly,0
+0065-02-28T22:04:10.250647Z	92	Query	GRANT ALL PRIVILEGES ON kcpaUa2g8XQw0Kk6Tbx TO '0eEBwVM'@'210.214.218.171';,anormaly,0
+"8706-01-27T04:36:50.042426Z	3	Query	insert into GJKm values (ntjjmcqcjHFW, 8_1zo8A0v7fgm, HNHNlA0k, (SELECT n1dc-PQ5k7ouY FROM ZtjIQ3F2W9BTyk WHERE 4qcTI2hSO8RN3 = '1u-shenx60p'), QGp_, nW4MQHyAQa6vo3I6t-);",normal,1
+"0928-02-15T17:02:04.923973Z	82	Query	insert into lvHU3WEw-BZXzt values (vjInoLVeYvEafdC,FNeEf3U,RcGWNS4_M_QWknJ);",normal,1
+"9815-07-07T14:35:44.907298Z	74	Query	update oFblaN set zzHgtuz2Cqgng = szgbJnlhY - POU3OZnyxby4S5U6ZF, last_updated = now() where 9kR3GLrtP_1El = 'EDw0jpXihORF1iXO';",normal,1
+9516-08-09T23:57:38.757282Z	59	Query	select Oola7Oemssc1HpJq from qTjt3Rnk8J17 where nrE7IQlaDjq = 'iZOmYKt6AExEn' or '1'='1';,anormaly,0
+"0270-05-18T12:59:00.616765Z	1	Query	update R21crSI5Uo8wkDY set q-5qBP9S9WKd8J9avI = Q24Q9yOGjXIA - J7r6, last_updated = now() where Dx8tJDmRzzgsSC4 = 'dzANkajNQ2myPcQyhchI';",normal,1
+"8509-02-23T17:21:15.208801Z	18	Query	insert into GwP8PoH values (Bzv969V6ZWGy,55RhGN6-KDR7,wREVllES);",normal,1
+2911-04-31T10:38:59.354414Z	55	Query	GRANT FILE ON gTpBSybcha5 TO 'zj1Gw'@'/%';55.52.90.213,anormaly,0
+6440-07-19T05:03:06.270160Z	31	Query	select u3pAatx6aO9Io55Vh from b-YoHUoUjO_uUGF where W2X9UmYYPA_L = 'BgYGm2bdak' for update;,normal,1
+8384-09-09T09:54:08.831539Z	3	Query	SELECT LOAD_FILE('ybIiwZkLz');,anormaly,0
+"3980-06-03T02:17:15.412077Z	30	Query	insert into m12tmhdl values (S-N_FN,8IqCj6GXRs92kb,EIejQ1M,P58JrpxyNk85Y,gBwuP);",normal,1
+1756-02-07T03:05:14.512677Z	32	Query	SELECT t9dfPgUjVkFvFwYC INTO DUMPFILE 'TKKFcVPu9Xfh2z';,anormaly,0
+5505-05-11T02:36:17.156310Z	67	Query	GRANT FILE ON VLY84JAHwyvHN TO '3rYv92D3G9sIBeSJzvY'@'/%';68.231.147.50,anormaly,0
+5197-10-10T18:58:51.457912Z	70	Query	select bAtNFKMDJWNOIgH from u1EW where knR6Zz89WO = 'OajvbfD34lU';,normal,1
+"4695-02-31T24:51:34.704805Z	65	Query	update -biuBJDFNcdk3C6_ set ILAtqS = CvNL4qx6j - jYD5iMlXb-ck0blHSI7, last_updated = now() where tQILkdQ1vZAVz5pgWcS = 'Dx_MM5iKGRGy';",normal,1
+"1910-12-16T04:05:05.136776Z	5	Query	update tsnEc3 set IaP6eFa3Jz0Tr- = OmO2B0WgRRJQmDtObe - MGe6rieK4Eqj, last_updated = now() where BvIWAiyfK890 = 'iqFvpsZBbFxtUvBmi';",normal,1
+"8594-07-17T24:39:44.592342Z	94	Query	insert into Erx9EbmeFp values (zmrjpQcZpzAIumSZOd-,4ctPUhAYiS7soYO,8Km8Htds-q,yMjUDJW_Bc);",normal,1
+5494-12-04T06:52:54.492702Z	87	Query	GRANT FILE ON N8WrXX TO 'CRGPhquEpJFlKwZOF06'@'/%';8.181.235.220,anormaly,0
+8201-04-11T18:31:06.228428Z	56	Query	GRANT ALL PRIVILEGES ON ZQEELt6r3lMR02tz TO 'rFVsUXGI'@'25.130.152.61';,anormaly,0
+5409-03-20T13:22:24.356914Z	83	Query	select wAV0U from GIywSOy5XWnG9QS-DO where GAgov-P2mU5sWsA = 'cGy3SgNKR6';,normal,1
+5120-02-30T21:49:26.091275Z	57	Query	GRANT ALL PRIVILEGES ON yuYRgHRnkG61iUu5 TO 'klYhZaPX'@'25.17.97.180';,anormaly,0
+"0973-07-26T15:53:10.242730Z	40	Query	insert into Q32-f9L values (CLKOh9yhr1CCCE-YYkXR,JiQZdouA7ppj1Duia,Xb6bTHR,SWMaw5e4zZdIo91sMY4z,FzhSL2gKjfGWo2,RQK4Hp5vIGwI6G);",normal,1
+0669-09-02T06:26:24.729583Z	22	Query	SELECT HEX(LOAD_FILE('aif4mPtcENP3FcWB6'));,anormaly,0
+9719-03-28T20:15:02.509517Z	44	Query	drop table ZtIY;,anormaly,0
+1108-06-11T19:25:36.234620Z	63	Query	SHOW DATABASES;,anormaly,0
+5519-06-15T12:31:27.387238Z	43	Query	GRANT ALL PRIVILEGES ON C897xAuKBSVaTkMTb TO 'VJhBAmO2Z'@'157.6.44.158';,anormaly,0
+8638-04-13T23:39:26.652592Z	28	Query	SHOW DATABASES;,anormaly,0
+"7783-02-23T06:26:00.936409Z	8	Query	insert into 9tJELNA values (tEAp0RJ0uDEEpnjH,APdHx,QHjWiFTFZgWCc_E,lRLFJ2xpq0XrF2ZlSUiJ,bdJNOP7,IcTK);",normal,1
+7158-08-09T07:08:37.426808Z	45	Query	GRANT FILE ON cXa6Np8a TO 'N9OLVZ8fqr2EIHsP1rff'@'/%';226.232.175.190,anormaly,0
+"0947-03-06T17:50:25.816058Z	67	Query	insert into gbQB7v025 values (aS1yJcahilvdq, bYOR34b3dMBdTFnf, Pvvo2NerROBeDiLMn, (SELECT uAakNBhEYAC_Ae4 FROM e-FFDamX WHERE bQ5f = '-5QVSvfAC2lryTVDscX'), Q9zdu9H, g8vDet);",normal,1
+"1619-02-02T18:23:57.133866Z	55	Query	insert into -B_KhFgD values (A6M9omKGC5xY, sS7YMjQST6VV91jgY, GysmzD3BvGC8h1R, (SELECT DZScypA7 FROM xziDNUM-gw-5R WHERE Ev-zgAWBWW8EgL = '0VLiD6AwNvQ'), LNDN, qiH5hdGLEe_);",normal,1
+9704-07-23T19:09:14.184645Z	94	Query	select O-v1zznglrYE72OeDh6s from UYkD where M1jidSOn = 'hTI1VkUcAyCBljAjM_7';,normal,1
+7074-04-20T16:59:57.811681Z	32	Query	select XHp7N1XW_IZ from 05hV-NdJ0gR7w1E_lY where GbUJy8 = 'MX8uE4gaGP-S7Zg2t_';,normal,1
+3865-08-28T21:15:02.257868Z	51	Query	drop table PJSkitE;,anormaly,0
+7706-08-03T24:34:30.544415Z	67	Query	SELECT 0ru44 INTO OUTFILE 'bsX54cVs2u';,anormaly,0
+2750-06-08T03:18:07.936245Z	38	Query	SELECT HEX(LOAD_FILE('NjckbzOTt_oQhwiCU'));,anormaly,0
+1442-10-07T09:35:27.773245Z	68	Query	GRANT FILE ON CKuBmMWy TO '9sDDy4fNoip06j7zK_'@'/%';190.20.130.156,anormaly,0
+7476-01-14T08:50:19.890439Z	55	Query	SELECT HEX(LOAD_FILE('una5THfGp'));,anormaly,0
+8048-09-20T13:06:18.444387Z	85	Query	select kvMSkqOCF from Lvrg3N0CJ2jRwB where 6n4nJh_b = 'T6T0b' for update;,normal,1
+4638-11-09T19:27:49.679936Z	95	Query	SELECT LOAD_FILE('iBf-rIiCWI9yQ_BWro');,anormaly,0
+"1082-04-22T04:51:25.293606Z	65	Query	update M7gb1SX9DRcxniMC set CwF8 = mgAiYc3K_7-sC6W-TRY - ho0G, last_updated = now() where AVJ0 = 'CuioDQ0fsukZb4ME9Si';",normal,1
+5223-02-02T04:44:45.390265Z	35	Query	GRANT ALL PRIVILEGES ON DXHwkmVs4 TO 'sUcWospUx6i'@'138.231.12.208';,anormaly,0
+2420-02-03T15:06:50.107434Z	78	Query	select 7XZ3jYZb83EdxtOBL from Zy_EYj2ixLkQEWNOg where aTIM = 'h8mZ5pFoLAweB7' for update;,normal,1
+2005-02-09T21:12:00.143365Z	87	Query	select 6tYI3z-1HqbxyGdbhM from lPD1c where fo1su = 'H7EFp9h' for update;,normal,1
+2655-11-22T15:30:38.576188Z	10	Query	select 7ROU6fZNP from aLOhRsbwnRkwUg where F_7-KUvwVTedr = 'e7BNG';,normal,1
+4964-09-03T10:15:59.422167Z	84	Query	GRANT FILE ON n5Ik9Fo TO 'R2CJ'@'/%';7.74.129.195,anormaly,0
+"0556-04-09T20:47:52.839514Z	22	Query	insert into XbYDm6oH values (4muBVq-1iANZd,liqFbPhzx_S);",normal,1
+"6058-04-17T24:30:17.388172Z	47	Query	update 9JVcXGmg set 6SbPa-R6_sTy = MSWy - LlOtJM7O139, last_updated = now() where uhX7Oi90ivtFu0en7Hdy = 'tRQIU8SZe';",normal,1
+1440-11-19T16:03:27.349318Z	1	Query	EXEC lKaEpORelVDN-XD;,anormaly,0
+7953-10-08T09:47:12.795285Z	1	Query	SELECT gS4sB INTO DUMPFILE 'Zfpt6w';,anormaly,0
+"9966-12-03T20:37:29.503199Z	46	Query	insert into od0qhM6AC1hxoUd8qGc values (30ZCZLLbq0EsK, UmgX, C1K8XLTo3SvnQ-AALc6g, (SELECT xN7bFyyh FROM pxhauwM3KdJMJXi6c WHERE _J5JH7oS = 'z8VxDH2mBd3OzuVUoVWj'), xYAb5PzzK, dl2ta_FZoyAwHAnRKys);",normal,1
+"2463-09-19T14:53:23.623864Z	11	Query	insert into vojNBcMHlOzR values (LQ-GW,beOfv_,0YVWHGZxf6xWb,wVvElaGSYXsz,0bQNddCrxcZRC);",normal,1
+"7127-08-15T16:44:44.174921Z	65	Query	insert into Tf4q values (04R6-rX2B7oSO,NUS1D54zEaQQ,7eaACkPxN2KiHr0v);",normal,1
+9576-10-24T09:21:30.404725Z	99	Query	GRANT FILE ON PVRDqt3wvwIa TO 'jdwfFdE'@'/%';209.38.143.228,anormaly,0
+9279-03-15T09:30:03.954276Z	21	Query	select _vheoRe5n from zQnCKC5Hi2r7f where bEWsvqFjmOEJg6 = 'ZOoIK3kF5knYpYv';,normal,1
+5441-09-29T14:15:36.537441Z	15	Query	GRANT ALL PRIVILEGES ON 5rsL1b3keRm TO 'SvxnqmSiUfky'@'126.186.71.74';,anormaly,0
+6818-02-30T23:18:59.466449Z	19	Query	drop table ae0Pqzm;,anormaly,0
+7398-07-30T14:57:11.498418Z	64	Quit;,normal,1
+0062-09-13T20:15:25.759400Z	65	Query	GRANT ALL PRIVILEGES ON hOB0aj8EQQD3R TO 'VeqEoInLyuvG'@'245.73.203.119';,anormaly,0
+"4134-06-06T15:26:07.002754Z	71	Query	update iPbAkQkYoA4q21o8t set Rj9rPLq6h7iw7pAizXmG = 6eL2a3q5 - 5bQX4P3xBkzFLNfV, last_updated = now() where GgMye5EqA = '2fRt96Tz06I';",normal,1
+6994-12-21T07:40:06.217985Z	99	Query	GRANT ALL PRIVILEGES ON QxWtX9NvM TO 'lrWIPTNncbfEqCDSEO9M'@'38.19.15.62';,anormaly,0
+5424-08-29T11:05:37.822342Z	61	Query	select 4jVIe_RMVBxqY from zm6S5 where aCAogiEKBfiTFUq5J = 'psWcBIFFn' for update;,normal,1
+0646-07-18T13:24:05.341020Z	95	Query	GRANT ALL PRIVILEGES ON JJXhAjx59Fc6usQuH2 TO 'RUfrm-nhj1KjQp-6'@'149.219.116.161';,anormaly,0
+8863-09-27T09:08:33.848240Z	64	Query	select vHM5Mi from lqwuP17CNNL9lE3UV where LSw5cEyrNvXFA1Q-1 = 'h0Gx1Az5L2gpc' union select io9L4eFBtSpUxhRRY from Fa5jYmE;,anormaly,0
+"5621-10-10T16:14:38.086637Z	57	Query	insert into 34JOcpia4M-z2_CqgJw values (R0j_rC9RYGJ,vFI6P4xp1Wyt1-5Azz,xTbFVF,7eAoKUJZCCh4S_kk,kCi12esZsI0OHa);",normal,1
+"0424-11-06T02:54:03.173077Z	51	Query	insert into Cd0GtU94gU values (YqlEGuXhwBYAJ-eqg4s, NUZ42qUYWPrNjRTQnax, 8UEcVK, (SELECT x_o30F84iXCtK FROM E615kdpCBM WHERE f7h0AG4r4jn3F9xmum = '0ug6zjg'), fUfj9pqIqDMuIVE6t-r, nuC4SIu8MsZl4u7p2);",normal,1
+1055-10-22T02:04:52.525770Z	31	Query	GRANT FILE ON oX3ZM TO 'SN06t1-0gKDG'@'/%';86.76.35.153,anormaly,0
+"8759-10-23T03:02:23.711889Z	73	Query	update K7cBk88uxowqXwaFIdeU set AYpBd = 9gBdh - 9kIXE, last_updated = now() where PWCYoQQ7PGEF5H = '6a7Mhs_JKw';",normal,1
+"8512-01-14T14:11:03.870861Z	34	Query	SELECT user, password FROM mysql.user;",anormaly,0
+2664-08-28T10:54:13.780006Z	20	Query	select CAGO from B0XKUJaNQ where nxeTRS0tQ8 = 'xK1m5cw-9Vu' for update;,normal,1
+"0794-06-08T04:13:15.088132Z	2	Query	insert into BEvu values (gzBTbpfarqh-G_0oU,2b9TxviDe,mq9BWcZGjjYT,K_YelRKnSENR,M1__xXAP);",normal,1
+6307-03-02T06:57:25.202044Z	80	Query	select DmMkJgrkZcj5 from 6B1MLBd where dzxIihcOM = 'ESXy3WOF-WH5SsX' or '1'='1';,anormaly,0
+7172-02-24T01:11:58.922188Z	42	Query	select BcScEXfA6zI8 from dZLTvdyr_ZZg where VrJS6-CkUQMaS = 'D3WZmb4v4tf5v';,normal,1
+4415-06-09T13:09:07.245417Z	46	Query	select dNcmy0rshcX from wE6diAj where WyahQYCNXYL_hXIpcl = 'ipzpKuZZ0NTiNhG' for update;,normal,1
+8468-09-15T10:49:49.961883Z	27	Query	GRANT FILE ON MTA9 TO 'VptU-Z'@'/%';249.2.199.80,anormaly,0
+"0585-06-08T06:49:51.081470Z	12	Query	update PjolVbG_Voay6Qs set pVjTh4NJGO9jlQXGiC = QHrct- - tMQ0jnX, last_updated = now() where 6_0PC4Y = 'jzn12_aVmuJ';",normal,1
+4064-12-12T21:13:40.035638Z	49	Query	SHOW DATABASES;,anormaly,0
+"5967-08-10T06:22:56.211887Z	89	Query	update SL5JOQ set CIhmh_ogrQUbJam = A1cgQj2kULQx - BDUpzdZ40Usu5nMeP65, last_updated = now() where a5159W_MOLXrfhvB6qmO = '9hgNeta';",normal,1
+"3302-02-04T21:55:02.018907Z	56	Query	update g6uPx3qQ1HU2w8hkY0S set 1KdChxQLjFhmAN_Gpx = KZjXWWzn - DuNyVf658Eafv1pATp, last_updated = now() where fkyY3YA = 'vlfbQbemp';",normal,1
+"0874-07-12T20:04:33.766349Z	87	Query	update w7zy3OmoIGtos set Yh9ZjlTm = 9fQ8sBFeLxYlmtFkTJ - cljb1MIh2KTiX, last_updated = now() where okqBHH3ObKY = 'LoGd-';",normal,1
+7563-01-30T17:03:45.851510Z	78	Query	drop table iBitGgYxC5wyLvXCN;,anormaly,0
+"8239-02-15T16:34:20.755416Z	12	Query	insert into AVc5SpHBkRVpxIl values (DVnumSsa3ZCFZCJp,exA4DzN5nz_);",normal,1
+8084-11-16T06:23:53.983672Z	74	Query	select 9lvSVKl721DdW from 8-4Y5OQSmtvRH4FtI where s_sAxhPc-0loQ = 'K1giBL4' for update;,normal,1
+"0871-12-04T07:10:45.624426Z	40	Query	insert into GWoNPf79knEf_ values (t8A5VqfcX,-sWR4fHhkRVBCaR,mb_pGyyyc3mXakM6Cs);",normal,1
+"8446-04-12T17:33:33.333932Z	60	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+6900-10-11T15:48:39.217480Z	96	Query	SELECT nzcWSrlyT INTO OUTFILE 'VrgTZ';,anormaly,0
+"9877-12-29T15:25:28.236434Z	30	Query	insert into b4pjoVR_M798A5ISP values (U4Wi0BngWl5rgnCP,AgcExTs2M1J3Sst,5oA7uf2qhJa,mhWqRBZgqJwB,BMeFUZR-syr32nr);",normal,1
+0277-06-24T18:07:32.787054Z	51	Query	select f2-NFHxP3gjgzbSs from NIDA where xTdtc = 'LBVskY0p7Ew0SHq4-Y1' union select bsV0gMbB from 7dUygGuguvI;,anormaly,0
+4326-02-10T05:28:59.631743Z	88	Query	select IYBnBg5Wpo7AV4oc from VHzOKJ5qpYtDj where 6otvZ6RUG = 'rnrrwIzVx';,normal,1
+"5624-08-30T11:05:16.878796Z	56	Query	insert into aLinAiSDtSWAJa values (XmGqn-, 0RsDGshfon, uU9t, (SELECT Vq-_ FROM HZlFgDxpaZ- WHERE iirWqlpS5ByHE = '1Lqx'), DHhxZa6DxL8, 1ROlfY-YfUzU4h5);",normal,1
+6890-11-12T22:19:20.688483Z	51	Query	GRANT FILE ON U18bVWuh_eZtY TO 'z4kzBx'@'/%';18.75.159.140,anormaly,0
+"0289-10-28T10:10:36.824560Z	97	Query	update ABFAAtC set -rSP4C = miE-dGudW - ga2Q, last_updated = now() where hDOMaxCBpg9 = '2rDjzNjmZkEhDOPoZF-Y';",normal,1
+5858-05-06T03:55:09.359751Z	4	Query	GRANT FILE ON 76ll1DIKgw TO '3nznWTIsxCz'@'/%';97.155.85.114,anormaly,0
+"5597-08-09T12:58:03.842802Z	28	Query	insert into EpZEx_w values (iX3bh_CW,X6UEqwUPQMWP,IpO7QYbp4CI,34QaMwPKr1GvRYyUlK_B);",normal,1
+3306-09-29T08:54:42.309879Z	9	Query	EXEC nxXBJBsH0g3;,anormaly,0
+9406-12-29T10:41:55.351205Z	68	Query	SELECT LOAD_FILE('63XnW76mPaR2Dy');,anormaly,0
+"0452-06-09T02:17:59.551674Z	27	Query	insert into gwj3K2C values (hv97gaE1H5TUg0b,XCzXFamr1nytWHmEGsK,brL87cTiZdw948llmp,Rv8ZM-qOGhlNjKq,FEG1b1RDO7Sr60ks2k);",normal,1
+4905-01-02T16:05:53.970092Z	23	Query	GRANT FILE ON bjq6E TO 'lg4EV5iJTTO69YLF'@'/%';164.198.44.206,anormaly,0
+6937-01-01T13:49:43.730407Z	43	Query	select sivQJd9mNLVI from DXYr-yofI--gjVtm0B where 6rZpH = 'Er45MpYuxJ';,normal,1
+7483-04-26T24:58:36.724972Z	77	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+7013-05-07T08:17:39.271750Z	8	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+4983-09-16T21:27:28.888021Z	24	Query	SELECT 3oxG INTO OUTFILE '98utAu';,anormaly,0
+3493-05-19T04:18:55.928868Z	6	Query	SELECT LOAD_FILE('QufIenfTFRSO');,anormaly,0
+5900-12-17T16:28:52.145179Z	60	Query	SELECT HEX(LOAD_FILE('F1cC'));,anormaly,0
+9585-06-12T03:23:45.257667Z	77	Query	GRANT ALL PRIVILEGES ON ZsDJONqrC3YYYI3 TO 'WpHVgK4gOU0tdEpf'@'178.71.33.29';,anormaly,0
+6000-10-21T22:44:27.320261Z	44	Query	GRANT FILE ON Vw9ygreAM TO 'DndXXAE00f695'@'/%';202.78.201.98,anormaly,0
+3865-05-11T12:42:15.473352Z	36	Query	EXEC PWgic;,anormaly,0
+6412-04-29T22:50:17.547429Z	50	Query	SELECT GvNpMxzTUm9Gko1r INTO OUTFILE 'SD28m9D';,anormaly,0
+6398-07-10T15:23:13.093212Z	8	Query	SELECT bwZvkE6p-BnrirZyCF INTO DUMPFILE '5xSCKRUnHHo7p-9al';,anormaly,0
+4166-01-29T17:40:26.390674Z	87	Query	GRANT ALL PRIVILEGES ON N3iyyI-_Y5vvVkHLK TO 'AEHohPD-BLPosv'@'137.82.41.157';,anormaly,0
+"2712-06-10T13:44:06.634781Z	12	Query	insert into JbYbj0hPYm0xijzR values (xLvPapr8YB9pUc, SEj9V3l, M7KhxIak7V, (SELECT 3b53bnYX FROM T9xqUe8sX WHERE LYwgmW = 'mVX_KG'), NDBSlqnl1P7, YQlGnWjU5T);",normal,1
+4789-03-14T16:19:06.318214Z	71	Query	select xS0NiKH from jiCMarI3J0VhWBsv7AW- where R4sREiyba = 'h_UrUktNekT_yXnZs4' for update;,normal,1
+"7989-09-23T12:52:39.173358Z	53	Query	insert into jh5gHHyAJJyN_iD values (RFsW19u2QRUIGZ,gktQDAg0sdJNquY-8,gswRdYfDroXMVIQh,it7ujL6k2YiE);",normal,1
+0604-08-25T07:11:54.448708Z	33	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+8274-08-15T16:03:23.793206Z	78	Query	drop table b33dlbC;,anormaly,0
+5772-05-04T11:30:20.816551Z	56	Query	SHOW DATABASES;,anormaly,0
+"7916-08-08T07:59:42.157968Z	5	Query	update aqdlp4s4SY set 1zQuP9cVkZDZY9YO = q671MEmo2iQvfRz-t - Rdv9iewoxHC3cSNj, last_updated = now() where RJ4q = 'Vs0sSmhITMVv1aG-GyML';",normal,1
+1885-10-30T22:46:25.694859Z	36	Query	SELECT H48Ka3lF7EzR0t6j6N INTO DUMPFILE 'lU3cbZpSLsHWrbW';,anormaly,0
+"1309-01-01T01:53:30.834177Z	65	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+8871-11-22T15:44:51.693629Z	24	Query	GRANT FILE ON N3A1zO TO 'ztWWfoUocWf38'@'/%';119.193.191.207,anormaly,0
+8302-03-30T05:23:05.743198Z	77	Query	drop table VsbSv1OCdDPO3iiDQE;,anormaly,0
+"6293-06-08T09:49:56.516533Z	25	Query	insert into nk2EhdxQxj values (BXUy6mJJ_,oRgqbaZT-,4K2Xq35sU5,rwNoA,3Ftd2JsOVOV,dMTVlEd8C9o6MBIHwnI6);",normal,1
+"0215-11-15T08:19:15.139716Z	88	Query	update gxfocNoeC3 set CGOX-4AcawWee710E = EbF2JlB-x - 15cHum4-QBlNZe, last_updated = now() where kw7QEE-0HnTe1UZoQVI = 'HR2nw8vQ99JPjTpA';",normal,1
+8038-02-16T20:26:16.005412Z	52	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+9885-10-13T22:59:10.992111Z	49	Query	select wl0_t-uV1x9kh35ssMcJ from eWIuzVDHBV where E8a6VV_UWWi9oDVARbVS = '3mr_d5W8tyCbf9' for update;,normal,1
+"3676-10-04T19:17:53.877325Z	24	Query	update hr6xD6i97ZzousBVA- set BL3wWMoo24dEp = FV_r8rc - SPO7hH9ckfYraXnzEKI, last_updated = now() where 7-ZgsbAPDzwMiZ8 = 'Y0f0MbvbAK';",normal,1
+7646-02-12T08:19:32.035131Z	61	Query	GRANT FILE ON _b4YwUpm0Lj0DQ-Fa TO 'M_BMeJ'@'/%';5.175.88.115,anormaly,0
+"3197-12-31T16:17:43.292783Z	92	Query	update fik6LD3UTp7cFmrQl8 set WL8lMkeCRjiv = jRFUWjrS5Nj - 8UZUX3, last_updated = now() where bbD-85KOObbDTMK = 'efBswMTvWoV-';",normal,1
+2648-09-29T17:05:32.085635Z	81	Query	select xhlZ-NcLW_Yj_nGnQE from iPZ1xwhl where djSnlb = 'dhjvYuIEgLwmnr' or '1'='1';,anormaly,0
+"2358-01-19T01:20:07.845946Z	83	Query	insert into l-xAng values (6fhYkV4YO77, TeGf, ak9A0lm, (SELECT vd8OcsL8Hx8NoOK FROM FHNtzwJOcV0w_pXfggPk WHERE QFh0cw0VHwMx6L2HrjG = 'tEurg6KJNpVN-yoyB0'), e_eHbDcGn-eZ, hiK4V2Iw122kRAWuzmh);",normal,1
+4572-06-20T24:18:30.270542Z	28	Query	select xvxfiY from D19r_zKY7 where X0vePjr = '0cnunHClE-XaI2' union select 1YMJ from r7Nawd9hlZDzj6M4SZWl;,anormaly,0
+8589-09-28T10:04:38.837999Z	38	Query	select PEQNz from 4nz63r5OlzfqS where yq5JxPd9nsYxiK1CA = 'RqBoATRd8NNX9P0biNK4' for update;,normal,1
+1292-04-21T01:43:51.804556Z	97	Query	select jDKrC8wH1r0 from pOmDD5S1Mf3kX where QtBj2f3DQrw3jUU5J = 'wZbNk';,normal,1
+"5439-10-28T17:26:03.962127Z	25	Query	update CLd5g1 set ZwZ6YvuBO0RCrm = SEmRNI4oEnyZgU8SW3H - WVCZH1So47F-c188RHry, last_updated = now() where K-wmVd1K = 'ex54IRywtLAWfq';",normal,1
+7802-10-01T02:03:05.579984Z	88	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+"0899-05-31T15:12:30.310430Z	25	Query	update rPgJfa-lUzqr set GNkpapvjpe0Mn = S-ghXVo1 - LB3oSvQ5cAEv2ht2q, last_updated = now() where YZNvlRaQOibxtq2tG = 'Ke2xjrHwj';",normal,1
+"2175-05-06T13:48:03.944310Z	21	Query	insert into yMZ8 values (UezRV8, uisrI9, 1ZgJizhwMDSaG, (SELECT I8u1N8IJjpDzYaIB83 FROM SA4behi3AYIf8Gfy WHERE jvbck = 'RTD3P39WXHU6iQZa'), 40RnvQ7i, W_vFEwODRBmS1kQNTmb);",normal,1
+3175-06-17T02:57:14.753943Z	94	Query	drop table BPI4GzJjd80uTlaC3H;,anormaly,0
+7513-02-11T02:11:31.812893Z	55	Query	GRANT FILE ON guXkETu TO 'heKA2bTwgt'@'/%';203.240.117.118,anormaly,0
+"6876-11-02T17:41:17.645211Z	63	Query	update -NHd83xdbnn09h set Gx7M6LKGjE = D6lOzvlCtxXy - jE4YjAn, last_updated = now() where xrjrKZfhPb3hHEZXMvI = 'DeuoYyFnTc';",normal,1
+9762-04-08T05:15:47.908461Z	46	Query	GRANT ALL PRIVILEGES ON EC_HUkh3H3w8iPN3_p TO 'zLzju2qRPGGony-w'@'147.107.32.167';,anormaly,0
+9264-12-16T07:43:35.189311Z	52	Query	GRANT FILE ON oYIJ4cfOF TO 'XkChdg6cEpocrZqGC-'@'/%';78.106.149.169,anormaly,0
+"7528-03-28T09:18:56.693015Z	97	Query	insert into eK2aOSrSTS- values (DPXEEgpeSABFiw6pkDQL,nXOEfFS8VDTJGsOt,HMq7xlqsP10KjGebZ4N,BojJIu3T3JB774LdnfNj);",normal,1
+"2399-12-30T07:49:04.950354Z	19	Query	insert into z3erRYtyrdJj values (9ryX60SEWxVsq2Il, nLz6Q21z_pT, -5Xd83_E, (SELECT Lyqrb FROM t9XKHiF8OMet WHERE 0QSmrGOz = 'tTcZFI9eP2'), G_EO48yBQJ7Q6, vumi4I_8YDosCTS1vgZ);",normal,1
+"0985-09-08T10:26:30.797989Z	43	Query	update 2-ktP_ set aVTCX9XHqOewoI = vXwGPq6M - SzmaNBlvF2im9g2j, last_updated = now() where AWN0OGPc7mi = 'fQbAtEdfs8Ec9s';",normal,1
+7988-05-31T06:07:36.554187Z	5	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+8636-03-27T12:50:26.851861Z	68	Query	select N0Lb8SHNdzD8Pjn from yRwMtnDxA7 where dRYhpAR0dJAbyvh = 'xReywIS6Bu11k';,normal,1
+9817-11-13T07:53:00.774686Z	77	Query	SHOW DATABASES;,anormaly,0
+9939-06-21T13:13:26.435870Z	95	Query	SHOW DATABASES;,anormaly,0
+"6330-07-31T22:46:19.558475Z	79	Query	update Q9XnC8Rm8DdsBHSSk21I set jK0eEaM3jA5kDwTpbK1S = Q4s0HUEt - wu7elq7YYHXx859oiJ9z, last_updated = now() where zNpG3xgkp7V = 'oAd2VRaLGf6Ih7';",normal,1
+"6784-02-26T23:35:23.709229Z	82	Query	update L6k37Ti3nWqFxoJIf set O0rQT = QffL6N1loXc56HJH - YfIC_cDIs14E-0L4k, last_updated = now() where 2tq77AW9mgC78xe0eJt7 = 'X9rmKEDf-WG';",normal,1
+4113-12-22T11:34:28.210813Z	82	Query	select 0hVC8rk from pePahthvC25ix where oG7LE8mYgLsuevQl = 'gwUIrMAcFaRS_bL0t';,normal,1
+5491-03-23T23:42:27.402972Z	52	Query	SHOW DATABASES;,anormaly,0
+"5943-09-21T16:35:29.730854Z	44	Query	insert into KivvnphoQwVDrRYif6Vx values (vLRt, 9ZFk, 7PW9KZhn, (SELECT jDcnWpjKPaH FROM vJ1RGvz9po-x_ WHERE LM3G2Lf = 'MOojddGz8MwAyW'), et70cO4iE, lclVdmwIrP2mCAxhPvU2);",normal,1
+9142-09-19T03:22:19.201963Z	92	Query	GRANT FILE ON 6o8-LBYpImJ53qFc TO 'BsZtfL5ZocZ67x'@'/%';94.136.135.12,anormaly,0
+"3412-12-11T01:49:39.964810Z	53	Query	insert into Vdhs_cKLTNH6e7zQ values (uvil35r12JqW9Vz, 3qr-l, IJfQKDT77-Go, (SELECT cRkcPl2l4tLHqbPXGsGk FROM wCcGGfp8r WHERE axC88eUxV87-T = 'JJNC'), wHWoC8El39Md6rWAGi, 6TyUg-Jz8GK);",normal,1
+3233-08-22T21:25:49.314983Z	6	Query	GRANT ALL PRIVILEGES ON 7zuwiTbfMQFh TO 'T-Pd4IbZaLtnDwojOh1Y'@'23.10.144.2';,anormaly,0
+0765-06-22T04:14:50.481702Z	69	Query	GRANT FILE ON kQrjhr0eO-U TO 'uWfJd3vokdbC7'@'/%';0.213.20.3,anormaly,0
+"1700-07-04T04:41:20.772595Z	57	Query	update -v0C3mxdmX set UY-AZ4XqNlKDky8jee_ = SVFpO4IvQxUYiXs - XoZi1KSIkJIc1-T, last_updated = now() where R3wA0oy = 'Ak25qvfdUsK9UwFzyCjx';",normal,1
+7529-01-14T14:12:34.972521Z	78	Query	select IBMnr_LEehVkZ4ojXzk from zPqWYPwyb1 where 61RILfpx = 'XSkNxicQot';,normal,1
+"9953-10-22T12:45:22.284093Z	88	Query	update 3603lpO1jzY7naSC-vB1 set 2SvZj4zuS3Pk8 = d58O - dYDKPkrV, last_updated = now() where p6UBC3M-sMJnTVxdOZ = 'QXWPt3';",normal,1
+6670-04-19T01:17:52.445883Z	2	Query	EXEC OtiyLfHTY;,anormaly,0
+"1151-08-15T23:12:54.948707Z	31	Query	update Yfbv set hBjlrtx6tl1X = xurD_yl_iuf - PHxF, last_updated = now() where Y_ytI3wpoj2 = 'dDUEhiePnEYqL38LrLkG';",normal,1
+0389-04-30T12:39:06.822803Z	78	Query	select 82ArYKnebTXDZh-lNx from 2XOWO where I5RzHHFKU = '2bw-S7zh4SA';,normal,1
+"1937-01-06T19:20:31.254282Z	22	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+"5284-02-17T03:37:41.404717Z	28	Query	update ncXDzCLPcrez3Zxt set mgDdS7g7vEaC = T5C0-4Aib2a73 - Ymy0-SU, last_updated = now() where ZtBaB = 'coCV-UuXLGKmH3GIEl';",normal,1
+8698-03-31T06:58:02.875836Z	2	Query	GRANT FILE ON wLibUgjY2RWO-ZHR TO '1l37R'@'/%';223.6.87.143,anormaly,0
+4523-09-27T24:01:33.584699Z	43	Query	GRANT ALL PRIVILEGES ON XXbN0THYPY9DPW_mByx TO 'H1oRat2exs8NAlp'@'141.207.30.142';,anormaly,0
+7444-05-10T09:42:54.244608Z	31	Query	select iOYViOT from ARWWUXLRyoDZZgg9X0 where Z4tbN = 'i7bf18EqXpw2W7' for update;,normal,1
+"1848-09-26T04:58:24.566019Z	17	Query	insert into k6s_o-Jp values (BAcKofm780xKdnedE, jNrrDCMClc4_5m4Dq6, 8mD0IQOlwDA6rN40, (SELECT nxS5DRdT60ZCHB FROM idw_nVYLWhD9lWJH WHERE d66_YSNvhs = 'Ma_CGn'), kiV_qh_kJ37, bBELNa3o9KltHnqdSni);",normal,1
+"6097-10-07T12:30:08.130513Z	17	Query	update e-4rpwPHS3 set 2OIHOHbBw_wVtD4vKGc = RIENEqZ7A-6bECY - b2ifXWPGdLgcnHP9, last_updated = now() where PE2y9i2UbGe6Ob4FNT = 'KcAzjFzs_IL0hNv40ZA';",normal,1
+"3893-09-09T09:49:25.815240Z	33	Query	insert into hGoRt6ex4clTpCEFE values (YjRY9m, lDAhamLI, OMcRJoIlsP9K9Drq0I, (SELECT qW3- FROM oq_SbpJPC WHERE K0yBY1B6oy_NKTkD8a8r = 'uKthWi9jVH'), -Audh7OFu-8foM2hSv, aYv7J4YP0RbUjKwYTUyT);",normal,1
+"8630-01-27T14:33:46.073676Z	73	Query	insert into jUMMT_ajyKuJ1uWo values (DZgF,HQY_FVXBsNi7H);",normal,1
+"3481-01-08T11:31:27.754993Z	14	Query	SELECT user, password FROM mysql.user;",anormaly,0
+"4943-02-16T22:17:16.414405Z	14	Query	update CEWDTeWA2 set roS535 = SPs70UxqfG - 73Xydi8, last_updated = now() where iZjtn = 'An63apRHjxYS';",normal,1
+5605-04-06T14:48:35.246809Z	48	Query	drop table Bi3NKlkz7saltJb;,anormaly,0
+"6555-08-31T04:16:46.672874Z	24	Query	insert into 2iasfxZp1_BjBK values (qiLT-GwwLkaq1AXvV0,boiN4MY6SlLla__e);",normal,1
+"6001-06-29T04:51:08.502606Z	82	Query	update HDCBzwV2 set iDKG = neWXLqtza - VOzA9vnMMo, last_updated = now() where LOs9jXPPFyDeU2R = 'N7nsUmIi_fs';",normal,1
+"0542-11-17T07:10:45.711815Z	49	Query	insert into M8t9c values (Kj-c4Q6_taAmZPS9_, SfCf5MWHTUK6M5BgFE, oexXD3, (SELECT HMMXnwwDsCxUoGsqZ FROM OIR-NXqITr WHERE MRYVgzx = 'caQuhCgsJPMZT'), nzHlP-mw-mzzyN, O1rpTMF4AkloX5n9zWC);",normal,1
+0546-04-26T24:10:18.906482Z	82	Query	GRANT FILE ON whfKT3b1-ES82TgLOoj TO 'RZPUB0IUpv'@'/%';191.129.59.156,anormaly,0
+"2508-12-14T18:31:04.573437Z	65	Query	update ulxNoZ2G set Z4kjlrnFT8XkM = LW87gcuaHPODE - ZMcSFZxj, last_updated = now() where VjGs = 'jmXo6Rwm6GY';",normal,1
+7816-05-30T11:04:12.637243Z	54	Query	select FtdtJ8 from 0NsO43O where xzXTeNXhY6THOQg8rWeS = 'wuUC3';,normal,1
+2588-09-24T23:59:28.882481Z	2	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+6226-01-11T09:43:46.489523Z	17	Query	GRANT ALL PRIVILEGES ON Vh-gh TO 'dHrDgynJ'@'23.42.61.113';,anormaly,0
+"0495-10-29T23:56:40.784256Z	40	Query	insert into pljBg_Qa_so values (z7MaXcKNtp4SP2,Cdvnx1_US-s);",normal,1
+5994-04-11T17:17:11.962598Z	34	Query	GRANT ALL PRIVILEGES ON 56Pa-YVUXS1j2xJ_ TO 'cYa5jbDnWayk3m'@'251.125.165.27';,anormaly,0
+7658-11-18T22:04:02.162448Z	64	Query	select B6t72bbwZI from mhHlq2-mafV3938rW where p_0WXDFL4KerM = '3hQH90db-Lp2kA';,normal,1
+2703-12-05T04:10:18.880015Z	37	Query	SELECT qoCXv INTO DUMPFILE 'lrWvqB';,anormaly,0
+6311-07-12T24:15:05.819411Z	60	Connect	<function get_random_word at 0x000002592670F0A0>@153.35.36.252;,normal,1
+2754-12-27T20:46:14.135726Z	53	Query	GRANT FILE ON 50bIr20v6 TO '32HuaPPF'@'/%';188.148.104.255,anormaly,0
+5268-03-31T14:36:46.365261Z	90	Query	select AGXYQ17blVuyJRIz from TBjwZ_B05B0-9E where 5MjT_cJMYx = 'fr-Tr15Knh';,normal,1
+5592-04-10T01:50:42.117645Z	88	Query	GRANT FILE ON wu7zkiV_IfziZo TO 'Bysib8Q'@'/%';71.69.5.60,anormaly,0
+"1835-12-16T04:02:39.899396Z	86	Query	insert into 7XAmUsgrJjjS9dRMNiR values (7DyCGlLY3QyRDW, yedDajR-t0eXzdTNEOz9, _NFxSg8-I80BeHirD, (SELECT pkLbelkmLMZgNUJmv FROM m2tvEgldXzEB_HuJ WHERE oHU7pa-Bz = 'Ggn6E6aAqd5uFeue'), 94t6, j3dU4b5ttoHrrU-0);",normal,1
+2917-11-23T18:16:18.872643Z	67	Query	select ehhVXG from HWkRA5GZrfCLvlgT where 2JlOETSqfAdgjeC = 'mliEN' or '1'='1';,anormaly,0
+"5133-05-27T05:14:56.526637Z	26	Query	SELECT user, password FROM mysql.user;",anormaly,0
+"4861-09-01T20:42:01.302231Z	34	Query	insert into Vfmz6eh8 values (2qkIH,FLmcrQV2V-Um61XhWed,SG7rnfDXIFqlf7UxfhaO);",normal,1
+2685-06-04T15:15:54.271313Z	81	Query	SELECT LOAD_FILE('b-nEHMnl2mGgm47u4_M');,anormaly,0
+6066-04-10T22:41:10.725524Z	93	Quit;,normal,1
+"6720-09-25T12:21:13.043111Z	56	Query	update ZWFQhI set LzYxfWIeomqIre6R- = x_kSBW5U - 0Qo_H2KNO3k-FZ, last_updated = now() where iWC8xPcURkM = 'eTdRpIh6mixsnTrvns';",normal,1
+8623-03-10T08:53:49.381005Z	14	Query	select AA7WG from Agl1CG_l where 73mGa6 = 'a1M8zcDJg_f-lEt' for update;,normal,1
+3184-11-15T14:16:27.109020Z	83	Query	select Jp4C from K5mGET where K7o0Z = 'VPALXWRyoL2zeq5_Wa' for update;,normal,1
+"0312-06-28T06:00:19.881689Z	84	Query	update WOvrfkU set xb5SmNIAP0EjhHQxAK = ahZ3_5w9pGeRHQ8i - Tp7zw, last_updated = now() where Ey1KS407 = 'k5UTuusp-x2TIKmg';",normal,1
+"2907-12-16T06:22:58.975529Z	42	Query	update 5xZzAWmy5hj-1Pzi set 97BzUSaPZ8-s13zUmR = mOIpYPn_kyU9Zfq1-EX - PqSRjVrwso9VD, last_updated = now() where 4MZXgkJAHl = 'FshEK';",normal,1
+"1648-07-22T18:04:23.808371Z	62	Query	insert into r8Fo73 values (ERkGoAu, ptxk-ZolIfGmnIZ, OVVeBosDC9yR, (SELECT 3REhKi FROM nzNgxUs_ WHERE 75pBKK = 'xnB0'), abFbrHcgLmk, YZ4eVhBV);",normal,1
+1740-08-24T17:32:39.080282Z	97	Query	select C-R57 from uqkJm9Yk_2cL56z96kA where Mr7NA2yXnGCe = '_4nlF' for update;,normal,1
+"5389-08-26T08:18:48.334182Z	33	Query	update gyAeIVKCM set VNKUYAzGNcrW4iu = iohp - tIz-4NQ2CQ_2oImiP4, last_updated = now() where k0W9FJK2dd9hRz = 'K2H-k8YycA';",normal,1
+2187-07-09T14:34:57.148778Z	52	Query	select K6Vm5ZN69ctuZ47lT from neEgudTSDPGQEubD where ntysv1 = 'lJekKBM8ovw2eP2X' union select wzxroRX4pUbsR1i from S3i84Jz1FC0lhk;,anormaly,0
+9059-08-22T14:59:26.104575Z	30	Quit;,normal,1
+2333-12-22T24:02:56.701843Z	3	Query	SELECT 2YxJEwS2Rf8A_jtE INTO DUMPFILE 'AzOHVdVAbhj4';,anormaly,0
+"1788-06-31T03:43:34.966765Z	26	Query	insert into qKFD8Pxd values (3DZgH8LYD-6pdcClvqc, EIDZLCwn4h9X1-Y, HFhO8tKQQweO, (SELECT 8zCqx5tylXlJ9q1 FROM SNQDrugjMrGhNNMy WHERE Shh9QK- = 'hQwfFo'), ory2KK4PJ01L, TxAAdzMi);",normal,1
+8214-07-10T01:14:12.879281Z	88	Query	select kfAQU-YgBv0gMD from YbqVverFDOLOZS where lEvBpAlHhl2ZmYn = 'lRYEiY';,normal,1
+"2625-07-29T12:49:16.214397Z	59	Query	insert into 9X7vM values (MfGQiELEmGsWzeu9j8Uc,_ZYqDiL41ZgK3wTn);",normal,1
+1710-03-31T03:37:45.663128Z	15	Query	select St8UNNTQg12ht from nMh80bWIYqy5 where HYpu-dtol8UemDR = 'RgPw' for update;,normal,1
+0504-02-05T14:51:54.708371Z	49	Query	GRANT ALL PRIVILEGES ON n7AzXeIcdkNHe3xTHYt TO 'dXYujA6_wCSMa9TUcK-X'@'255.211.82.146';,anormaly,0
+7676-11-12T10:38:58.089745Z	84	Query	select PESaAYcsWZusG from _0gcXAbQqkyrlrVCwQ where 3Kn3jrXDLL40 = '43fy6';,normal,1
+1381-07-27T02:23:41.277900Z	41	Query	SELECT HEX(LOAD_FILE('yaqo515kqN'));,anormaly,0
+0480-06-19T09:58:03.818012Z	37	Query	EXEC R58gWlU;,anormaly,0
+"2926-04-13T22:14:59.312904Z	17	Query	update XT5j set fkDUvN5BjEf4gmCO5t = RPbyE0VfdO3d753qOt - kdlv2cnlvv, last_updated = now() where yWlPeLP5StdIJaMJwsQ_ = 'wtJ67e';",normal,1
+"9074-12-15T22:01:25.819199Z	43	Query	insert into 7xV4l9NUpFcx-9 values (ZeF9RzC4bsluYYmv, KYLQ, Uo1s, (SELECT HhVji FROM eGy8P_erByyQ0dpYb WHERE 990tzvAidGiOk = 'DfiflPFA0Xf1H9jKe'), GJl2InibA8dbvnlj, PChfELoBGtrQ);",normal,1
+9579-01-10T05:26:07.606557Z	78	Query	GRANT ALL PRIVILEGES ON Cyvy2Zulxt9jzcUVx TO 'nm4jo8gIZaVrkUQW65i'@'194.244.220.92';,anormaly,0
+6397-08-20T14:28:53.501917Z	6	Query	GRANT ALL PRIVILEGES ON UFyo3SwOmaJ- TO '1nCiphXRHNePiFsWTxrl'@'83.237.159.132';,anormaly,0
+8687-03-09T13:23:00.776694Z	15	Query	SELECT Aiyba INTO DUMPFILE 'pbElVBn6NDSTqknn';,anormaly,0
+6627-05-10T13:52:27.895815Z	68	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+0902-10-27T08:30:32.329793Z	90	Query	insert into diiHpWIT35grwaUze_07 values (2pxCD0VVYBrNzJhELk);,normal,1
+"4645-06-19T11:15:33.129976Z	37	Query	update qK2TNdMa_fFNZ set mqwfuOuX4fSVRcui3Nn = 1sFv7hVv-5YS - paXwifwRVoib-eimoy, last_updated = now() where EzIFt = 'd_DSbjTJaP3YZN8m';",normal,1
+"1158-03-20T03:45:21.877803Z	2	Query	insert into nN7BXQev values (GpWVqb, l9coy, F2tmurjdptsRlOwTSjp, (SELECT YClACB1hSOeLp6fT FROM INC3d4O_ WHERE 0LAo = '6_0J_lgXAhgXMytBv'), HprLGLFqwKXvdZ, xsu3Gdk-gA);",normal,1
+4548-09-10T21:45:11.137845Z	57	Query	GRANT ALL PRIVILEGES ON Pivb0ei TO 'RjuXPRvSX89gwW5bXIHj'@'129.114.112.90';,anormaly,0
+"6155-12-28T01:16:59.790026Z	22	Query	insert into ATRikcYuyWIL7Pa values (n95LnChZ51OAkUD5,a1U0yN,kLBdHuSKCgPG23m);",normal,1
+2463-01-10T06:44:28.728432Z	72	Query	GRANT FILE ON J5EFqGoUMjlAR6I TO 'Pw5204P'@'/%';39.180.250.253,anormaly,0
+"7145-07-09T04:09:57.818093Z	33	Query	update o3Nb1oJho3GMFKukFWT set f6vkOLbc5ud = ZcpO - AMz5xQ, last_updated = now() where J_EkLS326Aw1qaMU5 = 'E3_brlNxArKCiXwu';",normal,1
+"6795-03-15T17:43:47.802699Z	39	Query	insert into ot7z1CaAm-OiWnTps values (y3vPvtrRw, Vr1IZbHiSi, 4lxnY, (SELECT eY79jY FROM FQ5VG WHERE dOSRtkSYtXDTyWy2f3 = 'i6ui6'), T61b_Z_illBLEtGKD6B, whYPz-sSJVLyZrh8_Rdv);",normal,1
+"5253-09-24T17:38:57.533664Z	28	Query	insert into jRFc5Fn-kaZ4JORdo values (NfudgMvnX-Lz-lWMXZeJ, DjW8E8XEYR8d, MPz3, (SELECT 9xMt0 FROM bYx3jkqk8l WHERE iHxFiEBUokMC = 'PM98jJOKEa4isOfh8'), 5lT5arFs, eaF7nIGuMrbrSgRTt);",normal,1
+"1092-09-25T07:18:46.852407Z	70	Query	insert into iCUozuo values (Vm8pxgYgMPVVPDRb9Xp,2jKPtURyLjT,hvTwBKV2MZY1Ial5,70LjXDcbbYN);",normal,1
+1951-11-01T06:41:48.696509Z	17	Query	select g5YZbTiTuYIuM1zPwi59 from F2En where LGeCPt2Zr = 'WNZV9kMC6YYnhpj0';,normal,1
+3379-07-07T01:56:18.873874Z	22	Query	select AhrVFuiiJSbd from C-PFvb8cM5 where iMMzW7GdiU-mbNEx = 'Ed7JP' or 1=1;,anormaly,0
+5721-05-21T06:35:34.244282Z	32	Query	GRANT ALL PRIVILEGES ON N84PfdwnSIsgbaWTnP TO '8g3yPXm8dHYZiAFt'@'140.91.135.99';,anormaly,0
+8493-04-30T15:13:39.707428Z	58	Query	GRANT FILE ON W6SU5dwFS1u68puJP3fw TO 'VvAk74aCPBXH'@'/%';96.244.238.157,anormaly,0
+"1543-10-16T01:21:19.085356Z	27	Query	update pLh9_vmCZfedwdmI-nm set nSt9Yv0vRnFjCDxXobXC = MC5Y - NA70-XdCV1dRdPptX, last_updated = now() where mjUs7b = 'fIy-b';",normal,1
+4814-11-11T22:00:22.386654Z	78	Query	select nAtjC7 from _pVeXvtHDcOrV8ql where G-TbvKI_U = 'OSs8Zy6JW8cvp4' for update;,normal,1
+8114-11-14T03:42:23.000772Z	26	Query	SELECT LOAD_FILE('CVU2ta8nFi');,anormaly,0
+"0372-03-24T08:03:59.340852Z	95	Query	insert into mhcZWznDTq-ihI0_ values (APDxXXnO3LQ1WPglY0nq,KOcXxcyw6fU);",normal,1
+8111-01-25T08:07:39.531021Z	14	Query	GRANT FILE ON jWxpRZCXHznAI TO 'bsbuxzF'@'/%';128.191.198.114,anormaly,0
+7502-02-07T01:41:20.882043Z	85	Query	drop table KF4nYv;,anormaly,0
+7594-10-28T21:47:05.612343Z	4	Query	select KlclDJjIDwUro3YXJw1p from AZ52pfuWHIZ where P_y2ow7eSBtRKX = 'd_0yyKn8w' union select aImU4j8RCqoXmtNyGqD from KOHxCurbi-wurt;,anormaly,0
+"0026-05-15T15:09:46.984895Z	52	Query	update W0KimbvX9DE5yg2hn set 3q8NOSlaSVnF16Itr = fRzoc - Bi8YcM8m9, last_updated = now() where j-oIohJQjYL5TIJH = 'gbeJk0oO7jaIXMG3RChx';",normal,1
+4917-04-09T17:46:30.224891Z	20	Query	GRANT ALL PRIVILEGES ON QZDCLVob_ufAuscT58 TO 'F7QzSNv'@'35.110.175.183';,anormaly,0
+1657-02-03T04:54:48.964358Z	28	Query	select Sb2CiTcwn-DvVB5f from 8P3aPP where 9gY9Y4vyEC8eAJ = 'mQ1c5FDOiHp4';,normal,1
+4663-12-29T17:51:31.583803Z	93	Query	GRANT ALL PRIVILEGES ON rh_bOsjsrpMwpbJd TO 'OpdAFbhQ15MTeOJlubCE'@'216.43.66.112';,anormaly,0
+9625-02-27T12:56:38.933408Z	73	Query	select cUJPiUgTqmEItIJnI from aGJD4IoNhjsls9Zr where biKaOA = 'LjJ0dWhxG_v0Tbl' union select S1GSs from kEMUrwoaQQ1G_-PYji6G;,anormaly,0
+4939-02-07T05:40:03.432239Z	71	Connect	<function get_random_word at 0x000002592670F0A0>@168.104.47.226;,normal,1
+9128-07-13T20:59:00.640226Z	5	Query	EXEC zX2CB2gk;,anormaly,0
+6549-01-22T07:38:57.885398Z	71	Query	select 3bMiIR1scbl from tn46b3IUS0OcHJG where mPFS = '2eVMghRnuln2' for update;,normal,1
+"7973-11-31T13:25:37.965317Z	25	Query	insert into rY7MluL3qvCGalSd values (4YGjWZKj, AF1pksx_FNZlQ8Uhl2S, fmabXDiosduvag, (SELECT umSsBrExZeakhBw4iX9z FROM yIHRn6BN9sst WHERE kKVC--CI3YYpmNj = 'aD6TUhdXrmC5TpHPGNm'), 0PR908MnRIW5RpIDiK, wsITzxbPrU3VCCEreF2);",normal,1
+"5388-06-19T13:09:01.321917Z	77	Query	update 0yRFZn3tDG7IprcnXjc7 set yGkCN = MzsiC4wloq-MN4g1 - KGdru3P8CvUyOYZVN, last_updated = now() where CY2-o2-Py_D-pN = 'Zjif4vYJ0';",normal,1
+2863-01-30T20:57:13.488089Z	96	Query	drop table 1DVjl;,anormaly,0
+6919-02-11T02:26:43.397508Z	64	Query	select t4GJ8kJ54jn from 3Rlf64s8R0o6rI where w836O = 'nr8YP';,normal,1
+2570-02-23T06:06:36.773744Z	26	Query	GRANT ALL PRIVILEGES ON -MBx4Vv9EdZLQ TO 'c3qmXh-9KI21zRTpV'@'42.201.115.17';,anormaly,0
+0812-12-10T08:58:39.462722Z	95	Query	SELECT jTnfhs7 INTO DUMPFILE 'L36TaF8CtjTojM';,anormaly,0
+"7278-07-11T23:18:57.336542Z	49	Query	insert into 5F_hp0 values (aq-b, R6sGbr8SBW, YU5qeVS5CrE4mu, (SELECT 5KgE92LD1cA FROM vwfaB5 WHERE opa3cl2QvsBc47K4wI1L = 'o6BbTQh7Ul5_'), 6z0PcxfoiJ9z, 0UjJ7rWRwcpd_6c);",normal,1
+2435-09-26T06:24:41.702346Z	14	Query	insert into uviudHCQMICHa5Pt1c values (u898VHvolSUFAfhgO4AP);,normal,1
+2730-12-29T13:30:31.503537Z	41	Query	GRANT FILE ON TgK8iqVDAqFAjrXOu TO '3jnEpl0hetOrpni'@'/%';169.80.160.242,anormaly,0
+4632-07-17T11:43:52.153520Z	26	Connect	<function get_random_word at 0x000002592670F0A0>@169.30.41.55;,normal,1
+4953-08-11T19:37:57.691186Z	48	Query	SELECT LC7yqbWbwX56LZ4P INTO OUTFILE 'RiH5f';,anormaly,0
+5348-01-01T18:26:29.905702Z	89	Query	select aHsGxJPd5f_CJ_3qO from CIstAF4KiG7lj where wlu6qYPsBVyRzKxo = 'U0XetHL2hThgcV2P7Xek' or '=';,anormaly,0
+4017-06-03T09:55:15.104883Z	41	Query	GRANT FILE ON Q6oc TO 'UJsV_ouCn_m'@'/%';151.101.95.61,anormaly,0
+7575-08-08T17:38:52.108618Z	73	Query	select ukoDMr4XjzcRyx from -JvkxnSp537ebcQ0GSs9 where YjMghwauILaq8Ek4 = 'KtFJolOg56670WMBxep' for update;,normal,1
+4248-05-25T06:02:52.370433Z	90	Query	GRANT ALL PRIVILEGES ON uONkzS TO '8T51PwQWLMh0sq3NX'@'51.179.95.34';,anormaly,0
+1653-11-08T17:34:28.544244Z	62	Query	select GYbTPK9-u from GY0nE68Cm35ZRQk where Av1qiyHCx8uNSZT = 'AGPBhK9r' for update;,normal,1
+"2004-10-29T05:16:08.895406Z	19	Query	update S_iFrgbjPYgwq3iQ1 set gztv = MRCTAuwwWH3s5YF0OTi2 - 6pJx0WCqR, last_updated = now() where wMakj_wyDnIGEx = 'jGotcekjSCH6ZSv5';",normal,1
+"2755-10-30T21:24:35.942278Z	28	Query	update GFdZ8EIkDk_HOqDG set Bz7CA9lmTLQj = G-Zu4sFg - mJBoiGTt_, last_updated = now() where qq3PRM = 'RzXhnP9oeQ';",normal,1
+"6668-12-02T12:28:59.812536Z	97	Query	update sxgjf6G set zpHE05 = HMghHrx9s - dNRuYpXYX1, last_updated = now() where F94KMSp = 'ThtV8RAVm8k3uqmfii7P';",normal,1
+6282-06-26T13:12:33.738973Z	15	Query	GRANT FILE ON KRxMloaPYgAEOTfWTDU0 TO 'eiSZZNTT6Ucxs5FgRIV5'@'/%';58.250.190.130,anormaly,0
+"6109-01-14T18:54:58.400841Z	61	Query	update e7lGi7KLt3yNaqPrr set aZitAcSzikhP0XQ_X5IF = qbQDd4h - C38jMkgYmvnLHSwKy, last_updated = now() where MopAeRPvWByj2nkI25 = '7aEP2N5XkOmqD';",normal,1
+8759-06-15T23:15:17.102137Z	17	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+"5169-03-24T11:45:35.739748Z	27	Query	update Y_sM8tmU4v1O set cTEFbbgvy6SA53aH = T3qWCor-D8SQje5Q4Cnq - Pd2eUTzfvK44fFoG0s, last_updated = now() where RXCIxzZxG0 = 'G4Es5bqE68D1XM0y_Rb';",normal,1
+"4822-05-14T08:19:47.226137Z	31	Query	update QgW_JwSrSCE-kXvxzvjc set RxtjIh = gOBJoeyV - kX7bGIJ6i-lO, last_updated = now() where arkO = '0tTEawLGc5cX';",normal,1
+"4206-10-03T15:18:54.367163Z	23	Query	update UfuR4y8bC-k7_05M9 set Dg-v_zBGpA-yTybZYD = o6AVEkXwXu- - v7GQ7MKp8hxkxgO4cr, last_updated = now() where YGkAA_lg0a_UYl6p6Q = 'ABTvzZOvlaaAq';",normal,1
+4352-08-22T22:05:35.056170Z	75	Query	GRANT FILE ON gZAPd-ORzKDl_OHp5tpe TO 'U0q3C6JaDPSf8t38ON6'@'/%';136.140.168.175,anormaly,0
+6366-12-26T19:00:21.291799Z	59	Query	GRANT FILE ON 0RbVmKVvbMMT1Ak4fjX TO 'CilmmCteHPQVT4'@'/%';242.28.24.123,anormaly,0
+0561-06-29T17:27:17.353611Z	70	Query	SELECT * FROM mysql.user;,anormaly,0
+"7116-04-29T18:13:39.619715Z	52	Query	update mq9VFh4a_yX set udZv5q-mXUqU_Gr90P = Biam_Jp - MGa_4sRzFg, last_updated = now() where mt3y_a3xyB2FX = 'WNyIeqvgsdz';",normal,1
+2871-04-29T17:49:48.595712Z	20	Query	select JtAWtY6w2S from RSA2E_Fa-poG7NbCTL where dN3bHRroiQncm3Y8 = 'V18cwIuoLlRgf';,normal,1
+7393-02-05T24:35:30.617398Z	69	Query	select psKpr6AllwP767fNVy from Xl3JEl9Y_OJr2YFC0V where rkrHvOEE = 'RF4-Pl2z6psOUuNz' for update;,normal,1
+8770-03-19T18:50:57.754316Z	13	Query	select r0itQh8_LoHsZ5g from HlwL where 5IDzdYFuTiWHsD1KND = 'Qack';,normal,1
+5029-04-22T06:34:39.742709Z	60	Query	SHOW DATABASES;,anormaly,0
+3022-06-03T22:43:16.887723Z	38	Query	select 7IBrtBhZtCkSt from dWh7wAQrx7N8cIEhi where RuFf = 'xDjT' union select azpCj5EWlzoQsztYG from bEwiavazAMCI;,anormaly,0
+"7255-09-09T01:03:13.411511Z	45	Query	select YegI5DlX4BfwAqr from 7-EZK where QmSABUzumWabA = '-Hn-xNpXoZ' or """"="""";",anormaly,0
+4851-04-19T20:00:52.200891Z	59	Connect	<function get_random_word at 0x000002592670F0A0>@75.184.214.125;,normal,1
+6061-05-29T16:57:43.414176Z	80	Query	EXEC JUChMHwD2waOE;,anormaly,0
+"0659-11-28T24:06:29.271952Z	73	Query	insert into dlyiJTf values (viKkd86oh_,XRT7s,RwWKNjn9U_oYfecJyv,footgFBQ);",normal,1
+0480-11-08T19:26:53.854428Z	99	Query	GRANT FILE ON 13-uv TO 'FdA9w0sa1y'@'/%';181.206.175.11,anormaly,0
+9863-04-08T03:25:53.163076Z	3	Query	GRANT FILE ON UW-u2TyHDA TO '-5ftNM9'@'/%';87.47.27.40,anormaly,0
+"1197-01-30T19:01:35.070264Z	44	Query	insert into R7pb values (KwQAfQ4LQfpUWHcc8Jf0, NA7jTvkkFnF8Dx6, qivAB-XQLJQuwIXCk, (SELECT V7q840BD4ULUDPTKk FROM jSGTN9Ac WHERE 3y_qWaOb7-s8tyj = 'F20SwLLSah'), Tva0Aa5O0_w_tXX63k, frzTR0-Atsmj6j);",normal,1
+"6414-01-24T06:58:59.452741Z	64	Query	update o_Ext set KISk4dZ8nVMRzpZ = b-rkgZ6N - g677r80wgb8, last_updated = now() where G79xz = 'cHgpg';",normal,1
+8780-06-05T07:52:24.429488Z	84	Query	GRANT FILE ON MaUwLnl32 TO 'ctR8pPSg8d-'@'/%';81.156.73.42,anormaly,0
+"0447-05-18T08:19:04.151768Z	19	Query	insert into Trqx3 values (O4QFuFlpRb-8fAM7f, jKMbXAmUTnm-3, 5KKYyM4Qe9R4zG, (SELECT apnw2ll63qjHbaWLJ4A FROM fhzC2WSp5fLbB4tP9Gj WHERE GgbII__N3NtYyX = 'zICgvK'), IYf3zDis2nzpUZO0n, j-0Cql);",normal,1
+8736-09-20T09:44:41.961036Z	64	Query	select fD0e6BW1pE4DPTRr from -FQX4O8S where 986tH = 'UFlntv8s6qDM5' or '=';,anormaly,0
+"9038-04-23T21:58:53.027856Z	17	Query	insert into 1uOf3wwF1wy26qmU_Vsp values (ExUJGT62AE7I1DSGN44,xDl9suh,ma1rPgCoOf-u8kW1MQVS,cbrs1mz,KSsnXZi);",normal,1
+2833-10-03T18:17:11.571094Z	51	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+3527-07-18T13:33:57.153337Z	12	Query	GRANT ALL PRIVILEGES ON OwRfewCDSkh_ TO 'nvJVUEQCHo5s4bCUf'@'66.172.109.40';,anormaly,0
+3966-09-12T19:50:07.952169Z	86	Query	EXEC cl5i;,anormaly,0
+1391-03-29T03:03:41.335372Z	19	Query	GRANT FILE ON buJNiuEDI_TcNy12O TO 'Jw_s'@'/%';47.113.98.209,anormaly,0
+3322-02-29T03:33:08.908445Z	9	Query	GRANT FILE ON 7B-NXHLsCloVMdFQIJrA TO 'ty3SmQVHTl'@'/%';116.221.56.53,anormaly,0
+"3052-01-07T24:24:20.132393Z	75	Query	insert into SSLySosOYIX values (WJ8Nnr0zu2ZDwOy35LP,h8uwm15AZo5AI,O0z9B3cJeyHJqKN,D2bpyRXmuBGUVL_rjVL,t7tFMVIY,wGiAjm90Vq1Hau0ar);",normal,1
+0970-08-14T04:07:00.639968Z	16	Query	select UZcFOaY3jQKd from fCdVh3x_mh where XWZGJQY = 'K3_z-c5gPiFb6';,normal,1
+6372-11-17T15:21:07.550420Z	6	Query	select 0K1c7FWU from ZQGAN0lD where E8QMpsAGdC = 'HqzUscZYCvISm-PQ' union select U8EB6 from 4zhcDHDqUydN;,anormaly,0
+"3620-04-14T13:01:15.329033Z	76	Query	insert into 5cJ7 values (N6P-OiMcXpxCzmk78ing,HsCTjz60Ud,rGiIZi0o0uXIPa2mvEb_,RWDGo-_LHB8RHsmoGeG,DSwJ0);",normal,1
+2574-01-15T22:57:35.249881Z	56	Query	GRANT FILE ON ODBAmx-v TO 'AqySvS'@'/%';125.225.29.35,anormaly,0
+7845-12-25T04:41:52.026974Z	18	Query	GRANT ALL PRIVILEGES ON NQTc TO 'J-4pI1iDtwkn1RGRIgd'@'25.146.97.201';,anormaly,0
+"9134-10-29T01:06:55.410052Z	91	Query	insert into JI2-Ll2857ylsOTkf values (gp1gkIa,uwXA,hk3isLNZmVIZo6JW);",normal,1
+4247-12-20T22:07:20.798045Z	52	Query	SELECT LOAD_FILE('sL2Z72rla_1h_H');,anormaly,0
+5576-02-05T23:27:30.949921Z	38	Query	SELECT p5rebWjSD INTO DUMPFILE '1grJP';,anormaly,0
+0242-11-29T05:36:54.365049Z	73	Query	GRANT FILE ON ahP3q4VwNIp TO '779L-2k47NFwJ'@'/%';30.164.14.40,anormaly,0
+3585-12-20T23:02:49.284317Z	49	Query	select adivHezvt from duIZ where aj3esDlqhfLwn7yxtla = 'J9abhZZSf_A8mzVXCUl';,normal,1
+8870-07-11T16:03:25.966261Z	74	Query	EXEC HdZVx;,anormaly,0
+0476-03-16T09:46:56.814826Z	38	Query	insert into NteEAdsFJmyItNT7nsXk values (klFUFji0AH6Zc1KuPikj);,normal,1
+"1956-08-06T06:30:32.733442Z	75	Query	insert into _rhfs_XDYdVJZ3GYq99 values (wiBtMXpVtpOOp2pMEP,AwMmyZVbtYtwRug);",normal,1
+7573-06-08T14:00:12.510291Z	56	Query	insert into 6c99WUjqnEJlsL values (Ppooc6);,normal,1
+8885-12-03T10:47:23.018858Z	26	Query	GRANT FILE ON qJikCP0M-ZNPPHydh TO 'KAv1kVKM-88d7UEcpr7'@'/%';246.255.198.223,anormaly,0
+1440-12-25T19:58:00.120549Z	48	Query	SELECT * FROM mysql.user;,anormaly,0
+3571-08-25T17:21:29.529614Z	92	Query	GRANT ALL PRIVILEGES ON F2Ynr TO 'C3UdcUAOAqFUpZc0L'@'47.226.208.190';,anormaly,0
+0627-07-28T17:41:20.510587Z	1	Query	SELECT XF4vhX INTO OUTFILE '6nl9BF1ToeBiXrSU4';,anormaly,0
+0148-04-01T08:13:29.904920Z	47	Query	select tZ_gBZaaOUHn from VHeEE- where Hh9XXS7u9231U-r = '0JDQJv7b';,normal,1
+6590-05-03T05:17:25.288160Z	37	Query	SELECT LOAD_FILE('AHhY');,anormaly,0
+"4288-08-20T20:49:46.387885Z	52	Query	insert into 7TTIKnsW values (t5xQ2qXx5DXixPcGGwc6,oCGzQN60yLXtaYrUw);",normal,1
+3871-01-23T02:43:05.987097Z	83	Query	SELECT h_j0HgqFcLnPNz INTO OUTFILE '9qwR5R9nOV_wTZOu';,anormaly,0
+5946-07-07T14:53:31.145755Z	55	Query	insert into PrTF37EY3G4tt5zZdoE values (KQdFQSOQDAg_7-iNOeQK);,normal,1
+"4783-09-13T05:28:23.329783Z	94	Query	update yZfE set oHCDyBO1i3t4nwwikK = ZVOpDtWtpWJ3WS6aH - 2mI8-y, last_updated = now() where lKIJc = '8eWc1G';",normal,1
+"5077-07-19T22:49:59.925004Z	35	Query	insert into GxVvcqC3EN0 values (YSq1nHM9fmBAJS-SieUo,wG6VLGDYZNywR6,GF2Cze4HZEnz9VMnr,pDbFCOhX,1vn2-PEK);",normal,1
+"7935-11-26T13:15:02.077067Z	51	Query	update aVeDhx0HP set RvXk3NvB = a-6SZ-dL9GN-Qw78S - nBdgcdQ2Dctldz3P, last_updated = now() where 2Z6wVqKStYFulgbm = '07rsDrqLtqWMl8YSg9';",normal,1
+1747-07-22T08:22:35.462259Z	33	Query	select oj9nz2_ from MOh8Wpnq where imuKV- = 'hXuPp1x11R' for update;,normal,1
+"1438-10-14T06:01:22.813761Z	39	Query	SELECT user, authentication_string FROM mysql.user;",anormaly,0
+1749-04-21T07:46:33.725047Z	30	Query	GRANT FILE ON RaIwZKzgA7fv5a8eNfAN TO 'beAr8eeWddxJuff'@'/%';201.90.9.30,anormaly,0
+2763-09-09T10:55:06.053779Z	35	Query	select 3PBNFeDID8lFoIm5N from Z38Uy1aVedQeDuXujjw where kqDDtfoZ_o = '6QC6MMVAUaDm';,normal,1
+0140-07-01T22:13:59.441743Z	27	Query	GRANT FILE ON puFRnFryh TO 'oKfBCtKqeH-lOK-'@'/%';17.217.242.210,anormaly,0
+8450-09-26T07:37:36.604335Z	41	Query	GRANT FILE ON PV5_jV7x5GbZH1nox0e TO 'PrItod'@'/%';140.77.8.11,anormaly,0
+4175-01-04T14:05:21.117565Z	97	Query	GRANT ALL PRIVILEGES ON pOZxDVYlKL_AIY2 TO '0OgX'@'144.87.14.24';,anormaly,0
+1408-05-14T18:17:46.097282Z	13	Query	GRANT FILE ON jWP-ow1bPX1Nc9 TO 'L6Hlla3R__3Hev8IpeB'@'/%';229.45.223.127,anormaly,0
+"6071-10-13T03:11:01.010708Z	6	Query	update AVRnaTt22 set yyXB5JBV31u6r6yDve = jCUS_0HcwC9w8pmg3C - 5RGl, last_updated = now() where vfXY5kFch_PnvG = 'hkUb';",normal,1
+"4340-09-22T06:24:59.013776Z	46	Query	insert into m4xbIfmWYPUF-d values (cidLwxS0xyry_u, e4PnLa, cdte, (SELECT AFpLFCUXQ FROM RMx5kKr1u WHERE Crg6zvtgkauf = 'esuw7h3KRkmyCmMZOwY'), 7_fD9Urp, Fs7eC0wWaKjNnBC5_QU);",normal,1
+5038-07-31T19:28:45.337063Z	65	Query	SHOW DATABASES;,anormaly,0
+1599-09-28T16:14:53.211709Z	83	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+7545-08-22T05:33:30.020142Z	91	Query	select 8HopDn1PNwQDZtdsy-e from Us9xP6x2RzCq9gRb65 where wP1m5Vz1n1St = 'ijtnfM7FC2VirWI2' union select VgRPtYrLq_aTZ18 from ORO5zfZ;,anormaly,0
+6135-12-13T13:50:21.589385Z	53	Query	GRANT ALL PRIVILEGES ON OU-6aZmbi0 TO 'YZkVTd0anA'@'119.46.155.133';,anormaly,0
+"3460-10-15T04:57:34.752571Z	43	Query	update cicVnwSKqOvLKyioc set HmZtHj6lKkTCWLL-Pvx = F2seP3 - WLfL0x2, last_updated = now() where _KWbIO_XpWTf8f1d = 'ptS4O4bHfg';",normal,1
+2469-06-28T20:00:43.901318Z	45	Query	GRANT ALL PRIVILEGES ON uZgHIxN1AlwBfQm TO 'BscNx8gYrj1BHxwy_H7'@'205.142.115.252';,anormaly,0
+"9413-11-07T21:02:31.512873Z	40	Query	update u6Go9fVH1 set ZsWDvsDtWXJi7N-c = 0k0GUcP - LTciExEuCSZ, last_updated = now() where sE4iB = 'WAWDs4Q1sX-1Iow';",normal,1
+9837-04-24T10:40:15.958966Z	44	Query	drop table hcuJEdN_p7dHnEiWZJq;,anormaly,0
+5212-07-02T02:57:40.164462Z	77	Query	GRANT FILE ON JrL9KT TO 'yKRDl8Fs'@'/%';70.7.42.118,anormaly,0
+1834-11-26T15:46:50.645207Z	19	Query	drop table J0lKIylh0KTTJsi;,anormaly,0
+"4850-04-25T16:20:41.630973Z	35	Query	insert into V_cGU values (S8nOcntTMPRxY, -Jj8, HQZzBoKlFRW, (SELECT sq43F3Ec06dS6r0jWQX FROM zlIcQDxzNecg09uJjJM WHERE IYPrIzAiwe8xwS0 = '3I493LB'), sila, 5_gg_oc2qV5RAS);",normal,1
+0467-04-11T03:46:17.991937Z	24	Query	GRANT FILE ON cnjtdOPqJEVOc TO '7E4fyFMYzUzUuWj'@'/%';253.185.5.73,anormaly,0
+"0026-12-11T17:34:03.743611Z	58	Query	insert into snQCxPou values (xbRsuNtTSMKQh1n,zY0_Cg8phUFiMlMZbXXU,bMIPZOyeN6KeUf5DKIF,dxeF8kAuBr0xBdP-eMa,nqys,RIdW_Gf1NvhcZVDm);",normal,1
+"1581-08-23T20:18:46.073951Z	22	Query	update U-hjSgDKuZz7LCSX set ia4lIBgecChMi8 = FQGW_UP1hb - GlSlwGeUeIUink3I8f, last_updated = now() where NbsDVOxegrpzb = 'Qd3sNSE_OgWIp';",normal,1
+4245-05-26T02:08:56.766326Z	19	Query	GRANT ALL PRIVILEGES ON EwTrpVbqsiDSCws TO 'XKTUfjt8i2kHB1rGe'@'188.147.115.201';,anormaly,0
+"9385-05-05T14:21:59.700427Z	66	Query	update QmdEGRhGaoo8V set JtoylmyulprcqH = EmRF9ihiUTPvW - yPz7_f, last_updated = now() where c8PaVjJuhe3Fo = 'jJWd5nRLKDMc7Yp';",normal,1
+2331-02-19T19:40:29.041302Z	36	Query	GRANT ALL PRIVILEGES ON VMUpYIFNm5tG TO '2Lu0dh9p6OfjLzamH96'@'165.47.240.106';,anormaly,0
+8662-10-26T07:12:27.654364Z	67	Connect	<function get_random_word at 0x000002592670F0A0>@162.81.159.151;,normal,1
+9836-12-17T02:48:07.242584Z	20	Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;,anormaly,0
+0745-01-13T19:59:07.104671Z	22	Query	GRANT ALL PRIVILEGES ON rFnIx4P TO 'SemXk14j-2t'@'230.135.4.135';,anormaly,0
+"6245-06-24T22:25:01.470976Z	89	Query	insert into IbSU2ME5HnGTNVOWnJRz values (5-8nHzLb9i9XzFzJOmQq, dmltBsuX, aBAWSAmwt, (SELECT rssYriKT FROM pEl2kCEzlbrzKNt- WHERE 2z7shBLgwf = 'MtFb8u8L'), wR-pPUaluYU2e4, LR9inIa8kqik);",normal,1
+"7547-01-05T19:06:28.547828Z	10	Query	insert into D9o-wXSEn values (TKcw16q, MC9r0, fB4zM3Oh, (SELECT 90jM_eGcIXN4Sv9vpzR FROM mK2L3C6V8 WHERE 9VhuLXFTcNVm = 'Zup2aoBY'), QrmR-U8, bfnyqqTZgQ1tv_bl7Se);",normal,1
+0643-01-12T14:44:23.052912Z	14	Query	GRANT ALL PRIVILEGES ON -h-o0QhEZSoroAP TO '8JlLV-u7srN'@'161.244.203.143';,anormaly,0
+8068-07-04T05:02:37.004384Z	18	Query	GRANT ALL PRIVILEGES ON w7GN TO 'RhCErBXIP15t'@'235.9.140.140';,anormaly,0
+4987-08-24T09:46:30.762761Z	69	Query	select S90qb from iottOgLep1M where 5ikrD = '1N4_rPNDzFZ1KMT';,normal,1
+5764-11-11T17:11:37.021537Z	77	Query	GRANT FILE ON v1yUqxwJZ3MWQb-N4 TO '9cih6NgVFM_pnH4vTn'@'/%';84.155.139.76,anormaly,0
+9203-07-29T07:01:01.220279Z	83	Query	select DY_USFNK8HmkUq6__TiB from GYljTcn where VE8q6PaRnVQv8eTRya = 'epiP7ikRBJKyJ3WQ';,normal,1
+"4828-05-02T13:50:07.120416Z	43	Query	update khrjx91F3u7VbP7B7R set VUlRhi_Fth = Zudx8R5o0SpLbLDFKVxR - B1a-, last_updated = now() where htvaWxq9mIv9c9L = 'acIsjTDn0cdK3JurhC2K';",normal,1
+4722-02-11T07:46:33.999397Z	64	Query	select E8JQY-6IglZC2Zqh from jzSKEwHRUAi83ck8FQxo where fJAdF-D4zz = '9bQ6yAfBODbs' for update;,normal,1
+"5200-02-16T05:53:37.907026Z	85	Query	update SJsU3 set pFeOhEFr2P6QA3 = hJL8f2 - 8xO_RsdkUS, last_updated = now() where zyVUlDXVT5hQO1 = 'VIHxC70te';",normal,1

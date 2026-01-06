@@ -282,7 +282,7 @@ def main():
     abnormal.append((Row(tg, ad12, True), 4))
     abnormal.append((Row(tg, ad13, True), 1))
 
-    num = 500000
+    num = 1000
     dg = DatasetGenerator(normal, abnormal)
     dg.generate_csv(num)
 

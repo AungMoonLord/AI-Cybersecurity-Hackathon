@@ -1,0 +1,201 @@
+query log,status,label
+SELECT * FROM users WHERE LENGTH(email)=LENGTH(email),anomaly,0
+SELECT * FROM orders WHERE total>=0,anomaly,0
+SELECT * FROM users WHERE id=id+0,anomaly,0
+SELECT * FROM users ORDER BY (SELECT COUNT(*) FROM users),anomaly,0
+SELECT * FROM payments WHERE amount=amount,anomaly,0
+SELECT * FROM users WHERE EXISTS (SELECT 1 FROM users),anomaly,0
+SELECT * FROM users WHERE TRUE IS TRUE,anomaly,0
+SELECT * FROM users WHERE NOT FALSE,anomaly,0
+"SELECT * FROM users WHERE COALESCE(id,0)=id",anomaly,0
+SELECT * FROM users WHERE SIGN(id)>=0,anomaly,0
+"SELECT * FROM users WHERE ASCII(SUBSTRING(email,1,1)) BETWEEN 32 AND 126",anomaly,0
+SELECT * FROM users WHERE CHAR_LENGTH(password_hash)>0,anomaly,0
+"SELECT * FROM users WHERE POWER(2,0)=1",anomaly,0
+SELECT * FROM users WHERE EXP(0)=1,anomaly,0
+SELECT * FROM users WHERE LN(EXP(1))=1,anomaly,0
+SELECT * FROM users WHERE id IN (SELECT id FROM users),anomaly,0
+SELECT * FROM users WHERE email IN (SELECT email FROM users),anomaly,0
+SELECT * FROM orders WHERE user_id IN (SELECT id FROM users),anomaly,0
+SELECT * FROM users WHERE id=(SELECT MIN(id) FROM users),anomaly,0
+SELECT * FROM users WHERE id=(SELECT MAX(id) FROM users),anomaly,0
+SELECT CASE WHEN COUNT(*)>0 THEN 1 ELSE 0 END FROM users,anomaly,0
+SELECT * FROM users WHERE (SELECT COUNT(*) FROM users)>=1,anomaly,0
+SELECT * FROM users WHERE (SELECT COUNT(*) FROM users)=COUNT(*),anomaly,0
+SELECT * FROM users WHERE COUNT(*) OVER ()>=0,anomaly,0
+SELECT * FROM users ORDER BY RANDOM(),anomaly,0
+SELECT * FROM users WHERE id+1>id,anomaly,0
+SELECT * FROM users WHERE id*1=id,anomaly,0
+SELECT * FROM users WHERE ABS(id)=ABS(id),anomaly,0
+SELECT * FROM users WHERE ROUND(id)=id,anomaly,0
+SELECT * FROM users WHERE CEILING(id)=id,anomaly,0
+SELECT * FROM users WHERE EXISTS (SELECT 1 FROM information_schema.tables),anomaly,0
+SELECT * FROM users WHERE DATABASE() IS NOT NULL,anomaly,0
+SELECT * FROM users WHERE CURRENT_USER IS NOT NULL,anomaly,0
+SELECT * FROM users WHERE VERSION() IS NOT NULL,anomaly,0
+SELECT * FROM users WHERE SESSION_USER IS NOT NULL,anomaly,0
+SELECT * FROM users ORDER BY LENGTH(password_hash),anomaly,0
+SELECT * FROM users ORDER BY email,anomaly,0
+SELECT * FROM users WHERE email LIKE '%@%',anomaly,0
+SELECT * FROM users WHERE POSITION('@' IN email)>0,anomaly,0
+"SELECT * FROM users WHERE STRPOS(email,'@')>0",anomaly,0
+SELECT * FROM users WHERE id BETWEEN id AND id,anomaly,0
+SELECT * FROM users WHERE id<=id,anomaly,0
+SELECT * FROM users WHERE id>=id,anomaly,0
+SELECT * FROM users WHERE id<>-1,anomaly,0
+SELECT * FROM users WHERE id NOT IN (-1),anomaly,0
+SELECT * FROM users WHERE EXISTS (SELECT 1),anomaly,0
+SELECT * FROM users WHERE TRUE,anomaly,0
+SELECT * FROM users WHERE NOT(id<0),anomaly,0
+SELECT * FROM users WHERE id IS NOT NULL,anomaly,0
+SELECT * FROM users,anomaly,0
+SELECT column_name FROM information_schema.columns WHERE table_name='users',anomaly,0
+SELECT COUNT(*) FROM information_schema.tables,anomaly,0
+SELECT table_name FROM information_schema.tables ORDER BY table_name,anomaly,0
+SELECT * FROM pg_catalog.pg_roles,anomaly,0
+SELECT current_setting('search_path'),anomaly,0
+SELECT current_database(),anomaly,0
+SELECT inet_server_addr(),anomaly,0
+SELECT pg_backend_pid(),anomaly,0
+SHOW all,anomaly,0
+SELECT * FROM pg_stat_activity,anomaly,0
+SELECT * FROM users WHERE id BETWEEN -1 AND 100000000,anomaly,0
+SELECT * FROM orders WHERE total >= -999999,anomaly,0
+SELECT * FROM users WHERE created_at <= NOW(),anomaly,0
+SELECT * FROM users WHERE email IS NOT DISTINCT FROM email,anomaly,0
+"SELECT * FROM users WHERE COALESCE(deleted_at,NOW())>=NOW()",anomaly,0
+SELECT * FROM payments WHERE amount::TEXT LIKE '%0%',anomaly,0
+SELECT * FROM users WHERE CAST(id AS TEXT) ~ '[0-9]',anomaly,0
+SELECT * FROM orders WHERE status::TEXT <> '',anomaly,0
+SELECT * FROM users WHERE id::TEXT <> '',anomaly,0
+SELECT * FROM users WHERE LENGTH(TRIM(email))>0,anomaly,0
+SELECT CASE WHEN COUNT(*)>100 THEN pg_sleep(2) ELSE pg_sleep(0) END FROM users,anomaly,0
+SELECT pg_sleep(1),anomaly,0
+SELECT * FROM users ORDER BY md5(email),anomaly,0
+SELECT * FROM orders ORDER BY random(),anomaly,0
+SELECT * FROM users ORDER BY LENGTH(password_hash) DESC,anomaly,0
+SELECT * FROM users OFFSET 0,anomaly,0
+SELECT * FROM payments LIMIT 500000,anomaly,0
+SELECT * FROM audit_logs ORDER BY created_at,anomaly,0
+SELECT * FROM logs WHERE message IS NOT NULL,anomaly,0
+SELECT * FROM users WHERE role IS NOT NULL,anomaly,0
+ALTER TABLE users DISABLE TRIGGER ALL,anomaly,0
+ALTER TABLE orders ALTER COLUMN total DROP NOT NULL,anomaly,0
+SET statement_timeout = 0,anomaly,0
+SET enable_indexscan = off,anomaly,0
+SET enable_bitmapscan = off,anomaly,0
+VACUUM FULL users,anomaly,0
+REINDEX TABLE users,anomaly,0
+ANALYZE VERBOSE payments,anomaly,0
+ALTER SYSTEM SET log_statement='all',anomaly,0
+CHECKPOINT,anomaly,0
+UPDATE balances SET amount=amount*100,anomaly,0
+UPDATE orders SET status='completed' WHERE status='pending',anomaly,0
+UPDATE refunds SET approved=true,anomaly,0
+"INSERT INTO refunds (order_id,amount) VALUES (1,999999)",anomaly,0
+UPDATE inventory SET qty=qty+10000,anomaly,0
+DELETE FROM sessions,anomaly,0
+DELETE FROM notifications,anomaly,0
+UPDATE users SET verified=true,anomaly,0
+UPDATE users SET email_verified_at=NOW(),anomaly,0
+UPDATE users SET password_changed_at=NOW(),anomaly,0
+SELECT * FROM users WHERE id=17,normaly,1
+"SELECT name,email FROM users WHERE id=21",normaly,1
+"INSERT INTO users (name,email) VALUES ('alice','a@x.com')",normaly,1
+UPDATE users SET last_login=NOW() WHERE id=17,normaly,1
+DELETE FROM sessions WHERE expires_at<NOW(),normaly,1
+SELECT * FROM orders WHERE user_id=17,normaly,1
+"INSERT INTO orders (user_id,total) VALUES (17,299.00)",normaly,1
+UPDATE orders SET status='shipped' WHERE id=301,normaly,1
+SELECT * FROM orders WHERE status='pending',normaly,1
+SELECT COUNT(*) FROM orders,normaly,1
+SELECT * FROM payments WHERE order_id=301,normaly,1
+UPDATE payments SET status='confirmed' WHERE id=88,normaly,1
+SELECT SUM(amount) FROM payments WHERE status='confirmed',normaly,1
+SELECT * FROM refunds WHERE created_at>=CURRENT_DATE,normaly,1
+"INSERT INTO refunds (order_id,amount) VALUES (301,50)",normaly,1
+SELECT * FROM products WHERE active=true,normaly,1
+"SELECT id,name,price FROM products ORDER BY price ASC",normaly,1
+UPDATE inventory SET qty=qty-1 WHERE sku='SKU-1',normaly,1
+SELECT * FROM inventory WHERE qty<5,normaly,1
+"INSERT INTO inventory_logs (sku,delta) VALUES ('SKU-1',-1)",normaly,1
+SELECT * FROM categories,normaly,1
+"SELECT p.name,c.name FROM products p JOIN categories c ON p.category_id=c.id",normaly,1
+SELECT COUNT(*) FROM products WHERE category_id=3,normaly,1
+SELECT AVG(price) FROM products,normaly,1
+SELECT * FROM products WHERE price>(SELECT AVG(price) FROM products),normaly,1
+SELECT * FROM users WHERE created_at>=NOW()-INTERVAL '1 day',normaly,1
+"SELECT DATE(created_at),COUNT(*) FROM orders GROUP BY DATE(created_at)",normaly,1
+"SELECT user_id,COUNT(*) FROM orders GROUP BY user_id",normaly,1
+SELECT * FROM users ORDER BY created_at DESC LIMIT 10,normaly,1
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 20,normaly,1
+SELECT * FROM logs WHERE level='ERROR',normaly,1
+"INSERT INTO logs (level,message) VALUES ('INFO','job completed')",normaly,1
+"SELECT DATE_TRUNC('hour',created_at),COUNT(*) FROM logs GROUP BY DATE_TRUNC('hour',created_at)",normaly,1
+SELECT * FROM audit_logs WHERE actor='system',normaly,1
+INSERT INTO audit_logs (action) VALUES ('inventory_update'),normaly,1
+SELECT * FROM sessions WHERE user_id=17,normaly,1
+SELECT COUNT(DISTINCT user_id) FROM sessions,normaly,1
+DELETE FROM notifications WHERE read=true,normaly,1
+UPDATE notifications SET read=true WHERE id=55,normaly,1
+SELECT * FROM notifications WHERE read=false,normaly,1
+SELECT * FROM addresses WHERE user_id=17,normaly,1
+UPDATE addresses SET city='Bangkok' WHERE id=9,normaly,1
+"INSERT INTO addresses (user_id,city) VALUES (17,'Phuket')",normaly,1
+SELECT * FROM users u JOIN addresses a ON u.id=a.user_id,normaly,1
+SELECT * FROM users WHERE email LIKE '%@gmail.com',normaly,1
+"SELECT * FROM users WHERE id IN (1,2,3)",normaly,1
+SELECT * FROM orders WHERE total BETWEEN 100 AND 500,normaly,1
+SELECT * FROM payments WHERE created_at>=NOW()-INTERVAL '30 days',normaly,1
+"SELECT user_id,SUM(total) FROM orders GROUP BY user_id",normaly,1
+SELECT * FROM orders WHERE id=(SELECT MAX(id) FROM orders),normaly,1
+SELECT * FROM users WHERE id=8,normaly,1
+"SELECT name,email FROM users WHERE id=15",normaly,1
+UPDATE users SET last_login=NOW() WHERE id=8,normaly,1
+DELETE FROM sessions WHERE expires_at<NOW(),normaly,1
+SELECT * FROM sessions WHERE user_id=8,normaly,1
+"INSERT INTO orders (user_id,total) VALUES (8,149.00)",normaly,1
+SELECT * FROM orders WHERE user_id=8 ORDER BY created_at DESC,normaly,1
+UPDATE orders SET status='paid' WHERE id=401,normaly,1
+"INSERT INTO payments (order_id,amount) VALUES (401,149.00)",normaly,1
+UPDATE payments SET status='confirmed' WHERE order_id=401,normaly,1
+SELECT * FROM products WHERE active=true,normaly,1
+"SELECT id,name FROM products ORDER BY name",normaly,1
+UPDATE inventory SET qty=qty-1 WHERE sku='SKU-77',normaly,1
+SELECT * FROM inventory WHERE sku='SKU-77',normaly,1
+"INSERT INTO inventory_logs (sku,delta) VALUES ('SKU-77',-1)",normaly,1
+SELECT COUNT(*) FROM orders WHERE created_at>=CURRENT_DATE,normaly,1
+"SELECT DATE(created_at),SUM(total) FROM orders GROUP BY DATE(created_at)",normaly,1
+"SELECT user_id,COUNT(*) FROM orders GROUP BY user_id",normaly,1
+SELECT AVG(total) FROM orders WHERE created_at>=CURRENT_DATE,normaly,1
+SELECT * FROM orders WHERE total>(SELECT AVG(total) FROM orders),normaly,1
+"INSERT INTO addresses (user_id,city) VALUES (8,'Bangkok')",normaly,1
+SELECT * FROM addresses WHERE user_id=8,normaly,1
+UPDATE addresses SET city='Chiang Mai' WHERE user_id=8,normaly,1
+SELECT * FROM users u JOIN addresses a ON u.id=a.user_id,normaly,1
+SELECT * FROM users WHERE email LIKE '%@gmail.com',normaly,1
+"INSERT INTO logs (level,message) VALUES ('INFO','order_created')",normaly,1
+SELECT * FROM logs WHERE level='WARN',normaly,1
+"SELECT DATE_TRUNC('hour',created_at),COUNT(*) FROM logs GROUP BY DATE_TRUNC('hour',created_at)",normaly,1
+INSERT INTO audit_logs (action) VALUES ('payment_confirmed'),normaly,1
+SELECT * FROM audit_logs ORDER BY created_at DESC LIMIT 20,normaly,1
+DELETE FROM cart_items WHERE user_id=8,normaly,1
+UPDATE notifications SET read=true WHERE user_id=8,normaly,1
+SELECT * FROM notifications WHERE user_id=8 AND read=false,normaly,1
+DELETE FROM notifications WHERE read=true,normaly,1
+SELECT * FROM coupons WHERE expired=false,normaly,1
+SELECT * FROM users WHERE created_at>=NOW()-INTERVAL '7 days',normaly,1
+SELECT DISTINCT user_id FROM orders,normaly,1
+"SELECT * FROM orders WHERE status IN ('paid','shipped')",normaly,1
+SELECT * FROM payments WHERE created_at>=NOW()-INTERVAL '30 days',normaly,1
+"SELECT user_id,SUM(total) FROM orders GROUP BY user_id",normaly,1
+SELECT * FROM users ORDER BY created_at DESC LIMIT 5,normaly,1
+SELECT * FROM orders ORDER BY total DESC LIMIT 10,normaly,1
+SELECT * FROM products WHERE price BETWEEN 100 AND 500,normaly,1
+SELECT * FROM inventory WHERE qty<5,normaly,1
+SELECT * FROM users WHERE last_login IS NULL,normaly,1
+SELECT * FROM orders WHERE id=(SELECT MAX(id) FROM orders),normaly,1
+SELECT * FROM users WHERE id IN (SELECT user_id FROM orders),normaly,1
+SELECT * FROM payments WHERE amount>(SELECT AVG(amount) FROM payments),normaly,1
+SELECT COUNT(DISTINCT user_id) FROM sessions,normaly,1
+SELECT * FROM users WHERE active=true,normaly,1
