@@ -40,7 +40,7 @@ Select an employee type for report personalization. Then, choose a sample query 
 
 | Name                                                                                                            | Purpose                                                       |
 | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| [google-bert/bert-base-uncased](https://huggingface.co/google-bert/bert-base-uncased)                           | Fine-tuned classification inference model on transaction logs |
+| [AungMoonLord/bert-log-anomaly-detection](https://huggingface.co/google-bert/bert-base-uncased)                           | Fine-tuned classification inference model on transaction logs |
 | [meta-llama/llama-4-scout-17b-16e-instruct](https://console.groq.com/docs/model/llama-4-scout-17b-16e-instruct) | Report writing and summarization model                        |
 
 
