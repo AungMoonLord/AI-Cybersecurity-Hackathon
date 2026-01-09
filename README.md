@@ -22,7 +22,7 @@
 
 ## About the Project
 
-Mjolnir is an AI-powered security tool that automates the detection of fraud in financial transaction logs. It uses our fine-tuned BERT model to classify each query as `Normal` or `Anomaly`, along with an LLM to translate technical threats into plain English. Instead of generating generic alerts, it produces personalized reports tailored for managers, developers, and executives, such as CISOs. Mjolnir’s objective is to rapidly detect, prevent, and mitigate the potential damage caused by cyberattacks by automating these processes.
+Mjolnir is an AI-powered security tool that automates the detection of fraud in financial transaction logs as advanced persistent threats (APT). It uses our fine-tuned BERT model to classify each query as `Normal` or `Anomaly`, along with an LLM to translate technical threats into plain English. Instead of generating generic alerts, it produces personalized reports tailored for managers, developers, and executives, such as CISOs. Mjolnir’s objective is to rapidly detect, prevent, and mitigate the potential damage caused by cyberattacks by automating these processes.
 
 In the future, we aim to improve the system’s accuracy by introducing human-in-the-loop verification to identify cases where the model incorrectly classifies a query, as well as by developing a model that can continually retrain itself using new and corrected data.
 
