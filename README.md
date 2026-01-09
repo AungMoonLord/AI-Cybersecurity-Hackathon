@@ -27,7 +27,7 @@ Mjolnir is an AI-powered security tool that automates the detection of fraud in 
 In the future, we aim to improve the system’s accuracy by introducing human-in-the-loop verification to identify cases where the model incorrectly classifies a query, as well as by developing a model that can continually retrain itself using new and corrected data.
 
 > [!NOTE]
-> While the production environment will monitor data 24/7 and generate reports by comparing the oldest and newest entries within an appropriate timeframe, the current prototype is limited to occasional manual runs with a smaller workload of log excerpts (approximately 200 lines) due to resource constraints.
+> A real-world environment system needs to monitor data 24/7 and automatically alert as soon as an anomaly is detected. It must also generate reports by comparing the oldest and newest entries within an appropriate timeframe. Unfortunately, the current prototype is limited to occasional manual runs with a smaller workload of log excerpts (approximately 200 lines) due to resource constraints.
 
 ## Usage
 
