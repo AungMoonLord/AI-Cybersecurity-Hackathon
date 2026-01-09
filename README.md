@@ -4,7 +4,7 @@
     <img src="images/logo.png" alt="Logo" width="auto" height="auto">
   </a>
 
-  <h1 style="margin-top: 2rem; align: center">Mjolnir: AI-Powered Fraud Detection and Personalized Report Generation from Financial Transaction Logs</h1>
+  <h1 style="margin-top: 2rem; align: center">Mjolnir: Realtime AI-Powered Fraud Detection and Personalized Report Generation from Financial Transaction Logs</h1>
 
   <h3 align="center">
     A fraud detection and prevention project for <i>Samsung × KBTG Digital Fraud Cybersecurity Hackathon</i>.
@@ -22,12 +22,12 @@
 
 ## About the Project
 
-Mjolnir is an AI-powered security tool that automates the detection of fraud in financial transaction logs. It uses a fine-tuned BERT model to classify each query into `normal` and `anomaly` and an LLM to translate those technical threats into plain English. Instead of generic alerts, it generates personalized reports for managers, developers, and executives like CISOs. Mjolnir's objective is to rapidly detect, prevent, and mitigate the potential damage these cyberattacks by automating such processes.
+Mjolnir is an AI-powered security tool that automates the detection of fraud in financial transaction logs as advanced persistent threats (APT). It uses our fine-tuned BERT model to classify each query as `Normal` or `Anomaly`, along with an LLM to translate technical threats into plain English. Instead of generating generic alerts, it produces personalized reports tailored for managers, developers, and executives, such as CISOs. Mjolnir’s objective is to rapidly detect, prevent, and mitigate the potential damage caused by cyberattacks by automating these processes.
 
-In the future, we aim to improve the system's accuracy by introducing human-in-the-loop checking for chances of the model incorrectly classifying a query and developing the model that can constantly train itself from new and corrected data.
+In the future, we aim to improve the system’s accuracy by introducing human-in-the-loop verification to identify cases where the model incorrectly classifies a query, as well as by developing a model that can continually retrain itself using new and corrected data.
 
 > [!NOTE]
-> While the production environment will monitor data 24/7 and generate reports by comparing the oldest and newest entries of an appropriate timeframe, the current prototype is limited to occasional manual runs with a smaller workload of log excerpts (about 200 lines) due to resource constraints.
+> A real-world environment system needs to monitor data 24/7 and automatically alert as soon as an anomaly is detected. It must also generate reports by comparing the oldest and newest entries within an appropriate timeframe. Unfortunately, the current prototype is limited to occasional manual runs with a smaller workload of log excerpts (approximately 200 lines) due to resource constraints.
 
 ## Usage
 
