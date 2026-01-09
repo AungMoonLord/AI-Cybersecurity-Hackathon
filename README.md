@@ -4,7 +4,7 @@
     <img src="images/logo.png" alt="Logo" width="auto" height="auto">
   </a>
 
-  <h1 style="margin-top: 2rem; align: center">Mjolnir: AI-Powered Fraud Detection and Personalized Report Generation from Financial Transaction Logs</h1>
+  <h1 style="margin-top: 2rem; align: center">Mjolnir: Realtime AI-Powered Fraud Detection and Personalized Report Generation from Financial Transaction Logs</h1>
 
   <h3 align="center">
     A fraud detection and prevention project for <i>Samsung × KBTG Digital Fraud Cybersecurity Hackathon</i>.
