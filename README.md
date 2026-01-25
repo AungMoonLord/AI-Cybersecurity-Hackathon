@@ -10,10 +10,6 @@
     A fraud detection and prevention project for <i>Samsung × KBTG Digital Fraud Cybersecurity Hackathon</i>.
     <br/>
     <br/>
-    <a href="https://n8nsys.giize.com/form/7ba35445-b45e-4027-bb70-c84243abda6a">
-      <img src="images/try-the-demo.svg" alt="Try the Demo" width="auto" height="40">
-    </a>
-    &nbsp;
     <a href="https://youtu.be/si21QpFcjiE">
       <img src="images/see-the-demo.svg" alt="See the Demo in Action" width="auto" height="40">
     </a>
